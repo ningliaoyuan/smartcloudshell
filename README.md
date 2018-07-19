@@ -13,6 +13,7 @@ Then user the follow url to test:
 http://localhost:5000/cli/help/your query
 
 - python test.py
+
 Then check out the output in output folder
 
 # Install packages on azure web app
