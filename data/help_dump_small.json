@@ -1,0 +1,270 @@
+{
+  "acr check-name": {
+    "parameters": {
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      }
+    },
+    "help": "Checks if a container registry name is valid and available for use.",
+    "examples": [
+      [
+        "Check if a registry name already exists.",
+        "az acr check-name -n doesthisnameexist\n"
+      ]
+    ]
+  },
+  "acr list": {
+    "parameters": {
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      }
+    },
+    "help": "Lists all the container registries under the current subscription.",
+    "examples": [
+      [
+        "List container registries and show the results in a table.",
+        "az acr list -o table\n"
+      ],
+      [
+        "List container registries in a resource group and show the results in a table.",
+        "az acr list -g MyResourceGroup -o table\n"
+      ]
+    ]
+  },
+  "acr create": {
+    "parameters": {
+      "--cmd": {
+        "name": [
+          "--cmd"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      },
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      },
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "[REQUIRED]",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      },
+      "--sku": {
+        "name": [
+          "--sku"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The SKU of the container registry"
+      },
+      "--location": {
+        "name": [
+          "--location",
+          "-l"
+        ],
+        "required": "",
+        "help": "Location. You can configure the default location using `az configure --defaults location=<location>`"
+      },
+      "--storage-account-name": {
+        "name": [
+          "--storage-account-name"
+        ],
+        "required": "",
+        "help": "Provide the name of an existing storage account if you're recreating a container registry over a previous registry created storage account. Only applicable to Classic SKU."
+      },
+      "--admin-enabled": {
+        "name": [
+          "--admin-enabled"
+        ],
+        "required": "",
+        "help": "Indicates whether the admin user is enabled"
+      },
+      "--deployment-name": {
+        "name": [
+          "--deployment-name"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      }
+    },
+    "help": "Creates a container registry.",
+    "examples": [
+      [
+        "Create a managed container registry with the Standard SKU.",
+        "az acr create -n MyRegistry -g MyResourceGroup --sku Standard\n"
+      ],
+      [
+        "Create a container registry with a new storage account with the Classic SKU.",
+        "az acr create -n MyRegistry -g MyResourceGroup --sku Classic\n"
+      ]
+    ]
+  },
+  "acr delete": {
+    "parameters": {
+      "--cmd": {
+        "name": [
+          "--cmd"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      },
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      },
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      }
+    },
+    "help": "Deletes a container registry.",
+    "examples": [
+      [
+        "Delete a container registry.",
+        "az acr delete -n MyRegistry\n"
+      ]
+    ]
+  },
+  "acr show": {
+    "parameters": {
+      "--cmd": {
+        "name": [
+          "--cmd"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      },
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      },
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      }
+    },
+    "help": "Get the details of a container registry.",
+    "examples": [
+      [
+        "Get the login server for a container registry.",
+        "az acr show -n MyRegistry --query loginServer\n"
+      ]
+    ]
+  },
+  "acr login": {
+    "parameters": {
+      "--cmd": {
+        "name": [
+          "--cmd"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      },
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      },
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      },
+      "--username": {
+        "name": [
+          "--username",
+          "-u"
+        ],
+        "required": "",
+        "help": "The username used to log into a container registry"
+      },
+      "--password": {
+        "name": [
+          "--password",
+          "-p"
+        ],
+        "required": "",
+        "help": "The password used to log into a container registry"
+      }
+    },
+    "help": "Log in to a container registry through the Docker CLI.",
+    "examples": [
+      [
+        "Log in to a container registry",
+        "az acr login -n MyRegistry\n"
+      ]
+    ]
+  },
+  "acr show-usage": {
+    "parameters": {
+      "--cmd": {
+        "name": [
+          "--cmd"
+        ],
+        "required": "",
+        "help": "==SUPPRESS=="
+      },
+      "--name": {
+        "name": [
+          "--name",
+          "-n"
+        ],
+        "required": "[REQUIRED]",
+        "help": "The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`"
+      },
+      "--resource-group": {
+        "name": [
+          "--resource-group",
+          "-g"
+        ],
+        "required": "",
+        "help": "Name of resource group. You can configure the default group using `az configure --defaults group=<name>`"
+      }
+    },
+    "help": "Get the quota usages for a container registry.",
+    "examples": [
+      [
+        "Get the quota usages for a container registry.",
+        "az acr show-usage -n MyRegistry\n"
+      ]
+    ]
+  }
+}
