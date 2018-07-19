@@ -1,0 +1,10 @@
+create storage account,storage account create
+turn off vm,vm stop
+Lists all the container registries,acr list
+create new web app,webapp create
+show me my web apps,webapp list
+how to restart web app,webapp restart
+virtual machine extension image types,vmss extension image list-names
+show all storage accounts,storage account list
+get connection string of my storage account,storage account show-connection-string
+Create a firewall rule for sql server,sql server firewall-rule create
