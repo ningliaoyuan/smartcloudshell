@@ -86,11 +86,53 @@ def outputWords(allTexts):
         i += 1
     writeToFile('words.csv', csv)
 
+class Word:
+  def __init__(self, word, lemma, pos, tag, dep, isAlpha, isStop, text):
+    self.word = word
+    self.lemma = lemma
+    self.pos = pos
+    self.tag = tag
+    self.dep = dep
+    self.isAlpha = isAlpha
+    self.isStop = isStop
+    self.count = 1
+    self.samples = [text]
+
+def outputWordCounts(allTexts):
+    nlp = spacy.load('en_core_web_lg')
+    i = 0
+    length = len(allTexts)
+    words = {}
+    while i < length:
+        text = allTexts[i]
+        print('{}/{} {}'.format(i, length, text))
+        text = re.sub(r'\W+', ' ', text)
+        doc = nlp(text)
+        for token in doc:
+            key = token.lemma_
+            if key in words:
+                words[key].count += 1
+                samples = words[key].samples
+                if(len(samples)<2):
+                    samples.append(text)
+            else:
+                words[key] = Word(key, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, text)
+        i += 1
+
+    csv = []
+    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, count, samples")
+    for key in words:
+        word = words[key]
+        csv.append('{},{},{},{},{},{},{},{},{}'.format(key, word.lemma, word.pos, word.tag, word.dep, word.isAlpha, word.isStop, word.count, word.samples))
+
+    writeToFile('all-word-counts.csv', csv)
+
+
 def run():
     allTexts = getAllTexts('../data/help_dump.json')
     # writeToFile("all-text.txt", allTexts)
-    outputWords(allTexts)
-
+    # outputWords(allTexts)
+    outputWordCounts(allTexts)
 
 run()
 print('completed')
