@@ -6,7 +6,7 @@ class TestCase:
 
   def __init__(self, query, expectedCommand):
     self.query = query
-    self.expectedCommand = expectedCommand
+    self.expectedCommands = expectedCommand.split('|')
     self.matchWithCmd = ''
     self.scoreWithCmd = 0
     self.isMatchCmdCorrect = None
@@ -20,16 +20,25 @@ class TestCase:
     if len(r1) >= 1:
       self.matchWithCmd = r1[0]['id']
       self.scoreWithCmd = r1[0]['score']
-      self.isMatchCmdCorrect = self.matchWithCmd == self.expectedCommand
+      self.isMatchCmdCorrect = self.matchWithCmd in self.expectedCommands
 
     r2 = compareWithHelp(self.query)
     if len(r2) >= 1:
       self.matchWithHelp = r2[0]['id']
       self.scoreWithHelp = r2[0]['score']
-      self.isMatchHelpCorrect = self.matchWithHelp == self.expectedCommand
+      self.isMatchHelpCorrect = self.matchWithHelp in self.expectedCommands
 
   def __str__(self):
-    return (self.query, self.expectedCommand, self.matchWithCmd, self.scoreWithCmd, self.isMatchCmdCorrect, self.matchWithHelp, self.scoreWithHelp, self.isMatchHelpCorrect).__str__()
+    return (
+      self.query,
+      self.expectedCommands,
+      self.matchWithCmd,
+      self.scoreWithCmd,
+      self.isMatchCmdCorrect,
+      self.matchWithHelp,
+      self.scoreWithHelp,
+      self.isMatchHelpCorrect
+    ).__str__()
 
   def __repr__(self):
     return self.__str__()
@@ -53,8 +62,26 @@ if not os.path.isdir('output'):
 
 with open(outputFile, 'w+') as csvfile:
   writer = csv.writer(csvfile)
-  writer.writerow(['Query', 'Expected command', 'Prediction1', 'Score1', 'Prediction1 correct', 'Prediction2', 'Score2', 'Prediction2 correct'])
+  writer.writerow([
+    'Query',
+    'Expected command',
+    'Prediction1',
+    'Score1',
+    'Prediction1 correct',
+    'Prediction2',
+    'Score2',
+    'Prediction2 correct'
+  ])
   for c in cases:
-    writer.writerow([c.query, c.expectedCommand, c.matchWithCmd, c.scoreWithCmd, c.isMatchCmdCorrect, c.matchWithHelp, c.scoreWithHelp, c.isMatchHelpCorrect])
+    writer.writerow([
+      c.query,
+      ', '.join(c.expectedCommands),
+      c.matchWithCmd,
+      c.scoreWithCmd,
+      c.isMatchCmdCorrect,
+      c.matchWithHelp,
+      c.scoreWithHelp,
+      c.isMatchHelpCorrect
+    ])
 
 print('Test result saved to ' + outputFile)

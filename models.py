@@ -13,7 +13,7 @@ class Model:
     self._desc = desc
 
   def load(self):
-    op0 = log().start("loadding model: " + self._desc)
+    op0 = log().start("loading model: " + self._desc)
 
     op = log().start("loading model")
     nlp = self._model.load()

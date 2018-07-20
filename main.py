@@ -8,8 +8,6 @@ from modelBase import Suggestion
 
 cliModel = baselineModel_lg.load()
 
-
-
 @app.route('/')
 def hello_world():
   return 'Welcome to smart cloud shell!'
