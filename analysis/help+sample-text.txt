@@ -1,0 +1,3308 @@
+List VMSS.
+Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+Check if a private IP address is available for use within a virtual network.
+Check whether 10.0.0.4 is available within MyVnet.
+Delete an address pool.
+Delete an address pool.
+Add a job to a Batch account.
+Complete a cloud-to-device message.
+Create an empty PTR record set.
+Create an empty PTR record set.
+Update an Azure IoT Hub device provisioning service.
+Update Allocation Policy to 'GeoLatency' of an Azure IoT Hub device provisioning service 'MyDps'
+Updates an Azure Cosmos DB collection 
+Delete a replication from a container registry.
+Delete a replication from a container registry.
+Manage ExpressRoute peering of an ExpressRoute circuit.
+Delete a network security group rule.
+Delete a network security group rule.
+Create Authorization Rule for given Service Bus Topic
+Create Authorization Rule for given Service Bus Topic
+Get the quota usages for a container registry.
+Get the quota usages for a container registry.
+Get the details of a public IP address.
+Get information about a public IP resource.
+Look up time zone information.
+Manage DevTest Labs artifacts.
+Get the details of a blob.
+Show all properties of a blob.
+List policy events.
+Get policy events at current subscription scope created in the last day.
+Get policy events at resource group scope in current subscription.
+Get policy events for a resource using resource name.
+Get policy events for a policy set definition in current subscription.
+Get policy events for a policy assignment in current subscription.
+Get top 5 policy events in current subscription, selecting a subset of properties and customizing ordering.
+Get policy events in current subscription filtering results based on some property values.
+Get policy events in current subscription aggregating results based on some properties.
+Get policy events in current subscription aggregating results based on some properties specifying multiple groupings.
+Get the details of a VM.
+Show information about a VM.
+Manage secrets of an Azure DevTest Lab.
+Manage Batch certificates.
+Gets a list of SKUs available for your VM scale set, including the minimum and maximum VM instances allowed for each SKU.
+Manage DevTest Lab artifact sources.
+Get the details of a subscription.
+List policy compliance states.
+Get latest policy states at current subscription scope.
+Get latest policy states at management group scope.
+Get latest policy states for a resource using resource ID.
+Get latest policy states for a nested resource using resource name.
+Get latest policy states for a policy definition in current subscription.
+Get latest policy states for a policy assignment in the specified resource group in current subscription.
+Get latest policy states in current subscription during a custom time interval.
+Get number of latest policy states in current subscription.
+Get latest policy states in current subscription grouping results based on some properties.
+Commands to manage clusters.
+List all of the jobs or job schedule in a Batch account.
+Shows the Service Bus Namespace details
+shows the Namespace details.
+List backups of a web app.
+Display the current distribution of traffic across slots.
+Update a linked IoT hub in an Azure IoT Hub device provisioning service.
+Delete linked IoT hub 'MyLinkedHub' in an Azure IoT Hub device provisioning service
+Show the authentification settings for the webapp.
+Group resources into availability sets.
+Manage Azure Authorization Rule connection strings for Namespace
+Create a virtual network gateway.
+Create a basic virtual network gateway for site-to-site connectivity.
+Add an extension to a VMSS or update an existing extension.
+Get the details of a VPN connection.
+View the details of a VPN connection.
+Gets a managed application definition.
+Delete an asset.
+Show the details of a migration Task. Use the "--expand" to get more details.
+Gets the result of evaluating an automatic scaling formula on the pool.  This API is primarily for validating an autoscale formula, as it simply returns the result without applying the formula to the pool. The pool must have auto scaling enabled in order to evaluate a formula.
+Delete a managed database.
+Delete a managed database
+Manage resource policy definitions.
+Creates a snapshot of an existing share under the specified account.
+Updates the ServiceBus Rule for Subscription
+Updates Rule.
+Generates a shared access signature for the table. Use the returned signature with the sas_token parameter of TableService.
+Manage a cluster certificate.
+List stored access policies on a containing object
+Get the details for a topic type.
+Generates a shared access signature for the file. Use the returned signature with the sas_token parameter of FileService.
+Manage an Azure Service Fabric cluster.
+Create an empty CNAME record set.
+Create an empty CNAME record set.
+Create a network security group rule.
+Create a basic "Allow" NSG rule with the highest priority.
+Create a security rule using service tags. For more details visit https://aka.ms/servicetags
+Delete a revoked certificate.
+Delete a revoked certificate.
+Update the firewall configuration of a web application.
+Configure WAF on an application gateway in detection mode with default values
+Update Authorization Rule for the given Service Bus Queue.
+Update Authorization Rule for Queue
+Shows the connection strings of Authorizationrule for the Eventhub.
+Shows the connection strings of Authorizationrule for the eventhub.
+check for the availability of the given name for the Namespace
+check for the availability of mynamespace for the Namespace
+Update the properties of a Batch job. Unspecified properties which can be updated are reset to their defaults.
+Update a frontend IP address.
+Update the frontend IP address of a public load balancer.
+Updates the specified Data Lake Analytics account to remove an Azure Storage account.
+Gets the permissions for the specified container. The permissions indicate whether container data may be accessed publicly.
+Manage Batch applications.
+Update a policy definition.
+Gets information about the specified certificate.
+Configure deployment slot auto swap.
+Configure the Azure Virtual Machine Scale Set diagnostics extension.
+Shows the list of Authorization Rule by Service Bus Namespace
+Shows the list of Authorization Rule by Service Bus Namespace
+Update the settings of a cluster.
+Set the `MaxFileOperationTimeout` setting for a cluster to 5 seconds.
+Manage Azure Kubernetes Services.
+Manage a server's DNS aliases.
+Gets information about the specified pool.
+Get the details of an event subscription.
+Show the details of an event subscription for an Event Grid topic.
+Show the details of an event subscription for a resource group.
+Attach an unmanaged persistent disk to a VM.
+Attach a new default sized (1023 GB) unmanaged data disk to a VM.
+Manage automatic scaling of Batch pools.
+Get the configuration for a server."
+Gets a list of operations performed on the database.
+Get the details of an SRV record set.
+Get the details of an SRV record set.
+Place the CLI in a waiting state until a deployment condition is met.
+Create a service principal and configure its access to an Azure Media Services account.
+Create a service principal with password and configure its access to an Azure Media Services account. Output will be in xml format.
+Show the connection strings for an IoT hub.
+Show the connection string of an IoT hub using default policy and primary key.
+Show the connection strings for all IoT hubs in a resource group.
+Manage data warehouses.
+Manage subnets in an Azure Virtual Network.
+Manage app service plans.
+List role definitions.
+Update source control token cached in Azure app service. If no token is provided, the command will clean up existing token.
+Manage revoked certificates in a virtual network gateway.
+Update a firewall rule in a Data Lake Analytics account.
+Place the CLI in a waiting state until a condition of the ExpressRoute is met.
+Pause executing next line of CLI script until the ExpressRoute circuit is successfully provisioned.
+List jobs.
+List jobs.
+Manage container-based continuous deployment.
+Update Azure Advisor configuration.
+Update low CPU threshold for a given subscription to 20%.
+Create a Service Bus Namespace
+Create a Service Bus Namespace.
+(PREVIEW) Manage IoT device messaging.
+Create an empty SRV record set.
+Create an empty SRV record set.
+Gets SSL predefined policy with the specified policy name.
+Gets SSL predefined policy with the specified policy name.
+Show the details of a database.
+Show database 'testdb' in the server 'testsvr'.
+Set the value of a CNAME record.
+Set the value of a CNAME record.
+Update a VPN connection.
+Add BGP to an existing connection.
+Update a role definition.
+Create an empty TXT record set.
+Create an empty TXT record set.
+Manage Azure Network Security Groups (NSGs).
+Delete an action group.
+List redirect configurations.
+List redirect configurations.
+Update the metadata of a device in an IoT hub.
+Disable a device.
+Manage Azure Active Directory group members.
+Update a virtual network.
+Update a virtual network with the IP address of a DNS server.
+Deletes a job.  Deleting a job also deletes all tasks that are part of that job, and all job statistics. This also overrides the retention period for task data; that is, if the job contains tasks which are still retained on compute nodes, the Batch services deletes those tasks' working directories and all their contents.  When a Delete Job request is received, the Batch service sets the job to the deleting state. All update operations on a job that is in deleting state will fail with status code 409 (Conflict), with additional information indicating that the job is being deleted.
+Delete an SSL certificate.
+Delete an SSL certificate.
+Copies a file asynchronously. This operation returns a copy operation  properties object, including a copy ID you can use to check or abort the  copy operation. The File service copies files on a best-effort basis.  If the destination file exists, it will be overwritten. The destination  file cannot be modified while the copy operation is in progress.
+Marks the specified file for deletion. The file is later deleted during garbage collection.
+Join files in a Data Lake Store account into one file.
+Manage resource provider features.
+Add a new node type to a cluster.
+Add a new node type to a cluster.
+Clear all subscriptions from the CLI's local cache.
+Invoke an action on the resource.
+Power-off a vm, specified by Id.
+Get the details of a URL path map.
+Get the details of a URL path map.
+Retrieve the remote desktop protocol file for a Batch compute node.
+Update a data warehouse.
+Gets information about all network interfaces in a virtual machine in a virtual machine scale set.
+Manage Azure DevTest Labs.
+Create a group in the directory.
+list a service principal's credentials.
+Stop a running packet capture session.
+Stop a running packet capture session.
+List inbound NAT rules.
+List inbound NAT rules.
+Manage redirect configurations.
+Get the details of an SSL certificate.
+Get the details of an SSL certificate.
+Manage Azure Authorization Rule keys for Service Bus Queue
+Get the details of an ARM template in a lab.
+Gets information about the deleted vaults in a subscription.
+Get the details of a container registry.
+Get the login server for a container registry.
+Manage Projects for an instance of the Data Migration Service.
+Manage data disks of a VMSS.
+Deletes a task from the specified job.  When a task is deleted, all of the files in its directory on the compute node where it ran are also deleted (regardless of the retention time). For multi-instance tasks, the delete task operation applies synchronously to the primary task; subtasks and their files are then deleted asynchronously in the background.
+Show information about a workspace.
+Show information about a workspace.
+Gets information about a specified certificate. Authorization: requires the certificates/get permission.
+Get cluster resource.
+Creates a new directory under the specified share or parent directory.  If the directory with the same name already exists, the operation fails on the service. By default, the exception is swallowed by the client. To expose the exception, specify True for fail_on_exists.
+Manage deployment operations.
+Create a DNS zone using a DNS zone file.
+Import a local zone file into a DNS zone resource.
+Delete a storage account.
+Delete a storage account using a resource ID.
+Download the content of a Batch task file.
+Manage probes to gather and evaluate information on a gateway.
+List all policies for a Recovery services vault.
+Get a web app's connection strings.
+Manage applications running on an Azure Service Fabric cluster.
+Gets a list of server DNS aliases for a server.
+Manage a database's auditing policy.
+Entity which contains details of the job.
+List directories in a share.
+(PREVIEW) Manage Data Lake Analytics catalog table valued functions.
+Delete an SSL certificate from a function app.
+Release the lease. The lease may be released if the lease_id specified matches that associated with the container. Releasing the lease allows another client to immediately acquire the lease for the container as soon as the release is complete.
+List resource policy assignments.
+List data warehouses for a server.
+Create a redirect configuration.
+Create a redirect configuration to a http-listener called MyBackendListener.
+(PREVIEW) display functionapp's managed service identity
+Lists all of the pools in the specified account.
+Create a new CDN profile.
+Create a CDN profile using Verizon premium CDN.
+Manage certificate issuer information.
+List the CNAME record set in a zone.
+List the CNAME record set in a zone.
+List available endpoints for a CDN.
+List all endpoints within a given CDN profile.
+Get file or folder information in a Data Lake Store account.
+Remove a secret from a VM.
+Delete a deployment slot.
+List the installed extensions.
+Retrieve service diagnostic settings categories.
+Manage Azure Network resources.
+Manage Azure Resource Manager deployments.
+Create a public IP address.
+Create a basic public IP resource.
+Create a public IP resource in an availability zone in the current resource group region.
+Show details of a particular Recovery service vault.
+List the access keys for a Azure Cosmos DB database account.
+Restore disks of the backed VM from the specified recovery point.
+Gets the preview feature with the specified name.
+Lists all of the tasks that are associated with the specified job.  For multi-instance tasks, information such as affinityId, executionInfo and nodeInfo refer to the primary task. Use the list subtasks API to retrieve information about subtasks.
+List the VM image publishers available in the Azure Marketplace.
+List all publishers in the West US region.
+List address pools.
+List address pools.
+Manage address pools of an application gateway.
+Update a web app's connection strings.
+Add a mysql connection string.
+Register a provider.
+Recovers the deleted secret back to its current version under /secrets. Authorization: requires the secrets/recover permission.
+Update a resource group.
+List all A record sets in a zone.
+List all A record sets in a zone.
+Gets information about the specified application.
+Generates a verification code for an Azure IoT Hub certificate.
+Generates a verification code for MyCertificate
+(PREVIEW) display webapp's managed service identity
+Deletes an Azure Cosmos DB collection 
+Update a container registry.
+Update tags for a container registry.
+Enable the administrator user account for a container registry.
+Manage applications with AAD Graph.
+Gets a list of virtual network rules in a server.
+Get the details of a network interface.
+Get the internal domain name suffix of a NIC.
+See catalog of available reservations
+Permanently deletes the specified secret. aka purges the secret. Authorization: requires the secrets/purge permission.
+Cancels the current virtual machine scale set rolling upgrade.
+Get the details of a source control deployment configuration.
+Reset a service principal credential.
+Create an empty NS record set.
+Create an empty NS record set.
+Retrieve the remote login settings for a Batch compute node.
+Sets the server's encryption protector.
+Get catalog of available reservation.
+Manage shared access policies of a storage table.
+List lock information.
+List out the locks on a vnet resource. Includes locks in the associated group and subscription.
+Gets information about a disk.
+List certificates in a specified key vault.  The GetCertificates operation returns the set of certificates resources in the specified key vault.
+Add an extension.
+Add extension by name
+Add extension from local disk
+List the number of network resources in a region that are used against a subscription quota.
+List the provisioned network resources in East US region within a subscription.
+Get the details of an address pool.
+Get the details of an address pool.
+Update a web app.
+Update the tags of a web app.
+Update the storage blob delete-policy.
+Delete a policy definition.
+(PREVIEW) Manage Data Lake Analytics catalogs.
+List frontend ports.
+List frontend ports.
+Manage Network Watcher troubleshooting sessions.
+Delete a resource-level lock.
+Delete a resource level lock
+Show the dashboard for a Kubernetes cluster in a web browser.
+Get the details of an Azure IoT Hub device provisioning service.
+Show details of an Azure IoT Hub device provisioning service 'MyDps'
+Deletes a container registry.
+Delete a container registry.
+Evaluate probe information and define routing rules.
+Permanently deletes the specified vault. aka Purges the deleted Azure key vault.
+Get provider operations metadatas.
+List all application security groups in a subscription.
+List all application security groups in a subscription.
+Create a storage account.
+Create a storage account 'MyStorageAccount' in resource group 'MyResourceGroup' in the West US region with locally redundant storage.
+check for the availability of the given name for the Namespace
+Create a new topic.
+Update a metric-based alert rule.
+Update the properties of an Azure Cognitive Services account.
+Add a user account to a Batch compute node.
+Show the details of an IP configuration.
+Show the details of an IP configuration of a NIC.
+Manage Azure Event Hubs namespaces, eventhubs, consumergroups and geo recovery configurations - Alias
+Manage Azure Database for PostgreSQL servers.
+Deletes and autoscale setting.
+Properties of the Recovery Services vault.
+Configure SSL certificates for web apps.
+Display information for an extension.
+Show the CustomScript extension version 2.0.2.
+List all available invoices of the subscription
+List extensions associated with a VMSS.
+Retrieves the list of procedures from the Data Lake Analytics catalog.
+Show the details of a migration Project.
+Manage Batch pools.
+Disable Azure Advisor recommendations.
+Remove action groups from this activity log alert
+Manage protection of your items, enable protection or disable it, or take on-demand backups.
+Deletes an Azure IoT Hub certificate.
+Deletes MyCertificate
+Send a device-to-cloud message.
+Send a device-to-cloud message to an IoT hub with a default message.
+Start a function app.
+Manage DNS domains in Azure.
+Lists the deleted certificates in the specified vault, currently available for recovery.  The GetDeletedCertificates operation retrieves the certificates in the current vault which are in a deleted state and ready for recovery or purging.
+Retrieve a job recurrence in a Data Lake Analytics account.
+Manage resource policy assignments.
+manage a service principal's credentials.
+Delete a function app.
+Manage blob storage container leases.
+Configure the settings of a web application firewall.
+Create and start a migration Task.
+Create and start a Task which performs no validation checks.
+The format of the database options JSON object.
+Get the details of a route in a route table.
+Get the details of a route in a route table.
+List the extensions attached to a VM.
+List attached extensions to a named VM.
+Remove an address pool of an IP configuration.
+Remove an address pool of an IP configuration.
+Start a CDN endpoint.
+Start a CDN endpoint.
+Create a new server Active Directory administrator.
+Remove a certificate contact from the specified vault. 
+Delete a rule of a URL path map.
+Delete a rule of a URL path map.
+List the event categories of activity logs.
+View statistics of all jobs under a Batch account.
+Manage build definitions, which can be triggered by git commits or base image updates.
+Delete the custom domain of a CDN.
+Delete a custom domain.
+List all the transforms of an Azure Media Services account.
+Show budget for an Azure subscription.
+Retrieve a catalog credential.
+Restart VMs.
+Restart a VM.
+Get information for a Data Lake Analytics job.
+(PREVIEW) Upgrade the ACI Connector on a managed Kubernetes cluster.
+Upgrade the ACI Connector for Linux to a managed Kubernetes cluster.
+Upgrade the ACI Connector for both Windows and Linux to a managed Kubernetes cluster.
+Upgrade the ACI Connector from a custom Helm chart with custom tag.
+Create an asset.
+Manage Azure Virtual Networks.
+Add a TXT record.
+Add a TXT record.
+Gets the patching schedule of a redis cache (requires Premium SKU).
+Permanently stop data replication between two database replicas.
+Create a named endpoint to connect to a CDN.
+Create an endpoint to service content for hostname over HTTP or HTTPS.
+Create an endpoint with a custom domain with compression and only HTTPS.
+Delete VMs within a VMSS.
+Create a container in a storage account.
+Create a storage container in a storage account.
+Perform deployment using the kudu zip push deployment for a webapp.
+Perform deployment by using zip file content.
+Create the Service Bus Topic
+Create a new Service Bus Topic
+(PREVIEW) Manage Data Lake Analytics catalog assemblies.
+Delete peering settings.
+Delete private peering.
+Shows Service Bus Subscription Details
+Shows the Subscription details.
+manage service identities of a VM
+Show a stored access policy on a containing object
+Attach managed data disks to a scale set or its instances.
+get a policy set definition.
+Deletes the Service Bus Topic
+Deletes the Service Bus Topic
+Manage VMs in an Azure DevTest Lab.
+Create a database as a readable secondary replica of an existing database.
+Create a database with performance level S0 as a secondary replica of an existing Standard database.
+Display the access control list (ACL).
+display VM's managed identity info.
+Delete a URL path map.
+Delete a URL path map.
+Returns all user-defined metadata for the specified share.
+Lists the compute nodes in the specified pool.
+Gets the active diagnostic settings for the specified resource.
+Gets the settings required for remote login to a compute node.  Before you can remotely login to a node using the remote login settings, you must create a user account on the node. This API can be invoked only on pools created with the virtual machine configuration property. For pools created with a cloud service configuration, see the GetRemoteDesktop API.
+Delete virtual machine. This operation can take a while to complete.
+Import a private key. Supports importing base64 encoded private keys from PEM files. Supports importing BYOK keys into HSM for premium KeyVaults. 
+Lists the available billing periods for a subscription in reverse chronological order. This is only supported for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API.
+Delete a repository or image in a container registry.
+Delete a repository from a container registry.
+Delete an image by sha256-based manifest digest. This deletes all tags referencing the manifest and any associated layer data.
+Use an Azure Virtual Network Gateway to establish secure, cross-premises connectivity.
+Create an app service plan.
+Create a basic app service plan.
+Show the details of an action group
+Retrieves the list of external data sources from the Data Lake Analytics catalog.
+Delete a root certificate.
+Remove a certificate from the list of Root Certificates whose children are allowed to access this Gateway.
+Delete a data warehouse.
+(PREVIEW) Manage rules in a route filter.
+Download a VPN client configuration required to connect to Azure via point-to-site.
+List virtual networks.
+List all virtual networks in a subscription.
+List virtual networks in a subscription which specify a certain address prefix.
+Manage Azure Database for MySQL servers.
+Enable https delivery of the custom domain.
+Remove all CORS rules from a storage account.
+Configure the Network Watcher service for different regions.
+Configure Network Watcher for the West US region.
+Retrieve a firewall rule in a Data Lake Analytics account.
+Show metrics settings for a storage account.
+Add a new certificate to the Virtual Machine Scale Sets that make up the cluster to be used by hosted applications.
+Add an application certificate.
+Retrieve a pre-generated VPN client configuration.
+Get the pre-generated point-to-site VPN client of the virtual network gateway.
+Show information about an experiment.
+Show information about an experiment.
+Update the configuration of a server.
+Set a new configuration value.
+Register a device for an IoT hub.
+Create a device authenticating with symmetric key.
+Create a device authenticating with a self-signed X.509 certificate, which is put into to the current directory.
+Create a device authenticating with a self-signed X.509 certificate, and write the certificate to /path/to/output.
+View all available CDN edge nodes.
+Create or update an identity in the specified subscription and resource group.
+List which services support VNET service tunneling in a given region.
+List the endpoint services available for use in the West US region.
+Returns a boolean indicating whether the collection exists 
+Get the details for an event hub consumer group.
+List all the streaming policies within an Azure Media Services account.
+Manage policy compliance states.
+Create an elastic pool.
+Create elastic pool with zone redundancy enabled
+Create a Standard 100 DTU elastic pool.
+Stop an instance of the Data Migration Service. While stopped, it can't be used to run data migrations and the owner won't be billed.
+Shows the details of Service Bus Namespace Authorization Rule
+Shows the details of Service Bus Namespace Authorization Rule
+Place the CLI in a waiting state until a condition of the local gateway is met.
+List route filters.
+List route filters in a resource group.
+Lists the metric definitions for the resource.
+Deletes the Namespaces
+Deletes the Namespace
+Get the details of a replication.
+Get the details of a replication.
+List app service plans.
+List all free tier App Service plans.
+Create a new shared access policy in an IoT hub.
+Create a new shared access policy.
+Stop a running VM.
+Stop a running VM.
+Manage streaming policies for an Azure Media Services account.
+Deletes the operation for a specified certificate. Authorization: requires the certificates/update permission.
+List repositories in a container registry.
+List repositories in a given container registry.
+Manage scopes for activity log alerts
+Log in to Azure.
+Log in interactively.
+Log in with a service principal using client secret.
+Log in using a VM's system assigned identity
+Lists firewall rules in a Data Lake Store account.
+Manage Azure Service Bus Topic and Authorization Rule
+Restart a function app.
+Show details of a DDoS protection plan.
+Update a CDN endpoint to manage how content is delivered.
+Turn off HTTP traffic for an endpoint.
+Update a probe.
+Update a probe with a different port and interval.
+Perform a health check and return the status of the service and virtual machine size.
+Update the properties of a VM.
+Add or update a tag.
+Set the primary NIC of a VM.
+Remove the fourth NIC from a VM.
+Lists the autoscale settings for a resource group.
+Get the details of a route table.
+Get the details of a route table.
+Renews the lease. The lease can be renewed if the lease ID specified on the request matches that associated with the blob. Note that the lease may be renewed even if it has expired as long as the blob has not been modified or leased again since the expiration of that lease. When you renew a lease, the lease duration clock resets.
+Gets the account keys for the specified Batch account.  This operation applies only to Batch accounts created with a poolAllocationMode of 'BatchService'. If the Batch account was created with a poolAllocationMode of 'UserSubscription', clients cannot use access to keys to authenticate, and must use Azure Active Directory instead. In this case, getting the keys will fail.
+Manage inbound NAT address pools of a load balancer.
+List the Batch accounts associated with a subscription or resource group.
+Returns all user-defined metadata and system properties for the specified directory. The data returned does not include the directory's list of files.
+Find the available VM extensions for a subscription and region.
+Update a PTR record set.
+Update a PTR record set.
+Check if Geo Recovery Alias Name is available
+Check availability of the Geo-Disaster Recovery Configuration Alias Name
+Retrieves the specified external data source from the Data Lake Analytics catalog.
+Remove an NS record from its record set.
+Remove an NS record from its record set.
+Disables Geo-Disaster Recovery Configuration Alias and stops replicating changes from primary to secondary namespaces
+Disables Geo-Disaster Recovery Configuration Alias and stops replicating changes from primary to secondary namespaces
+Show manifests of a repository in a container registry.
+Show manifests of a repository in a container registry.
+Get all reservations.
+Upload files from a local directory to a blob container.
+Deletes a firewall rule in a Data Lake Store account.
+Manage route tables.
+Show encryption status.
+Show information about a file server.
+Show full information about a file server.
+Display information for a NIC attached to a VM.
+Show details of a NIC on a VM.
+Gets a named billing period.  This is only supported for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API.
+Get lifetime summary statistics for all of the jobs in a Batch account.
+List autoscale rules for a profile.
+Retrieves one or more messages from the front of the queue, but does not alter the visibility of the message.  Only messages that are visible may be retrieved. When a message is retrieved  for the first time with a call to get_messages, its dequeue_count property  is set to 1. If it is not deleted and is subsequently retrieved again, the  dequeue_count property is incremented. The client may use this value to  determine how many times a message has been retrieved. Note that a call  to peek_messages does not increment the value of DequeueCount, but returns  this value for the client to read.  If the key-encryption-key or resolver field is set on the local service object, the messages will be decrypted before being returned.
+Gets the patching schedule of a redis cache (requires Premium SKU).
+Start a web app.
+Updates the applied scopes of the reservation.
+List managed application definitions.
+Manage Azure Service Bus Queue and Authorization Rule
+Wait for server to satisfy certain conditions.
+List the keys to use with the Maps APIs.
+Show the details of a job.
+Get details of an application security group.
+Get details of an application security group.
+Gets information about a snapshot.
+List HTTP listeners.
+List HTTP listeners.
+Deletes a tag from the subscription.  You must remove all values from a resource tag before you can delete it.
+Delete a peering.
+Delete a virtual network peering connection.
+Create a route in a route table.
+Create a route that forces all inbound traffic to a Network Virtual Appliance.
+(PREVIEW) Manage links between Data Lake Analytics accounts and Azure Storage.
+Creates a tag in the subscription.  The tag name can have a maximum of 512 characters and is case insensitive. Tag names created by Azure have prefixes of microsoft, azure, or windows. You cannot create tags with one of these prefixes.
+(PREVIEW) Manage Data Lake Analytics jobs.
+List queues in a storage account.
+Get an entity from the specified table. Throws if the entity does not exist.
+Attach a managed persistent disk to a VM.
+Attach a new default sized (1023 GB) managed data disk to a VM.
+Lists all of the applications in the specified account.
+Manage Batch account keys.
+List reservation details.
+Manage extensions on a VM scale set.
+Update a database.
+Update database with zone redundancy enabled
+Set the permissions for a file or folder in a Data Lake Store account.
+Delete a file server.
+Delete file server and wait for deletion to be completed.
+Request file server deletion without waiting for deletion to be completed.
+Update an event subscription.
+Update an event subscription for an Event Grid topic to specify a new endpoint.
+Update an event subscription for a resource group to specify a new endpoint and a new subject-ends-with filter.
+Gets a enrollment account by name.
+Get the details of a function app.
+Lists all the edge nodes of a CDN service.
+Restore a server from backup.
+Restore 'testsvr' as 'testsvrnew'.
+List managed disks.
+Delete formula.
+Create a custom Virtual Machine Image from managed disks or snapshots.
+Create an image from an existing disk.
+Import a certificate into KeyVault.
+Create a service principal with a certificate, add the certificate to Key Vault and provision a VM with that certificate.
+Update a linked IoT hub in an Azure IoT Hub device provisioning service.
+Update linked IoT hub 'MyLinkedHub.azure-devices.net' in an Azure IoT Hub device provisioning service
+List availability sets.
+List availability sets.
+Update an app service plan.
+List traffic manager endpoints.
+List traffic manager endpoints.
+Delete a stored access policy on a containing object 
+Update a resource-level lock.
+Update a resource level lock with new notes and type
+Returns all user-defined metadata, standard HTTP properties, and system properties for the file. Returns an instance of :class:`~azure.storage.file.models.File` with :class:`~azure.storage.file.models.FileProperties` and a metadata dict.
+Update a network security group rule.
+Update an NSG rule with a new wildcard destination address prefix.
+Manage Batch compute node files.
+Update a load balancer.
+Update the tags of a load balancer.
+Add a secondary cluster certificate to the cluster.
+Add a certificate to a  cluster using a keyvault secret identifier.
+Update peering settings of an ExpressRoute circuit.
+Add IPv6 Microsoft Peering settings to existing IPv4 config.
+Delete a route from a route table.
+Delete a route from a route table.
+(PREVIEW) Manage Data Lake Analytics catalog databases.
+Update a local VPN gateway.
+Update a Local Network Gateway provisioned with a 10.0.0.0/24 address prefix with additional prefixes.
+Get all the deployments for a resource group.
+Gets the approximate size of the data stored on the share, rounded up to the nearest gigabyte.  Note that this value may not include all recently created or recently resized files.
+Manage file storage directories.
+Set a stored access policy on a containing object
+Manage login credentials for Azure Container Registries.
+List available Data Lake Analytics accounts.
+Update an inbound NAT rule.
+Update an inbound NAT rule to disable floating IP and modify idle timeout duration.
+(PREVIEW) Manage Data Lake Analytics account firewall rules.
+Show an authorization certificate.
+Show an authorization certificate.
+Remove an MX record from its record set.
+Remove an MX record from its record set.
+Adds a new message to the back of the message queue.   The visibility timeout specifies the time that the message will be  invisible. After the timeout expires, the message will become visible.  If a visibility timeout is not specified, the default value of 0 is used.  The message time-to-live specifies how long a message will remain in the  queue. The message will be deleted from the queue when the time-to-live  period expires.  If the key-encryption-key field is set on the local service object, this method will encrypt the content before uploading.
+List available Azure Cognitive Services accounts.
+List all the Cognitive Services accounts in a resource group.
+Copies a blob asynchronously. This operation returns a copy operation  properties object, including a copy ID you can use to check or abort the  copy operation. The Blob service copies blobs on a best-effort basis.  The source blob for a copy operation may be a block blob, an append blob,  or a page blob. If the destination blob already exists, it must be of the  same blob type as the source blob. Any existing destination blob will be  overwritten. The destination blob cannot be modified while a copy operation  is in progress.  When copying from a page blob, the Blob service creates a destination page  blob of the source blob's length, initially containing all zeroes. Then  the source page ranges are enumerated, and non-empty ranges are copied.   For a block blob or an append blob, the Blob service creates a committed  blob of zero length before returning from this operation. When copying  from a block blob, all committed blocks and their block IDs are copied.  Uncommitted blocks are not copied. At the end of the copy operation, the  destination blob will have the same committed block count as the source.  When copying from an append blob, all committed blocks are copied. At the  end of the copy operation, the destination blob will have the same committed  block count as the source.  For all blob types, you can call get_blob_properties on the destination  blob to check the status of the copy operation. The final blob will be  committed when the copy completes.
+Manage Batch compute nodes.
+Sets a server to which DNS alias should point
+Manage configuration values for a server.
+Deletes the Eventhub
+Deletes the Eventhub
+Moves resources from one resource group to another(can be under different subscription)
+Get the details of a job in an IoT hub.
+(PREVIEW) Remove Azure Dev Spaces from a managed Kubernetes cluster.
+Remove Azure Dev Spaces from a managed Kubernetes cluster.
+Get the details of an A record set.
+Get the details of an A record set.
+List of Authorizationrule by Event Hubs Namespace
+List of Authorizationrule by Event Hubs Namespace
+Update a function app.
+Generates a shared access signature for the queue. Use the returned signature with the sas_token parameter of QueueService.
+Bind a hostname to a function app.
+(PREVIEW) Manage Data Lake Analytics catalog tables.
+List files and directories in a share.
+(PREVIEW) Manage route filters.
+List experiments.
+List experiments.
+Get secret.
+Create an IP configuration.
+Create a primary IP configuration for a NIC.
+List all of the executed builds for a registry, with the ability to filter by a specific build task.
+List builds for a build task and show the results in a table.
+Export artifacts from a formula.
+Stop a virtual machine This operation can take a while to complete.
+Delete a redirect configuration.
+Delete a redirect configuration.
+Create a stored access policy on the containing object
+Enables task scheduling on the specified compute node.  You can enable task scheduling on a node only if its current scheduling state is disabled.
+Manage storage accounts.
+List service principals.
+Manage blob copy operations.
+Terminates a job schedule.
+Create a new shared access policy in an Azure IoT Hub device provisioning service.
+Create a new shared access policy in an Azure IoT Hub device provisioning service with EnrollmentRead right
+Examine the logs for a container in a container group.
+Delete lab. This operation can take a while to complete.
+This operation retrieves a list of routes the virtual network gateway has learned, including routes learned from BGP peers.
+Retrieve a list of learned routes.
+Delete a job.
+Delete a job. The job will be terminated if it's currently running.
+Request job deletion without waiting for job to be deleted.
+Close access to the recovery point.
+Create a streaming policy.
+Get the details of a local VPN gateway.
+Get the details of a local VPN gateway.
+Update an MX record set.
+Update an MX record set.
+List load balancing rules.
+List load balancing rules.
+Delete an Azure Cognitive Services account.
+Regenerates one of the access keys for the specified storage account.
+Delete a user.
+List all firewall rules for a server.
+Delete an IoT hub.
+Manage frontend IP addresses of a load balancer.
+List available servers.
+List all servers in the current subscription.
+Manage Azure Authorization Rule keys for Service Bus Namespace
+Show the properties of a lock
+Show a subscription level lock
+Manage Batch AI resources.
+Delete a user account from a VM.
+Delete a user account.
+List maanged databases on a managed instance.
+List managed databases on a managed instance
+Manage web app deployments.
+(PREVIEW) Manage Data Lake Analytics catalog table types.
+List available built-in stacks which can be used for web apps.
+Retrieve node agent SKUs of Batch pools using a Virtual Machine Configuration.
+Delete a managed instance.
+Delete a managed instance
+Retrieves the specified view from the Data Lake Analytics catalog.
+Abandon a cloud-to-device message.
+List available usage resources for VMs.
+Get the compute resource usage for the West US region.
+Get all reservation orders
+Upload a file or folder to a Data Lake Store account.
+Upload a file to a share that uses the SMB 3.0 protocol.
+Upload to a local file to a share.
+Replace the existing access control list for a file or folder.
+Updates a replication.
+Update tags for a replication
+Show the current Address Resolution Protocol (ARP) table of an ExpressRoute circuit.
+Show the current Address Resolution Protocol (ARP) table of an ExpressRoute circuit.
+Create a URL path map.
+Create a URL path map with a rule.
+Manage URL path maps of an application gateway.
+List resource links.
+List links, filtering with <filter-string>
+Start an application gateway.
+Start an application gateway.
+Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account.
+Upgrade a managed Kubernetes cluster to a newer version.
+Manage a cluster's settings.
+register a preview feature.
+Place the CLI in a waiting state until a condition of the virtual network gateway is met.
+Pause CLI until the virtual network gateway is created.
+Delete a role definition.
+Retrieves statistics related to replication for the Queue service. It is  only available when read-access geo-redundant replication is enabled for  the storage account.  With geo-redundant replication, Azure Storage maintains your data durable  in two locations. In both locations, Azure Storage constantly maintains  multiple healthy replicas of your data. The location where you read,  create, update, or delete data is the primary storage account location.  The primary location exists in the region you choose at the time you  create an account via the Azure Management Azure classic portal, for  example, North Central US. The location to which your data is replicated  is the secondary location. The secondary location is automatically  determined based on the location of the primary; it is in a second data  center that resides in the same region as the primary location. Read-only  access is available from the secondary location, if read-access geo-redundant  replication is enabled for your storage account.
+Change the number of VMs within a VMSS.
+Returns server usages.
+Manage transforms for an Azure Media Services account.
+Deletes a firewall rule.
+Create a new firewall rule for a server.
+Create a firewall rule allowing all connections from all IP addresses.
+Create a rule for a URL path map.
+Create a rule for a URL path map.
+Gets all Alias(Disaster Recovery configurations).
+Manage user roles for access control with Azure Active Directory and service principals.
+Merges a certificate or a certificate chain with a key pair existing on the server.  The MergeCertificate operation performs the merging of a certificate or certificate chain with a key pair currently available in the service. Authorization: requires the certificates/update permission.
+Manage point-in-time copies of managed disks, native blobs, or other snapshots.
+Update a traffic manager profile.
+Update a traffic manager profile to change the TTL to 300.
+Sets Service Bus Geo-Disaster Recovery Configuration Alias for the give Namespace
+Sets Geo Disaster Recovery configuration - Alias for the give Namespace
+Update an application.
+update a native application with delegated permission of "access the AAD directory as the signed-in user"
+Get the details of a web app's configuration.
+Manage Azure Cosmos DB collections.
+Update an Azure Cosmos DB database account.
+Remove entries for the access control list of a file or folder.
+Lists available SSL options for configuring SSL policy.
+List available SSL options for configuring SSL policy.
+Get the details of a webhook.
+Get the details of a webhook.
+Manage Azure Service Bus Rule
+Create a Data Lake Analytics account.
+Download a secret from a KeyVault. 
+Restarts the specified compute node.  You can restart a node only if it is in an idle or running state.
+Manage transform outputs for an Azure Media Services account.
+Get billing invoices for a subscription.
+Delete a probe.
+Delete a probe.
+Gets a server's secure connection policy.
+Create a new custom domain to provide a hostname for a CDN endpoint.
+Create a custom domain within an endpoint and profile.
+Deletes Service Bus Geo-Disaster Recovery Configuration Alias request accepted
+Delete Service Bus Geo-Disaster Recovery Configuration Alias request accepted
+Unbind a hostname from a function app.
+List all CAA record sets in a zone.
+List all CAA record sets in a zone.
+List managed Kubernetes clusters.
+Start a streaming endpoint.
+Enables automatic scaling for a pool.  You cannot enable automatic scaling on a pool if a resize operation is in progress on the pool. If automatic scaling of the pool is currently disabled, you must specify a valid autoscale formula as part of the request. If automatic scaling of the pool is already enabled, you may specify a new autoscale formula and/or a new evaluation interval. You cannot call this API for the same pool more than once every 30 seconds.
+Adds an application to the specified Batch account.
+List unamanaged disks of a VM.
+List the unmanaged disks attached to a VM.
+Create an address pool.
+Create an address pool with two endpoints.
+Manage network security group flow logging.
+Gets an authorization rule for a namespace by rule name.
+Deletes an Azure Cosmos DB database account.
+Manage VPN connection IPSec policies.
+Delete a database.
+Delete database 'testdb' in the server 'testsvr'.
+List the Topic by Service Bus Namepsace
+Get the Topics by Namespace.
+Import data into a Redis cache.
+Delete a firewall rule.
+Remove a TXT record from its record set.
+Remove a TXT record from its record set.
+Deletes the specified Batch account.
+Update the policy associated with this item.
+List policy definitions.
+Gets all subscription usage metrics in a given location.
+Remove AAAA record from its record set.
+Remove an AAAA record from its record set.
+Pre-load content for a CDN endpoint.
+Pre-load Javascript and CSS content for an endpoint.
+Manage application-level routing and load balancing services.
+Create a managed instance.
+Create a managed instance with specified parameters and with identity
+Create a stored access policy on the containing object
+Get the details of a traffic manager endpoint.
+Get the details of a traffic manager endpoint.
+Update properties of an SOA record.
+Update properties of an SOA record.
+List publicly available extensions.
+List all publicly available extensions
+Configure a new backup schedule for a web app.
+Manage Azure Advisor configuration.
+Gets the specified Data Lake Store trusted identity provider.
+Delete an Azure IoT Hub device provisioning service.
+Delete an Azure IoT Hub device provisioning service 'MyDps'
+Place the CLI in a waiting state until a condition of the DMS instance is met.
+Get the details of a shared access policy of an IoT hub.
+Export all the device identities in the IoT hub identity registry to an Azure Storage blob container.
+Manage MySQL databases on a server.
+Delete an SRV record set and all associated records.
+Delete an SRV record set and all associated records.
+Manage a server's Active Directory administrator.
+Inspect the price sheet of an Azure subscription within a billing period.
+Update the access control list for a file or folder.
+Manage SSL certificates of an application gateway.
+Gets the properties of the specified task file.
+Unregister a cloud.
+Manage streaming endpoints for an Azure Media Service account.
+Manage formulas for an Azure DevTest Lab.
+Delete an application.
+Create a policy definition.
+Create a read-only policy.
+List tables in a storage account.
+Manage packet capture sessions on VMs.
+Update an Azure IoT Hub Device Provisioning Service certificate.
+Update a CA certificate in an Azure IoT Hub device provisioning service by uploading a new PEM file.
+Deletes the virtual network rule with the given name.
+(PREVIEW) Manage Data Lake Analytics job pipelines.
+Check if a given Project name is available within a given instance of DMS as well as the name's validity.
+Update the properties of a job schedule.
+Create a web app.
+Create a web app with the default configuration.
+Creates an Azure Cosmos DB database 
+Regenerate login credentials for a container registry.
+Renew the second password for a container registry.
+shows properties of Geo-Disaster Recovery Configuration Alias for Primay or Secondary Namespace
+Shows properties of Geo-Disaster Recovery Configuration Alias of the Primary Namespace
+Manage Azure resource level locks.
+Delete a certificate from a Batch account.
+Regenerate keys of Authorization Rule for the Service Bus Namespace.
+Regenerate keys of Authorization Rule for the Service Bus Namespace.
+Set a stored access policy on a containing object
+Manage Batch application packages.
+(PREVIEW) Manage Azure IoT hubs.
+Perform an on-demand backup of a backed up item.
+Show the details of a database.
+Show database 'testdb' in the server 'testsvr'.
+Create peering settings for an ExpressRoute circuit.
+Create Microsoft Peering settings with IPv4 configuration.
+Remove the expiration time for a file.
+Gets information about the specified Batch account.
+List all local VPN gateways in a resource group.
+List all local VPN gateways in a resource group.
+Get the statistics for an IoT hub.
+Deletes the specified message.  Normally after a client retrieves a message with the get_messages operation,  the client is expected to process and delete the message. To delete the  message, you must have two items of data: id and pop_receipt. The  id is returned from the previous get_messages operation. The  pop_receipt is returned from the most recent :func:`~get_messages` or  :func:`~update_message` operation. In order for the delete_message operation  to succeed, the pop_receipt specified on the request must match the  pop_receipt returned from the :func:`~get_messages` or :func:`~update_message`  operation.
+Delete a firewall rule in a Data Lake Analytics account.
+List deleted keys in the specified vault. Authorization: Requires the keys/list permission.
+Starts a rolling upgrade to move all virtual machine scale set instances to the latest available Platform Image OS version. Instances which are already running the latest available OS version are not affected.
+Aborts a pending copy_blob operation, and leaves a destination blob with zero length and full metadata.
+List available locations for running function apps.
+List all TXT record sets in a zone.
+List all TXT record sets in a zone.
+Show tags for a repository in a container registry.
+Show tags of a repository in a container registry.
+Manage encryption of VM disks.
+Generates a shared access signature for the blob. Use the returned signature with the sas_token parameter of any BlobService.
+Attach a secondary storage to an Azure Media Services account.
+List views in a database or schema.
+Update a managed instance.
+Updates a mi with specified parameters and with identity
+Manage PostgreSQL databases on a server.
+Get the URL which can be used to configure webhooks for continuous deployment.
+Manage file shares that use the SMB 3.0 protocol.
+Export a container group in yaml format.
+Export a container group in yaml.
+Disables task scheduling on the specified compute node.  You can disable task scheduling on a node only if its current scheduling state is enabled.
+List Azure Advisor recommendations.
+Show the connection strings for devices in an IoT hub.
+Show the connection string of a device in an IoT Hub using the primary key.
+Show the connection strings of the default devices in an IoT Hub using primary key.
+Manage operations on an elastic pool.
+Get the details of a Data Lake Store account.
+Update a frontend IP address.
+Update a frontend IP address to use a new IP address.
+Create a probe.
+Create an application gateway probe.
+Create a managed application definition.
+Create a managed application defintion.
+List the VM/VMSS images available in the Azure Marketplace.
+List all available images.
+List all CentOS images.
+Shows an Azure Cosmos DB database 
+Show details of a particular policy.
+Delete custom image. This operation can take a while to complete.
+Create a network interface.
+Create a network interface for a specified subnet on a specified virtual network.
+Create a network interface for a specified subnet on a virtual network with network security group and application security groups.
+
+List available ExpressRoute service providers.
+List available ExpressRoute service providers.
+Recovers the deleted key back to its current version under /keys. Authorization: Requires the keys/recover permission.
+List DDoS protection plans.
+Opens a VM to inbound traffic on specified ports.
+Open all ports on a VM to inbound traffic.
+Open all ports for all VMs in a resource group.
+Create/upload an Azure IoT Hub certificate.
+Uploads a CA certificate PEM file to an IoT hub.
+Regenerate a shared access key of a topic.
+Get a DNS zone parameters. Does not show DNS records within the zone.
+List DNS zones in a resource group.
+Update an existing server Active Directory administrator.
+Check for the existence of a storage container.
+Manage frontend IP addresses of an application gateway.
+Manage the keys of an Azure Cognitive Services account.
+Create an instance of the Data Migration Service.
+Create an instance of DMS.
+Update a database's auditing policy.
+Enable by storage account name.
+Set the list of audit actions.
+Remove an audit action by list index.
+(PREVIEW) Manage Data Lake Analytics catalog external data sources.
+List all incidents for an alert rule.
+Provides the list of activity log.
+Update autoscale settings.
+Update autoscale settings to use a fixed 3 instances by default.
+Lists the Event Hubs Namespaces
+List the Event Hubs Namespaces by resource group.
+Delete a virtual network.
+Delete a virtual network.
+List supported regions for the current subscription.
+Recovers the deleted certificate back to its current version under /certificates.  The RecoverDeletedCertificate operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval (available in the deleted certificate's attributes).
+delete a service principal's credential.
+Start a virtual machine. This operation can take a while to complete.
+Create an environment in a lab.
+Create a subnet and associate an existing NSG and route table.
+Create new subnet attached to an NSG with a custom route table.
+Manage Data Lake Store filesystem access and permissions.
+Add a contact to the specified vault to receive notifications of certificate operations. 
+List IP addresses associated with a VM.
+Get the IP addresses for a VM.
+List paths supported by a streaming locator.
+Show the details of a resource-level lock
+Show a resource level lock
+Manage container metadata.
+Manage the Azure Network Watcher.
+List the log profiles.
+Scale or update settings of a Redis cache.
+List stored access policies on a containing object
+Delete a Streaming Locator.  Deletes a Streaming Locator in the Media Services account.
+Manage HTTP listeners of an application gateway.
+Lists all of the files in task directories on the specified compute node.
+Show a stored access policy on a containing object
+Delete a CDN endpoint.
+Delete a CDN endpoint.
+Delete an environment from a lab.
+Show autoscale setting details.
+Manage and administer Azure Service Fabric clusters.
+List connection monitors for the given region.
+List a connection monitor for the given region.
+Gets a server encryption protector.
+Create a new firewall rule for a server.
+Create a firewall rule allowing all connections from all IP addresses.
+List DNS zones.
+List DNS zones in a resource group.
+Upload a root certificate.
+Add a Root Certificate to the list of certs allowed to connect to this Gateway.
+Manage jobs for a transform.
+Show details of a subnet.
+Show the details of a subnet associated with a virtual network.
+Manage resource groups and template deployments.
+Manage the Azure Monitor Service.
+Get operations from all providers.
+Manage deployment from git or Mercurial repositories.
+(PREVIEW) Manage the event hub consumer groups of an IoT hub.
+Manage autoscaling profiles.
+Submit a job to a Data Lake Analytics account.
+Add an NS record.
+Add an NS record.
+Manage resource policies.
+Delete a route table.
+Delete a route table.
+Update an authorization certificate.
+Update authorization certificates to use a new cert file.
+Launch a proxy and browse the Kubernetes web UI.
+List all effective network security groups applied to a network interface.
+List the effective security groups associated with a NIC.
+Generate a new client secret for a service principal configured for an Azure Media Services account.
+Deletes existing diagnostic settings for the specified resource.
+Create a metric-based alert rule.
+Create a high CPU usage alert on a VM with no actions.
+Get the details of a probe.
+Get the details of a probe.
+Georestore a server from backup.
+Georestore 'testsvr' as 'testsvrnew' where 'testsvrnew' is in same resource group as 'testsvr'.
+Deletes the specified table and any data it contains.  When a table is successfully deleted, it is immediately marked for deletion  and is no longer accessible to clients. The table is later removed from  the Table service during garbage collection.  Note that deleting a table is likely to take at least 40 seconds to complete.  If an operation is attempted against the table while it was being deleted,  an :class:`AzureConflictHttpError` will be thrown.
+Gets the log profile.
+Generates a connection string to a database.
+Generate connection string for ado.net
+Retrieves a list of individual key versions with the same key name.  The full key identifier, attributes, and tags are provided in the response.
+Get information on predefined SSL policies.
+Manage the user accounts of a Batch compute node.
+Retrieves the list of table partitions from the Data Lake Analytics catalog.
+Gets a collection of object IDs of groups of which the specified group is a member.
+Add a CORS rule to a storage account.
+List the versions of the specified secret.  The LIST VERSIONS operation can be applied to all versions having the same secret name in the same key vault. The full secret identifier and attributes are provided in the response. No values are returned for the secrets and only current versions of a secret are listed.
+Generate a verification code for an Azure IoT Hub Device Provisioning Service certificate.
+Generate a verification code for MyCertificate
+Unregister a provider.
+Gets all elastic pools in a server.
+Updates the specified attributes associated with the given certificate.  The UpdateCertificate operation applies the specified update on the given certificate; note the only elements being updated are the certificate's attributes.
+Add an MX record.
+Add an MX record.
+Get details for compute-related resource SKUs.
+List all SKUs in the West US region.
+Delete a frontend IP address.
+Delete a frontend IP address.
+Manage IP configurations of a network interface.
+Commands to manage file servers.
+Create a managed disk.
+Create a managed disk by importing from a blob uri.
+Create a managed disk by copying an existing disk or snapshot.
+List IPSec policies associated with a VPN connection.
+List the IPsec policies set on a connection.
+Create a DNS zone.
+Create a DNS zone using a fully qualified domain name.
+Remove a CNAME record from its record set.
+Remove a CNAME record from its record set.
+Manage Azure Container Instances.
+Delete a database.
+Delete database 'testdb' in the server 'testsvr'.
+Manage Batch task files.
+Delete a traffic manager endpoint.
+Delete a traffic manager endpoint.
+Create a MySQL database.
+Create database 'testdb' in the server 'testsvr' with the default parameters.
+Update a virtual network gateway.
+Change the SKU of a virtual network gateway.
+Get the service URI and custom headers for the webhook.
+Get the configuration information for a webhook.
+Get the details for available web app deployment profiles.
+Delete a resource group lock.
+Delete a resource group lock
+Updates the EventHub ConsumerGroup
+Updates a ConsumerGroup.
+Configure the Azure Virtual Machine diagnostics extension.
+Show the current routing table of an ExpressRoute circuit peering.
+Show the current routing table of an ExpressRoute circuit peering.
+ Aborts a pending copy_file operation, and leaves a destination file  with zero length and full metadata.
+Update a VMSS.
+(PREVIEW) Manage Data Lake Analytics accounts.
+(PREVIEW) Manage Data Lake Analytics catalog views.
+Create a new link authorization for an ExpressRoute circuit.
+Create a new link authorization for an ExpressRoute circuit.
+Manage the node-type of a cluster.
+Manage Azure subscription level locks.
+Manage inbound NAT rules of a load balancer.
+Manage Batch tasks.
+(PREVIEW) manage functionapp's managed service identity
+List event hub consumer groups.
+Show details of a container registered to a Recovery services vault.
+Gets the specified resource provider.
+Lists the files in a task's directory on its compute node.
+Manage secondary storage for an Azure Media Services account.
+List all recovery points of a backed up item.
+Check the availability of a relative DNS name.
+Check the availability of 'mywebapp.trafficmanager.net' in Azure.
+List all of the webhooks for a container registry.
+List webhooks and show the results in a table.
+Configure routing traffic to deployment slots.
+Copy autoscale rules from one profile to another.
+List cluster resources.
+Manage resource policy set definitions.
+Creates the Event Hubs Namespace
+Creates a new namespace.
+Manage Redis patch schedules.
+Commands to manage experiments.
+Update the authentication settings for the webapp.
+Enable AAD by enabling authentication and setting AAD-associated parameters. Default provider is set to AAD. Must have created a AAD service principal beforehand.
+Imports a bacpac into an existing database.
+Get an SAS key for use in import operation.
+Import bacpac into an existing database using a storage account key.
+Manage Azure Cosmos DB database accounts.
+List registered topic types.
+Deletes an Azure Cosmos DB database 
+Create a container group.
+Create a container in a container group with 1 core and 1Gb of memory.
+Create a container in a container group with public IP address and ports.
+Create a container in a container group that invokes a script upon start.
+Create a container in a container group with environment variables.
+Create a container in a container group using container image from another private container image registry.
+Create a container in a container group that mounts a git repo as volume.
+Add a subscription to a management group.
+Add a subscription to a management group.
+Removes compute nodes from the specified pool.  This operation can only run when the allocation state of the pool is steady. When this operation runs, the allocation state changes from steady to resizing.
+Export a database to a bacpac.
+Get an SAS key for use in export operation.
+Export bacpac using a storage account key.
+Updates the Service Bus Topic
+Updates existing Service Bus Topic.
+List artifact sources in a given lab.
+Deletes an elastic pool.
+Manage blob storage containers.
+List traffic manager profiles.
+List traffic manager profiles.
+Delete an autoscale profile.
+Gets the diagnostic settings category for the specified resource.
+Manage a server's virtual network rules.
+Create a new event subscription for an Event Grid topic or for an Azure resource.
+Create a new event subscription for an Event Grid topic, using default filters.
+Create a new event subscription for a resource group, using default filters.
+Create a new event subscription for a subscription, with a filter specifying a subject prefix.
+Create a new event subscription for a subscription, using default filters, and an EventHub as a destination.
+Update a subscription lock.
+Update a subscription lock with new notes and type
+Trigger a ping event for a webhook.
+Trigger a ping event for a webhook.
+Get detailed security information on a VM for the currently configured network security group.
+Get the network security group information for the specified VM.
+Manage the client certificate of a cluster.
+Create HTTP settings.
+Create HTTP settings.
+Retrieve the status of BGP peers.
+Retrieve the status of a BGP peer.
+Delete a frontend port.
+Delete a frontend port.
+List the replicas of a database and their replication status.
+Deletes and autoscale setting.
+Get a URL for a git repository endpoint to clone and push to for function app deployment.
+Get an endpoint and add it as a git remote.
+Manage replications of Azure Container Registries across multiple regions.
+Update a catalog credential for use with an external data source.
+Update or clear SSL policy settings.
+Set a predefined SSL policy.
+Remove an SRV record from its record set.
+Remove an SRV record from its record set.
+List remote login information for cluster's nodes.
+List remote login information for a cluster.
+List the details of a reservation by order id or reservation id.
+Get details for topic types.
+Create a stored access policy on the containing object
+Delete an event subscription.
+Delete an event subscription for an Event Grid topic.
+Delete an event subscription for a resource group.
+Updates a Data Lake Store account.
+Manage storage blob leases.
+List secrets in a specified key vault.  The LIST operation is applicable to the entire vault, however only the base secret identifier and attributes are provided in the response. Individual secret versions are not listed in the response.
+Checks if an Azure Cosmos DB account name exists.
+Create a resource group lock.
+Create a read-only resource group level lock.
+Manage shared access keys of a topic.
+Delete a link authorization of an ExpressRoute circuit.
+Delete a link authorization of an ExpressRoute circuit.
+Manage App Service plans.
+List probes.
+List probes.
+Manage contacts for certificate management.
+Manage SQL servers.
+Get the details of a resource.
+Show a virtual machine resource named 'MyVm'.
+Show a subnet.
+Show an application gateway path rule.
+Get the login credentials for a container registry.
+Get the login credentials for a container registry.
+Get a password used to log in to a container registry.
+List registered clouds.
+get a policy definition.
+Get the configuration for a server."
+Synchronize from the repository. Only needed under manual integration mode.
+List all items protected by a backup policy.
+Updates a Service Bus Namespace
+Updates a Service Bus Namespace.
+Updates an existing entity in a table. Throws if the entity does not exist.  The update_entity operation replaces the entire entity and can be used to  remove properties.
+Retrieve a Redis cache's access keys. This operation requires write permission to the cache resource.
+Manage a server's encryption protector.
+Delete an authorization certificate.
+Delete an authorization certificate.
+Lists all of the existing custom domains within an endpoint.
+Create a default activity log alert
+Create an alert with default settings.
+Create an alert with an action group and specify webhook properties.
+Manage the durability of a cluster.
+Restores a backed up key to a vault.  Imports a previously backed up key into Azure Key Vault, restoring the key, its key identifier, attributes and access control policies. The RESTORE operation may be used to import a previously backed up key. Individual versions of a key cannot be restored. The key is restored in its entirety with the same key name as it had when it was backed up. If the key name is not available in the target Key Vault, the RESTORE operation will be rejected. While the key name is retained during restore, the final key identifier will change if the key is restored to a different vault. Restore will restore all versions and preserve version identifiers. The RESTORE operation is subject to security constraints: The target Key Vault must be owned by the same Microsoft Azure Subscription as the source Key Vault The user must have RESTORE permission in the target Key Vault.
+Get the details of a server.
+Remove an extension.
+Get the details of a virtual network.
+Get details for MyVNet.
+Get the external-facing IP address for a function app.
+Update a CAA record set.
+Update a CAA record set.
+Updates existing Service Bus Queue
+Updates Service Bus Queue.
+Get the details of a load balancing rule.
+Get the details of a load balancing rule.
+Get artifact source.
+Manage webapp authentication and authorization
+(PREVIEW) Manage Data Lake Analytics job recurrences.
+Update the configuration of a server.
+Set a new configuration value.
+List job's output files in a directory with given id.
+List files in the standard output directory of the job.
+List files in a folder 'MyFolder/MySubfolder' of an output directory with id 'MODELS'.
+(PREVIEW) assign managed service identity to the functionapp
+assign local identity and assign a reader role to the current resource group.
+Get custom image.
+Manage Azure resources.
+Gets a list of deleted databases that can be restored.
+Create a service principal.
+Delete an application security group.
+Delete an application security group.
+List the marketplace for an Azure subscription within a billing period.
+Convert a VM with unmanaged disks to use managed disks.
+Convert a VM with unmanaged disks to use managed disks.
+Manage web app deployment via source control.
+Manage address pools of a load balancer.
+Creates a firewall rule in a Data Lake Store account.
+Generates a shared access signature for the container. Use the returned signature with the sas_token parameter of any BlobService.
+List locations where Azure Container Service is in preview and in production.
+List the Tasks within a Project. Some tasks may have a status of Unknown, which indicates that an error occurred while querying the status of that task.
+List all Tasks within a Project.
+Create a new management group.
+Create a new management group.
+Create a new management group with a specific parent.
+Subscription operations for Management Groups.
+Get the flow log configuration of a network security group.
+Show NSG flow logs.
+Inspect the usage of Azure resources.
+Remove a member from a group.
+Retrieve invoice of specific name of the subscription
+Deletes the Authorizationrule of the namespace.
+Deletes the Authorizationrule of the namespace.
+Update a shared access policy in an Azure IoT Hub device provisioning service.
+Update access policy 'MyPolicy' in an Azure IoT Hub device provisioning service with EnrollmentWrite right
+Show all maps accounts in a subscription or in a resource group.
+Delete a managed application.
+Export data stored in a Redis cache.
+Update a traffic manager endpoint.
+Update a traffic manager endpoint to change its weight.
+Manage network interfaces. See also `az network nic`.
+Executes a command line on a cluster's node used to execute the job with optional ports forwarding.
+Report a GPU state for a job's node.
+Forward local 9000 to port 9001 on the given node.
+Deletes the Authorization Rule of the given Service Bus Topic.
+Deletes the Authorization Rule of Service Bus Topic.
+Manage the rules of a URL path map.
+Manage Batch job schedules.
+run command on a vm
+install nginx on a vm
+Upgrades the operating system of the specified pool.  During an upgrade, the Batch service upgrades each compute node in the pool. When a compute node is chosen for upgrade, any tasks running on that node are removed from the node and returned to the queue to be rerun later (or on a different compute node). The node will be unavailable until the upgrade is complete. This operation results in temporarily reduced pool capacity as nodes are taken out of service to be upgraded. Although the Batch service tries to avoid upgrading all compute nodes at the same time, it does not guarantee to do this (particularly on small pools); therefore, the pool may be temporarily unavailable to run tasks. When this operation runs, the pool state changes to upgrading. When all compute nodes have finished upgrading, the pool state returns to active. While the upgrade is in progress, the pool's currentOSVersion reflects the OS version that nodes are upgrading from, and targetOSVersion reflects the OS version that nodes are upgrading to. Once the upgrade is complete, currentOSVersion is updated to reflect the OS version now running on all nodes. This operation can only be invoked on pools created with the cloudServiceConfiguration property.
+List snapshots.
+Manage reservation order, which is container for reservations
+Wait for a container service to reach a desired state.
+Get the details of a gateway's HTTP settings.
+Get the details of a gateway's HTTP settings.
+Remove an existing subscription from a management group.
+Remove an existing subscription from a management group.
+Returns all user-defined metadata and system properties for the specified container. The data returned does not include the container's list of blobs.
+Shows the list of Authorizationrule by Namespace
+Shows the list of Authorizationrule by Namespace
+Get the default policy for self-signed certificates.
+Create a self-signed certificate with the default policy
+List reservation summaries for daily or monthly by order Id or reservation id.
+Links an Azure Storage account to the specified Data Lake Analytics account.
+Start the specified connection monitor.
+Start the specified connection monitor.
+List entities which satisfy a query.
+Delete a Project.
+Manage Azure CDN Custom Domains to provide custom host names for endpoints.
+Create a file server.
+Create a NFS file server using a configuration file.
+Update a user account.
+Update a Windows user account.
+Update a user on all VMs in a resource group.
+Delete a stored access policy on a containing object 
+List files generated by the cluster's node setup task.
+List names and sizes of files and directories inside of $AZ_BATCHAI_STDOUTERR_DIR.
+List names, sizes and download URLs for files and directories inside of $AZ_BATCHAI_STDOUTERR_DIR/folder/subfolder.
+Reset the SSH configuration on a VM.
+Reset the SSH configuration.
+Manage SQL managed instance databases.
+Cancel a job.
+Create a route filter.
+Create a route filter.
+Manage file storage directory metadata.
+Create a managed database.
+Create a managed database with specified collation
+Get information on the backend health of an application gateway.
+Show backend health of an application gateway.
+Manage function app deployment via source control.
+Delete a route filter.
+Delete a route filter.
+Remove the access control list for a file or folder.
+Update a function app's settings.
+Remove a CAA record from its record set.
+Remove a CAA record from its record set.
+List the read-only access keys for a Azure Cosmos DB database account.
+Get the details of an application.
+Manage the upgrade type of a cluster.
+Permanently deletes the specified deleted certificate.  The PurgeDeletedCertificate operation performs an irreversible deletion of the specified certificate, without possibility for recovery. The operation is not available if the recovery level does not specify 'Purgeable'. Requires the explicit granting of the 'purge' permission.
+Gets an elastic pool.
+Create a resource-level lock.
+Create a read-only resource level lock on a vnet.
+Change the private agent count of a container service.
+Returns all user-defined metadata for the specified file.
+Disable the encryption on a VMSS with managed disks.
+disable encryption a VMSS
+List preview features.
+Shows an Azure Cosmos DB collection and its offer 
+Manage address pools in an IP configuration.
+List the event types supported by a topic type.
+List role assignments.
+Get the details of an Azure Cognitive Services account.
+Gets all network interfaces in a virtual machine scale set.
+Create a network security group.
+Create an NSG in a resource group within a region with tags.
+Get lifetime summary statistics for all of the pools in a Batch account.
+Manage the managed data disks attached to a VM.
+Manage Azure IoT Hub Device Provisioning Service certificates.
+Manage storage service metrics.
+Manage role definitions.
+Set a web app container's settings.
+Manage NoSQL key-value storage.
+Manage DNS CNAME records.
+Manage storage account keys.
+Manage configuration values for a server.
+Delete a VM.
+Delete a VM without a prompt for confirmation.
+Create a DDoS protection plan.
+Shows the connection strings for namespace
+Shows the connection strings of Authorizationrule for the namespace.
+Commands to manage a Kubernetes-orchestrated Azure Container Service.
+Get details for a resource link.
+Remove an output from an existing transform.
+Get the details of an SOA record.
+Get the details of an SOA record.
+Manage container stored access policies.
+Lists the usage metrics, aggregated by pool across individual time intervals, for the specified account.  If you do not specify a $filter clause including a poolId, the response includes all pools that existed in the account in the time range of the returned aggregation intervals. If you do not specify a $filter clause including a startTime or endTime these filters default to the start and end times of the last aggregation interval currently available; that is, only the last aggregation interval is returned.
+Create a server.
+Create a PostgreSQL server with only required paramaters in North Europe.
+Create a PostgreSQL server with all paramaters set.
+Manage task scheduling for a Batch compute node.
+shows list of Authorization Rule by Service Bus Topic
+shows list of Authorization Rule by Service Bus Topic
+Manage Batch jobs.
+Show the details of an asset.
+Get the specified network interface in a virtual machine scale set.
+Create a key vault.
+List admins for a specified certificate issuer. 
+Create a Batch account with the specified parameters.
+Gets a deployment.
+Updates Authorizationrule for the given Namespace
+Updates Authorizationrule
+Add a certificate to a Batch account.
+Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS.
+Create a function app.
+Create a basic function app.
+List CDN profiles.
+List CDN profiles in a resource group.
+Create a new action group
+Delete an Azure Media Services account.
+Delete role assignments.
+Deletes the specified queue and any messages it contains.  When a queue is successfully deleted, it is immediately marked for deletion  and is no longer accessible to clients. The queue is later removed from  the Queue service during garbage collection.  Note that deleting a queue is likely to take at least 40 seconds to complete.  If an operation is attempted against the queue while it was being deleted,  an :class:`AzureConflictHttpError` will be thrown.
+Checks the quota and actual usage of endpoints under the given CDN profile.
+Show logging settings for a storage account.
+Get the details of a rule.
+Get the details of a rule.
+Delete an Azure IoT Hub Device Provisioning Service certificate.
+Delete MyCertificate in an Azure IoT Hub device provisioning service
+Stop protecting a backed up Azure VM.
+Georestore a server from backup.
+Georestore 'testsvr' as 'testsvrnew' where 'testsvrnew' is in same resource group as 'testsvr'.
+Perform maintenance on one or more virtual machines in a VM scale set.
+Update metadata for an IoT hub.
+Add a firewall filter rule to accept traffic from the IP mask 127.0.0.0/31.
+Retrieves the specified table valued function from the Data Lake Analytics catalog.
+Get the details of a service principal.
+Create/upload an Azure IoT Hub Device Provisioning Service certificate.
+Upload a CA certificate PEM file to an Azure IoT Hub device provisioning service.
+Retrieve a compute policy in a Data Lake Analytics account.
+Marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection.
+Cancel a Data Lake Analytics job.
+Log in to a Batch account through Azure Active Directory or Shared Key authentication.
+Update a database's threat detection policy.
+Enable by storage account name.
+Disable a subset of alert types.
+Disable a threat policy.
+Lists all the container registries under the current subscription.
+List container registries and show the results in a table.
+Sets one or more user-defined name-value pairs for the specified directory. Each call to this operation replaces all existing metadata attached to the directory. To remove all metadata from the directory, call this operation with no metadata dict.
+List action groups under a resource group or the current subscription
+List available servers.
+List all MySQL servers in a subscription.
+Get the details for a data warehouse.
+Manage the node instance of a cluster.
+Manage deployment from git or Mercurial repositories.
+Create diagnostic settings for the specified resource.
+Creates a Data Lake Store account.
+Show the effective route table applied to a network interface.
+Show the effective routes applied to a network interface.
+Manage Azure Active Directory users and user authentication.
+List URL path maps.
+List URL path maps.
+List applications.
+Manage DNS TXT records.
+Show the backup schedule for a web app.
+Creates the url to access a file.
+Deletes the log profile.
+Add a Batch job schedule to an account.
+Delete a shared access policies in an Azure IoT Hub device provisioning service.
+Delete shared access policy 'MyPolicy' in an Azure IoT Hub device provisioning service
+List workspaces.
+List all workspaces under the current subscription.
+Open a web app in a browser.
+List job recurrences in a Data Lake Analytics account.
+List the keys and connection strings of Authorization Rule for the given Service Bus Queue
+List the keys and connection strings of Authorization Rule for the given Service Bus Queue
+Show the dashboard for a service container's orchestrator in a web browser.
+Manage Azure Media Services resources.
+Information on available virtual machine images.
+Shows ServiceBus Rule Details
+Shows the ServiceBus Rule details.
+View a summary of Batch application packages.
+Enable disk encryption on the OS disk and/or data disks.
+Add admin details for a specified certificate issuer. 
+Purge pre-loaded content for a CDN endpoint.
+Purge pre-loaded Javascript and CSS content.
+Returns a boolean indicating whether the table exists.
+Verify an Azure IoT Hub Device Provisioning Service certificate.
+Verify ownership of the MyCertificate private key.
+List containers registered to a Recovery services vault.
+Add a VPN connection IPSec policy.
+Add specified IPsec policies to a connection instead of relying on defaults.
+Update a network security group.
+Remove a tag of an NSG.
+(PREVIEW) Manage Data Lake Analytics catalog schemas.
+Gets group information from the directory.
+List all MX record sets in a zone.
+List all MX record sets in a zone.
+Manage Azure IoT Hub Device Provisioning Service.
+Check for the existence of a blob in a container.
+Configure SSL certificates.
+Manage authorization certificates of an application gateway.
+Get the default configuration settings for a VM.
+Get the default diagnostics for a Linux VM and override the storage account name and the VM resource ID.
+shows the Service Bus Queue Details
+Shows the Service Bus Queue Details
+Show the status of a packet capture session.
+Show the status of a packet capture session.
+Update a frontend port.
+Update a frontend port to use a different port.
+Delete an AAAA record set and all associated records.
+Delete an AAAA record set and all associated records.
+Access to a secure, dedicated Redis cache for your Azure applications.
+Add an inbound NAT rule to an IP configuration.
+Add an inbound NAT rule to an IP configuration.
+Transform secrets into a form that can be used by VMs and VMSSes.
+Create a self-signed certificate with the default policy, and add it to a virtual machine.
+Manage resource providers.
+List rules in a route filter.
+List rules in a route filter.
+Manage web app container settings.
+Delete an event hub consumer group.
+List the file shares in a storage account.
+List custom VM images.
+List regions where a plan sku is available.
+Shows the Service Bus Topic Details
+Shows the Topic details.
+Remove an A record from its record set.
+Remove an A record from its record set.
+Manage Azure Event Hubs Authorizationrule connection strings for Namespace
+Manage replication between databases.
+Retrieves the specified assembly from the Data Lake Analytics catalog.
+Changes the lease ID of an active lease. A change must include the current lease ID and a new lease ID.
+Delete a network security group.
+Delete an NSG in a resource group.
+Delete a workspace.
+Delete a workspace.
+Revoke a resource's read access to a managed disk.
+Lists the autoscale settings for a resource group.
+Update a managed disk.
+The update key operation changes specified attributes of a stored key and can be applied to any key type and key version stored in Azure Key Vault.  In order to perform this operation, the key must already exist in the Key Vault. Note: The cryptographic material of a key itself cannot be changed.
+Lists all Azure Cosmos DB collections 
+Manage Azure Container Services.
+Get the details of a redirect configuration.
+Get the details of a redirect configuration.
+Upload an SSL certificate.
+Upload an SSL certificate.
+Releases the lease. The lease may be released if the lease ID specified on the request matches that associated with the blob. Releasing the lease allows another client to immediately acquire the lease for the blob as soon as the release is complete.
+Commands to manage Azure Backups.
+Delete Geo-Disaster Recovery Configuration Alias
+Delete Geo-Disaster Recovery Configuration Alias
+Manage the service log files of a Batch compute node.
+Gets a database's blob auditing policy.
+Manage custom virtual machine images.
+Manage Azure SQL Databases and Data Warehouses.
+Get the upgrade versions available for a managed Kubernetes cluster.
+List stored access policies on a containing object
+Remove an inbound NAT rule of an IP configuration.
+Remove an inbound NAT rule of an IP configuration.
+Manage Azure Event Hubs Authorizationrule connection strings for Geo Recovery configuration Alias
+List the keys and connection strings of Authorization Rule for Service Bus Topic.
+List the keys and connection strings of Authorization Rule for Service Bus Topic.
+Create a frontend IP address.
+Create a frontend IP address.
+List the VM image SKUs available in the Azure Marketplace.
+List all skus available for CentOS published by OpenLogic in the West US region.
+Get the details for an environment of a lab.
+Delete a source control deployment configuration.
+Grant a resource read access to a managed disk.
+Gets the identity.
+Gets a list of all virtual machines in a VM scale sets.
+Get billing periods for a subscription.
+Delete a build task from a container registry.
+Delete a build task from a container registry.
+(PREVIEW) Manage a Data Lake Store filesystem.
+Lists the diagnostic settings categories for the specified resource.
+Generates a shared access signature for the share. Use the returned signature with the sas_token parameter of FileService.
+Unbind a hostname from a web app.
+(PREVIEW) Remove user assigned identities from a VM.
+Remove 2 identities which are in the same resource group with the VM
+Update a public IP address.
+Update a public IP resource with a DNS name label and static allocation.
+List the SKUs that are supported by the Data Migration Service.
+Manage CDN profiles to define an edge network.
+Updates an Azure Storage account linked to the specified Data Lake Analytics account.
+List peerings.
+List all peerings of a specified virtual network.
+Manage Azure Batch accounts.
+Create a traffic manager endpoint.
+Create an endpoint for a performance profile to point to an Azure Web App endpoint.
+Manage Azure Active Directory Graph entities needed for Role Based Access Control
+Delete an HTTP listener.
+Delete an HTTP listener.
+Bind an SSL certificate to a web app.
+Test for the existence of a file or folder in a Data Lake Store account.
+Create a rule.
+Create a basic rule.
+Get the details for a VM image available in the Azure Marketplace.
+Show information for the latest available CentOS image from OpenLogic.
+Update a TXT record set.
+Update a TXT record set.
+Execute a command from within a running container of a container group.
+Stream a shell from within an nginx container.
+shows the Eventhub Details
+Shows the Eventhub details.
+Append content to a file in a Data Lake Store account.
+Disables automatic scaling for a pool.
+Manage Azure Service Bus Namespace Authorization Rule
+Create a backup of a web app.
+Gets a database's transparent data encryption configuration.
+Manage Azure Cloud Storage resources.
+Get an individual provider's operations.
+Get the boot diagnostics log from a VM.
+Get diagnostics logs for all VMs in a resource group.
+Upload Azure Batch service log files from the specified compute node to Azure Blob Storage.  This is for gathering Azure Batch service log files in an automated fashion from nodes if you are experiencing an error and wish to escalate to Azure support. The Azure Batch service log files should be shared with Azure support to aid in debugging issues with the Batch service.
+List the EventHub by Namepsace
+Get the Eventhubs by Namespace.
+Display information about extensions attached to a VM.
+Use VM name and extension name to show the extensions attached to a VM.
+Create Batch tasks.
+Move a file or folder in a Data Lake Store account.
+Manage the unmanaged data disks attached to a VM.
+Update a server.
+Update a server's sku.
+List container groups.
+Disables a job schedule.  No new jobs will be created until the job schedule is enabled again.
+Update a VM's size.
+Resize a VM.
+Add a PTR record.
+Add a PTR record.
+Create a job.
+Create a job to run on a cluster in the same resource group.
+Deletes a VM scale set.
+Delete a firewall rule.
+Copies an incremental copy of a blob asynchronously. This operation returns a copy operation properties object, including a copy ID you can use to check or abort the copy operation. The Blob service copies blobs on a best-effort basis.  The source blob for an incremental copy operation must be a page blob. Call get_blob_properties on the destination blob to check the status of the copy operation. The final blob will be committed when the copy completes.
+List route tables.
+List all route tables in a subscription.
+Get the details of an HTTP listener.
+Get the details of an HTTP listener.
+Get the details of an Azure Cosmos DB database account.
+List recent events for a webhook.
+List recent events for a webhook.
+Resumes a datawarehouse.
+List all hostname bindings for a web app.
+shows the Event Hubs Namespace Details
+shows the Namespace details.
+Shows the details of Authorization Rule for given Service Bus Topic
+Shows the details of Authorization Rule for given Service Bus Topic
+Get the firewall configuration of a web application.
+Get the firewall configuration of a web application.
+Show the default config file which defines data to be collected.
+Regenerate the connection strings of Authorizationrule for the namespace.
+Regenerate the connection strings of Authorizationrule for the namespace.
+List budgets for an Azure subscription.
+Sets backup related properties of the Recovery Services vault.
+Get instance information about a VM.
+Use a resource group and name to get instance view information of a VM.
+Download the content of the a node file.
+Download a file or folder from a Data Lake Store account to the local machine.
+Scale the node pool in a managed Kubernetes cluster.
+Show details of a particular backed up item.
+List Redis caches.
+List reservation summaries.
+Manage virtual networks of an Azure DevTest Lab.
+List the ServiceBus Rule by Subscription
+Shows the Rule ServiceBus by Subscription.
+Get the details of an application gateway.
+Get the details of an application gateway.
+Deletes the patching schedule of a redis cache (requires Premium SKU).
+Retrieves the specified table partition from the Data Lake Analytics catalog.
+Validate whether a template is syntactically correct.
+Get the details of a network security group rule.
+Get the details of a network security group rule.
+Restart a web app.
+Manage Azure Managed Disks.
+Get the details for a managed database.
+Get the details for a managed database
+Delete a file or folder in a Data Lake Store account.
+Create a transform.
+(PREVIEW) Manage Data Lake Store account trusted identity providers.
+Manage policy events.
+Manage Azure Maps accounts.
+Manage Azure resource group locks.
+Gets backup related properties of the Recovery Services vault.
+Retrieves the specified database from the Data Lake Analytics catalog.
+Get a specific reservation order.
+Retrieve a VPN connection shared key.
+View the shared key of a connection.
+Log in to a container registry through the Docker CLI.
+Log in to a container registry
+Update the details of an Azure Media Services account.
+List authorization certificates.
+List authorization certificates.
+Commands to work with cluster nodes.
+Manage operations on a database.
+Delete a CAA record set and all associated records.
+Delete a CAA record set and all associated records.
+Recover a key vault.
+Disables Service Bus Geo-Disaster Recovery Configuration Alias and stops replicating changes from primary to secondary namespaces
+Disables the Disaster Recovery and stops replicating changes from primary to secondary namespaces
+Captures a resource group as a template.
+Update deployment credentials.
+Set FTP and git deployment credentials for all apps.
+Export a DNS zone as a DNS zone file.
+Export a DNS zone as a DNS zone file in tsv format.
+Manage service diagnostic settings.
+Restore a managed database.
+Restore a managed database using Point in time restore
+Delete an extension from a VMSS.
+Mark a blob or snapshot for deletion.
+Delete a blob.
+The operation to perform maintenance on a virtual machine.
+List event subscriptions.
+List all event subscriptions for an Event Grid topic.
+List all event subscriptions for a topic-type in a specific location (under the currently selected Azure subscription).
+List all regional event subscriptions in a specific location (under the currently selected Azure subscription).
+List all global event subscriptions (under the currently selected Azure subscription).
+Lists available Data Lake Store accounts.
+Gets a subscription usage metric.
+Add a member to a group.
+List the build tasks for a container registry.
+List build tasks and show the results in a table.
+(PREVIEW) Manage Data Lake Analytics catalog table statistics.
+Add a network rule.
+Create a rule to allow a specific address-range.
+Updates Authorizationrule for the given Eventhub
+Updates Authorizationrule
+Manage local gateways.
+Checks that the storage account name is valid and is not already in use.
+(DEPRECATED) Import data into a Redis cache.
+Manage web app deployment slots.
+Manage Azure Service Bus Topic Authorization Rule
+Manage Batch service options for a subscription at the region level.
+Add a common name or certificate thumbprint to the cluster for client authentication.
+Add client certificate by thumbprint
+Updates a server's secure connection policy.
+Rename a database.
+Get the details of a container group.
+Set a secret for a lab.
+Gets information about the specified task.  For multi-instance tasks, information such as affinityId, executionInfo and nodeInfo refer to the primary task. Use the list subtasks API to retrieve information about subtasks.
+Manage storage service Cross-Origin Resource Sharing (CORS).
+Sets system properties on the blob. If one property is set for the content_settings, all properties will be overriden.
+Lists the specified certificate issuer.  The GetCertificateIssuer operation returns the specified certificate issuer resources in the specified key vault.
+Get the results of the last troubleshooting operation.
+Show the results or status of a troubleshooting operation for a Vnet Gateway.
+Manage Azure Media Services accounts.
+Delete a probe.
+Delete a probe.
+Start a job.
+Gets the first page of Azure Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.
+Update a virtual network rule.
+List Azure Media Services accounts for the entire subscription.
+List virtual networks in a given lab.
+Terminate a job.
+Terminate a job and wait for the job to be terminated.
+Request job termination without waiting for the job to be terminated.
+Manage shared access policies for a storage queue.
+Retrieves the specified package from the Data Lake Analytics catalog.
+(PREVIEW) Manage Data Lake Analytics account compute policies.
+Get the details of a rule in a route filter.
+Get the details of a rule in a route filter.
+Updates the specified trusted identity provider.
+Delete a job.
+Deletes a user account from the specified compute node.  You can delete a user account to a node only when it is in the idle or running state.
+List policy set definitions.
+List all firewall rules for a server.
+Detatch a managed disk from a VM.
+Detach a data disk from a VM.
+List Managed Service Identities
+Update the properties of a user account on a Batch compute node. Unspecified properties which can be updated are reset to their defaults.
+Get the versions available for creating a managed Kubernetes cluster.
+Breaks the lease, if the blob has an active lease. Once a lease is broken, it cannot be renewed. Any authorized request can break the lease; the request is not required to specify a matching lease ID. When a lease is broken, the lease break period is allowed to elapse, during which time no lease operation except break and release can be performed on the blob. When a lease is successfully broken, the response indicates the interval in seconds until a new lease can be acquired.   A lease that has been broken can also be released, in which case another client may immediately acquire the lease on the blob.
+Create a fixed or recurring autoscale profile.
+Create a fixed date profile, inheriting the default scaling rules but changing the capacity.
+Add an AAAA record.
+Add an AAAA record.
+Update a DNS zone properties. Does not modify DNS records within the zone.
+Update a DNS zone properties to change the user-defined value of a previously set tag.
+Deletes an application.
+Create a workspace.
+Create a workspace in East US region.
+Get the details of a firewall rule.
+Manage server logs.
+Create a Key Vault certificate.
+Create a self-signed certificate with the default policy and add it to a virtual machine.
+Set a web app's configuration.
+Pauses a datawarehouse.
+Get the details of an AAAA record set.
+Get the details of an AAAA record set.
+Delete a frontend IP address.
+Delete a frontend IP address.
+The undelete Blob operation restores the contents and metadata of soft deleted blob or snapshot. Attempting to undelete a blob or snapshot that is not soft deleted will succeed without any changes.
+Delete a webhook from a container registry.
+Delete a webhook from a container registry.
+Show details of an autoscale profile.
+Show the storage blob delete-policy.
+Add an SRV record.
+Add an SRV record.
+Regenerate the keys of an Azure Cognitive Services account.
+List available managed instances.
+List all managed instances in the current subscription.
+(PREVIEW) Manage rolling upgrades.
+Create a firewall rule.
+Upload files from a local directory to an Azure Storage File Share in a batch operation.
+Configure flow logging on a network security group.
+Enable NSG flow logs.
+Creates a container registry.
+Create a managed container registry with the Standard SKU.
+Terminates the specified task.  When the task has been terminated, it moves to the completed state. For multi-instance tasks, the terminate task operation applies synchronously to the primary task; subtasks are then terminated asynchronously in the background.
+Delete a cluster.
+Delete a cluster and wait for deletion to be completed.
+Delete cluster without asking for confirmation (for non-interactive scenarios).
+Update the reliability tier for the primary node in a cluster.
+Change the cluster reliability level to 'Silver'.
+List lock information in the subscription.
+List out all locks on the subscription level
+Delete a packet capture session.
+Delete a packet capture session. This only deletes the session and not the capture file.
+Get the details of a load balancer.
+Get the details of a load balancer.
+Update an SSL certificate.
+Change a gateway SSL certificate and password.
+Get details of a web app container's settings.
+Revoke a certificate.
+Revoke a certificate.
+Delete secret.
+Requests that a backup of the specified key be downloaded to the client.  The Key Backup operation exports a key from Azure Key Vault in a protected form. Note that this operation does NOT return key material in a form that can be used outside the Azure Key Vault system, the returned key material is either protected to a Azure Key Vault HSM or to Azure Key Vault itself. The intent of this operation is to allow a client to GENERATE a key in one Azure Key Vault instance, BACKUP the key, and then RESTORE it into another Azure Key Vault instance. The BACKUP operation may be used to export, in protected form, any key type from Azure Key Vault. Individual versions of a key cannot be backed up. BACKUP / RESTORE can be performed within geographical boundaries only; meaning that a BACKUP from one geographical area cannot be restored to another geographical area. For example, a backup from the US geographical area cannot be restored in an EU geographical area.
+List file servers.
+List all file servers in the given workspace.
+Manage a database's threat detection policies.
+Get information for an availability set.
+Get information about an availability set.
+Review Azure Advisor recommendations.
+Gets the operation associated with a specified certificate. Authorization: requires the certificates/get permission.
+Manage storage blob delete-policy service properties.
+Wait for a managed Kubernetes cluster to reach a desired state.
+Wait for a cluster to be upgraded, polling every minute for up to thirty minutes.
+List all the jobs of a transform within an Azure Media Services account.
+Place the CLI in a waiting state until a condition of a scale set is met.
+Preview the content of a file in a Data Lake Store account.
+Sets system properties on the file. If one property is set for the content_settings, all properties will be overriden.
+Enable Azure Advisor recommendations.
+Manage shared access policies of a storage file share.
+Creates a new key, stores it, then returns key parameters and attributes to the client.  The create key operation can be used to create any key type in Azure Key Vault. If the named key already exists, Azure Key Vault creates a new version of the key.
+Manage DNS AAAA records.
+Reboot specified Redis node(s). This operation requires write permission to the cache resource. There can be potential data loss.
+Get information about a network security group.
+Get basic information about an NSG.
+Get all default NSG rules with "Allow" access and format the output as a table.
+Returns all user-defined metadata for the specified container.
+Manage file copy operations.
+Gets the specified Azure Storage account linked to the given Data Lake Analytics account.
+Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
+Returns a boolean indicating whether the queue exists.
+Detach a secondary storage from an Azure Media Services account.
+Manage Azure Maps.
+Accept Azure Marketplace term so that the image can be used to create VMs
+Lists all node agent SKUs supported by the Azure Batch service.
+Manage Azure Cognitive Services accounts.
+List application gateways.
+List application gateways.
+shows the list of Authorizationrule by Eventhub
+shows the list of Authorizationrule by Eventhub
+View Azure resource metrics.
+Deletes the Service Bus Namespace
+Deletes the Service Bus Namespace
+Sets one or more user-defined name-value pairs for the specified share. Each call to this operation replaces all existing metadata attached to the share. To remove all metadata from the share, call this operation with no metadata dict.
+Update a build task for a container registry.
+Update the git access token for a build definition in a container registry.
+Delete an address pool.
+Delete an address pool.
+Get the details of a traffic manager profile.
+Get the details of a traffic manager profile.
+Gets an existing origin within an endpoint.
+Get the details of an IoT hub.
+Manage the certificate of an application.
+Show the details of an Azure Media Services account.
+Set the block or page tiers on the blob.
+Delete a VPN connection.
+Delete a VPN connection.
+Manage inbound NAT rules of an IP configuration.
+Create a resource policy assignment.
+Provide rule parameter values with the following example
+Get the details of an inbound NAT address pool.
+Get the details of an inbound NAT address pool.
+Update the properties of a Batch pool. Updating a property in a subgroup will reset the unspecified properties of that group.
+Manage Azure Service Bus Authorizationrule for Eventhub
+Update a route table.
+Update a route table to disable BGP route propogation.
+Disables the specified job, preventing new tasks from running.  The Batch Service immediately moves the job to the disabling state. Batch then uses the disableTasks parameter to determine what to do with the currently running tasks of the job. The job remains in the disabling state until the disable operation is completed and all tasks have been dealt with according to the disableTasks option; the job then moves to the disabled state. No new tasks are started under the job until it moves back to active state. If you try to disable a job that is in any state other than active, disabling, or disabled, the request fails with status code 409.
+Wait until either the job completes or the specified timeout value is reached.
+Create a snapshot.
+Create a snapshot by importing from a blob uri.
+Create a snapshot by copying an existing disk in the same resource group.
+Set the expiration time for a file.
+Manage budgets for an Azure subscription.
+Deletes the specified trusted identity provider from the specified Data Lake Store account.
+Unbind an SSL certificate from a web app.
+Update security policy settings for a Key Vault. 
+Delete all IPsec policies on a VPN connection.
+Remove all previously specified IPsec policies from a connection.
+List details of Virtual Machines.
+List all VMs.
+List all VMs by resource group with details.
+A backup policy defines when you want to take a backup and for how long you would retain each backup copy.
+Create a new role assignment for a user, group, or service principal.
+Create role assignment for an assignee.
+Wait for a Data Lake Analytics job to finish.
+Manage frontend ports of an application gateway.
+Update metrics settings for a storage account.
+Get the details of a web app's logging configuration.
+Deletes a deployment from the deployment history.  A template deployment that is currently running cannot be deleted. Deleting a template deployment removes the associated deployment operations. Deleting a template deployment does not affect the state of the resource group. This is an asynchronous operation that returns a status of 202 until the template deployment is successfully deleted. The Location response header contains the URI that is used to obtain the status of the process. While the process is running, a call to the URI in the Location header returns a status of 202. When the process finishes, the URI in the Location header returns a status of 204 on success. If the asynchronous request failed, the URI in the Location header returns an error-level status code.
+Manage blob incremental copy operations.
+Synchronize from the repository. Only needed under manual integration mode.
+List firewall rules in a Data Lake Analytics account.
+Manage Azure Management Groups.
+Create a subscription lock.
+Create a read-only subscription level lock.
+Update an extension.
+Update an extension by name
+Deletes the specified empty directory. Note that the directory must be empty before it can be deleted. Attempting to delete directories  that are not empty will fail.  If the directory does not exist, the operation fails on the service. By default, the exception is swallowed by the client. To expose the exception, specify True for fail_not_exist.
+Gets a list of virtual machine extension image versions.
+Delete a shared access policy from an IoT hub.
+Aborts a pending copy_blob operation, and leaves a destination blob with zero length and full metadata.
+Manage action groups for activity log alerts
+Create a traffic manager profile.
+Create a traffic manager profile with performance routing.
+List elastic pool editions available for the active subscription.
+Show all elastic pool editions and pool DTU limits in the West US region.
+Show available max sizes for elastic pools with at least 100 DTUs in the West US region.
+Update a network interface.
+Update a network interface to use a different network security group.
+List virtual network gateways.
+List virtual network gateways in a resource group.
+List the Service Bus Namespaces
+Get the Service Bus Namespaces by resource group
+Bind an SSL certificate to a function app.
+Create a stored access policy on the containing object
+Update the properties of a key vault.
+List link authorizations of an ExpressRoute circuit.
+List link authorizations of an ExpressRoute circuit.
+List available topics.
+List all topics in the current Azure subscription.
+Lists all Azure Cosmos DB databases 
+Creates an Azure Cosmos DB collection 
+Troubleshoot issues with VPN connections or gateway connectivity.
+Start a troubleshooting operation on a VPN Connection.
+Create a log profile.
+List all linked IoT hubs in an Azure IoT Hub device provisioning service.
+List all linked IoT hubs in MyDps
+Update a subnet.
+Associate a network security group to a subnet.
+Create a new managed Kubernetes cluster.
+Create a Kubernetes cluster with an existing SSH public key.
+Create a Kubernetes cluster with a larger node pool.
+Manage network interfaces.
+List shared access policies of an IoT hub.
+View the status of Batch job preparation and release tasks.
+Create a container service.
+Create a Kubernetes container service and generate SSH keys to connect to it.
+Mark a VM as generalized, allowing it to be imaged for multiple deployments.
+Deallocate, generalize, and capture a stopped virtual machine.
+Update diagnostic settings.
+(PREVIEW) Remove user assigned identities from a VM scaleset.
+Remove 2 identities which are in the same resource group with the VM scaleset
+Restart VMs within a VMSS.
+Create Authorization Rule for given Service Bus Topic
+Create Authorization Rule for given Service Bus Topic
+Manage template solutions provided and maintained by Independent Software Vendors (ISVs).
+Manage webhooks for Azure Container Registries.
+Creates a server dns alias.
+List Azure Cosmos DB database accounts.
+Commands to manage jobs.
+Returns database usages.
+Remove nodes from a node type in a cluster.
+Remove 2 'nt1' nodes from a cluster.
+Create Authorization Rule for the given Service Bus Queue.
+Create Authorization Rule for Queue
+Encrypt a VMSS with managed disks.
+encrypt a VM scale set using a key vault in the same resource group
+Register a cloud.
+Get the external-facing IP address for a web app.
+List network rules.
+Before you can delete a Backup protection policy, the policy must not have any associated Backup items. To  associate another policy with a Backup item, use the backup item set-policy command.
+Gets information about the specified job schedule.
+Update a route filter.
+Update the tags on a route filter.
+Delete a rule.
+Delete a rule.
+List secrets in a given user profile.
+List keys in the specified vault.  Retrieves a list of the keys in the Key Vault as JSON Web Key structures that contain the public part of a stored key. The LIST operation is applicable to all key types, however only the base key identifier,attributes, and tags are provided in the response. Individual versions of a key are not listed in the response. Authorization: Requires the keys/list permission.
+Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules and geo-disaster recovery configuration alias
+Create a database.
+Create a Standard S0 database.
+Create a database with zone redundancy enabled
+Update properties for a Batch account.
+Delete web app settings.
+Manage Azure Authorizationrule connection strings for Eventhub
+Create a connection monitor.
+Create a connection monitor for a virtual machine.
+List devices in an IoT hub.
+Delete an SSL certificate from a web app.
+Deletes the ServiceBus Rule
+Deletes the ServiceBus Rule
+Delete a link between resources.
+Delete link {LinkID}
+Update an existing management group.
+Update an existing management group with a specific display name.
+Update an existing management group with a specific display name and parent.
+Retrieves the specified table from the Data Lake Analytics catalog.
+List the subnets in a virtual network.
+List the subnets in a virtual network.
+Creates a new Azure Cosmos DB database account.
+Add existing NICs to a VM.
+Add two NICs to a VM.
+Download the public portion of a Key Vault certificate.
+Download a certificate as PEM and check its fingerprint in openssl.
+Reactivates a task, allowing it to run again even if its retry count has been exhausted.  Reactivation makes a task eligible to be retried again up to its maximum retry count. The task's state is changed to active. As the task is no longer in the completed state, any previous exit code or failure information is no longer available after reactivation. Each time a task is reactivated, its retry count is reset to 0. Reactivation will fail for tasks that are not completed or that previously completed successfully (with an exit code of 0). Additionally, it will fail if the job has completed (or is terminating or deleting).
+List frontend IP addresses.
+List frontend IP addresses.
+Clear the routing rules and send all traffic to production.
+Creates a new table in the storage account.
+Delete an existing Recovery services vault.
+Generate VPN client configuration.
+Create the VPN client configuration for RADIUS with EAP-MSCHAV2 authentication.
+Add action groups to this activity log alert. It can also be used to overwrite existing webhook properties of particular action groups.
+Add an action group and specify webhook properties.
+Remove webhook properties from an existing action group.
+Get the details of a PTR record set.
+Get the details of a PTR record set.
+Place the CLI in a waiting state until a condition of the resource group is met.
+List the routes of a virtual network gateway advertised to the specified peer.
+List the routes of a virtual network gateway advertised to the specified peer.
+Update an address pool.
+Update an address pool, add server.
+Gets a virtual machine extension image.
+Manage custom images of a DevTest Lab.
+Gets the properties of a storage account's Blob service, including Azure Storage Analytics.
+Shows the keys and connection strings of Authorizationrule for the Event Hubs Namespace
+Shows the keys and connection strings of Authorizationrule for the namespace.
+List available pricing tiers.
+Manage the routing of incoming traffic.
+Manage Azure Event Hubs Geo Recovery configuration Alias
+List the versions for available extensions.
+Find the available versions for the Docker extension.
+Sets user-defined metadata for the specified blob as one or more name-value pairs.
+Regenerate keys of Authorization Rule for Service Bus Queue
+Regenerate keys of Authorization Rule for Service Bus Queue
+Create a deployment slot.
+List all packet capture sessions within a resource group.
+List all packet capture sessions within a region.
+Start interactive mode.
+Lists all certificates contained within an Azure IoT Hub
+List all certificates in MyIotHub
+Download a web app's log history as a zip file.
+List peering settings of an ExpressRoute circuit.
+List peering settings of an ExpressRoute circuit.
+Requests that a backup of the specified secret be downloaded to the client. Authorization: requires the secrets/backup permission.
+Regenerates the specified account key for the Batch account.
+Delete a resource policy assignment.
+Stop a streaming endpoint.
+List deleted secrets in the specified vault. Authorization: requires the secrets/list permission.
+Update a probe.
+Update an application gateway probe with a timeout of 60 seconds.
+Create a cluster.
+Create a single node GPU cluster with default image and auto-storage account.
+Create a cluster providing all parameters manually.
+Check the availability of Geo-Disaster Recovery Configuration Alias Name
+Check the availability of Geo-Disaster Recovery Configuration Alias Name
+Check if a given DMS instance name is available in a given region as well as the name's validity.
+List log files for a server.
+List log files for 'testsvr' modified in the last 72 hours (default value).
+List log files for 'testsvr' less than 30Kb in size.
+Delete a group from the directory.
+Update an Azure IoT Hub certificate.
+Updates a CA certificate in an IoT hub by uploading a new PEM file.
+Manage storage blob service properties.
+Update a lock.
+Update a resource group level lock with new notes and type
+Retrieves user-defined metadata and queue properties on the specified queue. Metadata is associated with the queue as name-value pairs.
+Manage role assignments.
+Create a VM in a lab.
+Create a VM in the lab from a gallery image.
+Create a claimable VM in the lab from a gallery image with password authentication.
+Create a VM in the lab from a custom image.
+Create a VM from a formula.
+Get history of a reservation.
+Sets service-defined properties for the specified share.
+Update an AAAA record set.
+Update an AAAA record set.
+Add a new autoscale rule.
+Scale to 5 instances when the CPU Percentage across instances is greater than 75 averaged over 10 minutes.
+Scale down 50% when the CPU Percentage across instances is less than 25 averaged over 15 minutes.
+Deletes an Image.
+Show the details of a maps account.
+Update a webhook.
+Update headers for a webhook.
+Disable a webhook.
+Invokes Service Bus Geo-Disaster Recovery Configuration Alias failover and re-configure the alias to point to the secondary namespace
+Invokes Geo-Disaster Recovery Configuration Alias failover and reconfigure the alias to point to the secondary namespace
+List log files for a server.
+List log files for 'testsvr' modified in the last 72 hours (default value).
+List log files for 'testsvr' less than 30Kb in size.
+Find Azure CLI commands.
+Search for commands containing 'vm' or 'secret'
+Get the network topology of a resource group, virtual network or subnet.
+Use show-topology to get the topology of resources within a resource group.
+Gets the Remote Desktop Protocol file for the specified compute node.  Before you can access a node by using the RDP file, you must create a user account on the node. This API can only be invoked on pools created with a cloud service configuration. For pools created with a virtual machine configuration, see the GetRemoteLoginSettings API.
+List the VM image offers available in the Azure Marketplace.
+List all offers from Microsoft in the West US region.
+Create a web application, web API or native application
+Create a native application with delegated permission of "access the AAD directory as the signed-in user"
+Gets the first page of Data Lake Store accounts linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.
+Find out whether the virtual machine is protected or not. If protected, it returns the recovery services vault ID, otherwise it returns empty.
+Update a rule.
+Update a rule use a new HTTP listener.
+Delete an A record set and all associated records.
+Delete an A record set and all associated records.
+Manage databases.
+Check for the existence of a storage directory.
+Gets publishing user.  Gets publishing user.
+Revoke read access to a snapshot.
+Delete an experiment.
+Delete an experiment. All running jobs will be terminated.
+Request an experiment deletion without waiting for job to be deleted.
+Stream the content of a file (similar to 'tail -f').
+Stream standard output file of the job.
+Create a new Recovery Services vault.
+Enable managed service identity on a VMSS.
+Enable identity on a VMSS with the 'Owner' role.
+List all shared access policies in an Azure IoT Hub device provisioning service.
+List all shared access policies in MyDps
+List resource groups.
+List all resource groups located in the West US region.
+List storage accounts.
+List all storage accounts in a subscription.
+Update a URL path map.
+Update a URL path map to use new default HTTP settings.
+List shared access keys of a topic.
+Creates a server key.
+Create a custom role definition.
+Create a role with read-only access to storage and network resources, and the ability to start or restart VMs.
+Updates the specified Data Lake Analytics account to include the additional Data Lake Store account.
+Get virtual network.
+Delete a Streaming Policy.  Deletes a Streaming Policy in the Media Services account.
+Delete an inbound NAT address pool.
+Delete an inbound NAT address pool.
+Remove an extension attached to a VM.
+Use a VM name and extension to delete an extension from a VM.
+Manage user accounts for a VM.
+Deletes the Service Bus Subscription
+Deletes the Subscription
+Start an instance of the Data Migration Service. It can then be used to run data migrations.
+Deletes the specified task file from the compute node where the task ran.
+Manage metric-based alert rules.
+Get the details for a container service.
+Manage blob metadata.
+List artifacts in a given artifact source.
+Manage Azure Service Bus Authorization Rule for Namespace with Geo-Disaster Recovery Configuration Alias
+Manage activity log alerts
+Show details of a peering.
+Show all details of the specified virtual network peering.
+Update a DDoS protection plan.
+List or show existing origins related to CDN endpoints.
+Manage web app logs.
+Get a specified secret from a given key vault.  The GET operation is applicable to any secret stored in Azure Key Vault.
+Manage streaming locators for an Azure Media Services account.
+Get the details of an ExpressRoute circuit.
+Get the details of an ExpressRoute circuit.
+Get the properties of a specified build task.
+Get the details of a build task, displaying the results in a table.
+Get details on VMs within a VMSS.
+Delete a Data Lake Analytics account.
+Add a CAA record.
+Add a CAA record.
+Requests a new lease. If the container does not have an active lease, the Blob service creates a lease on the container and returns a new lease ID.
+Download and install the DC/OS command-line tool for a cluster.
+Create a local VPN gateway.
+Create a Local Network Gateway to represent your on-premises site.
+Permanently deletes the specified key. aka purges the key. Authorization: Requires the keys/purge permission.
+Show details of a key vault.
+List the SKUs avaiable for an Azure Cognitive Services account.
+Inspect the marketplace usage data of an Azure subscription within a billing period.
+Lists the certificate contacts for a specified key vault.  The GetCertificateContacts operation returns the set of certificate contact resources in the specified key vault.
+Configure a function app.
+Create a data warehouse.
+Retrieves information about the specified deleted certificate.  The GetDeletedCertificate operation retrieves the deleted certificate information plus its attributes, such as retention interval, scheduled permanent deletion and the current deletion recovery level.
+List all VPN connections in a resource group.
+List all VPN connections in a resource group.
+Changes the failover priority for the Azure Cosmos DB database account.
+Deletes the identity.
+Terminates the specified job, marking it as completed.  When a Terminate Job request is received, the Batch service sets the job to the terminating state. The Batch service then terminates any running tasks associated with the job and runs any required job release tasks. Then the job moves into the completed state. If there are any tasks in the job in the active state, they will remain in the active state. Once a job is terminated, new tasks cannot be added and any remaining active tasks will not be scheduled.
+Manage keys.
+Manage DNS SRV records.
+Delete an IP configuration.
+Delete an IP configuration.
+Update the durability tier or VM SKU of a node type in the cluster.
+Change the cluster durability level to 'Silver'.
+Get the details of a route filter.
+Get the details of a route filter.
+(PREVIEW) assign managed service identity to the webapp
+assign local identity and assign a reader role to the current resource group.
+Show information about a cluster.
+Show full information about a cluster.
+Create an application gateway.
+Create an application gateway with VMs as backend servers.
+Create an event hub consumer group.
+Create a consumer group 'cg1' in the default event hub endpoint.
+Show database editions available for the currently active subscription.
+Show all database editions in a location.
+Show available max database sizes for P1 service objective
+List routes in a route table.
+List routes in a route table.
+Remove a certificate from a cluster.
+Remove a certificate by thumbprint.
+List Azure IoT Hub device provisioning services.
+List all Azure IoT Hub device provisioning services in a subscription.
+List the information on available extensions.
+List the unique publishers for extensions.
+List extension names where the publisher name starts with "Microsoft.Azure.App".
+(PREVIEW) Test if a connection can be established between a Virtual Machine and a given endpoint.
+Check connectivity between two virtual machines in the same resource group over port 80.
+Show information about a particular Azure IoT Hub Device Provisioning Service certificate.
+Show details about MyCertificate in an Azure IoT Hub device provisioning service
+List available resizing options for VMs.
+List all available VM sizes for resizing.
+Queues a quick docker build providing interactive feedback.
+Queue a local context, validating the build is successful, without pushing to the registry.
+Gets the public part of a stored key.  The get key operation is applicable to all key types. If the requested key is symmetric, then no key material is released in the response.
+Update an action group
+List the ConsumerGroup by Eventhub
+Shows the ConsumerGroup by Eventhub.
+Gets a managed application.
+List the DMS instances within your currently configured subscription (to set this use "az account set"). If provided, only show the instances within a given resource group.
+List all the instances in your subscription.
+Claim a virtual machine from the Lab.
+Claim any available virtual machine in the lab.
+Claim multiple virtual machines in the lab by IDs.
+Manage Azure Batch.
+List available servers.
+List all PostgreSQL servers in a subscription.
+Get the details for a device in an IoT hub.
+Manage user credentials for deployment.
+Get the details of an address pool.
+Get the details of an address pool.
+Set the owner information for a file or folder in a Data Lake Store account.
+List secrets on a VM.
+Lists the asset SAS URLs used for uploading and downloading asset content.
+(PREVIEW) Manage links between Data Lake Analytics and Data Lake Store accounts.
+Configure function app settings.
+Show details of a shared access policies in an Azure IoT Hub device provisioning service.
+Show details of shared access policy 'MyPolicy' in an Azure IoT Hub device provisioning service
+Show the current count and limit of the storage accounts under the subscription.
+List the keys of an Azure Cognitive Services account.
+show properties of Authorization Rule for the given Service Bus Queue.
+show properties of Authorization Rule
+Restore backed up items from recovery points in a Recovery Services vault.
+Executes a command line on a cluster's node with optional ports forwarding.
+Report a snapshot of the current processes.
+Forward local 9000 to port 9001 on the node.
+Regenerate the connection strings of Authorizationrule for the namespace.
+Regenerate the connection strings of Authorizationrule for the namespace.
+Updates the Event Hubs Eventhub
+Updates a new Eventhub.
+Restore a web app from a backup.
+Update HTTP settings.
+Update HTTP settings to use a new probe.
+Invokes Geo-Disaster Recovery Configuration Alias to point to the secondary namespace
+Invokes GEO DR failover and reconfigure the alias to point to the secondary namespace
+List all ExpressRoute circuits for the current subscription.
+List all ExpressRoute circuits for the current subscription.
+Delete an existing management group.
+Delete an existing management group
+Resizes a file to the specified size. If the specified byte value is less than the current size of the file, then all ranges above the specified byte value are cleared.
+Activates a Batch application package.
+View statistics of all pools under a Batch account.
+List compute policies in the a Lake Analytics account.
+List load balancers.
+List load balancers.
+List a server's firewall rules.
+Manage SQL managed instances.
+Get the details for a database.
+Delete a CDN profile.
+Delete a CDN profile.
+Safeguard and maintain control of keys, secrets, and certificates.
+Deletes a snapshot.
+List catalog credentials.
+Delete a migration Task.
+Get the details of an express route peering.
+Get private peering details of an ExpressRoute circuit.
+Attach local standard output and error streams to a container in a container group.
+List all deployment slots.
+List public IP addresses.
+List all public IPs in a subscription.
+List all public IPs of a domain name label.
+Create a frontend port.
+Create a frontend port.
+Lists all SSL predefined policies for configuring SSL policy.
+Lists all SSL predefined policies for configuring SSL policy.
+Update an application gateway.
+Update an application gateway to use additional servers.
+Delete a TXT record set and all associated records.
+Delete a TXT record set and all associated records.
+Create and start a packet capture session.
+Create a packet capture session on a VM.
+List the Queue by Service Bus Namepsace
+Get the Queues by Service Bus Namespace.
+List certificate issuers for a specified key vault.  The GetCertificateIssuers operation returns the set of certificate issuer resources in the specified key vault.
+Cancel a job in an IoT hub.
+Get the details of a firewall rule.
+Updates an existing entity by merging the entity's properties. Throws  if the entity does not exist.   This operation does not replace the existing entity as the update_entity operation does. A property cannot be removed with merge_entity.  Any properties with null values are ignored. All other properties will be  updated or added.
+Manage action groups
+List the VMs in an Azure DevTest Lab.
+Get the details of gateway's SSL policy settings.
+Get the details of a gateway's SSL policy settings.
+Manage Azure Cognitive Services accounts.
+Update a certificate issuer record.
+Delete a connection monitor for the given region.
+Delete a connection monitor for the given region.
+Reset the properties of a Batch task.
+Disable https delivery of the custom domain.
+List custom images in a given lab.
+Create a topic.
+Create a new topic.
+Retrieves the list of schemas from the Data Lake Analytics catalog.
+Create a Batch application package record and activate it.
+Show details of a particular job.
+List the connection strings for a Azure Cosmos DB database account.
+Delete a lock.
+Delete a resource group-level lock
+Remove autoscale rules from a profile.
+Create an Azure IoT Hub device provisioning service.
+Create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the region of the resource group.
+Lists all of the applications available in the specified account.
+Manage DNS zones.
+List all AAAA record sets in a zone.
+List all AAAA record sets in a zone.
+Remove settings from a cluster.
+Remove the `MaxFileOperationTimeout` setting from a cluster.
+Creates a new build definition which can be triggered by git commits or base image updates.
+Create a build definition which updates on git commits and base image updates.
+Delete a policy set definition.
+List Azure Active Directory users.
+List the configuration values for a server.
+Manage routes in a route table.
+Resource which houses items or applications to be protected.
+Create a virtual network rule to allows access to an Azure SQL server.
+Create a vnet rule by providing the subnet id.
+Updates Authorization Rule for the given Service Bus Namespace
+Updates Authorization Rule 'myauthorule' for the given Service Bus Namespace 'mynamepsace' in resourcegroup
+Create a maps account.
+Create a certificate issuer record.
+Manage Tasks for a Data Migration Service instance's Project.
+(DEPRECATED) Update the settings of a Redis cache.
+Manage repositories (image names) for Azure Container Registries.
+List available sizes for VMs.
+List the available VM sizes in the West US region.
+Get lab.
+Get the details of a web app's settings.
+Gets specific run command for a subscription in a location.
+Update a server.
+Update a server's sku.
+Start live log tracing for a web app.
+Create a migration Project which can contain multiple Tasks.
+Create a Project for a DMS instance.
+Download and install kubectl, the Kubernetes command-line tool.
+Create new autoscale settings.
+Create autoscale settings to scale between 2 and 5 instances (3 as default). Email the administrator when scaling occurs.
+Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
+Manage a DNS SOA record.
+Deletes a pool from the specified account.  When you request that a pool be deleted, the following actions occur: the pool state is set to deleting; any ongoing resize operation on the pool are stopped; the Batch service starts resizing the pool to zero nodes; any tasks running on existing nodes are terminated and requeued (as if a resize pool operation had been requested with the default requeue option); finally, the pool is removed from the system. Because running tasks are requeued, the user can rerun these tasks by updating their job to target a different pool. The tasks can then run on the new pool. If you want to override the requeue behavior, then you should call resize pool explicitly to shrink the pool to zero size before deleting the pool. If you call an Update, Patch or Delete API on a pool in the deleting state, it will fail with HTTP status code 409 with error code PoolBeingDeleted.
+Delete a subscription lock.
+Delete a subscription lock
+List containers in a storage account.
+Get the details of a frontend port.
+Get the details of a frontend port.
+manage service identities of a VM scaleset.
+Get the properties of a specified build.
+Get the details of a build, displaying the results in a table.
+Upload an SSL certificate to a web app.
+Returns all user-defined metadata for the specified blob or snapshot.
+Delete an MX record set and all associated records.
+Delete an MX record set and all associated records.
+Creates or updates the specified trusted identity provider. During update, the trusted identity provider with the specified name will be replaced with this new provider.
+Get the details of a server.
+Delete an inbound NAT rule.
+Delete an inbound NAT rule.
+Get the details of a web app.
+Get the details for a managed instance.
+Get the details for a managed instance
+Suspend or terminate a currently running job.
+Get a token for utilities to access Azure.
+Get information on the 'next hop' of a VM.
+Get the next hop from a VMs assigned IP address to a destination at 10.1.0.4.
+Evaluate probe information and define routing rules.
+Show details of a linked IoT hub in an Azure IoT Hub device provisioning service.
+Show details of linked IoT hub 'MyLinkedHub' in an Azure IoT Hub device provisioning service
+Get the details of a source control deployment configuration.
+Reset a virtual network gateway.
+Reset a virtual network gateway.
+get a deployment's operation.
+Deletes the Service Bus Queue
+Deletes the queue
+Start VMs within a VMSS.
+Manage MySQL servers.
+Gets information about the specified application.
+Verifies an Azure IoT Hub certificate.
+Verifies ownership of the MyCertificate private key.
+Download blobs from a blob container recursively.
+Create the ServiceBus Rule for Subscription
+Create Rule.
+Commands to work with nodes which executed a job.
+Manage the metadata for a storage queue.
+Delete a function app's settings.
+Deletes a Redis cache.
+Delete a local VPN gateway.
+Create a Local Network Gateway to represent your on-premises site.
+Retrieves the specified procedure from the Data Lake Analytics catalog.
+Manage subtask information of a Batch task.
+Creates a file or folder in a Data Lake Store account.
+Get the details of a link authorization of an ExpressRoute circuit.
+Get the details of a link authorization of an ExpressRoute circuit.
+Manage Azure Event Hubs Authorizationrule for Geo Recovery configuration Alias
+Manage secrets.
+Configure web app settings.
+Start protecting a previously unprotected Azure VM as per the specified policy to a Recovery services vault.
+Retrieves the deleted key information plus its attributes. Authorization: Requires the keys/get permission.
+List blobs in a given container.
+List the information on available extensions.
+List the unique publishers for extensions.
+List extension names where the publisher name starts with "Microsoft.Azure.App".
+Delete a rule from a route filter.
+Delete a rule from a route filter.
+Deallocate a VM.
+Deallocate, generalize, and capture a stopped virtual machine.
+Update the properties of a storage account.
+Create a copy of a database.
+Create a database with performance level S0 as a copy of an existing Standard database.
+List the configuration values for a server.
+Get the details of a probe.
+Get the details of a probe.
+Convert an Azure Availability Set to contain VMs with managed disks.
+Convert an availabiity set to use managed disks by name.
+Create an empty CAA record set.
+Create an empty CAA record set.
+Update a firewall rule.
+Get the details of a topic.
+Show the details of a topic.
+Configure a web app.
+Delete an alert rule.
+Delete a maps account.
+Delete a traffic manager profile.
+Delete a traffic manager profile.
+Configure hostnames for a web app.
+List the details of Azure resource consumption, either as an invoice or within a billing period.
+Manage PostgreSQL servers.
+Disable the boot diagnostics on a VM.
+Disable boot diagnostics on all VMs in a resource group.
+Configure settings of a NIC attached to a VM.
+Set a NIC on a VM to be the primary interface.
+Sets a Geo-Disaster Recovery Configuration Alias for the give Namespace
+Sets Geo-Disaster Recovery Configuration Alias for the give Namespace
+Shows a server key.
+Imports an image to the container registry from source.
+Import an image to the target registry and inherits sourcerepository:sourcetag from source.
+Create a probe.
+Create a probe on a load balancer over HTTP and port 80.
+Create an ExpressRoute circuit.
+Create an ExpressRoute circuit.
+Delete an app service plan.
+Delete a key vault.
+Delete blobs from a blob container recursively.
+Manage environments for an Azure DevTest Lab.
+List all NS record sets in a zone.
+List all NS record sets in a zone.
+Change the  upgrade type for a cluster.
+Set a cluster to use the 'Automatic' upgrade mode.
+Deletes the specified certificate issuer.  The DeleteCertificateIssuer operation permanently removes the specified certificate issuer from the vault.
+Resize a cluster.
+Resize a cluster to zero size to stop paying for it.
+Manage admin information for certificate issuers.
+Update deployment credentials.
+Set FTP and git deployment credentials for all apps.
+Manage Azure Service Bus Subscription
+Stop a CDN endpoint.
+Stop a CDN endpoint.
+List table statistics in a database, table, or schema.
+Create an HTTP listener.
+Create an HTTP listener.
+Create a load balancer.
+Create a basic load balancer.
+Create a basic zone flavored internal load balancer, through provisioning a zonal public ip.
+Delete a server.
+Manage a server's keys.
+Shows the details for a firewall rule.
+Get the connection string for a storage account.
+Get a connection string for a storage account.
+Update a load balancing rule.
+Update a load balancing rule to change the protocol to UDP.
+Retrieve a job pipeline in a Data Lake Analytics account.
+Gets the number of nodes in each state, grouped by pool.
+Gets the status of the latest virtual machine scale set rolling upgrade.
+Delete a container group.
+Update a resource.
+Gets a database's threat detection policy.
+Manage run commands on a Virtual Machine
+Manage DNS records and record sets.
+Update an SRV record set.
+Update an SRV record set.
+Delete a resource group.
+Delete a resource group.
+Updates the attributes associated with a specified secret in a given key vault.  The UPDATE operation changes specified attributes of an existing stored secret. Attributes that are not specified in the request are left unchanged. The value of a secret itself cannot be changed.
+Update an elastic pool.
+Update elastic pool with zone redundancy enabled
+List container services.
+Deletes the server DNS alias with the given name.
+List the Projects within an instance of DMS.
+Request parameters for creating a new work or school account user.
+Regenerate keys of Authorization Rule for Service Bus Topic.
+Regenerate key of Service Bus Topic.
+Perform deployment using the kudu zip push deployment for a function app.
+Perform deployment by using zip file content.
+Delete a Data Lake Store account.
+Delete a stored access policy on a containing object 
+Reinstalls the operating system on the specified compute node.  You can reinstall the operating system on a node only if it is in an idle or running state. This API can be invoked only on pools created with the cloud service configuration property.
+Get the statistics of an ExpressRoute circuit.
+Get the statistics of an ExpressRoute circuit.
+List all the assets of an Azure Media Services account.
+Update a compute policy in the Data Lake Analytics account.
+Requests a new lease. If the blob does not have an active lease, the Blob service creates a lease on the blob and returns a new lease ID.
+Manage storage service logging information.
+Manage Azure IoT Hub Device Provisioning Service linked IoT hubs.
+Manage peering connections between Azure Virtual Networks.
+Delete a transform.
+Delete a CNAME record set and its associated record.
+Delete a CNAME record set and its associated record.
+Manage extensions on VMs.
+Manage the SSL policy of an application gateway.
+Delete files from an Azure Storage File Share.
+Manage Azure IoT Hub Device Provisioning Service access policies.
+Deletes a job schedule from the specified account.  When you delete a job schedule, this also deletes all jobs and tasks under that schedule. When tasks are deleted, all the files in their working directories on the compute nodes are also deleted (the retention period is ignored). The job schedule statistics are no longer accessible once the job schedule is deleted, though they are still counted towards account lifetime statistics.
+Cancel a Task if it's currently queued or running.
+Get the details of an MX record set.
+Get the details of an MX record set.
+Manage application security groups (ASGs).
+Manage reservation entities
+Create an inbound NAT rule.
+Create a basic inbound NAT rule for port 80.
+Start a stopped VM.
+Start a stopped VM.
+Update a topic.
+Update the properties of an existing topic.
+Manage Azure Content Delivery Networks (CDNs).
+Create a firewall rule in a Data Lake Analytics account.
+Creates or updates an autoscale setting.
+Set a subscription to be the current active subscription.
+(PREVIEW) Manage Data Lake Store accounts.
+Delete a web app container's settings.
+List all PTR record sets in a zone.
+List all PTR record sets in a zone.
+Merge two reservations.
+Delete a budget for an Azure subscription.
+Manage links between resources.
+Manage function app deployments.
+Update logging settings for a storage account.
+Update the details of an asset.
+Gets a list of server keys.
+Manage DNS MX records.
+Grant read access to a snapshot.
+Manage the operating system of Batch pools.
+Renew either the primary or secondary key for use with the Maps APIs.
+(PREVIEW) Manage Data Lake Analytics catalog table partitions.
+Manage Azure Managed Applications.
+Trigger a build task that might otherwise be waiting for git commits or base image update triggers.
+Trigger a build task.
+Update the configuration of a cloud.
+Lists all of the certificates that have been added to the specified account.
+Delete a network interface.
+Delete a network interface.
+Query a snapshot of the most recent connection state of a connection monitor.
+List a connection monitor for the given region.
+Loving or hating the CLI?  Let us know!
+Gets an autoscale setting.
+Waits for specified job completion and setups the exit code to the job's exit code.
+Wait for the job completion.
+Update the properties of the backup policy.
+View the number of tasks in a Batch job and their states.
+Update an NS record set.
+Update an NS record set.
+List lock information in the resource-group.
+List out all locks on the resource group level
+Manage service principal and role based access for an Azure Media Services account.
+Get the details for available function app deployment profiles.
+Delete an activity log alert.
+Manage Azure Container Registries for private registries within Azure.
+Update a route in a route table.
+Update a route in a route table to change the next hop ip address.
+List databases a server or elastic pool.
+Log out to remove access to Azure subscriptions
+Updates the ServiceBus Subscription
+Update a new Subscription.
+Delete a server.
+Manage activity logs.
+An item which is already protected or backed up to an Azure Recovery services vault with an associated policy.
+Creates the Event Hubs Eventhub
+Create a new Eventhub.
+Check for the existence of a file share.
+Retrieves the list of assemblies from the Data Lake Analytics catalog.
+List VM sizes for an availability set.
+List VM sizes for an availability set.
+Deletes a secret from a specified key vault.  The DELETE operation applies to any secret stored in Azure Key Vault. DELETE cannot be applied to an individual version of a secret.
+Update a log profile.
+View usage metrics of Batch pools.
+Deletes a certificate from a specified key vault.  Deletes all versions of a certificate object along with its associated policy. Delete certificate cannot be used to remove individual versions of a certificate object.
+Show formulae from an Azure DevTest Lab.
+Break the lease, if the container has an active lease. Once a lease is broken, it cannot be renewed. Any authorized request can break the lease; the request is not required to specify a matching lease ID. When a lease is broken, the lease break period is allowed to elapse, during which time no lease operation except break and release can be performed on the container. When a lease is successfully broken, the response indicates the interval in seconds until a new lease can be acquired.
+Enable managed service identity on a VM.
+Enable identity on a VM with the 'Reader' role.
+Manage traffic routing for web apps.
+Retrieves one or more messages from the front of the queue.  When a message is retrieved from the queue, the response includes the message  content and a pop_receipt value, which is required to delete the message.  The message is not automatically deleted from the queue, but after it has  been retrieved, it is not visible to other clients for the time interval  specified by the visibility_timeout parameter.  If the key-encryption-key or resolver field is set on the local service object, the messages will be decrypted before being returned.
+Manage registered Azure clouds.
+Creates the url to access a blob.
+Deletes the ConsumerGroup
+Deletes the ConsumerGroup
+See reservation order ids that are applied to subscription
+Manage consumption of Azure resources.
+Manage elastic pools.
+Create the Service Bus Queue
+Create Service Bus Queue.
+Update a snapshot.
+Update a rule in a route filter.
+Update a rule in a route filter to add Exchange to rule list.
+Download and install the Kubernetes command-line tool for a cluster.
+Place the CLI in a waiting state until a condition of the VM is met.
+Wait until a VM is created.
+Delete a load balancer.
+Delete a load balancer.
+Get the IP address and port number used to connect to individual VM instances within a set.
+Summarize policy compliance states.
+Get latest non-compliant policy states summary at current subscription scope.
+Get latest non-compliant policy states summary at resource group scope in current subscription.
+Get latest non-compliant policy states summary for a resource using resource name.
+Get latest non-compliant policy states summary for a policy set definition in current subscription.
+Get latest non-compliant policy states summary for a policy assignment in current subscription.
+Get latest non-compliant policy states summary in current subscription, limiting the assignments summary to top 5.
+Get latest non-compliant policy states summary in current subscription filtering results based on some property values.
+Create a compute policy in the Data Lake Analytics account.
+Manage public IP addresses.
+Manage queue storage messages.
+Create a linked IoT hub in an Azure IoT Hub device provisioning service.
+Create a linked IoT hub in an Azure IoT Hub device provisioning service
+List stored access policies on a containing object
+(DEPRECATED) Manage autoscale settings.
+Manage Azure subscription information.
+Create a new database by restoring from a backup.
+Stop a web app.
+Manage resource tags.
+Unbind an SSL certificate from a function app.
+Gets all deployments operations for a deployment.
+Copy multiple blobs or files to a blob container.
+Manage log profiles.
+Manage Azure locks.
+Add an A record.
+Add an A record.
+Create a Batch pool in an account. When creating a pool, choose arguments from either Cloud Services Configuration or Virtual Machine Configuration.
+List formulas in a given lab.
+List activity log alerts under a resource group or the current subscription.
+Insert an entity into a table.
+Show an extension.
+Detach managed data disks from a scale set or its instances.
+Enable diagnostics on a VMSS.
+List all SRV record sets in a zone.
+List all SRV record sets in a zone.
+List public IP addresses of VM instances within a set.
+Upload a file to a storage blob.
+Upload to a blob.
+Set a web app's settings.
+Set the default NodeJS version to 6.9.1 for a web app.
+Creates a new share under the specified account. If the share with the same name already exists, the operation fails on the service. By default, the exception is swallowed by the client. To expose the exception, specify True for fail_on_exists.
+Show the details for a managed Kubernetes cluster.
+Retrieves the specified table statistics from the Data Lake Analytics catalog.
+Online storage entity in Azure used to hold data such as backup copies, recovery points and backup policies.
+Capture information for a stopped VM.
+Deallocate, generalize, and capture a stopped virtual machine.
+Show details of a packet capture session.
+Show a packet capture session.
+List key vaults.
+List the supported profiles for a cloud.
+Add an output to an existing transform.
+Show storage account properties.
+Show properties for a storage account by resource ID.
+Reset a VPN connection shared key.
+Reset the shared key on a connection.
+Remove a PTR record from its record set.
+Remove a PTR record from its record set.
+Create an inbound NAT address pool.
+Create an inbound NAT address pool.
+Update an inbound NAT address pool.
+Update an inbound NAT address pool to a different backend port.
+Check for the existence of a file.
+Manage Azure Event Hubs eventhub and authorization-rule
+Delete a resource.
+Delete a virtual machine named 'MyVm'.
+Delete a subnet using a resource identifier.
+Create a new link between resources.
+Create a link from {SourceID} to {ResourceID} with notes
+Create a server.
+Create a service principal and configure its access to Azure resources.
+Create with a default role assignment.
+Create without a default assignment.
+Create using a self-signed certificte.
+Create using existing certificate in KeyVault.
+Create an experiment.
+Create an experiment.
+Retrieves statistics related to replication for the Table service. It is  only available when read-access geo-redundant replication is enabled for  the storage account.  With geo-redundant replication, Azure Storage maintains your data durable  in two locations. In both locations, Azure Storage constantly maintains  multiple healthy replicas of your data. The location where you read,  create, update, or delete data is the primary storage account location.  The primary location exists in the region you choose at the time you  create an account via the Azure Management Azure classic portal, for  example, North Central US. The location to which your data is replicated  is the secondary location. The secondary location is automatically  determined based on the location of the primary; it is in a second data  center that resides in the same region as the primary location. Read-only  access is available from the secondary location, if read-access geo-redundant  replication is enabled for your storage account.
+Create a streaming locator.
+Sets the permissions for the specified container or stored access  policies that may be used with Shared Access Signatures. The permissions indicate whether blobs in a container may be accessed publicly.
+Show a stored access policy on a containing object
+List web apps.
+List default host name and state for all web apps.
+Manage a database's transparent data encryption.
+Update settings of an ExpressRoute circuit.
+Change the SKU of an ExpressRoute circuit from Standard to Premium.
+Upgrade VMs within a VMSS.
+Update the properties of a Batch pool. Unspecified properties which can be updated are reset to their defaults.
+Manage the metadata of a file share.
+List probes.
+List probes.
+Get the details of a firewall rule in a Data Lake Store account.
+Reject a cloud-to-device message.
+List address pools.
+List address pools.
+Set auto-scale parameters for a cluster.
+Make a cluster to auto scale between 0 and 10 nodes depending on number of queued and running jobs.
+Delete a managed disk.
+Get a list of subscriptions for the logged in account.
+Create a route table.
+Create a route table.
+Find the available VM extensions for a subscription and region.
+Manage function apps.
+Delete a DNS zone and all associated records.
+Delete a DNS zone using a fully qualified domain name.
+Split a reservation.
+Restores a backed up secret to a vault. Authorization: requires the secrets/restore permission.
+Delete a container service.
+List the keys and connection strings of Authorization Rule for Service Bus Namespace
+List the keys and connection strings of Authorization Rule for Service Bus Namespace
+Import, update, or delete device identities in the IoT hub identity registry from a blob.
+Manage Azure Maps account keys.
+Check the availability of a resource name. This is needed for resources where name is globally unique, such as a CDN endpoint.
+Creates a queue under the given account.
+Show the details of a streaming policy.
+Lists the enrollment accounts the caller has access to.
+Get the details of an inbound NAT rule.
+Get the details of an inbound NAT rule.
+Scaffold fully formed autoscale-settings' parameters as json template 
+Delete a virtual network gateway.
+Delete a virtual network gateway.
+Manage a server's firewall rules.
+list groups in the directory
+Delete a topic.
+Delete a topic.
+Lists the execution status of the Job Preparation and Job Release task for the specified job across the compute nodes where the job has run.  This API returns the Job Preparation and Job Release task status on all compute nodes that have run the Job Preparation or Job Release task. This includes nodes which have since been removed from the pool. If this API is invoked on a job which has no Job Preparation or Job Release task, the Batch service returns HTTP status code 409 (Conflict) with an error code of JobPreparationTaskNotSpecified.
+Manage table storage entities.
+Delete a subnet.
+Delete a subnet.
+Delete an NS record set and all associated records.
+Delete an NS record set and all associated records.
+Download a script which mounts files of a recovery point.
+List resources.
+List all resources in the West US region.
+List all resources with the tag 'test'.
+List all resources with the tag 'test' that have the value 'example'.
+Manage file metadata.
+Gets the task counts for the specified job.  Task counts provide a count of the tasks by active, running or completed task state, and a count of tasks which succeeded or failed. Tasks in the preparing state are counted as running. If the validationStatus is unvalidated, then the Batch service has not been able to check state counts against the task states as reported in the List Tasks API. The validationStatus may be unvalidated if the job contains more than 200,000 tasks.
+Update an Azure Availability Set.
+Update an availability set.
+Remove an availability set tag.
+Deletes the Authorization Rule of the Service Bus Namespace.
+Deletes the Authorization Rule of the Service Bus Namespace.
+Regenerate an access key for a Azure Cosmos DB database account.
+Manage server logs.
+Deletes a server key.
+Checks if a container registry name is valid and available for use.
+Check if a registry name already exists.
+Deletes the specified file from the compute node.
+List remote login information for nodes which executed the job.
+List remote login information for a job nodes.
+Update a firewall rule.
+Update a firewall rule's start IP address.
+Manage a server's connection policy.
+Manage Azure Advisor.
+Get the details of a registered cloud.
+Retrieves the specified schema from the Data Lake Analytics catalog.
+This group is deprecated and will be removed in CLI version 2.0.36. The command, `redis patch-schedule patch-schedule show`, will be replaced with `redis patch-schedule show`'
+Receive a cloud-to-device message.
+Receive a cloud-to-device message from an IoT hub with a default timeout.
+Create an Azure Availability Set.
+Create an availability set.
+List all hostname bindings for a function app.
+Gets all Alias(Disaster Recovery configurations).
+Stop an application gateway.
+Stop an application gateway.
+Manage streamings for an Azure Media Services account.
+(PREVIEW) Install the ACI Connector on a managed Kubernetes cluster.
+Install the ACI Connector for Linux to a managed Kubernetes cluster.
+Install the ACI Connector for both Windows and Linux to a managed Kubernetes cluster.
+Install the ACI Connector from a custom Helm chart with custom tag.
+Show the details of a transform.
+List IoT hubs.
+List all IoT hubs in a subscription.
+List Azure Advisor configuration for the entire subscription.
+Manage Azure Traffic Manager end points.
+List function apps.
+List default host name and state for all function apps.
+Configure continuous deployment via containers.
+List the databases for a server.
+List databases in the server 'testsvr'.
+List the Subscription by Service Bus Topic
+Shows the Subscription by Service Bus Topic.
+Manage a web app's connection strings.
+Create an empty A record set.
+Create an empty A record set.
+Deletes all messages from the specified queue.
+Check if a member is in a group.
+Deletes a tag value.
+Create an Azure Virtual Machine.
+Create a default Ubuntu VM with automatic SSH authentication.
+Create a VM from a custom managed image.
+Create an Ubuntu Linux VM using a cloud-init script for configuration. See: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init.
+Create a simple Ubuntu Linux VM with a public IP address, DNS entry, two data disks (10GB and 20GB), and then generate ssh key pairs.
+Create a CentOS VM with a system assigned identity. The VM will have a 'Contributor' role with access to a storage account.
+Create a debian VM with both system and user assigned identity.
+Configure the Azure VM diagnostics extension.
+Set up default diagnostics on a Linux VM for Azure Portal VM metrics graphs and syslog collection.
+Delete a catalog credential.
+Returns all user-defined metadata and system properties for the specified share. The data returned does not include the shares's list of files or directories.
+Lists all of the subtasks that are associated with the specified multi-instance task.  If the task is not a multi-instance task then this returns an empty collection.
+Create a webhook for a container registry.
+Create a webhook for a container registry that will deliver docker push and delete events to a service URI.
+Apply artifacts to a virtual machine in Azure DevTest Lab.
+Display and manage the Azure CLI 2.0 configuration. This command is interactive.
+Set default resource group, webapp and VM names.
+Regenerate Redis cache's access keys. This operation requires write permission to the cache resource.
+Manage root certificates of a virtual network gateway.
+Manage DNS A records.
+Shows the details of Authorizationrule
+Shows the details of Authorizationrule
+Downloads a file to a file path, with automatic chunking and progress notifications. Returns an instance of File with properties and metadata.
+List of Authorization Rule by Service Bus Queue.
+List of Authorization Rule by Queue
+Bind a hostname to a web app.
+Lists available operations for the Managed Identity provider
+A snapshot of data at that point-of-time, stored in Recovery Services Vault, from which you can restore information.
+Create a VPN connection.
+Create a site-to-site connection between an Azure virtual network and an on-premises local network gateway.
+
+Gives access to all files of a recovery point.
+Gets all the available BGP service communities.
+Gets all the available BGP service communities.
+Delete an application gateway.
+Delete an application gateway.
+Gets a server.
+Delete security policy settings for a Key Vault. 
+Delete a compute policy in a Data Lake Analytics account.
+Delete a service principal and its role assignments.
+Update an application security group.
+Update an application security group with a modified tag value.
+Untag an image in a container registry.
+Untag an image from a repository.
+Get the default geographic hierarchy used by the geographic traffic routing method.
+Get the default geographic hierarchy used by the geographic traffic routing method.
+Returns a database's transparent data encryption operation result.
+Create an Azure Cognitive Services account.
+Create an S0 face API Cognitive Services account in West Europe without confirmation required.
+Show the price sheet for an Azure subscription within a billing period.
+Get node counts for Batch pools.
+Create a lock.
+Create a read-only subscription level lock.
+View an instance of a VMSS.
+Create a replication for a container registry.
+Create a replication for a container registry.
+Download files from an Azure Storage File Share to a local directory in a batch operation.
+Manage autoscale settings.
+Update a redirect configuration.
+Update a redirect configuration to a different http-listener.
+Manage Azure Active Directory service principals for automation authentication.
+Gets a Redis cache (resource description).
+Commands to list and stream files in job's output directories.
+List all of the replications for a container registry.
+List replications and show the results in a table.
+shows properties of Service Bus Geo-Disaster Recovery Configuration Alias for Primay/Secondary Namespace
+show properties Geo-Disaster Recovery Configuration Alias of the Primary Namespace
+Manage backups for web apps.
+Create a virtual network peering connection.
+Create a peering connection between two virtual networks.
+Get an activity log alert.
+Manage autoscale scaling rules.
+Marks the specified share for deletion. If the share does not exist, the operation fails on the service. By  default, the exception is swallowed by the client. To expose the exception, specify True for fail_not_exist.
+(PREVIEW) Manage Data Lake Analytics catalog stored procedures.
+Manage the reliability of a cluster.
+List network interfaces.
+List all NICs by internal DNS suffix.
+Manage user credentials for deployment.
+Manage certificates.
+(PREVIEW) Manage Data Lake Store account firewall rules.
+Manage Azure Event Hubs consumergroup
+Get the details of a CAA record set.
+Get the details of a CAA record set.
+Delete a PTR record set and all associated records.
+Delete a PTR record set and all associated records.
+Update a firewall rule.
+Update a firewall rule's start IP address.
+Deletes an existing entity in a table. Throws if the entity does not exist.  When an entity is successfully deleted, the entity is immediately marked  for deletion and is no longer accessible to clients. The entity is later  removed from the Table service during garbage collection.
+Enables a job schedule.
+Detatch an unmanaged disk from a VM.
+Detach a data disk from a VM.
+Add an address pool to an IP configuration.
+Add an address pool to an IP configuration.
+Reset the properties of a job schedule.  An updated job specification only applies to new jobs.
+Gets the Batch service quotas for the specified subscription at the given location.
+Deletes the Authorizationrule of Eventhub.
+Deletes the Authorizationrule of Eventhub.
+Delete a database.
+Manage Azure Authorization Rule keys for Service Bus Topic
+Create a rule in a route filter.
+Create a rule in a route filter to allow Dynamics 365.
+Add a secret to a VM.
+Manage pending certificate creation operations.
+Manage VM secrets.
+List frontend IP addresses.
+List frontend IP addresses.
+Delete an availability set.
+Delete an availability set.
+Tag a resource.
+Tag the virtual machine 'MyVm' with the key 'vmlist' and value 'vm1'.
+Resize or stop resizing a Batch pool.
+Manage Azure Service Bus Queue Authorization Rule
+Create an Azure Media Services account.
+Create a new resource group.
+Create a new resource group in the West US region.
+Show a stored access policy on a containing object
+Show Azure Advisor configuration for the given subscription or resource group.
+Delete a source control deployment configuration.
+Manage VPN connections.
+Get the details of a virtual network gateway.
+Get the details of a virtual network gateway.
+Enables the specified job, allowing new tasks to run.  When you call this API, the Batch service sets a disabled job to the enabling state. After the this operation is completed, the job moves to the active state, and scheduling of new tasks under the job resumes. The Batch service does not allow a task to remain in the active state for more than 7 days. Therefore, if you enable a job containing active tasks which were added more than 7 days ago, those tasks will not run.
+Update a policy set definition.
+Create a policy set definition.
+Create a policy set definition.
+Update a server.
+Check the quota and actual usage of the CDN profiles under the given subscription.
+Commands to manage workspaces.
+Set a stored access policy on a containing object
+Manage firewall rules for a server.
+List the names of available extensions.
+Find Docker extensions by publisher and location.
+Creates a read-only snapshot of a blob.
+Update an HTTP listener.
+Update an HTTP listener to use a different hostname.
+Create new Redis Cache instance
+List clusters.
+List all clusters in a workspace.
+Manage DNS CAA records.
+List the files and folders in a Data Lake Store account.
+Enable a receiver in an action group. This changes the receiver's status from Disabled to Enabled.
+Delete a managed application definition.
+List alert rules in a resource group.
+Delete an instance of the Data Migration Service.
+List azure resource manager templates in a given artifact source.
+List job pipelines in a Data Lake Analytics account.
+List all backed up items within a container.
+List all CORS rules for a storage account.
+Show an alert rule.
+Manage reservations for Azure resources.
+Set the primary replica database by failing over from the current primary replica database.
+Create an authorization certificate.
+Create an authorization certificate.
+Delete a stored access policy on a containing object 
+List the primary and secondary keys for a storage account.
+List the primary and secondary keys for a storage account.
+Update source control token cached in Azure app service. If no token is provided, the command will clean up existing token.
+(PREVIEW) Manage encryption of VMSS.
+Gets the members of a group.
+(PREVIEW) Manage Data Lake Analytics accounts, jobs, and catalogs.
+Manage CDN endpoints.
+Gets information about the specified job.
+(PREVIEW) Remove the ACI Connector from a managed Kubernetes cluster.
+Remove the ACI Connector from a cluster using the graceful mode.
+Change the lease ID of an active lease. A change must include the current lease ID and a new lease ID.
+(PREVIEW) Manage Data Lake Store accounts and filesystems.
+Disable disk encryption on the OS disk and/or data disks.
+List table valued functions in a database or schema.
+Create an empty MX record set.
+Create an empty MX record set.
+Retrieves the list of databases from the Data Lake Analytics catalog.
+List gallery images in a given lab.
+Gets an image.
+List the keys and connection strings of Authorization Rule for the Service Bus Namespace
+List the keys and connection strings of Authorization Rule for the namespace.
+Wait for server to satisfy certain conditions.
+Manage Azure Service Bus Namespace
+Manage Azure Active Directory groups.
+Create a new catalog credential for use with an external data source.
+Manage web apps.
+(PREVIEW) Manage Data Lake Analytics catalog packages.
+Update properties for a Batch application.
+Delete a load balancing rule.
+Delete a load balancing rule.
+Stop the specified connection monitor.
+Stop the specified connection monitor.
+Create a load balancing rule.
+Create a load balancing rule that assigns a front-facing IP configuration and port to an address pool and port.
+
+Create an HA ports load balancing rule that assigns a frontend IP and port to use all available backend IPs in a pool on the same port.
+
+Add nodes to a node type in a cluster.
+Add 2 'nt1' nodes to a cluster.
+Get the details of a frontend IP address.
+Get the details of a frontend IP address.
+Manage firewall rules for a server.
+Get enrollment accounts.
+Sets a secret in a specified key vault.  The SET operation adds a secret to the Azure Key Vault. If the named secret already exists, Azure Key Vault creates a new version of that secret.
+Creates Authorizationrule for the given Namespace
+Creates Authorizationrule
+Get the details of an NS record set.
+Get the details of an NS record set.
+Show the details of a streaming locator.
+Manage object storage for unstructured data (blobs).
+(PREVIEW) Manage devices in your Azure IoT hub.
+Download and install credentials to access a cluster.  This command requires the same private-key used to create the cluster.
+Gets information about the specified compute node.
+Update a VPN connection shared key.
+Change the shared key for the connection to "Abc123".
+Sets a database's transparent data encryption configuration.
+Updates a firewall rule in a Data Lake Store account.
+Shows information about a particular Azure IoT Hub certificate.
+Show details about MyCertificate
+Get the default policy with default values to backup a VM.
+Gets the specified Data Lake Store account details in the specified Data Lake Analytics account.
+Retrieves the specified table type from the Data Lake Analytics catalog.
+Show the details for an instance of the Data Migration Service.
+Configure logging for a web app.
+Create the ServiceBus Subscription
+Create a new Subscription.
+Stop a function app.
+Creates an SSH tunnel to the Azure container service, and opens the Mesosphere DC/OS dashboard in the browser.
+Show encryption status.
+Manage assets for an Azure Media Services account.
+Get the details of a Data Lake Analytics account.
+Test IP flow to/from a VM given the currently configured network security group rules.
+Run test-ip-flow verify to test logical connectivity from a VM to the specified destination IPv4 address and port.
+Create a PostgreSQL database.
+Create database 'testdb' in the server 'testsvr' with the default parameters.
+List Data Lake Analytics jobs.
+List all management groups.
+List all management groups
+Updates the Data Lake Analytics account specified to remove the specified Data Lake Store account.
+Manage DNS PTR records.
+List Recovery service vaults within a subscription.
+Update the properties of a maps account.
+List all the streaming endpoints within an Azure Media Services account.
+Create an Azure Virtual Machine Scale Set.
+Create a Windows VM scale set with 5 instances, a load balancer, a public IP address, and a 2GB data disk.
+Create a Linux VM scale set from a custom image using the default existing public SSH key.
+Create a Linux VM scale set using a cloud-init script for configuration. See: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init
+Create a VM scaleset with system assigned identity. The VM will have a 'Contributor' Role with access to a storage account.
+Create a debian VM scaleset with both system and user assigned identity.
+List the jobs in an IoT hub.
+create a resource.
+Create an API app by providing a full JSON configuration.
+Create a web app with the minimum required configuration information.
+Troubleshoot the startup of an Azure Virtual Machine.
+Create a new Azure Service Fabric cluster.
+Create a cluster with a given size and self-signed certificate that is downloaded locally.
+Power off (stop) VMs within a VMSS.
+Gets user information from the directory.
+Commands to manage a DC/OS-orchestrated Azure Container Service.
+Shows a connection monitor by name.
+Show a connection monitor for the given name.
+Retrieves the list of packages from the Data Lake Analytics catalog.
+Manage dedicated private network fiber connections to Azure.
+Update a peering.
+Change forwarded traffic configuration of a virtual network peering.
+Change gateway transit property configuration of a virtual network peering.
+List network security groups.
+List all NSGs in the 'westus' region.
+Get the details of a CNAME record set.
+Get the details of a CNAME record set.
+Provision Linux or Windows virtual machines.
+Deallocate VMs within a VMSS.
+Delete a public IP address.
+Delete a public IP address.
+Add scopes to this activity log alert.
+Show logs for a particular build. If no build-id is supplied, it shows logs for the last updated build.
+Show logs for the last updated build in the registry.
+Show logs for a particular build.
+Show properties of Event Hubs Geo-Disaster Recovery Configuration Alias and Namespace Authorizationrule
+Show properties Authorizationrule by Event Hubs Namespace
+List all the streaming locators within an Azure Media Services account.
+Manage event subscriptions for an Event Grid topic or for an Azure resource.
+Create Authorization Rule for the given Service Bus Namespace
+Create Authorization Rule 'myauthorule' for the given Service Bus Namespace 'mynamepsace' in resourcegroup
+Create a server.
+Create a MySQL server with only required paramaters in North Europe.
+Create a MySQL server with all paramaters set.
+Gets the names and values of all resource tags that are defined in a subscription.
+Set the active cloud.
+Redeploy an existing VM.
+Redeploy a VM.
+Enable the use of Azure Key Vault for encryption of a Data Lake Store account.
+(PREVIEW) Manage Data Lake Analytics catalog credentials.
+(PREVIEW) Manage Internet of Things (IoT) assets.
+Manage Azure Event Grid topics and subscriptions.
+Show details for the custom domain of a CDN.
+Get the details of a custom domain.
+Manage authentication of an ExpressRoute circuit.
+Create an empty AAAA record set.
+Create an empty AAAA record set.
+Managed Service Identities
+Get information on available WAF rule sets, rule groups, and rule IDs.
+List available rule groups in OWASP type rule sets.
+List available rules in the `crs_35_bad_robots` rule group.
+Lists all of the existing origins within an endpoint.
+Manage and configure load balancers.
+List autoscale profiles.
+Updates the Event Hubs Namespace
+Update a new namespace.
+Remove admin details for the specified certificate issuer. 
+Update the properties of a Batch job. Updating a property in a subgroup will reset the unspecified properties of that group.
+List Network Watchers.
+List all Network Watchers in a subscription.
+Upload an SSL certificate to a function app.
+Returns a list of server Administrators.
+Updates the visibility timeout of a message. You can also use this operation to update the contents of a message.  This operation can be used to continually extend the invisibility of a  queue message. This functionality can be useful if you want a worker role  to "lease" a queue message. For example, if a worker role calls get_messages  and recognizes that it needs more time to process a message, it can  continually extend the message's invisibility until it is processed. If  the worker role were to fail during processing, eventually the message  would become visible again and another worker role could process it.  If the key-encryption-key field is set on the local service object, this method will encrypt the content before uploading.
+Copy multiple files or blobs to a file share.
+(PREVIEW) Use Azure Dev Spaces with a managed Kubernetes cluster.
+Use Azure Dev Spaces with a managed Kubernetes cluster, interactively selecting a dev space.
+Use Azure Dev Spaces with a managed Kubernetes cluster, selecting a new or existing dev space         'develop/my-space' without prompting for confirmation.
+Manage connection monitoring between an Azure Virtual Machine and any IP resource.
+Creates the EventHub ConsumerGroup
+Create EventHub ConsumerGroup.
+List tables in a database or schema.
+Show the details of a resource group lock
+Show a resource group level lock
+Deletes an application package record and its associated binary file.
+Gets a list of operations performed on the elastic pool.
+Delete HTTP settings.
+Delete HTTP settings.
+Create a frontend IP address.
+Create a frontend ip address for a public load balancer.
+Show settings for a function app.
+List the NICs available on a VM.
+List all of the NICs on a VM.
+List managed applications.
+Commands to work with files generated by node setup task.
+Delete the Authorization Rule of Service Bus Queue
+Delete the Authorization Rule of Service Bus Queue
+Place the CLI in a waiting state until a condition of a managed disk is met.
+Sets one or more user-defined name-value pairs for the specified container. Each call to this operation replaces all existing metadata attached to the container. To remove all metadata from the container, call this operation with no metadata dict.
+Manage Azure Resource Manager (ARM) templates in an Azure DevTest Lab.
+Creates Authorizationrule for the given Eventhub
+Creates Authorizationrule
+Manage DDoS Protection Plans.
+Renews the lease. The lease can be renewed if the lease ID specified matches that associated with the container. Note that the lease may be renewed even if it has expired as long as the container has not been leased again since the expiration of that lease. When you renew a lease, the lease duration clock resets.
+Download log files.
+Download log files f1 and f2 to the current directory from the server 'testsvr'.
+List Azure Marketplace images allowed for a DevTest Lab.
+Check if a resource group exists.
+Check if 'MyResourceGroup' exists.
+Deletes a key of any type from storage in Azure Key Vault.  The delete key operation cannot be used to remove individual versions of a key. This operation removes the cryptographic material associated with the key, which means the key is not usable for Sign/Verify, Wrap/Unwrap or Encrypt/Decrypt operations.
+Manage Azure Event Hubs namespace and Authorizationrule
+Get a specific management group.
+Get a management group.
+Get a management group with children in all levels of hierarchy.
+List lock information in the resource-level.
+List out all locks on a vnet
+Gets a resource group.
+Manage load balancing rules.
+List all record sets within a DNS zone.
+List all "@" record sets within this zone.
+Get the app service plans for a resource group or a set of resource groups.
+Manage Azure Cosmos DB databases.
+List HTTP settings.
+List HTTP settings.
+Deletes a server.
+Removes scopes from this activity log alert.
+Shows the list of Authorization Rule by Service Bus Namespace
+Shows the list of Authorization Rule by Service Bus Namespace
+Shows details of a particular recovery point.
+Creates a tag value. The name of the tag must already exist.
+Returns a boolean indicating whether the database exists 
+Set extensions for a VM.
+Add a user account to a Linux VM.
+Update link between resources.
+Update the notes for {LinkID} notes "some notes to explain this link"
+List environments in a lab.
+Manage DNS NS records.
+Set a stored access policy on a containing object
+Show a resource policy assignment.
+Gets a server DNS alias.
+Place the CLI in a waiting state until a condition of the application gateway is met.
+Place the CLI in a waiting state until the application gateway is created.
+(PREVIEW) manage webapp's managed service identity
+List inbound NAT address pools.
+List inbound NAT address pools.
+(PREVIEW) Manage jobs in an IoT hub.
+Show the details of a subscription lock
+Show a subscription level lock
+Update the details of this activity log alert
+Update the condition
+Manage Batch service quotas at the region level.
+Show details on a VMSS extension.
+Configure hostnames for a function app.
+Manage Azure Service Bus Geo-Disaster Recovery Configuration Alias
+Enable the boot diagnostics on a VM.
+Enable boot diagnostics on all VMs in a resource group.
+Create an address pool.
+Create an address pool.
+Get virtual machine.
+Manage Azure Billing.
+Manage and update CLI extensions.
+Update the details of a transform.
+Create an application security group.
+Create an application security group.
+(PREVIEW) Manage shared access policies of an IoT hub.
+Downloads a blob to a file path, with automatic chunking and progress notifications. Returns an instance of :class:`~azure.storage.blob.models.Blob` with properties and metadata.
+Retrieves the deleted secret information plus its attributes. Authorization: requires the secrets/get permission.
+Retrieves the list of table types from the Data Lake Analytics catalog.
+Get the details of an alert rule incident.
+Start a deployment.
+Create a deployment from a remote template file, using parameters from a local JSON file.
+Create a deployment from a local template, using a parameter file and selectively overriding key/value pairs.
+Lists all of the job schedules in the specified account.
+Deletes an existing server Active Directory Administrator.
+List changelogs for role assignments.
+List all backup jobs of a Recovery Services vault.
+Gets a list of virtual machine extension image types.
+Get details of a reservation.
+Delete a web app's connection strings.
+Manage HTTP settings of an application gateway.
+Reimage VMs within a VMSS.
+Gets information about the specified application package.
+Create an Azure IoT hub.
+Create an IoT Hub with the free pricing tier F1, in the region of the resource group.
+Delete a DDoS protection plan.
+Gets the active diagnostic settings list for the specified resource.
+Manage file shares.
+Get access credentials for a managed Kubernetes cluster.
+Download log files.
+Download log files f1 and f2 to the current directory from the server 'testsvr'.
+Gets a list of databases in an elastic pool.
+Sets user-defined metadata for the specified file as one or more name-value pairs.
+(DEPRECATED) Gets all Redis caches in the specified subscription.
+Get the details of a TXT record set.
+Get the details of a TXT record set.
+Show information about a job.
+Show full information about a job.
+Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+List SSL certificates for a web app.
+Synchronizes access keys for the auto-storage account configured for the specified Batch account.
+Manage IoT Hub certificates.
+Update an IP configuration.
+Update a NIC to use a new private IP address.
+List the versions of a certificate.  The GetCertificateVersions operation returns the versions of a certificate in the specified key vault.
+Get the quota metrics for an IoT hub.
+List rules.
+List rules.
+Gets a virtual network rule.
+Manage Azure Data Migration Service (DMS) instances.
+Manage VPN shared keys.
+Lists all available run commands for a subscription in a location.
+Create a budget for an Azure subscription.
+Change deployment slots for a web app.
+Swap a staging slot into production for the MyUniqueApp web app.
+Shows the ConsumerGroup Details
+Shows the ConsumerGroup details.
+Manage Azure Reservations.
+Manage network interfaces of a VMSS.
+Delete an ExpressRoute circuit.
+Delete an ExpressRoute circuit.
+List the IP configurations of a NIC.
+List the IP configurations of a NIC.
+Delete a web app.
+Get list of applicable reservation order ids.
+List the databases for a server.
+List databases in the server 'testsvr'.
+Delete a device from an IoT hub.
+Manage network security group rules.
+Get a URL for a git repository endpoint to clone and push to for web app deployment.
+Get an endpoint and add it as a git remote.
+List the metric values for a resource.
+List a VM's CPU usage for the past hour
+List success E2E latency of a storage account and split the data series based on both API name and geo type
+List success E2E latency of a storage account and split the data series based on both API name and geo type. Limits the api name to 'DeleteContainer'
+List the metadata values for a storage account under transaction metric's api name dimension since 2017
+Update a resource group lock.
+Update a resource group lock with new notes and type
+Restore a server from backup.
+Restore 'testsvr' as 'testsvrnew'.
+Updates an autoscale setting.
+Gets the current usage information as well as limits for Batch AI resources for given location.
+Get information for eastus location.
+Create a custom image in a DevTest Lab.
+Create a custom image in the lab from a running Windows virtual machine without applying sysprep.
+Manage Azure Traffic Manager profiles.
+shows the details of Authorizationrule
+shows the details of Authorizationrule
+Update an A record set.
+Update an A record set.
+Gets publishing user.  Gets publishing user.
+Manage the access keys for the auto storage account configured for a Batch account.
+Get the details of a frontend IP address.
+Get the details of a frontend IP address.
+Remove a network rule.
+Manage network rules.
+Remove client certificates or subject names used for authentication.
+Remove a client certificate by thumbprint.
+Update a CDN profile.
+Create a virtual network.
+Create a virtual network.
+Manage Azure Event Hubs Authorizationrule for Namespace
+Update a Data Lake Analytics account.
+Create a managed application.
+Create a managed application of kind 'ServiceCatalog'. This requires a valid managed application definition ID.
+List all rules in a network security group.
+List all rules in a network security group.
+Remove NICs from a VM.
+Remove two NICs from a VM.
+List SSL certificates for a function app.
+Manage storage queues.
+List all certificates contained within an Azure IoT Hub device provisioning service
+List all certificates in MyDps
+Manage Azure Event Grid topics.
+Export the template used for a deployment.
+Gets the properties of the specified compute node file.
+Check if a given Task name is available within a given instance of DMS as well as the name's validity.
+List SSL certificates.
+List SSL certificates.
+Delete a managed Kubernetes cluster.
+Returns all user-defined metadata for the specified directory.
+display VM scaleset's managed identity info.
+Create or replace the patching schedule for Redis cache (requires Premium SKU).

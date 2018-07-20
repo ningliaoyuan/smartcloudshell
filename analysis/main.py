@@ -34,7 +34,7 @@ def addExamplesToTexts(examples, allTexts):
     return
 
 
-def getAllTexts(file):
+def getAllTexts(file, includeHelp, includeParameters, includeExamples):
     allTexts = []
     with open(file) as f:
         data = json.load(f)
@@ -43,13 +43,13 @@ def getAllTexts(file):
             #     pprint(key)
 
             cmd = data[key]
-            if 'help' in cmd:
+            if includeHelp and 'help' in cmd:
                 help = cmd['help']
                 addHelpToTexts(help, allTexts)
-            if 'parameters' in cmd:
+            if includeParameters and 'parameters' in cmd:
                 parameters = cmd['parameters']
                 addParametersToTexts(parameters, allTexts)
-            if 'examples' in cmd:
+            if includeExamples and 'examples' in cmd:
                 examples = cmd['examples']
                 addExamplesToTexts(examples, allTexts)
     return allTexts
@@ -68,7 +68,7 @@ def writeToFile(fileName, allTexts):
     return
 
 
-def outputWords(allTexts):
+def outputWords(fileName, allTexts):
     nlp = spacy.load('en_core_web_lg')
     i = 0
     csv = []
@@ -84,7 +84,7 @@ def outputWords(allTexts):
                   token.dep_, token.is_alpha, token.is_stop)
             csv.append('{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, text))
         i += 1
-    writeToFile('words.csv', csv)
+    writeToFile(fileName, csv)
 
 class Word:
   def __init__(self, word, lemma, pos, tag, dep, isAlpha, isStop, text):
@@ -98,7 +98,7 @@ class Word:
     self.count = 1
     self.samples = [text]
 
-def outputWordCounts(allTexts):
+def outputWordCounts(fileName, allTexts):
     nlp = spacy.load('en_core_web_lg')
     i = 0
     length = len(allTexts)
@@ -125,14 +125,24 @@ def outputWordCounts(allTexts):
         word = words[key]
         csv.append('{},{},{},{},{},{},{},{},{}'.format(key, word.lemma, word.pos, word.tag, word.dep, word.isAlpha, word.isStop, word.count, word.samples))
 
-    writeToFile('all-word-counts.csv', csv)
+    writeToFile(fileName, csv)
 
 
 def run():
-    allTexts = getAllTexts('../data/help_dump.json')
+    # allTexts = getAllTexts('../data/help_dump.json', True, True, True)
     # writeToFile("all-text.txt", allTexts)
-    # outputWords(allTexts)
-    outputWordCounts(allTexts)
+    # outputWords("all-words.csv", allTexts)
+    # outputWordCounts("all-word-counts.csv", allTexts)
+
+    allTexts = getAllTexts('../data/help_dump.json', True, False, True)
+    writeToFile("help+sample-text.txt", allTexts)
+    outputWords("help+sample-words.csv", allTexts)
+    outputWordCounts("help+sample-word-counts.csv", allTexts)
+
+    allTexts = getAllTexts('../data/help_dump.json', True, False, False)
+    writeToFile("help-text.txt", allTexts)
+    outputWords("help-words.csv", allTexts)
+    outputWordCounts("help-word-counts.csv", allTexts)
 
 run()
 print('completed')
