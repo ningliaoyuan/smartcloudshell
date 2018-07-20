@@ -39,8 +39,8 @@ def getAllTexts(file):
     with open(file) as f:
         data = json.load(f)
         for key in data:
-            if(key == 'network vnet check-ip-address'):
-                pprint(key)
+            # if(key == 'network vnet check-ip-address'):
+            #     pprint(key)
 
             cmd = data[key]
             if 'help' in cmd:
@@ -54,6 +54,7 @@ def getAllTexts(file):
                 addExamplesToTexts(examples, allTexts)
     return allTexts
 
+
 def writeToFile(fileName, allTexts):
     with open(fileName, "w") as text_file:
         # text_file.writelines(allTexts)
@@ -63,23 +64,33 @@ def writeToFile(fileName, allTexts):
             text = allTexts[i]
             text_file.write(text + '\n')
             print('{}/{}'.format(i, length))
-            i+=1
+            i += 1
     return
+
+
+def outputWords(allTexts):
+    nlp = spacy.load('en_core_web_lg')
+    i = 0
+    csv = []
+    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, text")
+    length = len(allTexts)
+    while i < length:
+        text = allTexts[i]
+        print('{}/{} {}'.format(i, length, text))
+        text = re.sub(r'\W+', ' ', text)
+        doc = nlp(text)
+        for token in doc:
+            print(token.text, token.lemma_, token.pos_, token.tag_,
+                  token.dep_, token.is_alpha, token.is_stop)
+            csv.append('{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, text))
+        i += 1
+    writeToFile('words.csv', csv)
 
 def run():
     allTexts = getAllTexts('../data/help_dump.json')
     # writeToFile("all-text.txt", allTexts)
+    outputWords(allTexts)
 
-    nlp = spacy.load('en_core_web_lg')
-    i = 0
-    while i < len(allTexts):
-        text = allTexts[i]
-        print(text)
-        text = re.sub(r'\W+', ' ', text)
-        doc = nlp(text)
-        for token in doc:
-            print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
-        i += 1
 
 run()
 print('completed')
