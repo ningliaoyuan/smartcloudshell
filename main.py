@@ -9,12 +9,6 @@ from modelBase import Suggestion
 cliModel = baselineModel_lg.load()
 
 
-def mapSuggestionToRes(suggestion: Suggestion):
-  return {
-    "id": suggestion.cliNode.id,
-    "score": suggestion.score,
-    "str": suggestion.cliNode.help
-  }
 
 @app.route('/')
 def hello_world():
@@ -22,15 +16,12 @@ def hello_world():
 
 @app.route('/cli/<string:query>')
 def cliWithCmd(query):
-  suggestions = cliModel.getSuggestions(query)
-  result = list(map(mapSuggestionToRes, suggestions))
-  
+  result = cliModel.getLagacyResult(query)
   return jsonify(result)
 
 @app.route('/cli/help/<string:query>')
 def cliWithHelp(query):
-  suggestions = cliModel.getSuggestions(query)
-  result = list(map(mapSuggestionToRes, suggestions))
+  result = cliModel.getLagacyResult(query)
   return jsonify(result)
 
 print("localhost:5000 is serving")

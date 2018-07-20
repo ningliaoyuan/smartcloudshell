@@ -7,12 +7,22 @@ class Suggestion:
     self.cliNode = cliNode
     self.score = score
   
+  def mapSuggestionToRes(self):
+    return {
+      "id": self.cliNode.id,
+      "score": self.score,
+      "str": self.cliNode.help
+    }
+
   def __str__(self):
     return (self.cliNode.id, self.cliNode.help, self.score).__str__()
 
   def __repr__(self):
     return (self.cliNode.__repr__(), self.score).__str__()
-    
+
+def mapSuggestionToRes(suggestion: Suggestion):
+  return suggestion.mapSuggestionToRes()
+
 # Nlp Processed Cli Node
 class NlpCliNode:
   def __init__(self, cliNode, nlpQueries):
@@ -52,3 +62,8 @@ class CliNlpModel:
     matches = filter(lambda scoredNode: scoredNode.score > self.scoreThreshold, scoredNodes)
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
     return sortedMatches[:100]
+
+  def getLagacyResult(self, queryStr, top = 10):
+    suggestions = self.getSuggestions(queryStr, top)
+    result = list(map(mapSuggestionToRes, suggestions))
+    return result
