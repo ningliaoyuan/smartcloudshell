@@ -1,3 +1,4 @@
+from enum import Enum
 from log import log
 from data import CliNode, CliData
 
@@ -42,7 +43,7 @@ class CliNlpModel:
     if rewriteQuery is not None:
       self.rewriteQuery = rewriteQuery      
     else:
-      self.rewriteQuery = lambda qStr: qStr
+      self.rewriteQuery = lambda query: query
 
     self.nlpNodes = list(map(self._getNlpCliNode, cliData.getAllNodes()))
 
@@ -51,7 +52,7 @@ class CliNlpModel:
     nlpQuery = self._nlp(rewrittenQuery)
     return nlpQuery
 
-  def _getNlpCliNode(self, cliNode):
+  def _getNlpCliNode(self, cliNode: CliNode) -> NlpCliNode:
     queries = cliNode.getQueries()
     nlpQueries = list(map(self._getNlpQuery, queries))
     return NlpCliNode(cliNode, nlpQueries)

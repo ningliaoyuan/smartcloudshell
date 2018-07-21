@@ -1,7 +1,6 @@
 import json
+from typing import List
 
-
-# all cli obj
 
 def createCliNodeFromJsonNode(jsonNode):
   command = jsonNode[0]
@@ -13,18 +12,21 @@ def createCliNodeFromJsonNode(jsonNode):
   else:
     cliType = "group"
 
-  return CliNode(command, help, cliType)
+  # create initial queries
+  queries = list(filter(None, [command, help]))
 
+  return CliNode(command, help, cliType, queries)
 
 class CliNode:
-  def __init__(self, id, help, cliType):
+  def __init__(self, id, help, cliType, queries: List[str]):
     self.id = id
     self.help = help
     self.cliType = cliType
-  def getQueries(self):
-    # filter out empty or null string
-    return filter(None, [self.id, self.help])
-  
+    self.queries = queries
+
+  def getQueries(self) -> List[str]:
+    return self.queries
+    
   def __str__(self):
     return (self.id, self.cliType, self.help).__str__()
 
