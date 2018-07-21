@@ -14,12 +14,12 @@ def hello_world():
 
 @app.route('/cli/<string:query>')
 def cliWithCmd(query):
-  result = cliModel.getLagacyResult(query)
+  result = cliModel.getLegacyResult(query)
   return jsonify(result)
 
 @app.route('/cli/help/<string:query>')
 def cliWithHelp(query):
-  result = cliModel.getLagacyResult(query)
+  result = cliModel.getLegacyResult(query)
   return jsonify(result)
 
 print("localhost:5000 is serving")

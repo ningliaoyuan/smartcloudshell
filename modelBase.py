@@ -64,7 +64,7 @@ class CliNlpModel:
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
     return sortedMatches[:100]
 
-  def getLagacyResult(self, queryStr, top = 10):
+  def getLegacyResult(self, queryStr, top = 10):
     suggestions = self.getSuggestions(queryStr, top)
     result = list(map(mapSuggestionToRes, suggestions))
     return result

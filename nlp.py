@@ -1,14 +1,13 @@
 import spacy
 
 from models import baselineModel_lg
-from modelBase import Suggestion
 
 cliModel = baselineModel_lg.load()
 
 def compare(inputStr):
-  res = cliModel.getLagacyResult(inputStr)
+  res = cliModel.getLegacyResult(inputStr)
   return res
 
 def compareWithHelp(inputStr):
-  res = cliModel.getLagacyResult(inputStr)
+  res = cliModel.getLegacyResult(inputStr)
   return res

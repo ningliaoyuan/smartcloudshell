@@ -60,7 +60,7 @@ outputFile = 'output/testrun-' + ts + '.csv'
 if not os.path.isdir('output'):
   os.makedirs('output')
 
-with open(outputFile, 'w+') as csvfile:
+with open(outputFile, 'w+', newline='') as csvfile:
   writer = csv.writer(csvfile)
   writer.writerow([
     'Query',
