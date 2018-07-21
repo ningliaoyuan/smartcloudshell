@@ -3,6 +3,8 @@ import spacy
 from pprint import pprint
 import re
 
+nlp = spacy.load('en_core_web_lg')
+
 def addHelpToTexts(help, allTexts):
     if help is not None:
         allTexts.append(help)
@@ -59,6 +61,15 @@ def removeSpecialCharacters(text):
     text = re.sub('[^a-zA-Z ]', '', text)
     return text.replace("  "," ")
 
+docs = {}
+def getNlpDoc(text):
+    if text in docs:
+        return docs[text]
+    else:
+        doc = nlp(removeSpecialCharacters(text))
+        docs[text] = doc
+        return doc
+
 def writeToFile(fileName, allTexts):
     with open(fileName, "w") as text_file:
         # text_file.writelines(allTexts)
@@ -73,20 +84,18 @@ def writeToFile(fileName, allTexts):
 
 
 def outputWords(fileName, allTexts):
-    nlp = spacy.load('en_core_web_lg')
     i = 0
     csv = []
     csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, is_oov, text")
     length = len(allTexts)
     while i < length:
-        oText = allTexts[i]
-        print('{}/{} {}'.format(i, length, oText))
-        text = removeSpecialCharacters(oText)
-        doc = nlp(text)
+        text = allTexts[i]
+        print('{}/{} {}'.format(i, length, text))
+        doc = getNlpDoc(text)
         for token in doc:
-            print(token.text, token.lemma_, token.pos_, token.tag_,
-                  token.dep_, token.is_alpha, token.is_stop)
-            csv.append('{},{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, oText))
+            # print(token.text, token.lemma_, token.pos_, token.tag_,
+            #       token.dep_, token.is_alpha, token.is_stop)
+            csv.append('{},{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, text))
         i += 1
     writeToFile(fileName, csv)
 
@@ -104,24 +113,22 @@ class Word:
     self.samples = [text]
 
 def outputWordCounts(fileName, allTexts):
-    nlp = spacy.load('en_core_web_lg')
     i = 0
     length = len(allTexts)
     words = {}
     while i < length:
-        oText = allTexts[i]
-        print('{}/{} {}'.format(i, length, oText))
-        text = removeSpecialCharacters(oText)
-        doc = nlp(text)
+        text = allTexts[i]
+        print('{}/{} {}'.format(i, length, text))
+        doc = getNlpDoc(text)
         for token in doc:
             key = token.lemma_
             if key in words:
                 words[key].count += 1
                 samples = words[key].samples
                 if(len(samples)<2):
-                    samples.append(oText)
+                    samples.append(text)
             else:
-                words[key] = Word(key, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, oText)
+                words[key] = Word(key, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, text)
         i += 1
 
     csv = []
