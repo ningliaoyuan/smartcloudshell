@@ -8,3 +8,4 @@ virtual machine extension image types,vmss extension image list-names
 show all storage accounts,storage account list
 get connection string of my storage account,storage account show-connection-string
 Create a firewall rule for sql server,sql server firewall-rule create
+deploy my container,container create
