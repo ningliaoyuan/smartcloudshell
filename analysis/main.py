@@ -141,18 +141,22 @@ def outputWordCounts(fileName, allTexts):
 
 
 def run():
+    allTexts = getAllTexts('../data/help_dump.json', False, False, False)
+    outputWords("command-words.csv", allTexts)
+    outputWordCounts("command-word-counts.csv", allTexts)
+
     allTexts = getAllTexts('../data/help_dump.json', True, False, False)
-    writeToFile("help-text.txt", allTexts)
+    # writeToFile("help-text.txt", allTexts)
     outputWords("help-words.csv", allTexts)
     outputWordCounts("help-word-counts.csv", allTexts)
 
     allTexts = getAllTexts('../data/help_dump.json', True, False, True)
-    writeToFile("help+sample-text.txt", allTexts)
+    # writeToFile("help+sample-text.txt", allTexts)
     outputWords("help+sample-words.csv", allTexts)
     outputWordCounts("help+sample-word-counts.csv", allTexts)
 
     allTexts = getAllTexts('../data/help_dump.json', True, True, True)
-    writeToFile("all-text.txt", allTexts)
+    # writeToFile("all-text.txt", allTexts)
     outputWords("all-words.csv", allTexts)
     outputWordCounts("all-word-counts.csv", allTexts)
    

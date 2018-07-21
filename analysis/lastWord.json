@@ -1,0 +1,3488 @@
+{
+    "check-name": [
+        "acr check-name",
+        "dms check-name",
+        "dms project check-name",
+        "dms project task check-name",
+        "storage account check-name"
+    ],
+    "list": [
+        "acr list",
+        "acr repository list",
+        "acr webhook list",
+        "acr replication list",
+        "acr build-task list",
+        "acs list",
+        "aks list",
+        "advisor recommendation list",
+        "advisor configuration list",
+        "ams account list",
+        "ams transform list",
+        "ams asset list",
+        "ams job list",
+        "ams streaming locator list",
+        "ams streaming policy list",
+        "ams streaming endpoint list",
+        "webapp list",
+        "webapp config appsettings list",
+        "webapp config connection-string list",
+        "webapp config hostname list",
+        "webapp config ssl list",
+        "webapp config backup list",
+        "webapp deployment slot list",
+        "appservice plan list",
+        "functionapp list",
+        "functionapp config appsettings list",
+        "functionapp config hostname list",
+        "functionapp config ssl list",
+        "backup vault list",
+        "backup container list",
+        "backup policy list",
+        "backup item list",
+        "backup job list",
+        "backup recoverypoint list",
+        "batch account list",
+        "batch account keys list",
+        "batch application list",
+        "batch application summary list",
+        "batch pool node-agent-skus list",
+        "batch pool node-counts list",
+        "batch certificate list",
+        "batch pool usage-metrics list",
+        "batch pool list",
+        "batch job list",
+        "batch job prep-release-status list",
+        "batch job-schedule list",
+        "batch task list",
+        "batch task subtask list",
+        "batch task file list",
+        "batch node file list",
+        "batch node list",
+        "batchai workspace list",
+        "batchai cluster list",
+        "batchai cluster node list",
+        "batchai cluster file list",
+        "batchai experiment list",
+        "batchai job list",
+        "batchai job file list",
+        "batchai job node list",
+        "batchai file-server list",
+        "billing invoice list",
+        "billing period list",
+        "billing enrollment-account list",
+        "cdn endpoint list",
+        "cdn profile list",
+        "cdn custom-domain list",
+        "cdn origin list",
+        "cdn edge-node list",
+        "cloud list",
+        "cognitiveservices account keys list",
+        "cognitiveservices list",
+        "consumption usage list",
+        "consumption reservation summary list",
+        "consumption reservation detail list",
+        "consumption marketplace list",
+        "consumption budget list",
+        "container list",
+        "cosmosdb list",
+        "cosmosdb database list",
+        "cosmosdb collection list",
+        "dla account list",
+        "dla account firewall list",
+        "dla job list",
+        "dla job pipeline list",
+        "dla job recurrence list",
+        "dla account blob-storage list",
+        "dla account data-lake-store list",
+        "dla catalog credential list",
+        "dla catalog database list",
+        "dla catalog schema list",
+        "dla catalog table list",
+        "dla catalog assembly list",
+        "dla catalog external-data-source list",
+        "dla catalog procedure list",
+        "dla catalog table-partition list",
+        "dla catalog table-stats list",
+        "dla catalog table-type list",
+        "dla catalog tvf list",
+        "dla catalog view list",
+        "dla catalog package list",
+        "dla account compute-policy list",
+        "dls account list",
+        "dls account firewall list",
+        "dls account trusted-provider list",
+        "dls fs list",
+        "dms list",
+        "dms project list",
+        "dms project task list",
+        "eventgrid topic key list",
+        "eventgrid topic list",
+        "eventgrid event-subscription list",
+        "eventgrid topic-type list",
+        "eventhubs namespace list",
+        "eventhubs namespace authorization-rule list",
+        "eventhubs namespace authorization-rule keys list",
+        "eventhubs eventhub list",
+        "eventhubs eventhub authorization-rule list",
+        "eventhubs eventhub authorization-rule keys list",
+        "eventhubs eventhub consumer-group list",
+        "eventhubs georecovery-alias list",
+        "eventhubs georecovery-alias authorization-rule list",
+        "eventhubs georecovery-alias authorization-rule keys list",
+        "extension list",
+        "iot dps list",
+        "iot dps access-policy list",
+        "iot dps linked-hub list",
+        "iot dps certificate list",
+        "iot hub certificate list",
+        "iot hub list",
+        "iot hub consumer-group list",
+        "iot hub policy list",
+        "iot hub job list",
+        "iot device list",
+        "keyvault list",
+        "keyvault key list",
+        "keyvault secret list",
+        "keyvault certificate list",
+        "keyvault certificate contact list",
+        "keyvault certificate issuer list",
+        "keyvault certificate issuer admin list",
+        "lab vm list",
+        "lab custom-image list",
+        "lab gallery-image list",
+        "lab artifact list",
+        "lab artifact-source list",
+        "lab vnet list",
+        "lab formula list",
+        "lab secret list",
+        "lab environment list",
+        "lab arm-template list",
+        "maps account list",
+        "maps account keys list",
+        "monitor action-group list",
+        "monitor activity-log list",
+        "monitor activity-log alert list",
+        "monitor alert list",
+        "monitor autoscale list",
+        "monitor autoscale profile list",
+        "monitor autoscale rule list",
+        "monitor autoscale-settings list",
+        "monitor diagnostic-settings list",
+        "monitor diagnostic-settings categories list",
+        "monitor log-profiles list",
+        "monitor metrics list",
+        "network application-gateway list",
+        "network application-gateway auth-cert list",
+        "network application-gateway ssl-cert list",
+        "network application-gateway frontend-ip list",
+        "network application-gateway frontend-port list",
+        "network application-gateway address-pool list",
+        "network application-gateway http-settings list",
+        "network application-gateway http-listener list",
+        "network application-gateway rule list",
+        "network application-gateway probe list",
+        "network application-gateway url-path-map list",
+        "network application-gateway redirect-config list",
+        "network application-gateway ssl-policy predefined list",
+        "network asg list",
+        "network ddos-protection list",
+        "network dns zone list",
+        "network dns record-set list",
+        "network dns record-set a list",
+        "network dns record-set aaaa list",
+        "network dns record-set mx list",
+        "network dns record-set ns list",
+        "network dns record-set ptr list",
+        "network dns record-set srv list",
+        "network dns record-set txt list",
+        "network dns record-set caa list",
+        "network dns record-set cname list",
+        "network express-route list",
+        "network express-route auth list",
+        "network express-route peering list",
+        "network lb list",
+        "network lb frontend-ip list",
+        "network lb inbound-nat-rule list",
+        "network lb inbound-nat-pool list",
+        "network lb address-pool list",
+        "network lb rule list",
+        "network lb probe list",
+        "network local-gateway list",
+        "network nic list",
+        "network nic ip-config list",
+        "network nsg list",
+        "network nsg rule list",
+        "network watcher list",
+        "network watcher connection-monitor list",
+        "network watcher packet-capture list",
+        "network public-ip list",
+        "network route-filter list",
+        "network route-filter rule list",
+        "network route-table list",
+        "network route-table route list",
+        "network traffic-manager profile list",
+        "network traffic-manager endpoint list",
+        "network vnet list",
+        "network vnet peering list",
+        "network vnet subnet list",
+        "network vnet-gateway list",
+        "network vpn-connection list",
+        "network vpn-connection ipsec-policy list",
+        "policy event list",
+        "policy state list",
+        "account list",
+        "mysql server list",
+        "postgres server list",
+        "mysql server firewall-rule list",
+        "postgres server firewall-rule list",
+        "mysql server configuration list",
+        "postgres server configuration list",
+        "mysql server-logs list",
+        "postgres server-logs list",
+        "mysql db list",
+        "postgres db list",
+        "redis list",
+        "reservations reservation-order list",
+        "reservations reservation list",
+        "reservations reservation-order-id list",
+        "account lock list",
+        "group list",
+        "group lock list",
+        "resource list",
+        "resource lock list",
+        "provider list",
+        "provider operation list",
+        "feature list",
+        "tag list",
+        "group deployment list",
+        "group deployment operation list",
+        "policy assignment list",
+        "policy definition list",
+        "policy set-definition list",
+        "lock list",
+        "resource link list",
+        "managedapp list",
+        "managedapp definition list",
+        "account management-group list",
+        "role definition list",
+        "role assignment list",
+        "ad app list",
+        "ad sp list",
+        "ad sp credential list",
+        "ad user list",
+        "ad group list",
+        "ad group member list",
+        "servicebus namespace list",
+        "servicebus namespace authorization-rule list",
+        "servicebus namespace authorization-rule keys list",
+        "servicebus queue list",
+        "servicebus queue authorization-rule list",
+        "servicebus queue authorization-rule keys list",
+        "servicebus topic list",
+        "servicebus topic authorization-rule list",
+        "servicebus topic authorization-rule keys list",
+        "servicebus topic subscription list",
+        "servicebus topic subscription rule list",
+        "servicebus georecovery-alias list",
+        "servicebus georecovery-alias authorization-rule list",
+        "servicebus georecovery-alias authorization-rule keys list",
+        "sf cluster list",
+        "sql db list",
+        "sql dw list",
+        "sql db op list",
+        "sql elastic-pool list",
+        "sql elastic-pool op list",
+        "sql server list",
+        "sql server firewall-rule list",
+        "sql server ad-admin list",
+        "sql server key list",
+        "sql server vnet-rule list",
+        "sql server dns-alias list",
+        "sql mi list",
+        "sql midb list",
+        "storage account list",
+        "storage account keys list",
+        "storage account network-rule list",
+        "storage blob list",
+        "storage container list",
+        "storage container policy list",
+        "storage share list",
+        "storage share policy list",
+        "storage directory list",
+        "storage file list",
+        "storage cors list",
+        "storage queue list",
+        "storage queue policy list",
+        "storage table list",
+        "storage table policy list",
+        "disk list",
+        "identity list",
+        "image list",
+        "snapshot list",
+        "vm list",
+        "vm availability-set list",
+        "vm extension list",
+        "vm extension image list",
+        "vm image list",
+        "vm nic list",
+        "vm run-command list",
+        "vm secret list",
+        "vm unmanaged-disk list",
+        "vmss list",
+        "vmss extension list",
+        "vmss extension image list",
+        "vmss nic list"
+    ],
+    "create": [
+        "acr create",
+        "acr webhook create",
+        "acr replication create",
+        "acr build-task create",
+        "acs create",
+        "aks create",
+        "ams account create",
+        "ams account sp create",
+        "ams transform create",
+        "ams asset create",
+        "ams streaming locator create",
+        "ams streaming policy create",
+        "webapp create",
+        "webapp config backup create",
+        "webapp deployment slot create",
+        "appservice plan create",
+        "functionapp create",
+        "backup vault create",
+        "batch account create",
+        "batch application create",
+        "batch application package create",
+        "batch certificate create",
+        "batch pool create",
+        "batch job create",
+        "batch job-schedule create",
+        "batch task create",
+        "batch node user create",
+        "batchai workspace create",
+        "batchai cluster create",
+        "batchai experiment create",
+        "batchai job create",
+        "batchai file-server create",
+        "cdn endpoint create",
+        "cdn profile create",
+        "cdn custom-domain create",
+        "cognitiveservices account create",
+        "consumption budget create",
+        "container create",
+        "cosmosdb create",
+        "cosmosdb database create",
+        "cosmosdb collection create",
+        "dla account create",
+        "dla account firewall create",
+        "dla catalog credential create",
+        "dla account compute-policy create",
+        "dls account create",
+        "dls account firewall create",
+        "dls account trusted-provider create",
+        "dls fs create",
+        "dms create",
+        "dms project create",
+        "dms project task create",
+        "eventgrid topic create",
+        "eventgrid event-subscription create",
+        "eventhubs namespace create",
+        "eventhubs namespace authorization-rule create",
+        "eventhubs eventhub create",
+        "eventhubs eventhub authorization-rule create",
+        "eventhubs eventhub consumer-group create",
+        "iot dps create",
+        "iot dps access-policy create",
+        "iot dps linked-hub create",
+        "iot dps certificate create",
+        "iot hub certificate create",
+        "iot hub create",
+        "iot hub consumer-group create",
+        "iot hub policy create",
+        "iot device create",
+        "keyvault create",
+        "keyvault key create",
+        "keyvault certificate create",
+        "keyvault certificate issuer create",
+        "lab vm create",
+        "lab custom-image create",
+        "lab environment create",
+        "maps account create",
+        "monitor action-group create",
+        "monitor activity-log alert create",
+        "monitor alert create",
+        "monitor autoscale create",
+        "monitor autoscale profile create",
+        "monitor autoscale rule create",
+        "monitor autoscale-settings create",
+        "monitor diagnostic-settings create",
+        "monitor log-profiles create",
+        "network application-gateway create",
+        "network application-gateway auth-cert create",
+        "network application-gateway ssl-cert create",
+        "network application-gateway frontend-ip create",
+        "network application-gateway frontend-port create",
+        "network application-gateway address-pool create",
+        "network application-gateway http-settings create",
+        "network application-gateway http-listener create",
+        "network application-gateway rule create",
+        "network application-gateway probe create",
+        "network application-gateway url-path-map create",
+        "network application-gateway redirect-config create",
+        "network application-gateway url-path-map rule create",
+        "network asg create",
+        "network ddos-protection create",
+        "network dns zone create",
+        "network dns record-set a create",
+        "network dns record-set aaaa create",
+        "network dns record-set mx create",
+        "network dns record-set ns create",
+        "network dns record-set ptr create",
+        "network dns record-set srv create",
+        "network dns record-set txt create",
+        "network dns record-set caa create",
+        "network dns record-set cname create",
+        "network express-route create",
+        "network express-route auth create",
+        "network express-route peering create",
+        "network lb create",
+        "network lb frontend-ip create",
+        "network lb inbound-nat-rule create",
+        "network lb inbound-nat-pool create",
+        "network lb address-pool create",
+        "network lb rule create",
+        "network lb probe create",
+        "network local-gateway create",
+        "network nic create",
+        "network nic ip-config create",
+        "network nsg create",
+        "network nsg rule create",
+        "network watcher connection-monitor create",
+        "network watcher packet-capture create",
+        "network public-ip create",
+        "network route-filter create",
+        "network route-filter rule create",
+        "network route-table create",
+        "network route-table route create",
+        "network traffic-manager profile create",
+        "network traffic-manager endpoint create",
+        "network vnet create",
+        "network vnet peering create",
+        "network vnet subnet create",
+        "network vnet-gateway create",
+        "network vnet-gateway revoked-cert create",
+        "network vnet-gateway root-cert create",
+        "network vpn-connection create",
+        "mysql server create",
+        "postgres server create",
+        "mysql server firewall-rule create",
+        "postgres server firewall-rule create",
+        "mysql db create",
+        "postgres db create",
+        "redis create",
+        "account lock create",
+        "group create",
+        "group lock create",
+        "resource create",
+        "resource lock create",
+        "tag create",
+        "group deployment create",
+        "policy assignment create",
+        "policy definition create",
+        "policy set-definition create",
+        "lock create",
+        "resource link create",
+        "managedapp create",
+        "managedapp definition create",
+        "account management-group create",
+        "role definition create",
+        "role assignment create",
+        "ad app create",
+        "ad sp create",
+        "ad user create",
+        "ad group create",
+        "servicebus namespace create",
+        "servicebus namespace authorization-rule create",
+        "servicebus queue create",
+        "servicebus queue authorization-rule create",
+        "servicebus topic create",
+        "servicebus topic authorization-rule create",
+        "servicebus topic subscription create",
+        "servicebus topic subscription rule create",
+        "sf cluster create",
+        "sql db create",
+        "sql db replica create",
+        "sql dw create",
+        "sql elastic-pool create",
+        "sql server create",
+        "sql server firewall-rule create",
+        "sql server ad-admin create",
+        "sql server key create",
+        "sql server vnet-rule create",
+        "sql server dns-alias create",
+        "sql mi create",
+        "sql midb create",
+        "storage account create",
+        "storage container create",
+        "storage container policy create",
+        "storage share create",
+        "storage share policy create",
+        "storage directory create",
+        "storage queue create",
+        "storage queue policy create",
+        "storage table create",
+        "storage table policy create",
+        "disk create",
+        "identity create",
+        "image create",
+        "snapshot create",
+        "vm create",
+        "vm availability-set create",
+        "vmss create"
+    ],
+    "delete": [
+        "acr delete",
+        "acr repository delete",
+        "acr webhook delete",
+        "acr replication delete",
+        "acr build-task delete",
+        "acs delete",
+        "aks delete",
+        "ams account delete",
+        "ams transform delete",
+        "ams asset delete",
+        "ams job delete",
+        "ams streaming locator delete",
+        "ams streaming policy delete",
+        "webapp delete",
+        "webapp config appsettings delete",
+        "webapp config connection-string delete",
+        "webapp config hostname delete",
+        "webapp config container delete",
+        "webapp config ssl delete",
+        "webapp deployment source delete",
+        "webapp deployment slot delete",
+        "appservice plan delete",
+        "functionapp delete",
+        "functionapp config appsettings delete",
+        "functionapp config hostname delete",
+        "functionapp config ssl delete",
+        "functionapp deployment source delete",
+        "backup vault delete",
+        "backup policy delete",
+        "batch account delete",
+        "batch application delete",
+        "batch application package delete",
+        "batch certificate delete",
+        "batch pool delete",
+        "batch node delete",
+        "batch job delete",
+        "batch job-schedule delete",
+        "batch task delete",
+        "batch task file delete",
+        "batch node file delete",
+        "batch node user delete",
+        "batchai workspace delete",
+        "batchai cluster delete",
+        "batchai experiment delete",
+        "batchai job delete",
+        "batchai file-server delete",
+        "cdn endpoint delete",
+        "cdn profile delete",
+        "cdn custom-domain delete",
+        "cognitiveservices account delete",
+        "consumption budget delete",
+        "container delete",
+        "cosmosdb delete",
+        "cosmosdb database delete",
+        "cosmosdb collection delete",
+        "dla account delete",
+        "dla account firewall delete",
+        "dla account blob-storage delete",
+        "dla account data-lake-store delete",
+        "dla catalog credential delete",
+        "dla account compute-policy delete",
+        "dls account delete",
+        "dls account firewall delete",
+        "dls account trusted-provider delete",
+        "dls fs delete",
+        "dms delete",
+        "dms project delete",
+        "dms project task delete",
+        "eventgrid topic delete",
+        "eventgrid event-subscription delete",
+        "eventhubs namespace delete",
+        "eventhubs namespace authorization-rule delete",
+        "eventhubs eventhub delete",
+        "eventhubs eventhub authorization-rule delete",
+        "eventhubs eventhub consumer-group delete",
+        "eventhubs georecovery-alias delete",
+        "iot dps delete",
+        "iot dps access-policy delete",
+        "iot dps linked-hub delete",
+        "iot dps certificate delete",
+        "iot hub certificate delete",
+        "iot hub delete",
+        "iot hub consumer-group delete",
+        "iot hub policy delete",
+        "iot device delete",
+        "keyvault delete",
+        "keyvault key delete",
+        "keyvault secret delete",
+        "keyvault certificate delete",
+        "keyvault certificate pending delete",
+        "keyvault certificate contact delete",
+        "keyvault certificate issuer delete",
+        "keyvault certificate issuer admin delete",
+        "lab vm delete",
+        "lab delete",
+        "lab custom-image delete",
+        "lab formula delete",
+        "lab secret delete",
+        "lab environment delete",
+        "maps account delete",
+        "monitor action-group delete",
+        "monitor activity-log alert delete",
+        "monitor alert delete",
+        "monitor autoscale delete",
+        "monitor autoscale profile delete",
+        "monitor autoscale rule delete",
+        "monitor autoscale-settings delete",
+        "monitor diagnostic-settings delete",
+        "monitor log-profiles delete",
+        "network application-gateway delete",
+        "network application-gateway auth-cert delete",
+        "network application-gateway ssl-cert delete",
+        "network application-gateway frontend-ip delete",
+        "network application-gateway frontend-port delete",
+        "network application-gateway address-pool delete",
+        "network application-gateway http-settings delete",
+        "network application-gateway http-listener delete",
+        "network application-gateway rule delete",
+        "network application-gateway probe delete",
+        "network application-gateway url-path-map delete",
+        "network application-gateway redirect-config delete",
+        "network application-gateway url-path-map rule delete",
+        "network asg delete",
+        "network ddos-protection delete",
+        "network dns zone delete",
+        "network dns record-set a delete",
+        "network dns record-set aaaa delete",
+        "network dns record-set mx delete",
+        "network dns record-set ns delete",
+        "network dns record-set ptr delete",
+        "network dns record-set srv delete",
+        "network dns record-set txt delete",
+        "network dns record-set caa delete",
+        "network dns record-set cname delete",
+        "network express-route delete",
+        "network express-route auth delete",
+        "network express-route peering delete",
+        "network lb delete",
+        "network lb frontend-ip delete",
+        "network lb inbound-nat-rule delete",
+        "network lb inbound-nat-pool delete",
+        "network lb address-pool delete",
+        "network lb rule delete",
+        "network lb probe delete",
+        "network local-gateway delete",
+        "network nic delete",
+        "network nic ip-config delete",
+        "network nsg delete",
+        "network nsg rule delete",
+        "network watcher connection-monitor delete",
+        "network watcher packet-capture delete",
+        "network public-ip delete",
+        "network route-filter delete",
+        "network route-filter rule delete",
+        "network route-table delete",
+        "network route-table route delete",
+        "network traffic-manager profile delete",
+        "network traffic-manager endpoint delete",
+        "network vnet delete",
+        "network vnet peering delete",
+        "network vnet subnet delete",
+        "network vnet-gateway delete",
+        "network vnet-gateway revoked-cert delete",
+        "network vnet-gateway root-cert delete",
+        "network vpn-connection delete",
+        "mysql server delete",
+        "postgres server delete",
+        "mysql server firewall-rule delete",
+        "postgres server firewall-rule delete",
+        "mysql db delete",
+        "postgres db delete",
+        "redis delete",
+        "redis patch-schedule delete",
+        "account lock delete",
+        "group delete",
+        "group lock delete",
+        "resource delete",
+        "resource lock delete",
+        "tag delete",
+        "group deployment delete",
+        "policy assignment delete",
+        "policy definition delete",
+        "policy set-definition delete",
+        "lock delete",
+        "resource link delete",
+        "managedapp delete",
+        "managedapp definition delete",
+        "account management-group delete",
+        "role definition delete",
+        "role assignment delete",
+        "ad app delete",
+        "ad sp delete",
+        "ad sp credential delete",
+        "ad user delete",
+        "ad group delete",
+        "servicebus namespace delete",
+        "servicebus namespace authorization-rule delete",
+        "servicebus queue delete",
+        "servicebus queue authorization-rule delete",
+        "servicebus topic delete",
+        "servicebus topic authorization-rule delete",
+        "servicebus topic subscription delete",
+        "servicebus topic subscription rule delete",
+        "servicebus georecovery-alias delete",
+        "sql db delete",
+        "sql dw delete",
+        "sql elastic-pool delete",
+        "sql server delete",
+        "sql server firewall-rule delete",
+        "sql server ad-admin delete",
+        "sql server key delete",
+        "sql server vnet-rule delete",
+        "sql server dns-alias delete",
+        "sql mi delete",
+        "sql midb delete",
+        "storage account delete",
+        "storage blob delete",
+        "storage container delete",
+        "storage container policy delete",
+        "storage share delete",
+        "storage share policy delete",
+        "storage directory delete",
+        "storage file delete",
+        "storage queue delete",
+        "storage queue policy delete",
+        "storage message delete",
+        "storage table delete",
+        "storage table policy delete",
+        "storage entity delete",
+        "disk delete",
+        "identity delete",
+        "image delete",
+        "snapshot delete",
+        "vm delete",
+        "vm availability-set delete",
+        "vm extension delete",
+        "vm user delete",
+        "vmss delete",
+        "vmss extension delete"
+    ],
+    "show": [
+        "acr show",
+        "acr credential show",
+        "acr webhook show",
+        "acr replication show",
+        "acr build-task show",
+        "acs show",
+        "aks show",
+        "advisor configuration show",
+        "ams account show",
+        "ams transform show",
+        "ams asset show",
+        "ams job show",
+        "ams streaming locator show",
+        "ams streaming policy show",
+        "webapp show",
+        "webapp identity show",
+        "webapp traffic-routing show",
+        "webapp config show",
+        "webapp config container show",
+        "webapp config backup show",
+        "webapp deployment source show",
+        "webapp log show",
+        "webapp deployment user show",
+        "webapp auth show",
+        "appservice plan show",
+        "functionapp show",
+        "functionapp identity show",
+        "functionapp deployment source show",
+        "functionapp deployment user show",
+        "backup vault show",
+        "backup vault backup-properties show",
+        "backup container show",
+        "backup policy show",
+        "backup item show",
+        "backup job show",
+        "backup recoverypoint show",
+        "batch account show",
+        "batch application show",
+        "batch application package show",
+        "batch location quotas show",
+        "batch application summary show",
+        "batch certificate show",
+        "batch pool all-statistics show",
+        "batch pool show",
+        "batch job all-statistics show",
+        "batch job show",
+        "batch job task-counts show",
+        "batch job-schedule show",
+        "batch task show",
+        "batch task file show",
+        "batch node file show",
+        "batch node show",
+        "batch node remote-login-settings show",
+        "batchai workspace show",
+        "batchai cluster show",
+        "batchai experiment show",
+        "batchai job show",
+        "batchai file-server show",
+        "billing invoice show",
+        "billing period show",
+        "billing enrollment-account show",
+        "cdn endpoint show",
+        "cdn profile show",
+        "cdn custom-domain show",
+        "cdn origin show",
+        "cloud show",
+        "cognitiveservices account show",
+        "consumption pricesheet show",
+        "consumption budget show",
+        "container show",
+        "cosmosdb show",
+        "cosmosdb database show",
+        "cosmosdb collection show",
+        "dla account show",
+        "dla account firewall show",
+        "dla job show",
+        "dla job pipeline show",
+        "dla job recurrence show",
+        "dla account blob-storage show",
+        "dla account data-lake-store show",
+        "dla catalog credential show",
+        "dla catalog database show",
+        "dla catalog schema show",
+        "dla catalog table show",
+        "dla catalog assembly show",
+        "dla catalog external-data-source show",
+        "dla catalog procedure show",
+        "dla catalog table-partition show",
+        "dla catalog table-stats show",
+        "dla catalog table-type show",
+        "dla catalog tvf show",
+        "dla catalog view show",
+        "dla catalog package show",
+        "dla account compute-policy show",
+        "dls account show",
+        "dls account firewall show",
+        "dls account trusted-provider show",
+        "dls fs show",
+        "dls fs access show",
+        "dms show",
+        "dms project show",
+        "dms project task show",
+        "eventgrid topic show",
+        "eventgrid event-subscription show",
+        "eventgrid topic-type show",
+        "eventhubs namespace show",
+        "eventhubs namespace authorization-rule show",
+        "eventhubs eventhub show",
+        "eventhubs eventhub authorization-rule show",
+        "eventhubs eventhub consumer-group show",
+        "eventhubs georecovery-alias show",
+        "eventhubs georecovery-alias authorization-rule show",
+        "extension show",
+        "iot dps show",
+        "iot dps access-policy show",
+        "iot dps linked-hub show",
+        "iot dps certificate show",
+        "iot hub certificate show",
+        "iot hub show",
+        "iot hub consumer-group show",
+        "iot hub policy show",
+        "iot hub job show",
+        "iot device show",
+        "keyvault show",
+        "keyvault key show",
+        "keyvault secret show",
+        "keyvault certificate show",
+        "keyvault certificate pending show",
+        "keyvault certificate issuer show",
+        "lab vm show",
+        "lab custom-image show",
+        "lab artifact-source show",
+        "lab formula show",
+        "lab secret show",
+        "lab environment show",
+        "lab arm-template show",
+        "maps account show",
+        "monitor action-group show",
+        "monitor activity-log alert show",
+        "monitor alert show",
+        "monitor autoscale show",
+        "monitor autoscale profile show",
+        "monitor autoscale-settings show",
+        "monitor diagnostic-settings show",
+        "monitor diagnostic-settings categories show",
+        "monitor log-profiles show",
+        "network application-gateway show",
+        "network application-gateway auth-cert show",
+        "network application-gateway ssl-cert show",
+        "network application-gateway frontend-ip show",
+        "network application-gateway frontend-port show",
+        "network application-gateway address-pool show",
+        "network application-gateway http-settings show",
+        "network application-gateway http-listener show",
+        "network application-gateway rule show",
+        "network application-gateway probe show",
+        "network application-gateway url-path-map show",
+        "network application-gateway redirect-config show",
+        "network application-gateway ssl-policy show",
+        "network application-gateway ssl-policy predefined show",
+        "network application-gateway waf-config show",
+        "network asg show",
+        "network ddos-protection show",
+        "network dns zone show",
+        "network dns record-set a show",
+        "network dns record-set aaaa show",
+        "network dns record-set mx show",
+        "network dns record-set ns show",
+        "network dns record-set ptr show",
+        "network dns record-set srv show",
+        "network dns record-set txt show",
+        "network dns record-set caa show",
+        "network dns record-set soa show",
+        "network dns record-set cname show",
+        "network express-route show",
+        "network express-route auth show",
+        "network express-route peering show",
+        "network lb show",
+        "network lb frontend-ip show",
+        "network lb inbound-nat-rule show",
+        "network lb inbound-nat-pool show",
+        "network lb address-pool show",
+        "network lb rule show",
+        "network lb probe show",
+        "network local-gateway show",
+        "network nic show",
+        "network nic ip-config show",
+        "network nsg show",
+        "network nsg rule show",
+        "network watcher connection-monitor show",
+        "network watcher packet-capture show",
+        "network watcher flow-log show",
+        "network watcher troubleshooting show",
+        "network public-ip show",
+        "network route-filter show",
+        "network route-filter rule show",
+        "network route-table show",
+        "network route-table route show",
+        "network traffic-manager profile show",
+        "network traffic-manager endpoint show",
+        "network vnet show",
+        "network vnet peering show",
+        "network vnet subnet show",
+        "network vnet-gateway show",
+        "network vpn-connection show",
+        "network vpn-connection shared-key show",
+        "account show",
+        "mysql server show",
+        "postgres server show",
+        "mysql server firewall-rule show",
+        "postgres server firewall-rule show",
+        "mysql server configuration show",
+        "postgres server configuration show",
+        "mysql db show",
+        "postgres db show",
+        "redis show",
+        "redis patch-schedule show",
+        "redis patch-schedule patch-schedule show",
+        "reservations reservation-order show",
+        "reservations reservation show",
+        "reservations catalog show",
+        "account lock show",
+        "group show",
+        "group lock show",
+        "resource show",
+        "resource lock show",
+        "provider show",
+        "provider operation show",
+        "feature show",
+        "group deployment show",
+        "group deployment operation show",
+        "policy assignment show",
+        "policy definition show",
+        "policy set-definition show",
+        "lock show",
+        "resource link show",
+        "managedapp show",
+        "managedapp definition show",
+        "account management-group show",
+        "ad app show",
+        "ad sp show",
+        "ad user show",
+        "ad group show",
+        "servicebus namespace show",
+        "servicebus namespace authorization-rule show",
+        "servicebus queue show",
+        "servicebus queue authorization-rule show",
+        "servicebus topic show",
+        "servicebus topic authorization-rule show",
+        "servicebus topic subscription show",
+        "servicebus topic subscription rule show",
+        "servicebus georecovery-alias show",
+        "servicebus georecovery-alias authorization-rule show",
+        "sf cluster show",
+        "sql db show",
+        "sql dw show",
+        "sql db tde show",
+        "sql db audit-policy show",
+        "sql db threat-policy show",
+        "sql elastic-pool show",
+        "sql server show",
+        "sql server firewall-rule show",
+        "sql server key show",
+        "sql server tde-key show",
+        "sql server vnet-rule show",
+        "sql server conn-policy show",
+        "sql server dns-alias show",
+        "sql mi show",
+        "sql midb show",
+        "storage account show",
+        "storage logging show",
+        "storage metrics show",
+        "storage blob show",
+        "storage blob metadata show",
+        "storage blob service-properties delete-policy show",
+        "storage blob service-properties show",
+        "storage container show",
+        "storage container metadata show",
+        "storage container policy show",
+        "storage share show",
+        "storage share metadata show",
+        "storage share policy show",
+        "storage directory show",
+        "storage directory metadata show",
+        "storage file show",
+        "storage file metadata show",
+        "storage queue metadata show",
+        "storage queue policy show",
+        "storage table policy show",
+        "storage entity show",
+        "disk show",
+        "identity show",
+        "image show",
+        "snapshot show",
+        "vm identity show",
+        "vm show",
+        "vm availability-set show",
+        "vm encryption show",
+        "vm extension show",
+        "vm extension image show",
+        "vm image show",
+        "vm nic show",
+        "vm run-command show",
+        "vmss identity show",
+        "vmss show",
+        "vmss encryption show",
+        "vmss extension show",
+        "vmss extension image show",
+        "vmss nic show"
+    ],
+    "login": [
+        "acr login",
+        "batch account login",
+        "login"
+    ],
+    "show-usage": [
+        "acr show-usage",
+        "sql show-usage",
+        "storage account show-usage"
+    ],
+    "update": [
+        "acr update",
+        "acr webhook update",
+        "acr replication update",
+        "acr build-task update",
+        "advisor configuration update",
+        "ams account update",
+        "ams transform update",
+        "ams asset update",
+        "webapp update",
+        "webapp config backup update",
+        "webapp auth update",
+        "appservice plan update",
+        "functionapp update",
+        "cdn endpoint update",
+        "cdn profile update",
+        "cloud update",
+        "cognitiveservices account update",
+        "cosmosdb update",
+        "cosmosdb collection update",
+        "dla account update",
+        "dla account firewall update",
+        "dla account blob-storage update",
+        "dla catalog credential update",
+        "dla account compute-policy update",
+        "dls account update",
+        "dls account firewall update",
+        "dls account trusted-provider update",
+        "eventgrid topic update",
+        "eventgrid event-subscription update",
+        "eventhubs namespace update",
+        "eventhubs namespace authorization-rule update",
+        "eventhubs eventhub update",
+        "eventhubs eventhub authorization-rule update",
+        "eventhubs eventhub consumer-group update",
+        "extension update",
+        "iot dps update",
+        "iot dps access-policy update",
+        "iot dps linked-hub update",
+        "iot dps certificate update",
+        "iot hub certificate update",
+        "iot hub update",
+        "iot device update",
+        "keyvault update",
+        "keyvault certificate issuer update",
+        "maps account update",
+        "monitor action-group update",
+        "monitor activity-log alert update",
+        "monitor alert update",
+        "monitor autoscale update",
+        "monitor autoscale-settings update",
+        "monitor diagnostic-settings update",
+        "monitor log-profiles update",
+        "network application-gateway update",
+        "network application-gateway auth-cert update",
+        "network application-gateway ssl-cert update",
+        "network application-gateway frontend-ip update",
+        "network application-gateway frontend-port update",
+        "network application-gateway address-pool update",
+        "network application-gateway http-settings update",
+        "network application-gateway http-listener update",
+        "network application-gateway rule update",
+        "network application-gateway probe update",
+        "network application-gateway url-path-map update",
+        "network application-gateway redirect-config update",
+        "network asg update",
+        "network ddos-protection update",
+        "network dns zone update",
+        "network dns record-set a update",
+        "network dns record-set aaaa update",
+        "network dns record-set mx update",
+        "network dns record-set ns update",
+        "network dns record-set ptr update",
+        "network dns record-set srv update",
+        "network dns record-set txt update",
+        "network dns record-set caa update",
+        "network dns record-set soa update",
+        "network express-route update",
+        "network express-route peering update",
+        "network lb update",
+        "network lb frontend-ip update",
+        "network lb inbound-nat-rule update",
+        "network lb inbound-nat-pool update",
+        "network lb rule update",
+        "network lb probe update",
+        "network local-gateway update",
+        "network nic update",
+        "network nic ip-config update",
+        "network nsg update",
+        "network nsg rule update",
+        "network public-ip update",
+        "network route-filter update",
+        "network route-filter rule update",
+        "network route-table update",
+        "network route-table route update",
+        "network traffic-manager profile update",
+        "network traffic-manager endpoint update",
+        "network vnet update",
+        "network vnet peering update",
+        "network vnet subnet update",
+        "network vnet-gateway update",
+        "network vpn-connection update",
+        "network vpn-connection shared-key update",
+        "mysql server update",
+        "postgres server update",
+        "mysql server firewall-rule update",
+        "postgres server firewall-rule update",
+        "redis update",
+        "reservations reservation update",
+        "account lock update",
+        "group update",
+        "group lock update",
+        "resource update",
+        "resource lock update",
+        "policy definition update",
+        "policy set-definition update",
+        "lock update",
+        "resource link update",
+        "account management-group update",
+        "role definition update",
+        "ad app update",
+        "servicebus namespace update",
+        "servicebus namespace authorization-rule update",
+        "servicebus queue update",
+        "servicebus queue authorization-rule update",
+        "servicebus topic update",
+        "servicebus topic authorization-rule update",
+        "servicebus topic subscription update",
+        "servicebus topic subscription rule update",
+        "sf cluster reliability update",
+        "sf cluster durability update",
+        "sql db update",
+        "sql dw update",
+        "sql db audit-policy update",
+        "sql db threat-policy update",
+        "sql elastic-pool update",
+        "sql server update",
+        "sql server firewall-rule update",
+        "sql server ad-admin update",
+        "sql server vnet-rule update",
+        "sql server conn-policy update",
+        "sql mi update",
+        "storage account update",
+        "storage logging update",
+        "storage metrics update",
+        "storage blob update",
+        "storage blob metadata update",
+        "storage blob service-properties delete-policy update",
+        "storage container metadata update",
+        "storage container policy update",
+        "storage share update",
+        "storage share metadata update",
+        "storage share policy update",
+        "storage directory metadata update",
+        "storage file update",
+        "storage file metadata update",
+        "storage queue metadata update",
+        "storage queue policy update",
+        "storage message update",
+        "storage table policy update",
+        "disk update",
+        "snapshot update",
+        "vm update",
+        "vm availability-set update",
+        "vm user update",
+        "vmss update"
+    ],
+    "import": [
+        "acr import",
+        "iot device import",
+        "keyvault key import",
+        "keyvault certificate import",
+        "network dns zone import",
+        "redis import",
+        "sql db import"
+    ],
+    "renew": [
+        "acr credential renew",
+        "batch account keys renew",
+        "eventhubs namespace authorization-rule keys renew",
+        "eventhubs eventhub authorization-rule keys renew",
+        "maps account keys renew",
+        "servicebus namespace authorization-rule keys renew",
+        "servicebus queue authorization-rule keys renew",
+        "servicebus topic authorization-rule keys renew",
+        "storage account keys renew",
+        "storage blob lease renew",
+        "storage container lease renew"
+    ],
+    "show-tags": [
+        "acr repository show-tags"
+    ],
+    "show-manifests": [
+        "acr repository show-manifests"
+    ],
+    "untag": [
+        "acr repository untag"
+    ],
+    "get-config": [
+        "acr webhook get-config"
+    ],
+    "list-events": [
+        "acr webhook list-events"
+    ],
+    "ping": [
+        "acr webhook ping"
+    ],
+    "build": [
+        "acr build"
+    ],
+    "run": [
+        "acr build-task run"
+    ],
+    "list-builds": [
+        "acr build-task list-builds"
+    ],
+    "show-build": [
+        "acr build-task show-build"
+    ],
+    "logs": [
+        "acr build-task logs",
+        "container logs"
+    ],
+    "browse": [
+        "acs browse",
+        "acs dcos browse",
+        "acs kubernetes browse",
+        "aks browse",
+        "webapp browse"
+    ],
+    "list-locations": [
+        "acs list-locations",
+        "appservice list-locations",
+        "account list-locations"
+    ],
+    "scale": [
+        "acs scale",
+        "aks scale",
+        "vmss scale"
+    ],
+    "wait": [
+        "acs wait",
+        "aks wait",
+        "backup job wait",
+        "batchai job wait",
+        "dla job wait",
+        "dms wait",
+        "network application-gateway wait",
+        "network express-route wait",
+        "network local-gateway wait",
+        "network vnet-gateway wait",
+        "mysql server wait",
+        "postgres server wait",
+        "group wait",
+        "group deployment wait",
+        "disk wait",
+        "vm wait",
+        "vmss wait"
+    ],
+    "install-cli": [
+        "acs dcos install-cli",
+        "acs kubernetes install-cli",
+        "aks install-cli"
+    ],
+    "get-credentials": [
+        "acs kubernetes get-credentials",
+        "aks get-credentials"
+    ],
+    "get-upgrades": [
+        "aks get-upgrades"
+    ],
+    "install-connector": [
+        "aks install-connector"
+    ],
+    "remove-connector": [
+        "aks remove-connector"
+    ],
+    "upgrade": [
+        "aks upgrade",
+        "batch pool os upgrade"
+    ],
+    "upgrade-connector": [
+        "aks upgrade-connector"
+    ],
+    "use-dev-spaces": [
+        "aks use-dev-spaces"
+    ],
+    "remove-dev-spaces": [
+        "aks remove-dev-spaces"
+    ],
+    "get-versions": [
+        "aks get-versions"
+    ],
+    "disable": [
+        "advisor recommendation disable",
+        "backup protection disable",
+        "batch pool autoscale disable",
+        "batch job disable",
+        "batch job-schedule disable",
+        "batch node scheduling disable",
+        "vm boot-diagnostics disable",
+        "vm encryption disable",
+        "vmss encryption disable"
+    ],
+    "enable": [
+        "advisor recommendation enable",
+        "batch pool autoscale enable",
+        "batch job enable",
+        "batch job-schedule enable",
+        "batch node scheduling enable",
+        "vm boot-diagnostics enable",
+        "vm encryption enable",
+        "vmss encryption enable"
+    ],
+    "add": [
+        "ams account storage add",
+        "ams transform output add",
+        "webapp config hostname add",
+        "functionapp config hostname add",
+        "dla account blob-storage add",
+        "dla account data-lake-store add",
+        "extension add",
+        "keyvault certificate contact add",
+        "keyvault certificate issuer admin add",
+        "monitor activity-log alert action-group add",
+        "monitor activity-log alert scope add",
+        "network nic ip-config address-pool add",
+        "network nic ip-config inbound-nat-rule add",
+        "network vpn-connection ipsec-policy add",
+        "account management-group subscription add",
+        "ad group member add",
+        "sf cluster certificate add",
+        "sf cluster client-certificate add",
+        "sf cluster node-type add",
+        "sf cluster node add",
+        "sf application certificate add",
+        "storage account network-rule add",
+        "storage cors add",
+        "vm nic add",
+        "vm secret add"
+    ],
+    "remove": [
+        "ams account storage remove",
+        "ams transform output remove",
+        "extension remove",
+        "monitor activity-log alert action-group remove",
+        "monitor activity-log alert scope remove",
+        "network nic ip-config address-pool remove",
+        "network nic ip-config inbound-nat-rule remove",
+        "account management-group subscription remove",
+        "ad group member remove",
+        "sf cluster certificate remove",
+        "sf cluster client-certificate remove",
+        "sf cluster setting remove",
+        "sf cluster node remove",
+        "storage account network-rule remove",
+        "vm identity remove",
+        "vm nic remove",
+        "vm secret remove",
+        "vmss identity remove"
+    ],
+    "reset-credentials": [
+        "ams account sp reset-credentials"
+    ],
+    "get-sas-urls": [
+        "ams asset get-sas-urls"
+    ],
+    "cancel": [
+        "ams job cancel",
+        "dla job cancel",
+        "dms project task cancel",
+        "iot hub job cancel",
+        "sql db op cancel",
+        "sql elastic-pool op cancel",
+        "storage blob copy cancel",
+        "storage blob incremental-copy cancel",
+        "storage file copy cancel",
+        "vmss rolling-upgrade cancel"
+    ],
+    "start": [
+        "ams job start",
+        "ams streaming endpoint start",
+        "webapp start",
+        "functionapp start",
+        "cdn endpoint start",
+        "dms start",
+        "lab vm start",
+        "network application-gateway start",
+        "network watcher connection-monitor start",
+        "network watcher troubleshooting start",
+        "storage blob copy start",
+        "storage blob incremental-copy start",
+        "storage file copy start",
+        "vm start",
+        "vmss start",
+        "vmss rolling-upgrade start"
+    ],
+    "get-paths": [
+        "ams streaming locator get-paths"
+    ],
+    "stop": [
+        "ams streaming endpoint stop",
+        "webapp stop",
+        "functionapp stop",
+        "backup job stop",
+        "batch job stop",
+        "batch job-schedule stop",
+        "batch task stop",
+        "cdn endpoint stop",
+        "dms stop",
+        "lab vm stop",
+        "network application-gateway stop",
+        "network watcher connection-monitor stop",
+        "network watcher packet-capture stop",
+        "vm stop",
+        "vmss stop"
+    ],
+    "restart": [
+        "webapp restart",
+        "functionapp restart",
+        "vm restart",
+        "vmss restart"
+    ],
+    "list-runtimes": [
+        "webapp list-runtimes"
+    ],
+    "assign": [
+        "webapp identity assign",
+        "functionapp identity assign",
+        "vm identity assign",
+        "vmss identity assign"
+    ],
+    "set": [
+        "webapp traffic-routing set",
+        "webapp config set",
+        "webapp config appsettings set",
+        "webapp config connection-string set",
+        "webapp config container set",
+        "webapp deployment user set",
+        "functionapp config appsettings set",
+        "functionapp deployment user set",
+        "backup vault backup-properties set",
+        "backup policy set",
+        "batch account set",
+        "batch application set",
+        "batch pool set",
+        "batch job set",
+        "batch job-schedule set",
+        "cloud set",
+        "dls fs access set",
+        "eventhubs georecovery-alias set",
+        "keyvault secret set",
+        "lab secret set",
+        "network application-gateway ssl-policy set",
+        "network application-gateway waf-config set",
+        "account set",
+        "mysql server configuration set",
+        "postgres server configuration set",
+        "redis patch-schedule set",
+        "servicebus georecovery-alias set",
+        "sf cluster setting set",
+        "sf cluster upgrade-type set",
+        "sql db tde set",
+        "sql server tde-key set",
+        "sql server dns-alias set",
+        "vm diagnostics set",
+        "vm extension set",
+        "vm nic set",
+        "vmss diagnostics set",
+        "vmss extension set"
+    ],
+    "clear": [
+        "webapp traffic-routing clear",
+        "network vpn-connection ipsec-policy clear",
+        "account clear",
+        "storage cors clear",
+        "storage message clear"
+    ],
+    "get-external-ip": [
+        "webapp config hostname get-external-ip",
+        "functionapp config hostname get-external-ip"
+    ],
+    "upload": [
+        "webapp config ssl upload",
+        "functionapp config ssl upload",
+        "batch node service-logs upload",
+        "dls fs upload",
+        "storage blob upload",
+        "storage file upload"
+    ],
+    "bind": [
+        "webapp config ssl bind",
+        "functionapp config ssl bind"
+    ],
+    "unbind": [
+        "webapp config ssl unbind",
+        "functionapp config ssl unbind"
+    ],
+    "restore": [
+        "webapp config backup restore",
+        "keyvault key restore",
+        "keyvault secret restore",
+        "mysql server restore",
+        "postgres server restore",
+        "sql db restore",
+        "sql midb restore",
+        "backup restore"
+    ],
+    "config-local-git": [
+        "webapp deployment source config-local-git",
+        "functionapp deployment source config-local-git"
+    ],
+    "config-zip": [
+        "webapp deployment source config-zip",
+        "functionapp deployment source config-zip"
+    ],
+    "config": [
+        "webapp deployment source config",
+        "webapp log config",
+        "webapp deployment container config",
+        "functionapp deployment source config",
+        "webapp config",
+        "functionapp config"
+    ],
+    "sync": [
+        "webapp deployment source sync",
+        "functionapp deployment source sync",
+        "batch account autostorage-keys sync"
+    ],
+    "update-token": [
+        "webapp deployment source update-token",
+        "functionapp deployment source update-token"
+    ],
+    "tail": [
+        "webapp log tail"
+    ],
+    "download": [
+        "webapp log download",
+        "batch task file download",
+        "batch node file download",
+        "batch node remote-desktop download",
+        "dls fs download",
+        "keyvault secret download",
+        "keyvault certificate download",
+        "mysql server-logs download",
+        "postgres server-logs download",
+        "storage blob download",
+        "storage file download"
+    ],
+    "auto-swap": [
+        "webapp deployment slot auto-swap"
+    ],
+    "swap": [
+        "webapp deployment slot swap"
+    ],
+    "list-publishing-profiles": [
+        "webapp deployment list-publishing-profiles",
+        "functionapp deployment list-publishing-profiles"
+    ],
+    "show-cd-url": [
+        "webapp deployment container show-cd-url"
+    ],
+    "list-consumption-locations": [
+        "functionapp list-consumption-locations"
+    ],
+    "get-default-for-vm": [
+        "backup policy get-default-for-vm"
+    ],
+    "list-associated-items": [
+        "backup policy list-associated-items"
+    ],
+    "check-vm": [
+        "backup protection check-vm"
+    ],
+    "enable-for-vm": [
+        "backup protection enable-for-vm"
+    ],
+    "backup-now": [
+        "backup protection backup-now"
+    ],
+    "set-policy": [
+        "backup item set-policy",
+        "keyvault set-policy"
+    ],
+    "restore-disks": [
+        "backup restore restore-disks"
+    ],
+    "mount-rp": [
+        "backup restore files mount-rp"
+    ],
+    "unmount-rp": [
+        "backup restore files unmount-rp"
+    ],
+    "activate": [
+        "batch application package activate"
+    ],
+    "reset": [
+        "batch pool reset",
+        "batch job reset",
+        "batch job-schedule reset",
+        "batch task reset",
+        "batch node user reset",
+        "network vnet-gateway reset",
+        "network vpn-connection shared-key reset",
+        "ad sp credential reset"
+    ],
+    "evaluate": [
+        "batch pool autoscale evaluate"
+    ],
+    "resize": [
+        "batch pool resize",
+        "batchai cluster resize",
+        "storage file resize",
+        "vm resize"
+    ],
+    "reactivate": [
+        "batch task reactivate"
+    ],
+    "reboot": [
+        "batch node reboot"
+    ],
+    "reimage": [
+        "batch node reimage",
+        "vmss reimage"
+    ],
+    "auto-scale": [
+        "batchai cluster auto-scale"
+    ],
+    "exec": [
+        "batchai cluster node exec",
+        "batchai job node exec",
+        "container exec"
+    ],
+    "terminate": [
+        "batchai job terminate"
+    ],
+    "stream": [
+        "batchai job file stream"
+    ],
+    "list-usages": [
+        "batchai list-usages",
+        "network list-usages",
+        "sql list-usages",
+        "sql db list-usages",
+        "sql server list-usages"
+    ],
+    "name-exists": [
+        "cdn name-exists"
+    ],
+    "usage": [
+        "cdn usage",
+        "cdn profile usage",
+        "consumption usage"
+    ],
+    "load": [
+        "cdn endpoint load"
+    ],
+    "purge": [
+        "cdn endpoint purge",
+        "keyvault purge",
+        "keyvault key purge",
+        "keyvault secret purge",
+        "keyvault certificate purge"
+    ],
+    "validate-custom-domain": [
+        "cdn endpoint validate-custom-domain"
+    ],
+    "enable-https": [
+        "cdn custom-domain enable-https"
+    ],
+    "disable-https": [
+        "cdn custom-domain disable-https"
+    ],
+    "register": [
+        "cloud register",
+        "provider register",
+        "feature register"
+    ],
+    "unregister": [
+        "cloud unregister",
+        "provider unregister"
+    ],
+    "list-profiles": [
+        "cloud list-profiles"
+    ],
+    "list-skus": [
+        "cognitiveservices account list-skus",
+        "dms list-skus",
+        "iot hub list-skus",
+        "vm list-skus",
+        "vm image list-skus",
+        "vmss list-skus"
+    ],
+    "regenerate": [
+        "cognitiveservices account keys regenerate",
+        "eventgrid topic key regenerate"
+    ],
+    "configure": [
+        "configure",
+        "network watcher configure",
+        "network watcher flow-log configure"
+    ],
+    "export": [
+        "container export",
+        "iot device export",
+        "network dns zone export",
+        "redis export",
+        "group export",
+        "group deployment export",
+        "sql db export"
+    ],
+    "attach": [
+        "container attach",
+        "vm disk attach",
+        "vm unmanaged-disk attach",
+        "vmss disk attach"
+    ],
+    "list-keys": [
+        "cosmosdb list-keys",
+        "redis list-keys"
+    ],
+    "list-read-only-keys": [
+        "cosmosdb list-read-only-keys"
+    ],
+    "list-connection-strings": [
+        "cosmosdb list-connection-strings"
+    ],
+    "regenerate-key": [
+        "cosmosdb regenerate-key"
+    ],
+    "check-name-exists": [
+        "cosmosdb check-name-exists"
+    ],
+    "failover-priority-change": [
+        "cosmosdb failover-priority-change"
+    ],
+    "exists": [
+        "cosmosdb database exists",
+        "cosmosdb collection exists",
+        "eventhubs namespace exists",
+        "eventhubs georecovery-alias exists",
+        "group exists",
+        "servicebus namespace exists",
+        "servicebus georecovery-alias exists",
+        "storage blob exists",
+        "storage container exists",
+        "storage share exists",
+        "storage directory exists",
+        "storage file exists",
+        "storage queue exists",
+        "storage table exists"
+    ],
+    "submit": [
+        "dla job submit"
+    ],
+    "enable-key-vault": [
+        "dls account enable-key-vault"
+    ],
+    "append": [
+        "dls fs append"
+    ],
+    "test": [
+        "dls fs test"
+    ],
+    "preview": [
+        "dls fs preview"
+    ],
+    "join": [
+        "dls fs join"
+    ],
+    "move": [
+        "dls fs move",
+        "resource move"
+    ],
+    "set-expiry": [
+        "dls fs set-expiry"
+    ],
+    "remove-expiry": [
+        "dls fs remove-expiry"
+    ],
+    "set-permission": [
+        "dls fs access set-permission",
+        "storage container set-permission"
+    ],
+    "set-owner": [
+        "dls fs access set-owner"
+    ],
+    "set-entry": [
+        "dls fs access set-entry"
+    ],
+    "remove-entry": [
+        "dls fs access remove-entry"
+    ],
+    "remove-all": [
+        "dls fs access remove-all"
+    ],
+    "check-status": [
+        "dms check-status"
+    ],
+    "list-event-types": [
+        "eventgrid topic-type list-event-types"
+    ],
+    "break-pair": [
+        "eventhubs georecovery-alias break-pair",
+        "servicebus georecovery-alias break-pair"
+    ],
+    "fail-over": [
+        "eventhubs georecovery-alias fail-over",
+        "servicebus georecovery-alias fail-over"
+    ],
+    "list-available": [
+        "extension list-available"
+    ],
+    "feedback": [
+        "feedback"
+    ],
+    "find": [
+        "find"
+    ],
+    "interactive": [
+        "interactive"
+    ],
+    "generate-verification-code": [
+        "iot dps certificate generate-verification-code",
+        "iot hub certificate generate-verification-code"
+    ],
+    "verify": [
+        "iot dps certificate verify",
+        "iot hub certificate verify"
+    ],
+    "show-connection-string": [
+        "iot hub show-connection-string",
+        "iot device show-connection-string",
+        "sql db show-connection-string",
+        "storage account show-connection-string"
+    ],
+    "show-quota-metrics": [
+        "iot hub show-quota-metrics"
+    ],
+    "show-stats": [
+        "iot hub show-stats"
+    ],
+    "send": [
+        "iot device message send"
+    ],
+    "receive": [
+        "iot device message receive"
+    ],
+    "complete": [
+        "iot device message complete"
+    ],
+    "reject": [
+        "iot device message reject"
+    ],
+    "abandon": [
+        "iot device message abandon"
+    ],
+    "recover": [
+        "keyvault recover",
+        "keyvault key recover",
+        "keyvault secret recover",
+        "keyvault certificate recover"
+    ],
+    "delete-policy": [
+        "keyvault delete-policy",
+        "storage blob service-properties delete-policy"
+    ],
+    "list-deleted": [
+        "keyvault list-deleted",
+        "keyvault key list-deleted",
+        "keyvault secret list-deleted",
+        "keyvault certificate list-deleted",
+        "sql db list-deleted"
+    ],
+    "list-versions": [
+        "keyvault key list-versions",
+        "keyvault secret list-versions",
+        "keyvault certificate list-versions",
+        "vm extension image list-versions",
+        "vmss extension image list-versions"
+    ],
+    "set-attributes": [
+        "keyvault key set-attributes",
+        "keyvault secret set-attributes",
+        "keyvault certificate set-attributes"
+    ],
+    "show-deleted": [
+        "keyvault key show-deleted",
+        "keyvault secret show-deleted",
+        "keyvault certificate show-deleted"
+    ],
+    "backup": [
+        "keyvault key backup",
+        "keyvault secret backup",
+        "webapp config backup",
+        "backup"
+    ],
+    "get-default-policy": [
+        "keyvault certificate get-default-policy"
+    ],
+    "merge": [
+        "keyvault certificate pending merge",
+        "reservations reservation merge",
+        "storage entity merge"
+    ],
+    "apply-artifacts": [
+        "lab vm apply-artifacts"
+    ],
+    "claim": [
+        "lab vm claim"
+    ],
+    "get": [
+        "lab get",
+        "lab vnet get",
+        "storage message get"
+    ],
+    "export-artifacts": [
+        "lab formula export-artifacts"
+    ],
+    "enable-receiver": [
+        "monitor action-group enable-receiver"
+    ],
+    "list-categories": [
+        "monitor activity-log list-categories"
+    ],
+    "show-incident": [
+        "monitor alert show-incident"
+    ],
+    "list-incidents": [
+        "monitor alert list-incidents"
+    ],
+    "list-timezones": [
+        "monitor autoscale profile list-timezones"
+    ],
+    "copy": [
+        "monitor autoscale rule copy",
+        "sql db copy",
+        "storage blob copy",
+        "storage file copy"
+    ],
+    "get-parameters-template": [
+        "monitor autoscale-settings get-parameters-template"
+    ],
+    "list-definitions": [
+        "monitor metrics list-definitions"
+    ],
+    "show-backend-health": [
+        "network application-gateway show-backend-health"
+    ],
+    "list-options": [
+        "network application-gateway ssl-policy list-options"
+    ],
+    "list-rule-sets": [
+        "network application-gateway waf-config list-rule-sets"
+    ],
+    "add-record": [
+        "network dns record-set a add-record",
+        "network dns record-set aaaa add-record",
+        "network dns record-set mx add-record",
+        "network dns record-set ns add-record",
+        "network dns record-set ptr add-record",
+        "network dns record-set srv add-record",
+        "network dns record-set txt add-record",
+        "network dns record-set caa add-record"
+    ],
+    "remove-record": [
+        "network dns record-set a remove-record",
+        "network dns record-set aaaa remove-record",
+        "network dns record-set mx remove-record",
+        "network dns record-set ns remove-record",
+        "network dns record-set ptr remove-record",
+        "network dns record-set srv remove-record",
+        "network dns record-set txt remove-record",
+        "network dns record-set caa remove-record",
+        "network dns record-set cname remove-record"
+    ],
+    "set-record": [
+        "network dns record-set cname set-record"
+    ],
+    "get-stats": [
+        "network express-route get-stats"
+    ],
+    "list-arp-tables": [
+        "network express-route list-arp-tables"
+    ],
+    "list-route-tables": [
+        "network express-route list-route-tables"
+    ],
+    "list-service-providers": [
+        "network express-route list-service-providers"
+    ],
+    "show-effective-route-table": [
+        "network nic show-effective-route-table"
+    ],
+    "list-effective-nsg": [
+        "network nic list-effective-nsg"
+    ],
+    "test-ip-flow": [
+        "network watcher test-ip-flow"
+    ],
+    "test-connectivity": [
+        "network watcher test-connectivity"
+    ],
+    "show-next-hop": [
+        "network watcher show-next-hop"
+    ],
+    "show-security-group-view": [
+        "network watcher show-security-group-view"
+    ],
+    "show-topology": [
+        "network watcher show-topology"
+    ],
+    "query": [
+        "network watcher connection-monitor query",
+        "storage entity query"
+    ],
+    "show-status": [
+        "network watcher packet-capture show-status"
+    ],
+    "list-service-communities": [
+        "network route-filter rule list-service-communities"
+    ],
+    "check-dns": [
+        "network traffic-manager profile check-dns"
+    ],
+    "show-geographic-hierarchy": [
+        "network traffic-manager endpoint show-geographic-hierarchy"
+    ],
+    "check-ip-address": [
+        "network vnet check-ip-address"
+    ],
+    "list-endpoint-services": [
+        "network vnet list-endpoint-services"
+    ],
+    "list-bgp-peer-status": [
+        "network vnet-gateway list-bgp-peer-status"
+    ],
+    "list-advertised-routes": [
+        "network vnet-gateway list-advertised-routes"
+    ],
+    "list-learned-routes": [
+        "network vnet-gateway list-learned-routes"
+    ],
+    "generate": [
+        "network vnet-gateway vpn-client generate"
+    ],
+    "show-url": [
+        "network vnet-gateway vpn-client show-url"
+    ],
+    "summarize": [
+        "policy state summarize"
+    ],
+    "logout": [
+        "logout"
+    ],
+    "get-access-token": [
+        "account get-access-token"
+    ],
+    "georestore": [
+        "mysql server georestore",
+        "postgres server georestore"
+    ],
+    "force-reboot": [
+        "redis force-reboot"
+    ],
+    "import-method": [
+        "redis import-method"
+    ],
+    "list-all": [
+        "redis list-all"
+    ],
+    "regenerate-keys": [
+        "redis regenerate-keys"
+    ],
+    "update-settings": [
+        "redis update-settings"
+    ],
+    "list-history": [
+        "reservations reservation list-history"
+    ],
+    "split": [
+        "reservations reservation split"
+    ],
+    "tag": [
+        "resource tag",
+        "tag"
+    ],
+    "invoke-action": [
+        "resource invoke-action"
+    ],
+    "add-value": [
+        "tag add-value"
+    ],
+    "remove-value": [
+        "tag remove-value"
+    ],
+    "validate": [
+        "group deployment validate"
+    ],
+    "list-changelogs": [
+        "role assignment list-changelogs"
+    ],
+    "create-for-rbac": [
+        "ad sp create-for-rbac"
+    ],
+    "get-member-groups": [
+        "ad group get-member-groups"
+    ],
+    "check": [
+        "ad group member check"
+    ],
+    "rename": [
+        "sql db rename"
+    ],
+    "list-editions": [
+        "sql db list-editions",
+        "sql elastic-pool list-editions"
+    ],
+    "pause": [
+        "sql dw pause"
+    ],
+    "resume": [
+        "sql dw resume"
+    ],
+    "list-activity": [
+        "sql db tde list-activity"
+    ],
+    "list-links": [
+        "sql db replica list-links"
+    ],
+    "delete-link": [
+        "sql db replica delete-link"
+    ],
+    "set-primary": [
+        "sql db replica set-primary"
+    ],
+    "list-dbs": [
+        "sql elastic-pool list-dbs"
+    ],
+    "generate-sas": [
+        "storage account generate-sas",
+        "storage blob generate-sas",
+        "storage container generate-sas",
+        "storage share generate-sas",
+        "storage file generate-sas",
+        "storage queue generate-sas",
+        "storage table generate-sas"
+    ],
+    "url": [
+        "storage blob url",
+        "storage file url"
+    ],
+    "snapshot": [
+        "storage blob snapshot",
+        "storage share snapshot",
+        "snapshot"
+    ],
+    "undelete": [
+        "storage blob undelete"
+    ],
+    "set-tier": [
+        "storage blob set-tier"
+    ],
+    "upload-batch": [
+        "storage blob upload-batch",
+        "storage file upload-batch"
+    ],
+    "download-batch": [
+        "storage blob download-batch",
+        "storage file download-batch"
+    ],
+    "delete-batch": [
+        "storage blob delete-batch",
+        "storage file delete-batch"
+    ],
+    "acquire": [
+        "storage blob lease acquire",
+        "storage container lease acquire"
+    ],
+    "release": [
+        "storage blob lease release",
+        "storage container lease release"
+    ],
+    "change": [
+        "storage blob lease change",
+        "storage container lease change"
+    ],
+    "break": [
+        "storage blob lease break",
+        "storage container lease break"
+    ],
+    "start-batch": [
+        "storage blob copy start-batch",
+        "storage file copy start-batch"
+    ],
+    "show-permission": [
+        "storage container show-permission"
+    ],
+    "stats": [
+        "storage share stats",
+        "storage queue stats",
+        "storage table stats"
+    ],
+    "put": [
+        "storage message put"
+    ],
+    "peek": [
+        "storage message peek"
+    ],
+    "replace": [
+        "storage entity replace"
+    ],
+    "insert": [
+        "storage entity insert"
+    ],
+    "grant-access": [
+        "disk grant-access",
+        "snapshot grant-access"
+    ],
+    "revoke-access": [
+        "disk revoke-access",
+        "snapshot revoke-access"
+    ],
+    "list-operations": [
+        "identity list-operations"
+    ],
+    "capture": [
+        "vm capture"
+    ],
+    "convert": [
+        "vm convert",
+        "vm availability-set convert"
+    ],
+    "deallocate": [
+        "vm deallocate",
+        "vmss deallocate"
+    ],
+    "generalize": [
+        "vm generalize"
+    ],
+    "get-instance-view": [
+        "vm get-instance-view",
+        "vmss get-instance-view"
+    ],
+    "list-ip-addresses": [
+        "vm list-ip-addresses"
+    ],
+    "list-sizes": [
+        "vm list-sizes",
+        "vm availability-set list-sizes"
+    ],
+    "list-usage": [
+        "vm list-usage"
+    ],
+    "list-vm-resize-options": [
+        "vm list-vm-resize-options"
+    ],
+    "open-port": [
+        "vm open-port"
+    ],
+    "perform-maintenance": [
+        "vm perform-maintenance",
+        "vmss perform-maintenance"
+    ],
+    "redeploy": [
+        "vm redeploy"
+    ],
+    "get-boot-log": [
+        "vm boot-diagnostics get-boot-log"
+    ],
+    "get-default-config": [
+        "vm diagnostics get-default-config",
+        "vmss diagnostics get-default-config"
+    ],
+    "detach": [
+        "vm disk detach",
+        "vm unmanaged-disk detach",
+        "vmss disk detach"
+    ],
+    "list-names": [
+        "vm extension image list-names",
+        "vmss extension image list-names"
+    ],
+    "list-offers": [
+        "vm image list-offers"
+    ],
+    "list-publishers": [
+        "vm image list-publishers"
+    ],
+    "accept-terms": [
+        "vm image accept-terms"
+    ],
+    "invoke": [
+        "vm run-command invoke"
+    ],
+    "format": [
+        "vm secret format"
+    ],
+    "reset-ssh": [
+        "vm user reset-ssh"
+    ],
+    "delete-instances": [
+        "vmss delete-instances"
+    ],
+    "list-instances": [
+        "vmss list-instances"
+    ],
+    "list-instance-connection-info": [
+        "vmss list-instance-connection-info"
+    ],
+    "list-instance-public-ips": [
+        "vmss list-instance-public-ips"
+    ],
+    "update-instances": [
+        "vmss update-instances"
+    ],
+    "list-vm-nics": [
+        "vmss nic list-vm-nics"
+    ],
+    "get-latest": [
+        "vmss rolling-upgrade get-latest"
+    ],
+    "acr": [
+        "acr"
+    ],
+    "credential": [
+        "acr credential",
+        "dla catalog credential",
+        "ad sp credential"
+    ],
+    "repository": [
+        "acr repository"
+    ],
+    "webhook": [
+        "acr webhook"
+    ],
+    "replication": [
+        "acr replication"
+    ],
+    "build-task": [
+        "acr build-task"
+    ],
+    "acs": [
+        "acs"
+    ],
+    "dcos": [
+        "acs dcos"
+    ],
+    "kubernetes": [
+        "acs kubernetes"
+    ],
+    "aks": [
+        "aks"
+    ],
+    "advisor": [
+        "advisor"
+    ],
+    "configuration": [
+        "advisor configuration",
+        "mysql server configuration",
+        "postgres server configuration"
+    ],
+    "recommendation": [
+        "advisor recommendation"
+    ],
+    "ams": [
+        "ams"
+    ],
+    "account": [
+        "ams account",
+        "batch account",
+        "cognitiveservices account",
+        "dla account",
+        "dls account",
+        "maps account",
+        "account",
+        "storage account"
+    ],
+    "storage": [
+        "ams account storage",
+        "storage"
+    ],
+    "sp": [
+        "ams account sp",
+        "ad sp"
+    ],
+    "transform": [
+        "ams transform"
+    ],
+    "output": [
+        "ams transform output"
+    ],
+    "asset": [
+        "ams asset"
+    ],
+    "job": [
+        "ams job",
+        "backup job",
+        "batch job",
+        "batchai job",
+        "dla job",
+        "iot hub job"
+    ],
+    "streaming": [
+        "ams streaming"
+    ],
+    "locator": [
+        "ams streaming locator"
+    ],
+    "policy": [
+        "ams streaming policy",
+        "backup policy",
+        "iot hub policy",
+        "policy",
+        "storage container policy",
+        "storage queue policy",
+        "storage share policy",
+        "storage table policy"
+    ],
+    "endpoint": [
+        "ams streaming endpoint",
+        "cdn endpoint",
+        "network traffic-manager endpoint"
+    ],
+    "appservice": [
+        "appservice"
+    ],
+    "webapp": [
+        "webapp"
+    ],
+    "auth": [
+        "webapp auth",
+        "network express-route auth"
+    ],
+    "identity": [
+        "webapp identity",
+        "functionapp identity",
+        "vm identity",
+        "vmss identity",
+        "identity"
+    ],
+    "appsettings": [
+        "webapp config appsettings",
+        "functionapp config appsettings"
+    ],
+    "connection-string": [
+        "webapp config connection-string"
+    ],
+    "container": [
+        "webapp config container",
+        "webapp deployment container",
+        "backup container",
+        "container",
+        "storage container"
+    ],
+    "ssl": [
+        "webapp config ssl",
+        "functionapp config ssl"
+    ],
+    "deployment": [
+        "webapp deployment",
+        "functionapp deployment",
+        "group deployment"
+    ],
+    "slot": [
+        "webapp deployment slot"
+    ],
+    "log": [
+        "webapp log"
+    ],
+    "user": [
+        "webapp deployment user",
+        "functionapp deployment user",
+        "batch node user",
+        "ad user",
+        "vm user"
+    ],
+    "source": [
+        "webapp deployment source",
+        "functionapp deployment source"
+    ],
+    "traffic-routing": [
+        "webapp traffic-routing"
+    ],
+    "plan": [
+        "appservice plan"
+    ],
+    "hostname": [
+        "webapp config hostname",
+        "functionapp config hostname"
+    ],
+    "functionapp": [
+        "functionapp"
+    ],
+    "vault": [
+        "backup vault"
+    ],
+    "backup-properties": [
+        "backup vault backup-properties"
+    ],
+    "item": [
+        "backup item"
+    ],
+    "recoverypoint": [
+        "backup recoverypoint"
+    ],
+    "protection": [
+        "backup protection"
+    ],
+    "files": [
+        "backup restore files"
+    ],
+    "batch": [
+        "batch"
+    ],
+    "autostorage-keys": [
+        "batch account autostorage-keys"
+    ],
+    "keys": [
+        "batch account keys",
+        "cognitiveservices account keys",
+        "eventhubs namespace authorization-rule keys",
+        "eventhubs eventhub authorization-rule keys",
+        "eventhubs georecovery-alias authorization-rule keys",
+        "maps account keys",
+        "servicebus namespace authorization-rule keys",
+        "servicebus queue authorization-rule keys",
+        "servicebus topic authorization-rule keys",
+        "servicebus georecovery-alias authorization-rule keys",
+        "storage account keys"
+    ],
+    "application": [
+        "batch application",
+        "sf application"
+    ],
+    "package": [
+        "batch application package",
+        "dla catalog package"
+    ],
+    "summary": [
+        "batch application summary",
+        "consumption reservation summary"
+    ],
+    "location": [
+        "batch location"
+    ],
+    "quotas": [
+        "batch location quotas"
+    ],
+    "certificate": [
+        "batch certificate",
+        "iot dps certificate",
+        "iot hub certificate",
+        "keyvault certificate",
+        "sf cluster certificate",
+        "sf application certificate"
+    ],
+    "file": [
+        "batch task file",
+        "batch node file",
+        "batchai cluster file",
+        "batchai job file",
+        "storage file"
+    ],
+    "task-counts": [
+        "batch job task-counts"
+    ],
+    "all-statistics": [
+        "batch job all-statistics",
+        "batch pool all-statistics"
+    ],
+    "prep-release-status": [
+        "batch job prep-release-status"
+    ],
+    "job-schedule": [
+        "batch job-schedule"
+    ],
+    "service-logs": [
+        "batch node service-logs"
+    ],
+    "node": [
+        "batch node",
+        "batchai cluster node",
+        "batchai job node",
+        "sf cluster node"
+    ],
+    "remote-login-settings": [
+        "batch node remote-login-settings"
+    ],
+    "remote-desktop": [
+        "batch node remote-desktop"
+    ],
+    "scheduling": [
+        "batch node scheduling"
+    ],
+    "pool": [
+        "batch pool"
+    ],
+    "os": [
+        "batch pool os"
+    ],
+    "autoscale": [
+        "batch pool autoscale",
+        "monitor autoscale"
+    ],
+    "usage-metrics": [
+        "batch pool usage-metrics"
+    ],
+    "node-counts": [
+        "batch pool node-counts"
+    ],
+    "node-agent-skus": [
+        "batch pool node-agent-skus"
+    ],
+    "task": [
+        "batch task",
+        "dms project task"
+    ],
+    "subtask": [
+        "batch task subtask"
+    ],
+    "batchai": [
+        "batchai"
+    ],
+    "workspace": [
+        "batchai workspace"
+    ],
+    "cluster": [
+        "batchai cluster",
+        "sf cluster"
+    ],
+    "experiment": [
+        "batchai experiment"
+    ],
+    "file-server": [
+        "batchai file-server"
+    ],
+    "billing": [
+        "billing"
+    ],
+    "invoice": [
+        "billing invoice"
+    ],
+    "period": [
+        "billing period"
+    ],
+    "enrollment-account": [
+        "billing enrollment-account"
+    ],
+    "cdn": [
+        "cdn"
+    ],
+    "profile": [
+        "cdn profile",
+        "monitor autoscale profile",
+        "network traffic-manager profile"
+    ],
+    "custom-domain": [
+        "cdn custom-domain"
+    ],
+    "origin": [
+        "cdn origin"
+    ],
+    "edge-node": [
+        "cdn edge-node"
+    ],
+    "cloud": [
+        "cloud"
+    ],
+    "cognitiveservices": [
+        "cognitiveservices"
+    ],
+    "consumption": [
+        "consumption"
+    ],
+    "reservation": [
+        "consumption reservation",
+        "reservations reservation"
+    ],
+    "detail": [
+        "consumption reservation detail"
+    ],
+    "pricesheet": [
+        "consumption pricesheet"
+    ],
+    "marketplace": [
+        "consumption marketplace"
+    ],
+    "budget": [
+        "consumption budget"
+    ],
+    "cosmosdb": [
+        "cosmosdb"
+    ],
+    "database": [
+        "cosmosdb database",
+        "dla catalog database"
+    ],
+    "collection": [
+        "cosmosdb collection"
+    ],
+    "dla": [
+        "dla"
+    ],
+    "catalog": [
+        "dla catalog",
+        "reservations catalog"
+    ],
+    "assembly": [
+        "dla catalog assembly"
+    ],
+    "external-data-source": [
+        "dla catalog external-data-source"
+    ],
+    "procedure": [
+        "dla catalog procedure"
+    ],
+    "schema": [
+        "dla catalog schema"
+    ],
+    "table": [
+        "dla catalog table",
+        "storage table"
+    ],
+    "table-partition": [
+        "dla catalog table-partition"
+    ],
+    "table-stats": [
+        "dla catalog table-stats"
+    ],
+    "table-type": [
+        "dla catalog table-type"
+    ],
+    "tvf": [
+        "dla catalog tvf"
+    ],
+    "view": [
+        "dla catalog view"
+    ],
+    "blob-storage": [
+        "dla account blob-storage"
+    ],
+    "data-lake-store": [
+        "dla account data-lake-store"
+    ],
+    "firewall": [
+        "dla account firewall",
+        "dls account firewall"
+    ],
+    "compute-policy": [
+        "dla account compute-policy"
+    ],
+    "pipeline": [
+        "dla job pipeline"
+    ],
+    "recurrence": [
+        "dla job recurrence"
+    ],
+    "dls": [
+        "dls"
+    ],
+    "trusted-provider": [
+        "dls account trusted-provider"
+    ],
+    "fs": [
+        "dls fs"
+    ],
+    "access": [
+        "dls fs access"
+    ],
+    "dms": [
+        "dms"
+    ],
+    "project": [
+        "dms project"
+    ],
+    "eventgrid": [
+        "eventgrid"
+    ],
+    "topic": [
+        "eventgrid topic",
+        "servicebus topic"
+    ],
+    "key": [
+        "eventgrid topic key",
+        "keyvault key",
+        "sql server key"
+    ],
+    "event-subscription": [
+        "eventgrid event-subscription"
+    ],
+    "topic-type": [
+        "eventgrid topic-type"
+    ],
+    "eventhubs": [
+        "eventhubs"
+    ],
+    "namespace": [
+        "eventhubs namespace",
+        "servicebus namespace"
+    ],
+    "authorization-rule": [
+        "eventhubs namespace authorization-rule",
+        "eventhubs eventhub authorization-rule",
+        "eventhubs georecovery-alias authorization-rule",
+        "servicebus namespace authorization-rule",
+        "servicebus queue authorization-rule",
+        "servicebus topic authorization-rule",
+        "servicebus georecovery-alias authorization-rule"
+    ],
+    "eventhub": [
+        "eventhubs eventhub"
+    ],
+    "consumer-group": [
+        "eventhubs eventhub consumer-group",
+        "iot hub consumer-group"
+    ],
+    "georecovery-alias": [
+        "eventhubs georecovery-alias",
+        "servicebus georecovery-alias"
+    ],
+    "extension": [
+        "extension",
+        "vm extension",
+        "vmss extension"
+    ],
+    "iot": [
+        "iot"
+    ],
+    "device": [
+        "iot device"
+    ],
+    "hub": [
+        "iot hub"
+    ],
+    "dps": [
+        "iot dps"
+    ],
+    "access-policy": [
+        "iot dps access-policy"
+    ],
+    "linked-hub": [
+        "iot dps linked-hub"
+    ],
+    "message": [
+        "iot device message",
+        "storage message"
+    ],
+    "keyvault": [
+        "keyvault"
+    ],
+    "secret": [
+        "keyvault secret",
+        "lab secret",
+        "vm secret"
+    ],
+    "pending": [
+        "keyvault certificate pending"
+    ],
+    "contact": [
+        "keyvault certificate contact"
+    ],
+    "issuer": [
+        "keyvault certificate issuer"
+    ],
+    "admin": [
+        "keyvault certificate issuer admin"
+    ],
+    "lab": [
+        "lab"
+    ],
+    "vm": [
+        "lab vm",
+        "vm"
+    ],
+    "custom-image": [
+        "lab custom-image"
+    ],
+    "gallery-image": [
+        "lab gallery-image"
+    ],
+    "artifact": [
+        "lab artifact"
+    ],
+    "artifact-source": [
+        "lab artifact-source"
+    ],
+    "vnet": [
+        "lab vnet",
+        "network vnet"
+    ],
+    "formula": [
+        "lab formula"
+    ],
+    "arm-template": [
+        "lab arm-template"
+    ],
+    "environment": [
+        "lab environment"
+    ],
+    "maps": [
+        "maps"
+    ],
+    "monitor": [
+        "monitor"
+    ],
+    "alert": [
+        "monitor alert",
+        "monitor activity-log alert"
+    ],
+    "metrics": [
+        "monitor metrics",
+        "storage metrics"
+    ],
+    "log-profiles": [
+        "monitor log-profiles"
+    ],
+    "diagnostic-settings": [
+        "monitor diagnostic-settings"
+    ],
+    "categories": [
+        "monitor diagnostic-settings categories"
+    ],
+    "rule": [
+        "monitor autoscale rule",
+        "network application-gateway rule",
+        "network application-gateway url-path-map rule",
+        "network lb rule",
+        "network nsg rule",
+        "network route-filter rule",
+        "servicebus topic subscription rule"
+    ],
+    "autoscale-settings": [
+        "monitor autoscale-settings"
+    ],
+    "activity-log": [
+        "monitor activity-log"
+    ],
+    "action-group": [
+        "monitor action-group",
+        "monitor activity-log alert action-group"
+    ],
+    "scope": [
+        "monitor activity-log alert scope"
+    ],
+    "network": [
+        "network"
+    ],
+    "application-gateway": [
+        "network application-gateway"
+    ],
+    "address-pool": [
+        "network application-gateway address-pool",
+        "network lb address-pool",
+        "network nic ip-config address-pool"
+    ],
+    "auth-cert": [
+        "network application-gateway auth-cert"
+    ],
+    "frontend-ip": [
+        "network application-gateway frontend-ip",
+        "network lb frontend-ip"
+    ],
+    "frontend-port": [
+        "network application-gateway frontend-port"
+    ],
+    "http-listener": [
+        "network application-gateway http-listener"
+    ],
+    "http-settings": [
+        "network application-gateway http-settings"
+    ],
+    "probe": [
+        "network application-gateway probe",
+        "network lb probe"
+    ],
+    "redirect-config": [
+        "network application-gateway redirect-config"
+    ],
+    "ssl-cert": [
+        "network application-gateway ssl-cert"
+    ],
+    "ssl-policy": [
+        "network application-gateway ssl-policy"
+    ],
+    "predefined": [
+        "network application-gateway ssl-policy predefined"
+    ],
+    "url-path-map": [
+        "network application-gateway url-path-map"
+    ],
+    "waf-config": [
+        "network application-gateway waf-config"
+    ],
+    "asg": [
+        "network asg"
+    ],
+    "ddos-protection": [
+        "network ddos-protection"
+    ],
+    "dns": [
+        "network dns"
+    ],
+    "record-set": [
+        "network dns record-set"
+    ],
+    "a": [
+        "network dns record-set a"
+    ],
+    "aaaa": [
+        "network dns record-set aaaa"
+    ],
+    "caa": [
+        "network dns record-set caa"
+    ],
+    "cname": [
+        "network dns record-set cname"
+    ],
+    "mx": [
+        "network dns record-set mx"
+    ],
+    "ns": [
+        "network dns record-set ns"
+    ],
+    "ptr": [
+        "network dns record-set ptr"
+    ],
+    "srv": [
+        "network dns record-set srv"
+    ],
+    "soa": [
+        "network dns record-set soa"
+    ],
+    "txt": [
+        "network dns record-set txt"
+    ],
+    "zone": [
+        "network dns zone"
+    ],
+    "express-route": [
+        "network express-route"
+    ],
+    "peering": [
+        "network express-route peering",
+        "network vnet peering"
+    ],
+    "lb": [
+        "network lb"
+    ],
+    "inbound-nat-pool": [
+        "network lb inbound-nat-pool"
+    ],
+    "inbound-nat-rule": [
+        "network lb inbound-nat-rule",
+        "network nic ip-config inbound-nat-rule"
+    ],
+    "local-gateway": [
+        "network local-gateway"
+    ],
+    "nic": [
+        "network nic",
+        "vmss nic",
+        "vm nic"
+    ],
+    "ip-config": [
+        "network nic ip-config"
+    ],
+    "nsg": [
+        "network nsg"
+    ],
+    "public-ip": [
+        "network public-ip"
+    ],
+    "route-table": [
+        "network route-table"
+    ],
+    "route": [
+        "network route-table route"
+    ],
+    "route-filter": [
+        "network route-filter"
+    ],
+    "traffic-manager": [
+        "network traffic-manager"
+    ],
+    "subnet": [
+        "network vnet subnet"
+    ],
+    "vpn-connection": [
+        "network vpn-connection"
+    ],
+    "ipsec-policy": [
+        "network vpn-connection ipsec-policy"
+    ],
+    "shared-key": [
+        "network vpn-connection shared-key"
+    ],
+    "vnet-gateway": [
+        "network vnet-gateway"
+    ],
+    "vpn-client": [
+        "network vnet-gateway vpn-client"
+    ],
+    "revoked-cert": [
+        "network vnet-gateway revoked-cert"
+    ],
+    "root-cert": [
+        "network vnet-gateway root-cert"
+    ],
+    "watcher": [
+        "network watcher"
+    ],
+    "connection-monitor": [
+        "network watcher connection-monitor"
+    ],
+    "packet-capture": [
+        "network watcher packet-capture"
+    ],
+    "flow-log": [
+        "network watcher flow-log"
+    ],
+    "troubleshooting": [
+        "network watcher troubleshooting"
+    ],
+    "event": [
+        "policy event"
+    ],
+    "state": [
+        "policy state"
+    ],
+    "mysql": [
+        "mysql"
+    ],
+    "server": [
+        "mysql server",
+        "postgres server",
+        "sql server"
+    ],
+    "firewall-rule": [
+        "mysql server firewall-rule",
+        "postgres server firewall-rule",
+        "sql server firewall-rule"
+    ],
+    "server-logs": [
+        "mysql server-logs",
+        "postgres server-logs"
+    ],
+    "db": [
+        "mysql db",
+        "postgres db",
+        "sql db"
+    ],
+    "postgres": [
+        "postgres"
+    ],
+    "redis": [
+        "redis"
+    ],
+    "patch-schedule": [
+        "redis patch-schedule",
+        "redis patch-schedule patch-schedule"
+    ],
+    "reservations": [
+        "reservations"
+    ],
+    "reservation-order": [
+        "reservations reservation-order"
+    ],
+    "reservation-order-id": [
+        "reservations reservation-order-id"
+    ],
+    "managedapp": [
+        "managedapp"
+    ],
+    "definition": [
+        "managedapp definition",
+        "policy definition",
+        "role definition"
+    ],
+    "lock": [
+        "lock",
+        "account lock",
+        "group lock",
+        "resource lock"
+    ],
+    "management-group": [
+        "account management-group"
+    ],
+    "subscription": [
+        "account management-group subscription",
+        "servicebus topic subscription"
+    ],
+    "set-definition": [
+        "policy set-definition"
+    ],
+    "assignment": [
+        "policy assignment",
+        "role assignment"
+    ],
+    "resource": [
+        "resource"
+    ],
+    "feature": [
+        "feature"
+    ],
+    "group": [
+        "group",
+        "ad group"
+    ],
+    "operation": [
+        "group deployment operation",
+        "provider operation"
+    ],
+    "provider": [
+        "provider"
+    ],
+    "link": [
+        "resource link"
+    ],
+    "app": [
+        "ad app"
+    ],
+    "role": [
+        "role"
+    ],
+    "ad": [
+        "ad"
+    ],
+    "member": [
+        "ad group member"
+    ],
+    "servicebus": [
+        "servicebus"
+    ],
+    "queue": [
+        "servicebus queue",
+        "storage queue"
+    ],
+    "sf": [
+        "sf"
+    ],
+    "client-certificate": [
+        "sf cluster client-certificate"
+    ],
+    "durability": [
+        "sf cluster durability"
+    ],
+    "node-type": [
+        "sf cluster node-type"
+    ],
+    "reliability": [
+        "sf cluster reliability"
+    ],
+    "setting": [
+        "sf cluster setting"
+    ],
+    "upgrade-type": [
+        "sf cluster upgrade-type"
+    ],
+    "sql": [
+        "sql"
+    ],
+    "audit-policy": [
+        "sql db audit-policy"
+    ],
+    "ad-admin": [
+        "sql server ad-admin"
+    ],
+    "op": [
+        "sql db op",
+        "sql elastic-pool op"
+    ],
+    "replica": [
+        "sql db replica"
+    ],
+    "threat-policy": [
+        "sql db threat-policy"
+    ],
+    "tde": [
+        "sql db tde"
+    ],
+    "dw": [
+        "sql dw"
+    ],
+    "elastic-pool": [
+        "sql elastic-pool"
+    ],
+    "conn-policy": [
+        "sql server conn-policy"
+    ],
+    "dns-alias": [
+        "sql server dns-alias"
+    ],
+    "tde-key": [
+        "sql server tde-key"
+    ],
+    "vnet-rule": [
+        "sql server vnet-rule"
+    ],
+    "mi": [
+        "sql mi"
+    ],
+    "midb": [
+        "sql midb"
+    ],
+    "blob": [
+        "storage blob"
+    ],
+    "incremental-copy": [
+        "storage blob incremental-copy"
+    ],
+    "lease": [
+        "storage blob lease",
+        "storage container lease"
+    ],
+    "metadata": [
+        "storage blob metadata",
+        "storage container metadata",
+        "storage directory metadata",
+        "storage file metadata",
+        "storage queue metadata",
+        "storage share metadata"
+    ],
+    "service-properties": [
+        "storage blob service-properties"
+    ],
+    "cors": [
+        "storage cors"
+    ],
+    "directory": [
+        "storage directory"
+    ],
+    "entity": [
+        "storage entity"
+    ],
+    "logging": [
+        "storage logging"
+    ],
+    "share": [
+        "storage share"
+    ],
+    "network-rule": [
+        "storage account network-rule"
+    ],
+    "disk": [
+        "vmss disk",
+        "vm disk",
+        "disk"
+    ],
+    "rolling-upgrade": [
+        "vmss rolling-upgrade"
+    ],
+    "availability-set": [
+        "vm availability-set"
+    ],
+    "boot-diagnostics": [
+        "vm boot-diagnostics"
+    ],
+    "diagnostics": [
+        "vm diagnostics",
+        "vmss diagnostics"
+    ],
+    "unmanaged-disk": [
+        "vm unmanaged-disk"
+    ],
+    "encryption": [
+        "vm encryption",
+        "vmss encryption"
+    ],
+    "image": [
+        "vm extension image",
+        "vm image",
+        "vmss extension image",
+        "image"
+    ],
+    "vmss": [
+        "vmss"
+    ],
+    "run-command": [
+        "vm run-command"
+    ]
+}

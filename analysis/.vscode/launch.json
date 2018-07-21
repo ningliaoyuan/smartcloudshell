@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "node",
+            "request": "launch",
+            "name": "nodejs",
+            "program": "${workspaceFolder}/getLastWord.js"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
