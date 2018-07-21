@@ -3,18 +3,30 @@
 - python -m spacy download en_core_web_lg
 - python -m spacy download en_core_web_sm
 
+# How to use
 
-
-# How to use:
-
-- python main.py
+```
+python main.py
+```
 
 Then user the follow url to test:
 http://localhost:5000/cli/help/your query
 
-- python test.py
+```
+python test.py
+```
 
 Then check out the output in output folder
+
+# Build Docker image
+```
+docker build -t smartcloudshell .
+```
+
+# Run Docker image
+```
+docker run -p 5000:5000 smartcloudshell
+```
 
 # Install packages on azure web app
 
