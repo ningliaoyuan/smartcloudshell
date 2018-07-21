@@ -3,7 +3,6 @@ import spacy
 from pprint import pprint
 import re
 
-
 def addHelpToTexts(help, allTexts):
     if help is not None:
         allTexts.append(help)
@@ -43,6 +42,7 @@ def getAllTexts(file, includeHelp, includeParameters, includeExamples):
             #     pprint(key)
 
             cmd = data[key]
+            allTexts.append(key)
             if includeHelp and 'help' in cmd:
                 help = cmd['help']
                 addHelpToTexts(help, allTexts)
@@ -54,6 +54,10 @@ def getAllTexts(file, includeHelp, includeParameters, includeExamples):
                 addExamplesToTexts(examples, allTexts)
     return allTexts
 
+def removeSpecialCharacters(text):
+    text = re.sub('[-_=/]',' ',text)
+    text = re.sub('[^a-zA-Z ]', '', text)
+    return text.replace("  "," ")
 
 def writeToFile(fileName, allTexts):
     with open(fileName, "w") as text_file:
@@ -72,22 +76,22 @@ def outputWords(fileName, allTexts):
     nlp = spacy.load('en_core_web_lg')
     i = 0
     csv = []
-    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, text")
+    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, is_oov, text")
     length = len(allTexts)
     while i < length:
-        text = allTexts[i]
-        print('{}/{} {}'.format(i, length, text))
-        text = re.sub(r'\W+', ' ', text)
+        oText = allTexts[i]
+        print('{}/{} {}'.format(i, length, oText))
+        text = removeSpecialCharacters(oText)
         doc = nlp(text)
         for token in doc:
             print(token.text, token.lemma_, token.pos_, token.tag_,
                   token.dep_, token.is_alpha, token.is_stop)
-            csv.append('{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, text))
+            csv.append('{},{},{},{},{},{},{},{},{}'.format(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, oText))
         i += 1
     writeToFile(fileName, csv)
 
 class Word:
-  def __init__(self, word, lemma, pos, tag, dep, isAlpha, isStop, text):
+  def __init__(self, word, lemma, pos, tag, dep, isAlpha, isStop, isOov, text):
     self.word = word
     self.lemma = lemma
     self.pos = pos
@@ -95,6 +99,7 @@ class Word:
     self.dep = dep
     self.isAlpha = isAlpha
     self.isStop = isStop
+    self.isOov = isOov
     self.count = 1
     self.samples = [text]
 
@@ -104,9 +109,9 @@ def outputWordCounts(fileName, allTexts):
     length = len(allTexts)
     words = {}
     while i < length:
-        text = allTexts[i]
-        print('{}/{} {}'.format(i, length, text))
-        text = re.sub(r'\W+', ' ', text)
+        oText = allTexts[i]
+        print('{}/{} {}'.format(i, length, oText))
+        text = removeSpecialCharacters(oText)
         doc = nlp(text)
         for token in doc:
             key = token.lemma_
@@ -114,35 +119,35 @@ def outputWordCounts(fileName, allTexts):
                 words[key].count += 1
                 samples = words[key].samples
                 if(len(samples)<2):
-                    samples.append(text)
+                    samples.append(oText)
             else:
-                words[key] = Word(key, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, text)
+                words[key] = Word(key, token.lemma_, token.pos_, token.tag_, token.dep_, token.is_alpha, token.is_stop, token.is_oov, oText)
         i += 1
 
     csv = []
-    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, count, samples")
+    csv.append("text, lemma_, pos_, tag_, dep_, is_alpha, is_stop, isOov, count, samples")
     for key in words:
         word = words[key]
-        csv.append('{},{},{},{},{},{},{},{},{}'.format(key, word.lemma, word.pos, word.tag, word.dep, word.isAlpha, word.isStop, word.count, word.samples))
+        csv.append('{},{},{},{},{},{},{},{},{},{}'.format(key, word.lemma, word.pos, word.tag, word.dep, word.isAlpha, word.isStop, word.isOov, word.count, word.samples))
 
     writeToFile(fileName, csv)
 
 
 def run():
-    # allTexts = getAllTexts('../data/help_dump.json', True, True, True)
-    # writeToFile("all-text.txt", allTexts)
-    # outputWords("all-words.csv", allTexts)
-    # outputWordCounts("all-word-counts.csv", allTexts)
+    allTexts = getAllTexts('../data/help_dump.json', True, False, False)
+    writeToFile("help-text.txt", allTexts)
+    outputWords("help-words.csv", allTexts)
+    outputWordCounts("help-word-counts.csv", allTexts)
 
     allTexts = getAllTexts('../data/help_dump.json', True, False, True)
     writeToFile("help+sample-text.txt", allTexts)
     outputWords("help+sample-words.csv", allTexts)
     outputWordCounts("help+sample-word-counts.csv", allTexts)
 
-    allTexts = getAllTexts('../data/help_dump.json', True, False, False)
-    writeToFile("help-text.txt", allTexts)
-    outputWords("help-words.csv", allTexts)
-    outputWordCounts("help-word-counts.csv", allTexts)
-
+    allTexts = getAllTexts('../data/help_dump.json', True, True, True)
+    writeToFile("all-text.txt", allTexts)
+    outputWords("all-words.csv", allTexts)
+    outputWordCounts("all-word-counts.csv", allTexts)
+   
 run()
 print('completed')
