@@ -1,6 +1,5 @@
 abbr,full, pos_, tag_, dep_, is_stop, isOov, count, samples,,,,,,,,
 vm,Virtual Machine,PROPN,NNP,compound,False,False,280,[u'vm show', u'Get the details of a VM.'],,,,,,,
-dns,Domain Name System,NOUN,NN,amod,False,False,137,[u'network dns record-set ptr create', u'network dns record-set cname create'],,,,,,,
 dla,Data Lake Analytics,NOUN,NN,compound,False,False,85,[u'dla account blob-storage delete', u'dla account firewall update'],,,,,,,
 vmss,Virtual Machine Scale Set,NOUN,NN,compound,False,True,80,[u'vmss list', u'List VMSS.'],,,,,,,
 cdn,Content Delivery Network,X,FW,compound,False,False,69,[u'cdn profile create', u'Create a new CDN profile.'],,,,,,,
@@ -56,6 +55,5 @@ ha,,PROPN,NNP,compound,False,False,1,[u'Create an HA ports load balancing rule t
 ttl,,NOUN,NN,dobj,False,False,1,[u'Update a traffic manager profile to change the TTL to 300.'],,,,,,,,
 acl,access control list,PROPN,NNP,appos,False,False,1,[u'Display the access control list (ACL).'],,,,,,,,
 rdp,Remote Desktop Protocol,PROPN,NNP,compound,False,False,1,[u'Gets the Remote Desktop Protocol file for the specified compute node.  Before you can access a node by using the RDP file, you must create a user account on the node. This API can only be invoked on pools created with a cloud service configuration. For pools created with a virtual machine configuration, see the GetRemoteLoginSettings API.'],,,,,,
-isv,Independent Software Vendors,PROPN,NNP,pobj,False,False,1,[u'Manage template solutions provided and maintained by Independent Software Vendors (ISVs).'],,,,,,,,
 rbac,Role-Based Access Control,NOUN,NN,pobj,False,True,1,[u'ad sp create-for-rbac'],,,,,,,,
 nsg,Network Security Groups,,,,,,,,,,,,,,,

@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "nodejs",
-            "program": "${workspaceFolder}/getLastWord.js"
+            "program": "${file}"
         },
         {
             "name": "Python: Current File",

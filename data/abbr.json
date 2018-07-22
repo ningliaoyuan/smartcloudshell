@@ -1,138 +1,120 @@
 {
     "vm": {
         "word": "virtual machine",
-        "count": 280
-    },
-    "dns": {
-        "word": "domain name system",
-        "count": 137
+        "count": 268
     },
     "dla": {
-        "word": "data lake analytics",
-        "count": 85
+        "word": "data lake analytics"
     },
     "vmss": {
         "word": "virtual machine scale set",
-        "count": 80
+        "count": 50
     },
     "cdn": {
         "word": "content delivery network",
-        "count": 69
+        "count": 17
     },
     "db": {
         "word": "database",
-        "count": 66
+        "count": 49
     },
     "acr": {
         "word": "container registry",
-        "count": 45
+        "count": 92
     },
     "dls": {
-        "word": "data lake store",
-        "count": 42
+        "word": "data lake store"
     },
     "ad": {
         "word": "active directory",
-        "count": 38
+        "count": 26
     },
     "dms": {
         "word": "data migration service",
-        "count": 33
+        "count": 10
     },
     "sf": {
         "word": "service fabric",
-        "count": 28
+        "count": 16
     },
     "nsg": {
         "word": "network security groups",
-        "count": null
+        "count": 23
     },
     "dps": {
         "word": "device provisioning services",
-        "count": 24
+        "count": 27
     },
     "fs": {
         "word": "file system",
-        "count": 22
+        "count": 2
     },
     "cert": {
         "word": "certification",
-        "count": 20
+        "count": 40
     },
     "sas": {
         "word": "sas",
-        "count": 17
+        "count": 6
     },
     "acs": {
         "word": "azure container services",
-        "count": 16
+        "count": 11
     },
     "sp": {
         "word": "service principal",
-        "count": 13
+        "count": 12
     },
     "ak": {
-        "word": "kubernetes cluster",
-        "count": 11
+        "word": "kubernetes cluster"
     },
     "redis": {
         "word": "redis cache",
-        "count": 9
+        "count": 8
     },
     "dw": {
-        "word": "data warehouse",
-        "count": 8
+        "word": "data warehouse"
     },
     "asg": {
         "word": "application security group",
-        "count": 7
+        "count": 5
     },
     "aad": {
         "word": "azure active directory",
-        "count": 7
+        "count": 1
     },
     "op": {
-        "word": "operations performed",
-        "count": 6
+        "word": "operations performed"
     },
     "waf": {
-        "word": "web application firewall",
-        "count": 6
+        "word": "web application firewall"
     },
     "midb": {
         "word": "managed database",
-        "count": 6
+        "count": 5
     },
     "az": {
         "word": "azure",
-        "count": 4
+        "count": 2851
     },
     "cors": {
-        "word": "cross-origin resource sharing",
-        "count": 4
+        "word": "cross-origin resource sharing"
     },
     "rp": {
-        "word": "recovery point",
-        "count": 2
+        "word": "recovery point"
     },
     "cg": {
         "word": "consumer group",
-        "count": 1
+        "count": 7
     },
     "acl": {
         "word": "access control list",
-        "count": 1
+        "count": 2
     },
     "rdp": {
-        "word": "remote desktop protocol",
-        "count": 1
-    },
-    "isv": {
-        "word": "independent software vendors",
-        "count": 1
+        "word": "remote desktop protocol"
     },
     "rbac": {
-        "word": "role-based access control",
-        "count": 1
+        "word": "role-based access control"
     }
 }
