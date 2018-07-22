@@ -64,7 +64,7 @@ class CliNlpModel:
     scoredNodes = list(map(lambda nlpCliNode: Suggestion(nlpCliNode.cliNode, nlpCliNode.compare(nlpQuery)), self.nlpNodes))
     matches = filter(lambda scoredNode: scoredNode.score > self.scoreThreshold, scoredNodes)
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
-    return sortedMatches[:100]
+    return sortedMatches[:top]
 
   def getLegacyResult(self, queryStr, top = 10):
     suggestions = self.getSuggestions(queryStr, top)
