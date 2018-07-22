@@ -10,6 +10,9 @@ class TestCase:
   def match(self, command: str) -> bool:
     return command in self.expectedCommands
 
+  def getCsvArray(self) -> List:
+    return [self.query, '|'.join(self.expectedCommands)]
+
 class TestSet:
   def __init__(self, id: str, testCases: List[TestCase]):
     self.id = id
@@ -25,21 +28,21 @@ class TestSet:
     '''
     filePath = "measure/testset/%s.csv" % fileName
 
-    op = log().start("Loading test set from: " + fileName) 
+    op = log().start("Loading test set from: " + fileName)
     with open(filePath) as csvfile:
       queries = csv.reader(csvfile)
       testCases = [TestCase(query[0], query[1]) for query in filter(len, queries)]
-    
 
     if id is None:
       id = fileName
 
     testSet = cls(id=id, testCases= testCases)
     op.end("%d test cases have been loaded." % testSet.count)
-    
+
     return testSet
 
 # export:
 testset_queries = TestSet.loadFromTestsFile(fileName = 'queries')
+testset_helptocommand = TestSet.loadFromTestsFile(fileName = 'helpToCommand')
 
 # print(testset_queries.count)
