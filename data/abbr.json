@@ -1,37 +1,37 @@
 {
     "vm": {
         "word": "virtual machine",
-        "count": 268
+        "count": 584
     },
     "dla": {
         "word": "data lake analytics"
     },
     "vmss": {
         "word": "virtual machine scale set",
-        "count": 50
+        "count": 89
     },
     "cdn": {
         "word": "content delivery network",
-        "count": 17
+        "count": 91
     },
     "db": {
         "word": "database",
-        "count": 49
+        "count": 156
     },
     "acr": {
         "word": "container registry",
-        "count": 92
+        "count": 93
     },
     "dls": {
         "word": "data lake store"
     },
     "ad": {
         "word": "active directory",
-        "count": 26
+        "count": 28
     },
     "dms": {
         "word": "data migration service",
-        "count": 10
+        "count": 19
     },
     "sf": {
         "word": "service fabric",
@@ -39,55 +39,56 @@
     },
     "nsg": {
         "word": "network security groups",
-        "count": 23
+        "count": 58
     },
     "dps": {
         "word": "device provisioning services",
-        "count": 27
+        "count": 68
     },
     "fs": {
-        "word": "file system",
-        "count": 2
+        "word": "file system"
     },
     "cert": {
         "word": "certification",
-        "count": 40
+        "count": 78
     },
     "sas": {
         "word": "sas",
-        "count": 6
+        "count": 585
     },
     "acs": {
         "word": "azure container services",
-        "count": 11
+        "count": 12
     },
     "sp": {
         "word": "service principal",
-        "count": 12
+        "count": 14
     },
     "ak": {
         "word": "kubernetes cluster"
     },
     "redis": {
         "word": "redis cache",
-        "count": 8
+        "count": 47
     },
     "dw": {
-        "word": "data warehouse"
+        "word": "data warehouse",
+        "count": 2
     },
     "asg": {
         "word": "application security group",
-        "count": 5
+        "count": 6
     },
     "aad": {
         "word": "azure active directory",
-        "count": 1
+        "count": 31
     },
     "op": {
         "word": "operations performed"
     },
     "waf": {
-        "word": "web application firewall"
+        "word": "web application firewall",
+        "count": 9
     },
     "midb": {
         "word": "managed database",
@@ -95,13 +96,15 @@
     },
     "az": {
         "word": "azure",
-        "count": 2851
+        "count": 2867
     },
     "cors": {
-        "word": "cross-origin resource sharing"
+        "word": "cross-origin resource sharing",
+        "count": 6
     },
     "rp": {
-        "word": "recovery point"
+        "word": "recovery point",
+        "count": 3
     },
     "cg": {
         "word": "consumer group",
@@ -109,12 +112,14 @@
     },
     "acl": {
         "word": "access control list",
-        "count": 2
+        "count": 19
     },
     "rdp": {
-        "word": "remote desktop protocol"
+        "word": "remote desktop protocol",
+        "count": 2
     },
     "rbac": {
-        "word": "role-based access control"
+        "word": "role-based access control",
+        "count": 12
     }
 }

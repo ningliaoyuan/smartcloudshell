@@ -2,7 +2,7 @@ var fs = require('fs');
 
 function countWordsInStr(str, counts) {
     str = str
-        .replace(/[:-_.\/]/g, ' ')
+        .replace(/[?:=\-_.\/]/g, ' ')
         .replace(/[^\w\s]/gi, '')
         .replace(/[0-9]/g, '')
         .replace(/\n/g, " ")
@@ -13,8 +13,8 @@ function countWordsInStr(str, counts) {
     for (var i = 0, len = tokens.length; i < len; i++) {
         var word = tokens[i];
         if (word && word.length > 1) {
-            if(word == "sourcerepositorysourcetag")
-                debugger;
+            // if(word == "defaultsecurityrulesaccess")
+            //     debugger;
             if (!counts[word]) {
                 counts[word] = 0;
             }
