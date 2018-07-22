@@ -41,4 +41,4 @@ Local:
 
 
 # Azure Api
-http://smartcloudshellapidev.westus2.azurecontainer.io
+http://smartcloudshellapi.westus2.azurecontainer.io/cli/help/I%20want%20to%20create%20a%20storage%20account
