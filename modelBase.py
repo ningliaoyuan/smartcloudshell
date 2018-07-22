@@ -7,7 +7,7 @@ class Suggestion:
   def __init__(self, cliNode: CliNode, score):
     self.cliNode = cliNode
     self.score = score
-  
+
   def mapSuggestionToRes(self):
     return {
       "id": self.cliNode.id,
@@ -32,7 +32,8 @@ class NlpCliNode:
 
   def compare(self, nlpQuery):
     scores = map(nlpQuery.similarity, self.nlpQueries)
-    return max(scores)
+    maxScore = max(scores)
+    return round(float(maxScore), 4)
 
 class CliNlpModel:
   def __init__(self, id: str, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
@@ -42,7 +43,7 @@ class CliNlpModel:
     self.scoreThreshold = scoreThreshold
 
     if rewriteQuery is not None:
-      self.rewriteQuery = rewriteQuery      
+      self.rewriteQuery = rewriteQuery
     else:
       self.rewriteQuery = lambda query: query
 

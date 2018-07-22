@@ -1,4 +1,4 @@
-import csv, json, os
+import csv, json, os, yaml
 from typing import List
 
 from datetime import datetime
@@ -11,6 +11,49 @@ class TestCaseResult:
     self.testCase = testCase
     self.matchedIndex = matchedIndex
     self.matchedSuggestion = matchedSuggestion
+
+class TestSummary:
+  def __init__(self, ts: str, modelId: str, testSetId: str, total, precision, top3recall, top10recall):
+    self.ts = ts
+    self.modelId = modelId
+    self.testSetId = testSetId
+    self.total = total
+    self.precision = precision
+    self.top3recall = top3recall
+    self.top10recall = top10recall
+    self.id = self.ts + '_' + self.testSetId + '_' + self.modelId
+
+class TestReport:
+  def __init__(self, ts: str, modelId: str, testSetId: str, testCaseResults: List[TestCaseResult]):
+    self.testCaseResults = testCaseResults
+
+    total = len(self.testCaseResults)
+
+    def filterByIndex(result: TestCaseResult, index: int) -> bool:
+      return result.matchedIndex > -1 and result.matchedIndex <= index
+
+    def cal(matchedResult: List[TestCaseResult], total: int) -> float:
+      return round(len(matchedResult) / total, 4)
+
+    top10Matched = list(filter(lambda r: filterByIndex(r, 10), self.testCaseResults))
+    top10recall = cal(top10Matched, total)
+
+    top3Matched = list(filter(lambda r: filterByIndex(r, 3), top10Matched))
+    top3recall = cal(top3Matched, total)
+
+    top1Matched = list(filter(lambda r: filterByIndex(r, 1), top3Matched))
+    precision = cal(top1Matched, total)
+
+    self.summary = TestSummary(ts, modelId, testSetId, total, precision, top3recall, top10recall)
+
+  def saveToYamlFile(self, filepath = None):
+    if filepath is None:
+      filepath = 'measure/output/' + self.summary.id + '.report.yaml'
+
+    with open(filepath, 'w') as outfile:
+      yaml.dump(self, outfile, default_flow_style=False)
+
+    print("Test report saves to " + filepath)
 
 class TestRunner:
   def __init__(self, testSet: TestSet, cliModel: CliNlpModel):
@@ -26,7 +69,7 @@ class TestRunner:
       sug = suggestions[index]
       if case.match(sug.cliNode.id):
         return TestCaseResult(case, index, sug)
-    
+
     return TestCaseResult(case)
 
   def getTestResults(self):
@@ -35,49 +78,23 @@ class TestRunner:
 
     return self._testCaseResults
 
-  def run(self):
+  def run(self) -> TestReport:
     if not os.path.isdir('measure/output'):
       os.makedirs('measure/output')
 
     results = self.getTestResults()
-    filepath = self._getTestRunFilePath()
 
-    TestRunner.writeToFile(filepath, results)
-    print("Finished test run. Result saved to " + filepath)
-
-  def _getTestRunFilePath(self):
     ts = datetime.now().strftime('%m%d%H%M%S')
-    outputFilePath = 'measure/output/' + ts + '_' + self._testSet.id + '_' + self._cliModel.id + '.testrun.csv'
-    
-    return outputFilePath
-  
-  @staticmethod
-  def writeToFile(outputFile: str, results: List[TestCaseResult]):
-    with open(outputFile, 'w+', newline='') as csvfile:
-      writer = csv.writer(csvfile)
-     
-      for res in results:
-        if res.matchedIndex > -1:
-          writer.writerow([
-            res.testCase.query,
-            res.matchedIndex,
-            res.matchedSuggestion.score,
-            res.matchedSuggestion.cliNode.id
-          ])
-        else:
-          writer.writerow([
-            res.testCase.query,
-            -1,
-            0,
-            res.testCase.expectedCommands[0]
-          ])
-    
-    baselineModel_sm
+    report = TestReport(ts, self._cliModel.id, self._testSet.id, results)
+
+    return report
 
 # runner = TestRunner(testset_queries, baselineModel_sm.load())
-# runner.run()
+# report = runner.run()
+# report.saveToYamlFile()
 
 runner = TestRunner(testset_queries, baselineModel_lg.load())
-runner.run()
+report = runner.run()
+report.saveToYamlFile()
 
 # TODO: add more runner to measure different combinations
