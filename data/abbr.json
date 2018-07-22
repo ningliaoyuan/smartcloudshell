@@ -1,0 +1,138 @@
+{
+    "vm": {
+        "word": "virtual machine",
+        "count": 280
+    },
+    "dns": {
+        "word": "domain name system",
+        "count": 137
+    },
+    "dla": {
+        "word": "data lake analytics",
+        "count": 85
+    },
+    "vmss": {
+        "word": "virtual machine scale set",
+        "count": 80
+    },
+    "cdn": {
+        "word": "content delivery network",
+        "count": 69
+    },
+    "db": {
+        "word": "database",
+        "count": 66
+    },
+    "acr": {
+        "word": "container registry",
+        "count": 45
+    },
+    "dls": {
+        "word": "data lake store",
+        "count": 42
+    },
+    "ad": {
+        "word": "active directory",
+        "count": 38
+    },
+    "dms": {
+        "word": "data migration service",
+        "count": 33
+    },
+    "sf": {
+        "word": "service fabric",
+        "count": 28
+    },
+    "nsg": {
+        "word": "network security groups",
+        "count": null
+    },
+    "dps": {
+        "word": "device provisioning services",
+        "count": 24
+    },
+    "fs": {
+        "word": "file system",
+        "count": 22
+    },
+    "cert": {
+        "word": "certification",
+        "count": 20
+    },
+    "sas": {
+        "word": "sas",
+        "count": 17
+    },
+    "acs": {
+        "word": "azure container services",
+        "count": 16
+    },
+    "sp": {
+        "word": "service principal",
+        "count": 13
+    },
+    "ak": {
+        "word": "kubernetes cluster",
+        "count": 11
+    },
+    "redis": {
+        "word": "redis cache",
+        "count": 9
+    },
+    "dw": {
+        "word": "data warehouse",
+        "count": 8
+    },
+    "asg": {
+        "word": "application security group",
+        "count": 7
+    },
+    "aad": {
+        "word": "azure active directory",
+        "count": 7
+    },
+    "op": {
+        "word": "operations performed",
+        "count": 6
+    },
+    "waf": {
+        "word": "web application firewall",
+        "count": 6
+    },
+    "midb": {
+        "word": "managed database",
+        "count": 6
+    },
+    "az": {
+        "word": "azure",
+        "count": 4
+    },
+    "cors": {
+        "word": "cross-origin resource sharing",
+        "count": 4
+    },
+    "rp": {
+        "word": "recovery point",
+        "count": 2
+    },
+    "cg": {
+        "word": "consumer group",
+        "count": 1
+    },
+    "acl": {
+        "word": "access control list",
+        "count": 1
+    },
+    "rdp": {
+        "word": "remote desktop protocol",
+        "count": 1
+    },
+    "isv": {
+        "word": "independent software vendors",
+        "count": 1
+    },
+    "rbac": {
+        "word": "role-based access control",
+        "count": 1
+    }
+}
