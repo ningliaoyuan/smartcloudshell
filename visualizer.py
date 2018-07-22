@@ -6,19 +6,21 @@ import mpld3
 from mpld3 import plugins
 import matplotlib.cm as cm
 
-from models import baselineModel_sm, baselineModel_lg
+from models import baselineModel_partial
 
 def visualize(modelLoader, title='Command confusion map'):
   records = []
   model = modelLoader.load()
   for nlpNode in model.nlpNodes:
       id = nlpNode.cliNode.id
+      group = nlpNode.cliNode.group
       for query in nlpNode.nlpQueries:
-          if query.has_vector:
+          if query.has_vector and query.text == id:
               record = {
                   'vector': query.vector,
                   'command': id,
-                  'query': query.text
+                  'query': query.text,
+                  'group': group
               }
               records.append(record)
 
@@ -27,25 +29,23 @@ def visualize(modelLoader, title='Command confusion map'):
   tsne = TSNE(n_components=2, verbose=2, metric='cosine', method='exact', n_iter=5000,
               perplexity=20, random_state=1131)
   tsne_results = tsne.fit_transform(np.stack(embeddings.vector, axis=0))
-  dfg = embeddings[['command', 'query']].copy()
+  dfg = embeddings[['command', 'query', 'group']].copy()
   dfg['t-x'] = tsne_results[:,0]
   dfg['t-y'] = tsne_results[:,1]
   dfg['rank'] = (dfg['t-x']-dfg['t-x'].min())**2+(dfg['t-y']-dfg['t-y'].min())**2
-  dfg['command-group'] = dfg['command'].str.split().str.get(0)
-  commands = dfg.drop_duplicates(['command-group']).sort_values(['rank'])[['command-group']].reset_index(drop=True)
-  commands['id'] = np.arange(0, len(commands), 1)
-  dfg = dfg.merge(commands, on='command-group', how='inner')
+  commandGroups = dfg.drop_duplicates(['group']).sort_values(['rank'])[['group']].reset_index(drop=True)
+  commandGroups['id'] = np.arange(0, len(commandGroups), 1)
+  dfg = dfg.merge(commandGroups, on='group', how='inner')
 
   fig, ax = plt.subplots(figsize=(16,12))
   ax.set_facecolor('#7E7E7E')
   colors = cm.tab20.colors
-  lastIdx = 0
-  for cmd in commands['command-group']:
-    data = dfg[dfg['command-group']==cmd]
+  for cmd in commandGroups['group']:
+    data = dfg[dfg['group']==cmd]
     c = data['id'].apply(lambda x: colors[x%len(colors)])
-    s = data['command-group'].apply(lambda x:50 if x==cmd else 10)
+    s = data['group'].apply(lambda x:50 if x==cmd else 10)
     pt = ax.scatter(data['t-x'], data['t-y'], c=c, label=cmd, s=s, alpha=0.7)
-    labels = ["- %s | %s" %(a[0],a[1]) for a in zip(data['command-group'], data['query'])]
+    labels = ["- %s | %s" %(a[0],a[1]) for a in zip(data['group'], data['query'])]
     tooltip = plugins.PointLabelTooltip(pt, labels=labels)
     mpld3.plugins.connect(fig, tooltip)
 
@@ -58,7 +58,7 @@ def visualize(modelLoader, title='Command confusion map'):
   for i, text in enumerate(lg.get_texts()):
     text.set_color(colors[i%len(colors)])
   ax.set_title(title, size=20)
-  plt.savefig(title+'.pdf')
+  plt.savefig('visualizer/' + title+'.pdf')
   # mpld3.save_html(fig, 'ConfusionMap.html')
 
   # import socket
@@ -68,5 +68,6 @@ def visualize(modelLoader, title='Command confusion map'):
   #   hostip="0.0.0.0"
   # mpld3.show(ip=hostip)
 
-visualize(baselineModel_sm, 'Command confusion map - small dataset with small model')
+#visualize(baselineModel_sm, 'Command confusion map - small dataset with small model')
 #visualize(baselineModel_lg, 'Command confusion map - large dataset with large model')
+visualize(baselineModel_partial, 'Command confusion map - partial dataset with large model (commands only)')

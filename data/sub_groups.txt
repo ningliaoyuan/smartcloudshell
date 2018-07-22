@@ -1,0 +1,474 @@
+account
+account lock
+account management-group
+account management-group subscription
+acr
+acr build-task
+acr credential
+acr replication
+acr repository
+acr webhook
+acs
+acs dcos
+acs kubernetes
+ad
+ad app
+ad group
+ad group member
+ad sp
+ad sp credential
+ad user
+advisor
+advisor configuration
+advisor recommendation
+aks
+ams
+ams account
+ams account sp
+ams account storage
+ams asset
+ams job
+ams streaming
+ams streaming endpoint
+ams streaming locator
+ams streaming policy
+ams transform
+ams transform output
+appservice
+appservice plan
+backup
+backup container
+backup item
+backup job
+backup policy
+backup protection
+backup recoverypoint
+backup restore
+backup restore files
+backup vault
+backup vault backup-properties
+batch
+batch account
+batch account autostorage-keys
+batch account keys
+batch application
+batch application package
+batch application summary
+batch certificate
+batch job
+batch job all-statistics
+batch job prep-release-status
+batch job task-counts
+batch job-schedule
+batch location
+batch location quotas
+batch node
+batch node file
+batch node remote-desktop
+batch node remote-login-settings
+batch node scheduling
+batch node service-logs
+batch node user
+batch pool
+batch pool all-statistics
+batch pool autoscale
+batch pool node-agent-skus
+batch pool node-counts
+batch pool os
+batch pool usage-metrics
+batch task
+batch task file
+batch task subtask
+batchai
+batchai cluster
+batchai cluster file
+batchai cluster node
+batchai experiment
+batchai file-server
+batchai job
+batchai job file
+batchai job node
+batchai workspace
+billing
+billing enrollment-account
+billing invoice
+billing period
+cdn
+cdn custom-domain
+cdn edge-node
+cdn endpoint
+cdn origin
+cdn profile
+cloud
+cognitiveservices
+cognitiveservices account
+cognitiveservices account keys
+configure
+consumption
+consumption budget
+consumption marketplace
+consumption pricesheet
+consumption reservation
+consumption reservation detail
+consumption reservation summary
+consumption usage
+container
+cosmosdb
+cosmosdb collection
+cosmosdb database
+disk
+dla
+dla account
+dla account blob-storage
+dla account compute-policy
+dla account data-lake-store
+dla account firewall
+dla catalog
+dla catalog assembly
+dla catalog credential
+dla catalog database
+dla catalog external-data-source
+dla catalog package
+dla catalog procedure
+dla catalog schema
+dla catalog table
+dla catalog table-partition
+dla catalog table-stats
+dla catalog table-type
+dla catalog tvf
+dla catalog view
+dla job
+dla job pipeline
+dla job recurrence
+dls
+dls account
+dls account firewall
+dls account trusted-provider
+dls fs
+dls fs access
+dms
+dms project
+dms project task
+eventgrid
+eventgrid event-subscription
+eventgrid topic
+eventgrid topic key
+eventgrid topic-type
+eventhubs
+eventhubs eventhub
+eventhubs eventhub authorization-rule
+eventhubs eventhub authorization-rule keys
+eventhubs eventhub consumer-group
+eventhubs georecovery-alias
+eventhubs georecovery-alias authorization-rule
+eventhubs georecovery-alias authorization-rule keys
+eventhubs namespace
+eventhubs namespace authorization-rule
+eventhubs namespace authorization-rule keys
+extension
+feature
+feedback
+find
+functionapp
+functionapp config
+functionapp config appsettings
+functionapp config hostname
+functionapp config ssl
+functionapp deployment
+functionapp deployment source
+functionapp deployment user
+functionapp identity
+group
+group deployment
+group deployment operation
+group lock
+identity
+image
+interactive
+iot
+iot device
+iot device message
+iot dps
+iot dps access-policy
+iot dps certificate
+iot dps linked-hub
+iot hub
+iot hub certificate
+iot hub consumer-group
+iot hub job
+iot hub policy
+keyvault
+keyvault certificate
+keyvault certificate contact
+keyvault certificate issuer
+keyvault certificate issuer admin
+keyvault certificate pending
+keyvault key
+keyvault secret
+lab
+lab arm-template
+lab artifact
+lab artifact-source
+lab custom-image
+lab environment
+lab formula
+lab gallery-image
+lab secret
+lab vm
+lab vnet
+lock
+login
+logout
+managedapp
+managedapp definition
+maps
+maps account
+maps account keys
+monitor
+monitor action-group
+monitor activity-log
+monitor activity-log alert
+monitor activity-log alert action-group
+monitor activity-log alert scope
+monitor alert
+monitor autoscale
+monitor autoscale profile
+monitor autoscale rule
+monitor autoscale-settings
+monitor diagnostic-settings
+monitor diagnostic-settings categories
+monitor log-profiles
+monitor metrics
+mysql
+mysql db
+mysql server
+mysql server configuration
+mysql server firewall-rule
+mysql server-logs
+network
+network application-gateway
+network application-gateway address-pool
+network application-gateway auth-cert
+network application-gateway frontend-ip
+network application-gateway frontend-port
+network application-gateway http-listener
+network application-gateway http-settings
+network application-gateway probe
+network application-gateway redirect-config
+network application-gateway rule
+network application-gateway ssl-cert
+network application-gateway ssl-policy
+network application-gateway ssl-policy predefined
+network application-gateway url-path-map
+network application-gateway url-path-map rule
+network application-gateway waf-config
+network asg
+network ddos-protection
+network dns
+network dns record-set
+network dns record-set a
+network dns record-set aaaa
+network dns record-set caa
+network dns record-set cname
+network dns record-set mx
+network dns record-set ns
+network dns record-set ptr
+network dns record-set soa
+network dns record-set srv
+network dns record-set txt
+network dns zone
+network express-route
+network express-route auth
+network express-route peering
+network lb
+network lb address-pool
+network lb frontend-ip
+network lb inbound-nat-pool
+network lb inbound-nat-rule
+network lb probe
+network lb rule
+network local-gateway
+network nic
+network nic ip-config
+network nic ip-config address-pool
+network nic ip-config inbound-nat-rule
+network nsg
+network nsg rule
+network public-ip
+network route-filter
+network route-filter rule
+network route-table
+network route-table route
+network traffic-manager
+network traffic-manager endpoint
+network traffic-manager profile
+network vnet
+network vnet peering
+network vnet subnet
+network vnet-gateway
+network vnet-gateway revoked-cert
+network vnet-gateway root-cert
+network vnet-gateway vpn-client
+network vpn-connection
+network vpn-connection ipsec-policy
+network vpn-connection shared-key
+network watcher
+network watcher connection-monitor
+network watcher flow-log
+network watcher packet-capture
+network watcher troubleshooting
+policy
+policy assignment
+policy definition
+policy event
+policy set-definition
+policy state
+postgres
+postgres db
+postgres server
+postgres server configuration
+postgres server firewall-rule
+postgres server-logs
+provider
+provider list
+provider operation
+redis
+redis patch-schedule
+redis patch-schedule patch-schedule
+reservations
+reservations catalog
+reservations reservation
+reservations reservation-order
+reservations reservation-order-id
+resource
+resource link
+resource lock
+role
+role assignment
+role definition
+servicebus
+servicebus georecovery-alias
+servicebus georecovery-alias authorization-rule
+servicebus georecovery-alias authorization-rule keys
+servicebus namespace
+servicebus namespace authorization-rule
+servicebus namespace authorization-rule keys
+servicebus queue
+servicebus queue authorization-rule
+servicebus queue authorization-rule keys
+servicebus topic
+servicebus topic authorization-rule
+servicebus topic authorization-rule keys
+servicebus topic subscription
+servicebus topic subscription rule
+sf
+sf application
+sf application certificate
+sf cluster
+sf cluster certificate
+sf cluster client-certificate
+sf cluster durability
+sf cluster node
+sf cluster node-type
+sf cluster reliability
+sf cluster setting
+sf cluster upgrade-type
+snapshot
+sql
+sql db
+sql db audit-policy
+sql db op
+sql db op cancel
+sql db replica
+sql db tde
+sql db threat-policy
+sql dw
+sql elastic-pool
+sql elastic-pool op
+sql elastic-pool op cancel
+sql mi
+sql midb
+sql server
+sql server ad-admin
+sql server conn-policy
+sql server dns-alias
+sql server firewall-rule
+sql server key
+sql server tde-key
+sql server vnet-rule
+storage
+storage account
+storage account generate-sas
+storage account keys
+storage account network-rule
+storage blob
+storage blob copy
+storage blob incremental-copy
+storage blob lease
+storage blob metadata
+storage blob service-properties
+storage blob service-properties delete-policy
+storage container
+storage container lease
+storage container metadata
+storage container policy
+storage cors
+storage directory
+storage directory metadata
+storage entity
+storage file
+storage file copy
+storage file metadata
+storage logging
+storage message
+storage metrics
+storage queue
+storage queue metadata
+storage queue policy
+storage share
+storage share metadata
+storage share policy
+storage table
+storage table policy
+tag
+vm
+vm availability-set
+vm boot-diagnostics
+vm diagnostics
+vm disk
+vm encryption
+vm extension
+vm extension image
+vm identity
+vm image
+vm nic
+vm run-command
+vm secret
+vm unmanaged-disk
+vm user
+vmss
+vmss diagnostics
+vmss disk
+vmss encryption
+vmss extension
+vmss extension image
+vmss identity
+vmss nic
+vmss rolling-upgrade
+webapp
+webapp auth
+webapp config
+webapp config appsettings
+webapp config backup
+webapp config connection-string
+webapp config container
+webapp config hostname
+webapp config ssl
+webapp deployment
+webapp deployment container
+webapp deployment slot
+webapp deployment source
+webapp deployment user
+webapp identity
+webapp log
+webapp traffic-routing

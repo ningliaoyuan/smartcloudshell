@@ -1,6 +1,6 @@
 import spacy, time, types
 from log import log
-from data import cliData, cliData_sm
+from data import cliData, cliData_partial, cliData_sm
 from modelBase import CliNlpModel
 
 import en_core_web_lg as model_lg
@@ -28,7 +28,7 @@ class Model:
 
 baselineModel_sm = Model(cliData_sm, model_sm, "small data set with small nlp model")
 baselineModel_lg = Model(cliData, model_lg, "large data set with large nlp model")
-
+baselineModel_partial = Model(cliData_partial, model_lg, "partial data set with large nlp model")
 
 # sm = baselineModel_sm.load()
 # suggestions = sm.getSuggestions("create storage account")

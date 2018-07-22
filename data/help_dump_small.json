@@ -1,4 +1,7 @@
 {
+  "acr": {
+      "help": "Manage Azure Container Registries for private registries within Azure."
+  },
   "acr check-name": {
     "parameters": {
       "--name": {
