@@ -7,10 +7,11 @@ from modelBase import CliNlpModel, Suggestion
 from testset import TestCase, TestSet, testset_queries
 
 class TestCaseResult:
-  def __init__(self, testCase: TestCase, matchedIndex: int = -1, matchedSuggestion: Suggestion = None):
+  def __init__(self, testCase: TestCase, suggestions: List[Suggestion], matchedIndex: int = -1, matchedSuggestion: Suggestion = None):
     self.testCase = testCase
     self.matchedIndex = matchedIndex
     self.matchedSuggestion = matchedSuggestion
+    self.suggestions = suggestions
 
 class TestSummary:
   def __init__(self, ts: str, modelId: str, testSetId: str, total, precision, top3recall, top10recall):
@@ -55,6 +56,64 @@ class TestReport:
 
     print("Test report saves to " + filepath)
 
+class CaseResultDiff:
+  def __init__(self, testCase: TestCase, report1Suggestions: List[Suggestion], report2Suggestions: List[Suggestion], report1MatchedIndex: int, report2MatchedIndex: int):
+    self.case = testCase
+    self.report1Suggestions = report1Suggestions
+    self.report2Suggestions = report2Suggestions
+    self.report1MatchedIndex = report1MatchedIndex
+    self.report2MatchedIndex = report2MatchedIndex
+
+    if report1MatchedIndex == -1:
+      report1MatchedIndex = 10000
+
+    if report2MatchedIndex == -1:
+      report1MatchedIndex = 10000
+
+    if report1MatchedIndex < report2MatchedIndex:
+      self.report1Score = 1
+    elif report1MatchedIndex > report2MatchedIndex:
+      self.report1Score = -1
+    else:
+      self.report1Score = 0
+
+class TestReportDiff:
+  def __init__(self, score, summary1: TestSummary, summary2: TestSummary, diffs: List[CaseResultDiff]):
+    self.score = score
+    self.summary1 = summary1
+    self.summary2 = summary2
+    self.z_diffs = diffs
+
+  def saveToYamlFile(self, filepath = None):
+    if filepath is None:
+      filepath = 'measure/output/' + self.summary1.id + '_' + self.summary2.id + '.diff.yaml'
+
+    with open(filepath, 'w') as outfile:
+      yaml.dump(self, outfile, default_flow_style=False)
+
+    print("Test report diff saves to " + filepath)
+
+  @classmethod
+  def diffReports(cls, report1: TestReport, report2: TestReport):
+    if report1.summary.testSetId != report2.summary.testSetId:
+      return None
+
+    diffs = []
+    score = 0
+    for index in range(len(report1.testCaseResults)):
+      res1 = report1.testCaseResults[index]
+      res2 = report2.testCaseResults[index]
+
+      if(res1.matchedIndex == res2.matchedIndex):
+        continue
+
+      diff = CaseResultDiff(res1.testCase, res1.suggestions, res2.suggestions, res1.matchedIndex, res2.matchedIndex)
+      score += diff.report1Score
+
+      diffs.append(diff)
+
+    return cls(score, report1.summary, report2.summary, diffs)
+
 class TestRunner:
   def __init__(self, testSet: TestSet, cliModel: CliNlpModel):
 
@@ -68,9 +127,9 @@ class TestRunner:
     for index in range(len(suggestions)):
       sug = suggestions[index]
       if case.match(sug.cliNode.id):
-        return TestCaseResult(case, index, sug)
+        return TestCaseResult(case, suggestions[:3], index, sug)
 
-    return TestCaseResult(case)
+    return TestCaseResult(case, suggestions[:3])
 
   def getTestResults(self):
     if self._testCaseResults is None:
@@ -89,12 +148,14 @@ class TestRunner:
 
     return report
 
-# runner = TestRunner(testset_queries, baselineModel_sm.load())
-# report = runner.run()
-# report.saveToYamlFile()
+runner = TestRunner(testset_queries, baselineModel_sm.load())
+report1 = runner.run()
 
 runner = TestRunner(testset_queries, baselineModel_lg.load())
-report = runner.run()
-report.saveToYamlFile()
+report2 = runner.run()
+
+diff = TestReportDiff.diffReports(report1, report2)
+diff.saveToYamlFile()
+
 
 # TODO: add more runner to measure different combinations
