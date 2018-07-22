@@ -9,7 +9,7 @@ from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc, Span, Token
 
 # Custom pipeline components: https://spacy.io//usage/processing-pipelines#custom-components
-azureResources = ['virtual machine']
+azureResources = ['virtual machine', 'vm']
 
 class AzureResourceRecognizer(object):
     name = 'AzureResourceRecognizer'  # component name, will show up in the pipeline

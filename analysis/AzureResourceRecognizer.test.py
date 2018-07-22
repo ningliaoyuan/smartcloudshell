@@ -16,10 +16,10 @@ def test(text):
     print('Entities', [(e.text, e.label_) for e in doc.ents])
 
 def run():
-    text = "Start my virtual machine."
-    test(text) # [u'Start', u'my', u'virtual', u'machine', u'.']
+    text = "How to start my vm?"
+    test(text)
     azureResourceRecognizer = AzureResourceRecognizer(nlp)
     nlp.add_pipe(azureResourceRecognizer, last=True)
-    test(text) # [u'Start', u'my', u'virtual machine', u'.']
+    test(text)
 
 run()
