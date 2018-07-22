@@ -56,9 +56,9 @@ with open ('./data/help_dump_with_top_group.json') as f:
 cliData = CliData(data)
 
 with open ('./data/help_dump_with_top_group_partial.json') as f:
-  data = json.load(f)
+  data_partial = json.load(f)
 
-cliData_partial = CliData(data)
+cliData_partial = CliData(data_partial)
 
 with open ('./data/help_dump_small_with_top_group.json') as f:
   data_sm = json.load(f)

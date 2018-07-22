@@ -45,7 +45,7 @@ class TestCase:
 
 cases = []
 
-with open('testset/queries.csv') as csvfile:
+with open('measure/testset/queries.csv') as csvfile:
   queries = csv.reader(csvfile)
   for row in queries:
     if len(row) == 0:

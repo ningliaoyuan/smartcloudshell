@@ -35,7 +35,8 @@ class NlpCliNode:
     return max(scores)
 
 class CliNlpModel:
-  def __init__(self, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
+  def __init__(self, id: str, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
+    self.id = id
     self._cliData = cliData
     self._nlp = nlpModel
     self.scoreThreshold = scoreThreshold
@@ -59,7 +60,7 @@ class CliNlpModel:
 
   def getSuggestions(self, queryStr, top = 100):
     nlpQuery = self._getNlpQuery(queryStr)
-    scoredNodes = map(lambda nlpCliNode: Suggestion(nlpCliNode.cliNode, nlpCliNode.compare(nlpQuery)), self.nlpNodes)
+    scoredNodes = list(map(lambda nlpCliNode: Suggestion(nlpCliNode.cliNode, nlpCliNode.compare(nlpQuery)), self.nlpNodes))
     matches = filter(lambda scoredNode: scoredNode.score > self.scoreThreshold, scoredNodes)
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
     return sortedMatches[:100]

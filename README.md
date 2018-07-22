@@ -38,3 +38,7 @@ Remote:
 
 Local:
 - pip wheel -r requirements.txt -w wheelhouse
+
+
+# Azure Api
+http://smartcloudshellapidev.westus2.azurecontainer.io
