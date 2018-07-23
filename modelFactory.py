@@ -59,6 +59,11 @@ def getBaselineModel_partial():
   nlp = model_lg.load()
   return CliNlpModel("pad_lgm", getAllAsQuries, data.cliData_partial, nlp)
 
+def getModelWithAbbrVectorAssigned_partial():
+  nlp = model_lg.load()
+  nlp = addAbbrVector(nlp)
+  return CliNlpModel("lgd_lgm_abbr", getAllAsQuries, data.cliData_partial, nlp)
+
 def getModelWithAbbrVectorAssigned():
   nlp = model_lg.load()
   nlp = addAbbrVector(nlp)
