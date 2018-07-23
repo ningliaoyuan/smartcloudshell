@@ -1,4 +1,3 @@
-
 import data, spacy, time
 import numpy as np
 from typing import List
@@ -35,7 +34,7 @@ def getIdAsQuery(cliNode: data.CliNode) -> List[str]:
 
 def getHelpAsQuery(cliNode: data.CliNode) -> List[str]:
   if cliNode.help is None:
-    return None
+    return [None]
   return [cliNode.help]
 
 def getIdAndHelp(cliNode: data.CliNode) -> List[str]:
@@ -47,6 +46,10 @@ def getAllAsQuries(cliNode: data.CliNode) -> List[str]:
 def getBaselineModel():
   nlp = model_lg.load()
   return CliNlpModel("lgd_lgm", getAllAsQuries, data.cliData, nlp)
+
+def getBaselineModel_idonly():
+  nlp = model_lg.load()
+  return CliNlpModel("lgd_lgm_idonly", getIdAsQuery, data.cliData, nlp)
 
 def getBaselineModel_sm():
   nlp = model_sm.load()
