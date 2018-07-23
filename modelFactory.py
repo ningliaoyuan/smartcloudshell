@@ -7,6 +7,7 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
+from QueryRewriter import rewriteQuery
 
 def getVector(vocab, words):
   tokens = words.split(' ')
@@ -64,7 +65,7 @@ def getModelWithAbbrVectorAssigned_partial():
   nlp = addAbbrVector(nlp)
   return CliNlpModel("lgd_lgm_abbr", getAllAsQuries, data.cliData_partial, nlp)
 
-def getModelWithAbbrVectorAssigned():
+def getModelWithAbbrQrVectorAssigned():
   nlp = model_lg.load()
-  nlp = addAbbrVector(nlp)
-  return CliNlpModel("lgd_lgm_abbr", getAllAsQuries, data.cliData, nlp)
+  # nlp = addAbbrVector(nlp)
+  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)

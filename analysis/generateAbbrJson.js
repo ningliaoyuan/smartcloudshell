@@ -50,20 +50,20 @@ function count(obj, counts) {
 }
 
 function getWordCountsDic() {
-    var helpText = fs.readFileSync("../data/help_dump.json", 'utf8');
+    var helpText = fs.readFileSync("data/help_dump.json", 'utf8');
     // have to parse to obj to count the workd, since the helpText is too large and below code hang 
     //  var lines = helpText.split("\n");
     var root = JSON.parse(helpText);
     var counts = {};
     count(root, counts)
     var r = JSON.stringify(counts);
-    fs.writeFileSync("../data/help_dump-word-frequencies.json", JSON.stringify(counts, null, 4));
+    fs.writeFileSync("data/help_dump-word-frequencies.json", JSON.stringify(counts, null, 4));
     return counts;
 }
 
 function run() {
     var wordCounts = getWordCountsDic(); // TODO
-    var text = fs.readFileSync('abbr.csv', 'utf8');
+    var text = fs.readFileSync('analysis/abbr.csv', 'utf8');
     var lines = text.split("\n");
 
     var result = {};
@@ -77,7 +77,7 @@ function run() {
         }
     }
 
-    fs.writeFileSync("../data/abbr.json", JSON.stringify(result, 0, 4));
+    fs.writeFileSync("data/abbr.json", JSON.stringify(result, 0, 4));
     console.log("completed");
 }
 

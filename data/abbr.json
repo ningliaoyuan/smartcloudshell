@@ -129,5 +129,12 @@
     "ams": {
         "word": "azure media services",
         "count": 1
+    },
+    "docdb": {
+        "word": "cosmos db"
+    },
+    "cosmosdb": {
+        "word": "cosmos db",
+        "count": 44
     }
 }
