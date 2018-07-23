@@ -3,10 +3,10 @@ app = Flask(__name__)
 
 print("initializing")
 
-from models import baselineModel_lg
+from modelFactory import getBaselineModel
 from modelBase import Suggestion
 
-cliModel = baselineModel_lg.load()
+cliModel = getBaselineModel()
 
 @app.route('/')
 def hello_world():
