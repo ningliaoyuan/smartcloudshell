@@ -22,8 +22,8 @@ for resource in azureResources:
     newResources.append(resourceLower)
     if resourceLower in abbrDic:
         newResources.append(abbrDic[resourceLower]['word'])
-    else:
-        print(resourceLower)
+    # else:
+    #     print(resourceLower)
 
 azureResources = newResources
 
