@@ -10,7 +10,7 @@ cliModel = getBaselineModel()
 
 @app.route('/')
 def hello_world():
-  return 'Welcome to smart cloud shell!'
+  return 'Welcome to smart cloud shell! Please help with testing/labeling at https://bizqnabootcamp.azurewebsites.net/'
 
 @app.route('/cli/<string:query>')
 def cliWithCmd(query):
