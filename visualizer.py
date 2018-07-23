@@ -57,7 +57,7 @@ def visualize(model, title='Command confusion map'):
   for i, text in enumerate(lg.get_texts()):
     text.set_color(colors[i%len(colors)])
   ax.set_title(title, size=20)
-  plt.savefig('visualizer/' + title+'.pdf')
+  plt.savefig('visualizer/' + title.replace(' ', '_') +'.pdf')
   # mpld3.save_html(fig, 'ConfusionMap.html')
 
   # import socket
@@ -70,3 +70,4 @@ def visualize(model, title='Command confusion map'):
 # visualize(modelFactory.getBaselineModel_sm(), 'Command confusion map - small dataset with small model')
 # visualize(modelFactory.getBaselineModel(), 'Command confusion map - large dataset with large model')
 visualize(modelFactory.getBaselineModel_partial(), 'Command confusion map - partial dataset with large model (commands only)')
+visualize(modelFactory.getModelWithAbbrVectorAssigned_partial(), 'Command confusion map - partial dataset with large model with abbr assigned (commands only)')
