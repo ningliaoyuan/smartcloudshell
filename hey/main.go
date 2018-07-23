@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -27,20 +28,54 @@ func main() {
 	} else if len(os.Args) == 2 && os.Args[1] == "test" {
 		selfTest()
 	} else if len(os.Args) > 2 && os.Args[1] == "local" {
-		fmt.Println(fetchSuggestions(localEndpoint, strings.Join(os.Args[2:], " ")))
+		r, err := fetchSuggestions(localEndpoint, strings.Join(os.Args[2:], " "))
+
+		if err != nil {
+			fmt.Printf("Something went wrong: %s\n", err.Error())
+		}
+
+		reader := bufio.NewReader(os.Stdin)
+
+		for i, c := range r {
+			fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v. (Y/n)", c.ID, c.Str, c.Score)
+
+			input, _ := reader.ReadString('\n')
+
+			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 {
+				break
+			}
+			fmt.Println()
+		}
 	} else {
-		fmt.Println(fetchSuggestions(remoteEndpoint, strings.Join(os.Args[2:], " ")))
+		r, err := fetchSuggestions(remoteEndpoint, strings.Join(os.Args[2:], " "))
+
+		if err != nil {
+			fmt.Printf("Something went wrong: %s\n", err.Error())
+		}
+
+		reader := bufio.NewReader(os.Stdin)
+
+		for i, c := range r {
+			fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v\n", c.ID, c.Str, c.Score)
+
+			input, _ := reader.ReadString('\n')
+
+			if len(input) == 0 || input == "Y" || input == "y" || i > 5 {
+				break
+			}
+			fmt.Println()
+		}
 	}
 }
 
-func fetchSuggestions(endpoint, q string) string {
+func fetchSuggestions(endpoint, q string) ([]Suggestion, error) {
 	client := &http.Client{}
 
 	url := fmt.Sprintf("%s/cli/help/%s", endpoint, q)
 	resp, err := client.Get(url)
 
 	if err != nil {
-		return "Whoops, something went wrong: %s"
+		return nil, fmt.Errorf("Whoops, something went wrong: %s", err)
 	}
 
 	defer resp.Body.Close()
@@ -49,14 +84,14 @@ func fetchSuggestions(endpoint, q string) string {
 	var r []Suggestion
 	err = json.Unmarshal(buff, &r)
 	if err != nil {
-		return err.Error()
+		return nil, err
 	}
 
 	if len(r) == 0 {
-		return "I have no idea what you are talking about."
+		return nil, fmt.Errorf("I have no idea what you are talking about")
 	}
 
-	return fmt.Sprintf("Do you mean `az %s`. Confidence level: %v", r[0].ID, r[0].Score)
+	return r, nil
 }
 
 func printHelp() {
@@ -88,10 +123,10 @@ func testEndpoint(url string) (string, error) {
 
 	if err != nil {
 		return "", fmt.Errorf("Connect endpoint failed: %s", err.Error())
-	} else {
-		defer resp.Body.Close()
-		buf, _ := ioutil.ReadAll(resp.Body)
-
-		return string(buf), nil
 	}
+
+	defer resp.Body.Close()
+	buf, _ := ioutil.ReadAll(resp.Body)
+
+	return string(buf), nil
 }
