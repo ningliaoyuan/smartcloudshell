@@ -3,7 +3,7 @@ from typing import List
 
 from datetime import datetime
 from modelBase import CliNlpModel, Suggestion
-from testset import TestCase, TestSet, testset_queries
+from measure.testset import TestCase, TestSet, testset_queries
 
 class TestCaseResult:
   def __init__(self, testCase: TestCase, suggestions: List[Suggestion], matchedIndex: int = -1, matchedSuggestion: Suggestion = None):

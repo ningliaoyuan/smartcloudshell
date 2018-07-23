@@ -5,9 +5,8 @@ import datetime
 import modelFactory
 # from Model import baselineModel_lg, baselineModel_sm
 from modelBase import CliNlpModel, Suggestion
-from testset import TestCase, TestSet, testset_queries
-
-from testrunner import TestRunner, TestReportDiff
+from measure.testset import TestCase, TestSet, testset_queries
+from measure.testrunner import TestRunner, TestReportDiff
 
 def ensureTestRunerCanRun():
   runner = TestRunner(testset_queries, modelFactory.getBaselineModel_sm())
@@ -30,7 +29,7 @@ def compareSmVsLgModels():
 def compareAbbrModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAbbrVectorAssigned(), modelFactory.getBaselineModel())
 
-# ensureTestRunerCanRun()
-compareAbbrModelVsBaseLine()
+ensureTestRunerCanRun()
+# compareAbbrModelVsBaseLine()
 
 # TODO: add more runner to measure different combinations
