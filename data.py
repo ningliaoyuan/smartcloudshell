@@ -30,7 +30,7 @@ class CliNode:
 
   def getQueries(self) -> List[str]:
     return self.queries
-    
+
   def __str__(self):
     return (self.id, self.cliType, self.help).__str__()
 
@@ -42,25 +42,21 @@ class CliData:
     self._dataJson = dataJson
     self._nodes = list(map(createCliNodeFromJsonNode, self._dataJson.items()))
     self._commandNodes = list(filter(lambda n: n.cliType == "command", self._nodes))
-  
+
   def getAllNodes(self):
     return self._nodes
 
   def getCommandNodes(self):
     return self._commandNodes
 
-#with open ('./data/help_dump_small.json') as f:
-with open ('./data/help_dump_with_top_group.json') as f:
-  data = json.load(f)
+  @classmethod
+  def loadFromJson(cls, filepath: str) -> CliData:
+    with open (filepath) as f:
+      data = json.load(f)
 
-cliData = CliData(data)
+    return cls(data)
 
-with open ('./data/help_dump_with_top_group_partial.json') as f:
-  data_partial = json.load(f)
-
-cliData_partial = CliData(data_partial)
-
-with open ('./data/help_dump_small_with_top_group.json') as f:
-  data_sm = json.load(f)
-
-cliData_sm = CliData(data_sm)
+# export
+cliData = CliData.loadFromJson('data/help_dump_with_top_group.json')
+data_partial = CliData.loadFromJson('data/help_dump_with_top_group_partial.json')
+data_sm = CliData.loadFromJson('data/help_dump_small_with_top_group.json')
