@@ -47,7 +47,9 @@ class CliNlpModel:
     else:
       self.rewriteQuery = lambda query: query
 
+    op = log().start("processing data with model: " + self.id)
     self.nlpNodes = list(map(self._getNlpCliNode, cliData.getAllNodes()))
+    op.end("done")
 
   def _getNlpQuery(self, query):
     rewrittenQuery = self.rewriteQuery(query)

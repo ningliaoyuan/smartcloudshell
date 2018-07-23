@@ -2,7 +2,6 @@ import csv, json, os, yaml
 from typing import List
 
 from datetime import datetime
-from models import baselineModel_lg, baselineModel_sm
 from modelBase import CliNlpModel, Suggestion
 from testset import TestCase, TestSet, testset_queries
 
@@ -147,15 +146,3 @@ class TestRunner:
     report = TestReport(ts, self._cliModel.id, self._testSet.id, results)
 
     return report
-
-# runner = TestRunner(testset_queries, baselineModel_sm.load())
-# report1 = runner.run()
-
-runner = TestRunner(testset_queries, baselineModel_lg.load())
-report2 = runner.run()
-
-# diff = TestReportDiff.diffReports(report1, report2)
-# diff.saveToYamlFile()
-
-
-# TODO: add more runner to measure different combinations
