@@ -36,7 +36,7 @@ docker run -p 5000:5000 smartcloudshell
 
 Windows
 ```
-https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.2/smartcloudshell_windows_64-bit.zip
+https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.3/smartcloudshell_windows_64-bit.zip
 ```
 
 Run with debug
