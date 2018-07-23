@@ -75,7 +75,7 @@ func presentResult(r []Suggestion) {
 	reader := bufio.NewReader(os.Stdin)
 
 	for i, c := range r {
-		fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v. (Y/n)", c.ID, c.Str, c.Score)
+		fmt.Printf("Did you mean `%s` that will `%s`? (Y/n)", c.ID, c.Str)
 
 		input, _ := reader.ReadString('\n')
 
