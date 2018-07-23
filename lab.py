@@ -29,10 +29,20 @@ def compareSmVsLgModels():
   compare(testset_queries, modelFactory.getBaselineModel_sm(), modelFactory.getBaselineModel())
 
 def compareAbbrModelVsBaseLine():
+  compare(testset_queries, modelFactory.getModelWithAbbrVectorAssigned(), modelFactory.getBaselineModel())
+
+def compareAbbrQrModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAbbrQrVectorAssigned(), modelFactory.getBaselineModel())
 
-# ensureTestRunerCanRun()
-compareAbbrModelVsBaseLine()
+def compareReports(reportPath1: str, reportPath2: str):
+  report1 = TestReport.loadFromYamlFile(reportPath1)
+  report2 = TestReport.loadFromYamlFile(reportPath2)
+  diff = TestReportDiff.diffReports(report1, report2)
+  diff.saveToYamlFile()
 
-compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
+# ensureTestRunerCanRun()
+# compareAbbrModelVsBaseLine()
+compareAbbrQrModelVsBaseLine()
+
+#compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations
