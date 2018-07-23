@@ -12,7 +12,7 @@ import (
 
 const (
 	localEndpoint  = "http://localhost:5000"
-	remoteEndpoint = "http://notdeployedy.com"
+	remoteEndpoint = "http://smartcloudshellapi.westus2.azurecontainer.io"
 )
 
 // Suggestion is the return structure

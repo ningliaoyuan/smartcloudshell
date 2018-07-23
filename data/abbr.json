@@ -121,5 +121,13 @@
     "rbac": {
         "word": "role-based access control",
         "count": 12
+    },
+    "aks": {
+        "word": "kubernetes",
+        "count": 31
+    },
+    "ams": {
+        "word": "azure media services",
+        "count": 1
     }
 }

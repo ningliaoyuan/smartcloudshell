@@ -6,11 +6,10 @@ import mpld3
 from mpld3 import plugins
 import matplotlib.cm as cm
 
-from models import baselineModel_partial
+import modelFactory
 
-def visualize(modelLoader, title='Command confusion map'):
+def visualize(model, title='Command confusion map'):
   records = []
-  model = modelLoader.load()
   for nlpNode in model.nlpNodes:
       id = nlpNode.cliNode.id
       group = nlpNode.cliNode.group
@@ -68,6 +67,6 @@ def visualize(modelLoader, title='Command confusion map'):
   #   hostip="0.0.0.0"
   # mpld3.show(ip=hostip)
 
-#visualize(baselineModel_sm, 'Command confusion map - small dataset with small model')
-#visualize(baselineModel_lg, 'Command confusion map - large dataset with large model')
-visualize(baselineModel_partial, 'Command confusion map - partial dataset with large model (commands only)')
+# visualize(modelFactory.getBaselineModel_sm(), 'Command confusion map - small dataset with small model')
+# visualize(modelFactory.getBaselineModel(), 'Command confusion map - large dataset with large model')
+visualize(modelFactory.getBaselineModel_partial(), 'Command confusion map - partial dataset with large model (commands only)')

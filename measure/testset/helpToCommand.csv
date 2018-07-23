@@ -1,0 +1,2332 @@
+Checks if a container registry name is valid and available for use,acr check-name
+Lists all the container registries under the current subscription,acr list
+Creates a container registry,acr create
+Deletes a container registry,acr delete
+Get the details of a container registry,acr show
+Log in to a container registry through the Docker CLI,acr login
+Get the quota usages for a container registry,acr show-usage
+Update a container registry,acr update
+Imports an image to the container registry from source,acr import
+Get the login credentials for a container registry,acr credential show
+Regenerate login credentials for a container registry,acr credential renew
+List repositories in a container registry,acr repository list
+Show tags for a repository in a container registry,acr repository show-tags
+Show manifests of a repository in a container registry,acr repository show-manifests
+Delete a repository or image in a container registry,acr repository delete
+Untag an image in a container registry,acr repository untag
+List all of the webhooks for a container registry,acr webhook list
+Create a webhook for a container registry,acr webhook create
+Delete a webhook from a container registry,acr webhook delete
+Get the details of a webhook,acr webhook show
+Get the service URI and custom headers for the webhook,acr webhook get-config
+List recent events for a webhook,acr webhook list-events
+Trigger a ping event for a webhook,acr webhook ping
+Update a webhook,acr webhook update
+List all of the replications for a container registry,acr replication list
+Create a replication for a container registry,acr replication create
+Delete a replication from a container registry,acr replication delete
+Get the details of a replication,acr replication show
+Updates a replication,acr replication update
+Queues a quick docker build providing interactive feedback,acr build
+Creates a new build definition which can be triggered by git commits or base image updates,acr build-task create
+Get the properties of a specified build task,acr build-task show
+List the build tasks for a container registry,acr build-task list
+Delete a build task from a container registry,acr build-task delete
+Update a build task for a container registry,acr build-task update
+Trigger a build task that might otherwise be waiting for git commits or base image update triggers,acr build-task run
+"List all of the executed builds for a registry, with the ability to filter by a specific build task",acr build-task list-builds
+Get the properties of a specified build,acr build-task show-build
+Show logs for a particular build,acr build-task logs
+Show the dashboard for a service container's orchestrator in a web browser,acs browse
+Create a container service,acs create
+Delete a container service,acs delete
+List container services,acs list
+List locations where Azure Container Service is in preview and in production,acs list-locations
+Change the private agent count of a container service,acs scale
+Get the details for a container service,acs show
+Wait for a container service to reach a desired state,acs wait
+"Creates an SSH tunnel to the Azure container service, and opens the Mesosphere DC/OS dashboard in the browser",acs dcos browse
+Download and install the DC/OS command-line tool for a cluster,acs dcos install-cli
+Launch a proxy and browse the Kubernetes web UI,acs kubernetes browse
+Download and install credentials to access a cluster,acs kubernetes get-credentials
+Download and install the Kubernetes command-line tool for a cluster,acs kubernetes install-cli
+Show the dashboard for a Kubernetes cluster in a web browser,aks browse
+Create a new managed Kubernetes cluster,aks create
+Delete a managed Kubernetes cluster,aks delete
+Get access credentials for a managed Kubernetes cluster,aks get-credentials
+Get the upgrade versions available for a managed Kubernetes cluster,aks get-upgrades
+"Download and install kubectl, the Kubernetes command-line tool",aks install-cli
+(PREVIEW) Install the ACI Connector on a managed Kubernetes cluster,aks install-connector
+List managed Kubernetes clusters,aks list
+(PREVIEW) Remove the ACI Connector from a managed Kubernetes cluster,aks remove-connector
+Scale the node pool in a managed Kubernetes cluster,aks scale
+Show the details for a managed Kubernetes cluster,aks show
+Upgrade a managed Kubernetes cluster to a newer version,aks upgrade
+(PREVIEW) Upgrade the ACI Connector on a managed Kubernetes cluster,aks upgrade-connector
+(PREVIEW) Use Azure Dev Spaces with a managed Kubernetes cluster,aks use-dev-spaces
+(PREVIEW) Remove Azure Dev Spaces from a managed Kubernetes cluster,aks remove-dev-spaces
+Wait for a managed Kubernetes cluster to reach a desired state,aks wait
+Get the versions available for creating a managed Kubernetes cluster,aks get-versions
+List Azure Advisor recommendations,advisor recommendation list
+Disable Azure Advisor recommendations,advisor recommendation disable
+Enable Azure Advisor recommendations,advisor recommendation enable
+List Azure Advisor configuration for the entire subscription,advisor configuration list
+Show Azure Advisor configuration for the given subscription or resource group,advisor configuration show
+Update Azure Advisor configuration,advisor configuration update
+Show the details of an Azure Media Services account,ams account show
+Delete an Azure Media Services account,ams account delete
+Update the details of an Azure Media Services account,ams account update
+List Azure Media Services accounts for the entire subscription,ams account list
+Create an Azure Media Services account,ams account create
+Attach a secondary storage to an Azure Media Services account,ams account storage add
+Detach a secondary storage from an Azure Media Services account,ams account storage remove
+Create a service principal and configure its access to an Azure Media Services account,ams account sp create
+Generate a new client secret for a service principal configured for an Azure Media Services account,ams account sp reset-credentials
+Show the details of a transform,ams transform show
+List all the transforms of an Azure Media Services account,ams transform list
+Delete a transform,ams transform delete
+Create a transform,ams transform create
+Update the details of a transform,ams transform update
+Add an output to an existing transform,ams transform output add
+Remove an output from an existing transform,ams transform output remove
+Show the details of an asset,ams asset show
+List all the assets of an Azure Media Services account,ams asset list
+Delete an asset,ams asset delete
+Update the details of an asset,ams asset update
+Lists the asset SAS URLs used for uploading and downloading asset content,ams asset get-sas-urls
+Create an asset,ams asset create
+Show the details of a job,ams job show
+List all the jobs of a transform within an Azure Media Services account,ams job list
+Delete a job,ams job delete
+Cancel a job,ams job cancel
+Start a job,ams job start
+Create a streaming locator,ams streaming locator create
+List all the streaming locators within an Azure Media Services account,ams streaming locator list
+Show the details of a streaming locator,ams streaming locator show
+Delete a Streaming Locator,ams streaming locator delete
+List paths supported by a streaming locator,ams streaming locator get-paths
+Create a streaming policy,ams streaming policy create
+List all the streaming policies within an Azure Media Services account,ams streaming policy list
+Show the details of a streaming policy,ams streaming policy show
+Delete a Streaming Policy,ams streaming policy delete
+List all the streaming endpoints within an Azure Media Services account,ams streaming endpoint list
+Start a streaming endpoint,ams streaming endpoint start
+Stop a streaming endpoint,ams streaming endpoint stop
+Create a web app,webapp create
+List web apps,webapp list
+Get the details of a web app,webapp show
+Delete a web app,webapp delete
+Stop a web app,webapp stop
+Start a web app,webapp start
+Restart a web app,webapp restart
+Open a web app in a browser,webapp browse
+List available built-in stacks which can be used for web apps,webapp list-runtimes
+(PREVIEW) assign managed service identity to the webapp,webapp identity assign
+(PREVIEW) display webapp's managed service identity,webapp identity show
+Update a web app,webapp update
+Configure routing traffic to deployment slots,webapp traffic-routing set
+Display the current distribution of traffic across slots,webapp traffic-routing show
+Clear the routing rules and send all traffic to production,webapp traffic-routing clear
+Set a web app's configuration,webapp config set
+Get the details of a web app's configuration,webapp config show
+Get the details of a web app's settings,webapp config appsettings list
+Set a web app's settings,webapp config appsettings set
+Delete web app settings,webapp config appsettings delete
+Get a web app's connection strings,webapp config connection-string list
+Update a web app's connection strings,webapp config connection-string set
+Delete a web app's connection strings,webapp config connection-string delete
+Bind a hostname to a web app,webapp config hostname add
+List all hostname bindings for a web app,webapp config hostname list
+Unbind a hostname from a web app,webapp config hostname delete
+Get the external-facing IP address for a web app,webapp config hostname get-external-ip
+Set a web app container's settings,webapp config container set
+Delete a web app container's settings,webapp config container delete
+Get details of a web app container's settings,webapp config container show
+Upload an SSL certificate to a web app,webapp config ssl upload
+List SSL certificates for a web app,webapp config ssl list
+Bind an SSL certificate to a web app,webapp config ssl bind
+Unbind an SSL certificate from a web app,webapp config ssl unbind
+Delete an SSL certificate from a web app,webapp config ssl delete
+List backups of a web app,webapp config backup list
+Show the backup schedule for a web app,webapp config backup show
+Create a backup of a web app,webapp config backup create
+Configure a new backup schedule for a web app,webapp config backup update
+Restore a web app from a backup,webapp config backup restore
+Get a URL for a git repository endpoint to clone and push to for web app deployment,webapp deployment source config-local-git
+Perform deployment using the kudu zip push deployment for a webapp,webapp deployment source config-zip
+Manage deployment from git or Mercurial repositories,webapp deployment source config
+Synchronize from the repository,webapp deployment source sync
+Get the details of a source control deployment configuration,webapp deployment source show
+Delete a source control deployment configuration,webapp deployment source delete
+Update source control token cached in Azure app service,webapp deployment source update-token
+Start live log tracing for a web app,webapp log tail
+Download a web app's log history as a zip file,webapp log download
+Configure logging for a web app,webapp log config
+Get the details of a web app's logging configuration,webapp log show
+List all deployment slots,webapp deployment slot list
+Delete a deployment slot,webapp deployment slot delete
+Configure deployment slot auto swap,webapp deployment slot auto-swap
+Change deployment slots for a web app,webapp deployment slot swap
+Create a deployment slot,webapp deployment slot create
+Get the details for available web app deployment profiles,webapp deployment list-publishing-profiles
+Gets publishing user,webapp deployment user show
+Update deployment credentials,webapp deployment user set
+Configure continuous deployment via containers,webapp deployment container config
+Get the URL which can be used to configure webhooks for continuous deployment,webapp deployment container show-cd-url
+Show the authentification settings for the webapp,webapp auth show
+Update the authentication settings for the webapp,webapp auth update
+Create an app service plan,appservice plan create
+Delete an app service plan,appservice plan delete
+List app service plans,appservice plan list
+Get the app service plans for a resource group or a set of resource groups,appservice plan show
+Update an app service plan,appservice plan update
+List regions where a plan sku is available,appservice list-locations
+Create a function app,functionapp create
+List function apps,functionapp list
+Get the details of a function app,functionapp show
+Delete a function app,functionapp delete
+Stop a function app,functionapp stop
+Start a function app,functionapp start
+Restart a function app,functionapp restart
+List available locations for running function apps,functionapp list-consumption-locations
+(PREVIEW) assign managed service identity to the functionapp,functionapp identity assign
+(PREVIEW) display functionapp's managed service identity,functionapp identity show
+Update a function app,functionapp update
+Show settings for a function app,functionapp config appsettings list
+Update a function app's settings,functionapp config appsettings set
+Delete a function app's settings,functionapp config appsettings delete
+Bind a hostname to a function app,functionapp config hostname add
+List all hostname bindings for a function app,functionapp config hostname list
+Unbind a hostname from a function app,functionapp config hostname delete
+Get the external-facing IP address for a function app,functionapp config hostname get-external-ip
+Upload an SSL certificate to a function app,functionapp config ssl upload
+List SSL certificates for a function app,functionapp config ssl list
+Bind an SSL certificate to a function app,functionapp config ssl bind
+Unbind an SSL certificate from a function app,functionapp config ssl unbind
+Delete an SSL certificate from a function app,functionapp config ssl delete
+Get a URL for a git repository endpoint to clone and push to for function app deployment,functionapp deployment source config-local-git
+Perform deployment using the kudu zip push deployment for a function app,functionapp deployment source config-zip
+Manage deployment from git or Mercurial repositories,functionapp deployment source config
+Synchronize from the repository,functionapp deployment source sync
+Get the details of a source control deployment configuration,functionapp deployment source show
+Delete a source control deployment configuration,functionapp deployment source delete
+Update source control token cached in Azure app service,functionapp deployment source update-token
+Update deployment credentials,functionapp deployment user set
+Gets publishing user,functionapp deployment user show
+Get the details for available function app deployment profiles,functionapp deployment list-publishing-profiles
+Create a new Recovery Services vault,backup vault create
+Show details of a particular Recovery service vault,backup vault show
+List Recovery service vaults within a subscription,backup vault list
+Gets backup related properties of the Recovery Services vault,backup vault backup-properties show
+Sets backup related properties of the Recovery Services vault,backup vault backup-properties set
+Delete an existing Recovery services vault,backup vault delete
+Show details of a container registered to a Recovery services vault,backup container show
+List containers registered to a Recovery services vault,backup container list
+Get the default policy with default values to backup a VM,backup policy get-default-for-vm
+Show details of a particular policy,backup policy show
+List all policies for a Recovery services vault,backup policy list
+List all items protected by a backup policy,backup policy list-associated-items
+Update the properties of the backup policy,backup policy set
+"Before you can delete a Backup protection policy, the policy must not have any associated Backup items",backup policy delete
+Find out whether the virtual machine is protected or not,backup protection check-vm
+Start protecting a previously unprotected Azure VM as per the specified policy to a Recovery services vault,backup protection enable-for-vm
+Perform an on-demand backup of a backed up item,backup protection backup-now
+Stop protecting a backed up Azure VM,backup protection disable
+Show details of a particular backed up item,backup item show
+List all backed up items within a container,backup item list
+Update the policy associated with this item,backup item set-policy
+List all backup jobs of a Recovery Services vault,backup job list
+Show details of a particular job,backup job show
+Suspend or terminate a currently running job,backup job stop
+Wait until either the job completes or the specified timeout value is reached,backup job wait
+Shows details of a particular recovery point,backup recoverypoint show
+List all recovery points of a backed up item,backup recoverypoint list
+Restore disks of the backed VM from the specified recovery point,backup restore restore-disks
+Download a script which mounts files of a recovery point,backup restore files mount-rp
+Close access to the recovery point,backup restore files unmount-rp
+List the Batch accounts associated with a subscription or resource group,batch account list
+Gets information about the specified Batch account,batch account show
+Create a Batch account with the specified parameters,batch account create
+Update properties for a Batch account,batch account set
+Deletes the specified Batch account,batch account delete
+Log in to a Batch account through Azure Active Directory or Shared Key authentication,batch account login
+Synchronizes access keys for the auto-storage account configured for the specified Batch account,batch account autostorage-keys sync
+Gets the account keys for the specified Batch account,batch account keys list
+Regenerates the specified account key for the Batch account,batch account keys renew
+Lists all of the applications in the specified account,batch application list
+Gets information about the specified application,batch application show
+Adds an application to the specified Batch account,batch application create
+Update properties for a Batch application,batch application set
+Deletes an application,batch application delete
+Create a Batch application package record and activate it,batch application package create
+Deletes an application package record and its associated binary file,batch application package delete
+Gets information about the specified application package,batch application package show
+Activates a Batch application package,batch application package activate
+Gets the Batch service quotas for the specified subscription at the given location,batch location quotas show
+Lists all of the applications available in the specified account,batch application summary list
+Gets information about the specified application,batch application summary show
+Lists all node agent SKUs supported by the Azure Batch service,batch pool node-agent-skus list
+"Gets the number of nodes in each state, grouped by pool",batch pool node-counts list
+Add a certificate to a Batch account,batch certificate create
+Delete a certificate from a Batch account,batch certificate delete
+Gets information about the specified certificate,batch certificate show
+Lists all of the certificates that have been added to the specified account,batch certificate list
+"Lists the usage metrics, aggregated by pool across individual time intervals, for the specified account",batch pool usage-metrics list
+Get lifetime summary statistics for all of the pools in a Batch account,batch pool all-statistics show
+Create a Batch pool in an account,batch pool create
+Lists all of the pools in the specified account,batch pool list
+Deletes a pool from the specified account,batch pool delete
+Gets information about the specified pool,batch pool show
+Update the properties of a Batch pool,batch pool set
+Update the properties of a Batch pool,batch pool reset
+Disables automatic scaling for a pool,batch pool autoscale disable
+Enables automatic scaling for a pool,batch pool autoscale enable
+Gets the result of evaluating an automatic scaling formula on the pool,batch pool autoscale evaluate
+Resize or stop resizing a Batch pool,batch pool resize
+Upgrades the operating system of the specified pool,batch pool os upgrade
+Removes compute nodes from the specified pool,batch node delete
+Get lifetime summary statistics for all of the jobs in a Batch account,batch job all-statistics show
+Add a job to a Batch account,batch job create
+Deletes a job,batch job delete
+Gets information about the specified job,batch job show
+Update the properties of a Batch job,batch job set
+Update the properties of a Batch job,batch job reset
+List all of the jobs or job schedule in a Batch account,batch job list
+"Disables the specified job, preventing new tasks from running",batch job disable
+"Enables the specified job, allowing new tasks to run",batch job enable
+"Terminates the specified job, marking it as completed",batch job stop
+Lists the execution status of the Job Preparation and Job Release task for the specified job across the compute nodes where the job has run,batch job prep-release-status list
+Gets the task counts for the specified job,batch job task-counts show
+Add a Batch job schedule to an account,batch job-schedule create
+Deletes a job schedule from the specified account,batch job-schedule delete
+Gets information about the specified job schedule,batch job-schedule show
+Update the properties of a job schedule,batch job-schedule set
+Reset the properties of a job schedule,batch job-schedule reset
+Disables a job schedule,batch job-schedule disable
+Enables a job schedule,batch job-schedule enable
+Terminates a job schedule,batch job-schedule stop
+Lists all of the job schedules in the specified account,batch job-schedule list
+Create Batch tasks,batch task create
+Lists all of the tasks that are associated with the specified job,batch task list
+Deletes a task from the specified job,batch task delete
+Gets information about the specified task,batch task show
+Reset the properties of a Batch task,batch task reset
+"Reactivates a task, allowing it to run again even if its retry count has been exhausted",batch task reactivate
+Terminates the specified task,batch task stop
+Lists all of the subtasks that are associated with the specified multi-instance task,batch task subtask list
+Deletes the specified task file from the compute node where the task ran,batch task file delete
+Download the content of a Batch task file,batch task file download
+Gets the properties of the specified task file,batch task file show
+Lists the files in a task's directory on its compute node,batch task file list
+Deletes the specified file from the compute node,batch node file delete
+Download the content of the a node file,batch node file download
+Gets the properties of the specified compute node file,batch node file show
+Lists all of the files in task directories on the specified compute node,batch node file list
+Add a user account to a Batch compute node,batch node user create
+Deletes a user account from the specified compute node,batch node user delete
+Update the properties of a user account on a Batch compute node,batch node user reset
+Gets information about the specified compute node,batch node show
+Lists the compute nodes in the specified pool,batch node list
+Restarts the specified compute node,batch node reboot
+Reinstalls the operating system on the specified compute node,batch node reimage
+Disables task scheduling on the specified compute node,batch node scheduling disable
+Enables task scheduling on the specified compute node,batch node scheduling enable
+Gets the settings required for remote login to a compute node,batch node remote-login-settings show
+Gets the Remote Desktop Protocol file for the specified compute node,batch node remote-desktop download
+Upload Azure Batch service log files from the specified compute node to Azure Blob Storage,batch node service-logs upload
+Create a workspace,batchai workspace create
+Show information about a workspace,batchai workspace show
+List workspaces,batchai workspace list
+Delete a workspace,batchai workspace delete
+Create a cluster,batchai cluster create
+Delete a cluster,batchai cluster delete
+Show information about a cluster,batchai cluster show
+List clusters,batchai cluster list
+Resize a cluster,batchai cluster resize
+Set auto-scale parameters for a cluster,batchai cluster auto-scale
+List remote login information for cluster's nodes,batchai cluster node list
+Executes a command line on a cluster's node with optional ports forwarding,batchai cluster node exec
+List files generated by the cluster's node setup task,batchai cluster file list
+Create an experiment,batchai experiment create
+Show information about an experiment,batchai experiment show
+List experiments,batchai experiment list
+Delete an experiment,batchai experiment delete
+Create a job,batchai job create
+Delete a job,batchai job delete
+Terminate a job,batchai job terminate
+Show information about a job,batchai job show
+List jobs,batchai job list
+Waits for specified job completion and setups the exit code to the job's exit code,batchai job wait
+List job's output files in a directory with given id,batchai job file list
+Stream the content of a file (similar to 'tail -f'),batchai job file stream
+List remote login information for nodes which executed the job,batchai job node list
+Executes a command line on a cluster's node used to execute the job with optional ports forwarding,batchai job node exec
+Create a file server,batchai file-server create
+Delete a file server,batchai file-server delete
+Show information about a file server,batchai file-server show
+List file servers,batchai file-server list
+Gets the current usage information as well as limits for Batch AI resources for given location,batchai list-usages
+List all available invoices of the subscription,billing invoice list
+Retrieve invoice of specific name of the subscription,billing invoice show
+Lists the available billing periods for a subscription in reverse chronological order,billing period list
+Gets a named billing period,billing period show
+Lists the enrollment accounts the caller has access to,billing enrollment-account list
+Gets a enrollment account by name,billing enrollment-account show
+Check the availability of a resource name,cdn name-exists
+Check the quota and actual usage of the CDN profiles under the given subscription,cdn usage
+Start a CDN endpoint,cdn endpoint start
+Stop a CDN endpoint,cdn endpoint stop
+Delete a CDN endpoint,cdn endpoint delete
+"Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile",cdn endpoint show
+List available endpoints for a CDN,cdn endpoint list
+Pre-load content for a CDN endpoint,cdn endpoint load
+Purge pre-loaded content for a CDN endpoint,cdn endpoint purge
+Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS,cdn endpoint validate-custom-domain
+Create a named endpoint to connect to a CDN,cdn endpoint create
+Update a CDN endpoint to manage how content is delivered,cdn endpoint update
+Gets a CDN profile with the specified profile name under the specified subscription and resource group,cdn profile show
+Checks the quota and actual usage of endpoints under the given CDN profile,cdn profile usage
+Delete a CDN profile,cdn profile delete
+List CDN profiles,cdn profile list
+Create a new CDN profile,cdn profile create
+Update a CDN profile,cdn profile update
+Show details for the custom domain of a CDN,cdn custom-domain show
+Delete the custom domain of a CDN,cdn custom-domain delete
+Lists all of the existing custom domains within an endpoint,cdn custom-domain list
+Create a new custom domain to provide a hostname for a CDN endpoint,cdn custom-domain create
+Enable https delivery of the custom domain,cdn custom-domain enable-https
+Disable https delivery of the custom domain,cdn custom-domain disable-https
+Gets an existing origin within an endpoint,cdn origin show
+Lists all of the existing origins within an endpoint,cdn origin list
+Lists all the edge nodes of a CDN service,cdn edge-node list
+List registered clouds,cloud list
+Get the details of a registered cloud,cloud show
+Register a cloud,cloud register
+Unregister a cloud,cloud unregister
+Set the active cloud,cloud set
+Update the configuration of a cloud,cloud update
+List the supported profiles for a cloud,cloud list-profiles
+Create an Azure Cognitive Services account,cognitiveservices account create
+Delete an Azure Cognitive Services account,cognitiveservices account delete
+Get the details of an Azure Cognitive Services account,cognitiveservices account show
+Update the properties of an Azure Cognitive Services account,cognitiveservices account update
+List the SKUs avaiable for an Azure Cognitive Services account,cognitiveservices account list-skus
+Regenerate the keys of an Azure Cognitive Services account,cognitiveservices account keys regenerate
+List the keys of an Azure Cognitive Services account,cognitiveservices account keys list
+List available Azure Cognitive Services accounts,cognitiveservices list
+Display and manage the Azure CLI 2,configure
+"List the details of Azure resource consumption, either as an invoice or within a billing period",consumption usage list
+List reservation summaries for daily or monthly by order Id or reservation id,consumption reservation summary list
+List the details of a reservation by order id or reservation id,consumption reservation detail list
+Show the price sheet for an Azure subscription within a billing period,consumption pricesheet show
+List the marketplace for an Azure subscription within a billing period,consumption marketplace list
+List budgets for an Azure subscription,consumption budget list
+Show budget for an Azure subscription,consumption budget show
+Create a budget for an Azure subscription,consumption budget create
+Delete a budget for an Azure subscription,consumption budget delete
+List container groups,container list
+Create a container group,container create
+Get the details of a container group,container show
+Delete a container group,container delete
+Examine the logs for a container in a container group,container logs
+Execute a command from within a running container of a container group,container exec
+Export a container group in yaml format,container export
+Attach local standard output and error streams to a container in a container group,container attach
+Get the details of an Azure Cosmos DB database account,cosmosdb show
+List the access keys for a Azure Cosmos DB database account,cosmosdb list-keys
+List the read-only access keys for a Azure Cosmos DB database account,cosmosdb list-read-only-keys
+List the connection strings for a Azure Cosmos DB database account,cosmosdb list-connection-strings
+Regenerate an access key for a Azure Cosmos DB database account,cosmosdb regenerate-key
+Checks if an Azure Cosmos DB account name exists,cosmosdb check-name-exists
+Deletes an Azure Cosmos DB database account,cosmosdb delete
+Changes the failover priority for the Azure Cosmos DB database account,cosmosdb failover-priority-change
+Creates a new Azure Cosmos DB database account,cosmosdb create
+Update an Azure Cosmos DB database account,cosmosdb update
+List Azure Cosmos DB database accounts,cosmosdb list
+Shows an Azure Cosmos DB database ,cosmosdb database show
+Lists all Azure Cosmos DB databases ,cosmosdb database list
+Returns a boolean indicating whether the database exists ,cosmosdb database exists
+Creates an Azure Cosmos DB database ,cosmosdb database create
+Deletes an Azure Cosmos DB database ,cosmosdb database delete
+Shows an Azure Cosmos DB collection and its offer ,cosmosdb collection show
+Lists all Azure Cosmos DB collections ,cosmosdb collection list
+Returns a boolean indicating whether the collection exists ,cosmosdb collection exists
+Creates an Azure Cosmos DB collection ,cosmosdb collection create
+Deletes an Azure Cosmos DB collection ,cosmosdb collection delete
+Updates an Azure Cosmos DB collection ,cosmosdb collection update
+Create a Data Lake Analytics account,dla account create
+Update a Data Lake Analytics account,dla account update
+List available Data Lake Analytics accounts,dla account list
+Get the details of a Data Lake Analytics account,dla account show
+Delete a Data Lake Analytics account,dla account delete
+Create a firewall rule in a Data Lake Analytics account,dla account firewall create
+Update a firewall rule in a Data Lake Analytics account,dla account firewall update
+List firewall rules in a Data Lake Analytics account,dla account firewall list
+Retrieve a firewall rule in a Data Lake Analytics account,dla account firewall show
+Delete a firewall rule in a Data Lake Analytics account,dla account firewall delete
+Submit a job to a Data Lake Analytics account,dla job submit
+Wait for a Data Lake Analytics job to finish,dla job wait
+Get information for a Data Lake Analytics job,dla job show
+Cancel a Data Lake Analytics job,dla job cancel
+List Data Lake Analytics jobs,dla job list
+Retrieve a job pipeline in a Data Lake Analytics account,dla job pipeline show
+List job pipelines in a Data Lake Analytics account,dla job pipeline list
+Retrieve a job recurrence in a Data Lake Analytics account,dla job recurrence show
+List job recurrences in a Data Lake Analytics account,dla job recurrence list
+Gets the specified Azure Storage account linked to the given Data Lake Analytics account,dla account blob-storage show
+Links an Azure Storage account to the specified Data Lake Analytics account,dla account blob-storage add
+Updates an Azure Storage account linked to the specified Data Lake Analytics account,dla account blob-storage update
+Updates the specified Data Lake Analytics account to remove an Azure Storage account,dla account blob-storage delete
+"Gets the first page of Azure Storage accounts, if any, linked to the specified Data Lake Analytics account",dla account blob-storage list
+Gets the specified Data Lake Store account details in the specified Data Lake Analytics account,dla account data-lake-store show
+Gets the first page of Data Lake Store accounts linked to the specified Data Lake Analytics account,dla account data-lake-store list
+Updates the specified Data Lake Analytics account to include the additional Data Lake Store account,dla account data-lake-store add
+Updates the Data Lake Analytics account specified to remove the specified Data Lake Store account,dla account data-lake-store delete
+Create a new catalog credential for use with an external data source,dla catalog credential create
+Retrieve a catalog credential,dla catalog credential show
+Update a catalog credential for use with an external data source,dla catalog credential update
+List catalog credentials,dla catalog credential list
+Delete a catalog credential,dla catalog credential delete
+Retrieves the specified database from the Data Lake Analytics catalog,dla catalog database show
+Retrieves the list of databases from the Data Lake Analytics catalog,dla catalog database list
+Retrieves the specified schema from the Data Lake Analytics catalog,dla catalog schema show
+Retrieves the list of schemas from the Data Lake Analytics catalog,dla catalog schema list
+Retrieves the specified table from the Data Lake Analytics catalog,dla catalog table show
+List tables in a database or schema,dla catalog table list
+Retrieves the specified assembly from the Data Lake Analytics catalog,dla catalog assembly show
+Retrieves the list of assemblies from the Data Lake Analytics catalog,dla catalog assembly list
+Retrieves the specified external data source from the Data Lake Analytics catalog,dla catalog external-data-source show
+Retrieves the list of external data sources from the Data Lake Analytics catalog,dla catalog external-data-source list
+Retrieves the specified procedure from the Data Lake Analytics catalog,dla catalog procedure show
+Retrieves the list of procedures from the Data Lake Analytics catalog,dla catalog procedure list
+Retrieves the specified table partition from the Data Lake Analytics catalog,dla catalog table-partition show
+Retrieves the list of table partitions from the Data Lake Analytics catalog,dla catalog table-partition list
+Retrieves the specified table statistics from the Data Lake Analytics catalog,dla catalog table-stats show
+"List table statistics in a database, table, or schema",dla catalog table-stats list
+Retrieves the specified table type from the Data Lake Analytics catalog,dla catalog table-type show
+Retrieves the list of table types from the Data Lake Analytics catalog,dla catalog table-type list
+Retrieves the specified table valued function from the Data Lake Analytics catalog,dla catalog tvf show
+List table valued functions in a database or schema,dla catalog tvf list
+Retrieves the specified view from the Data Lake Analytics catalog,dla catalog view show
+List views in a database or schema,dla catalog view list
+Retrieves the specified package from the Data Lake Analytics catalog,dla catalog package show
+Retrieves the list of packages from the Data Lake Analytics catalog,dla catalog package list
+Create a compute policy in the Data Lake Analytics account,dla account compute-policy create
+Update a compute policy in the Data Lake Analytics account,dla account compute-policy update
+List compute policies in the a Lake Analytics account,dla account compute-policy list
+Retrieve a compute policy in a Data Lake Analytics account,dla account compute-policy show
+Delete a compute policy in a Data Lake Analytics account,dla account compute-policy delete
+Creates a Data Lake Store account,dls account create
+Updates a Data Lake Store account,dls account update
+Lists available Data Lake Store accounts,dls account list
+Delete a Data Lake Store account,dls account delete
+Get the details of a Data Lake Store account,dls account show
+Enable the use of Azure Key Vault for encryption of a Data Lake Store account,dls account enable-key-vault
+Creates a firewall rule in a Data Lake Store account,dls account firewall create
+Updates a firewall rule in a Data Lake Store account,dls account firewall update
+Lists firewall rules in a Data Lake Store account,dls account firewall list
+Get the details of a firewall rule in a Data Lake Store account,dls account firewall show
+Deletes a firewall rule in a Data Lake Store account,dls account firewall delete
+Creates or updates the specified trusted identity provider,dls account trusted-provider create
+Updates the specified trusted identity provider,dls account trusted-provider update
+Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account,dls account trusted-provider list
+Gets the specified Data Lake Store trusted identity provider,dls account trusted-provider show
+Deletes the specified trusted identity provider from the specified Data Lake Store account,dls account trusted-provider delete
+Get file or folder information in a Data Lake Store account,dls fs show
+List the files and folders in a Data Lake Store account,dls fs list
+Creates a file or folder in a Data Lake Store account,dls fs create
+Append content to a file in a Data Lake Store account,dls fs append
+Delete a file or folder in a Data Lake Store account,dls fs delete
+Upload a file or folder to a Data Lake Store account,dls fs upload
+Download a file or folder from a Data Lake Store account to the local machine,dls fs download
+Test for the existence of a file or folder in a Data Lake Store account,dls fs test
+Preview the content of a file in a Data Lake Store account,dls fs preview
+Join files in a Data Lake Store account into one file,dls fs join
+Move a file or folder in a Data Lake Store account,dls fs move
+Set the expiration time for a file,dls fs set-expiry
+Remove the expiration time for a file,dls fs remove-expiry
+Set the permissions for a file or folder in a Data Lake Store account,dls fs access set-permission
+Set the owner information for a file or folder in a Data Lake Store account,dls fs access set-owner
+Display the access control list (ACL),dls fs access show
+Update the access control list for a file or folder,dls fs access set-entry
+Replace the existing access control list for a file or folder,dls fs access set
+Remove entries for the access control list of a file or folder,dls fs access remove-entry
+Remove the access control list for a file or folder,dls fs access remove-all
+Check if a given DMS instance name is available in a given region as well as the name's validity,dms check-name
+Perform a health check and return the status of the service and virtual machine size,dms check-status
+Create an instance of the Data Migration Service,dms create
+Delete an instance of the Data Migration Service,dms delete
+"List the DMS instances within your currently configured subscription (to set this use ""az account set"")",dms list
+Show the details for an instance of the Data Migration Service,dms show
+Start an instance of the Data Migration Service,dms start
+Stop an instance of the Data Migration Service,dms stop
+Place the CLI in a waiting state until a condition of the DMS instance is met,dms wait
+List the SKUs that are supported by the Data Migration Service,dms list-skus
+Create a migration Project which can contain multiple Tasks,dms project create
+Delete a Project,dms project delete
+List the Projects within an instance of DMS,dms project list
+Show the details of a migration Project,dms project show
+Check if a given Project name is available within a given instance of DMS as well as the name's validity,dms project check-name
+Create and start a migration Task,dms project task create
+Delete a migration Task,dms project task delete
+List the Tasks within a Project,dms project task list
+Show the details of a migration Task,dms project task show
+Cancel a Task if it's currently queued or running,dms project task cancel
+Check if a given Task name is available within a given instance of DMS as well as the name's validity,dms project task check-name
+Create a topic,eventgrid topic create
+Get the details of a topic,eventgrid topic show
+List shared access keys of a topic,eventgrid topic key list
+Regenerate a shared access key of a topic,eventgrid topic key regenerate
+Delete a topic,eventgrid topic delete
+List available topics,eventgrid topic list
+Update a topic,eventgrid topic update
+Create a new event subscription for an Event Grid topic or for an Azure resource,eventgrid event-subscription create
+Get the details of an event subscription,eventgrid event-subscription show
+Delete an event subscription,eventgrid event-subscription delete
+List event subscriptions,eventgrid event-subscription list
+Update an event subscription,eventgrid event-subscription update
+List registered topic types,eventgrid topic-type list
+Get the details for a topic type,eventgrid topic-type show
+List the event types supported by a topic type,eventgrid topic-type list-event-types
+Creates the Event Hubs Namespace,eventhubs namespace create
+shows the Event Hubs Namespace Details,eventhubs namespace show
+Lists the Event Hubs Namespaces,eventhubs namespace list
+Deletes the Namespaces,eventhubs namespace delete
+check for the availability of the given name for the Namespace,eventhubs namespace exists
+Updates the Event Hubs Namespace,eventhubs namespace update
+Creates Authorizationrule for the given Namespace,eventhubs namespace authorization-rule create
+Shows the details of Authorizationrule,eventhubs namespace authorization-rule show
+Shows the list of Authorizationrule by Namespace,eventhubs namespace authorization-rule list
+Shows the connection strings for namespace,eventhubs namespace authorization-rule keys list
+Regenerate the connection strings of Authorizationrule for the namespace,eventhubs namespace authorization-rule keys renew
+Deletes the Authorizationrule of the namespace,eventhubs namespace authorization-rule delete
+Updates Authorizationrule for the given Namespace,eventhubs namespace authorization-rule update
+Creates the Event Hubs Eventhub,eventhubs eventhub create
+shows the Eventhub Details,eventhubs eventhub show
+List the EventHub by Namepsace,eventhubs eventhub list
+Deletes the Eventhub,eventhubs eventhub delete
+Updates the Event Hubs Eventhub,eventhubs eventhub update
+Creates Authorizationrule for the given Eventhub,eventhubs eventhub authorization-rule create
+shows the details of Authorizationrule,eventhubs eventhub authorization-rule show
+shows the list of Authorizationrule by Eventhub,eventhubs eventhub authorization-rule list
+Shows the connection strings of Authorizationrule for the Eventhub,eventhubs eventhub authorization-rule keys list
+Regenerate the connection strings of Authorizationrule for the namespace,eventhubs eventhub authorization-rule keys renew
+Deletes the Authorizationrule of Eventhub,eventhubs eventhub authorization-rule delete
+Updates Authorizationrule for the given Eventhub,eventhubs eventhub authorization-rule update
+Creates the EventHub ConsumerGroup,eventhubs eventhub consumer-group create
+Shows the ConsumerGroup Details,eventhubs eventhub consumer-group show
+List the ConsumerGroup by Eventhub,eventhubs eventhub consumer-group list
+Deletes the ConsumerGroup,eventhubs eventhub consumer-group delete
+Updates the EventHub ConsumerGroup,eventhubs eventhub consumer-group update
+Sets a Geo-Disaster Recovery Configuration Alias for the give Namespace,eventhubs georecovery-alias set
+shows properties of Geo-Disaster Recovery Configuration Alias for Primay or Secondary Namespace,eventhubs georecovery-alias show
+Gets all Alias(Disaster Recovery configurations),eventhubs georecovery-alias list
+Disables Geo-Disaster Recovery Configuration Alias and stops replicating changes from primary to secondary namespaces,eventhubs georecovery-alias break-pair
+Invokes Geo-Disaster Recovery Configuration Alias to point to the secondary namespace,eventhubs georecovery-alias fail-over
+Check the availability of Geo-Disaster Recovery Configuration Alias Name,eventhubs georecovery-alias exists
+Delete Geo-Disaster Recovery Configuration Alias,eventhubs georecovery-alias delete
+List of Authorizationrule by Event Hubs Namespace,eventhubs georecovery-alias authorization-rule list
+Show properties of Event Hubs Geo-Disaster Recovery Configuration Alias and Namespace Authorizationrule,eventhubs georecovery-alias authorization-rule show
+Shows the keys and connection strings of Authorizationrule for the Event Hubs Namespace,eventhubs georecovery-alias authorization-rule keys list
+Add an extension,extension add
+Remove an extension,extension remove
+List the installed extensions,extension list
+Show an extension,extension show
+List publicly available extensions,extension list-available
+Update an extension,extension update
+Loving or hating the CLI?  Let us know!,feedback
+Find Azure CLI commands,find
+Start interactive mode,interactive
+List Azure IoT Hub device provisioning services,iot dps list
+Get the details of an Azure IoT Hub device provisioning service,iot dps show
+Create an Azure IoT Hub device provisioning service,iot dps create
+Delete an Azure IoT Hub device provisioning service,iot dps delete
+Update an Azure IoT Hub device provisioning service,iot dps update
+List all shared access policies in an Azure IoT Hub device provisioning service,iot dps access-policy list
+Show details of a shared access policies in an Azure IoT Hub device provisioning service,iot dps access-policy show
+Create a new shared access policy in an Azure IoT Hub device provisioning service,iot dps access-policy create
+Update a shared access policy in an Azure IoT Hub device provisioning service,iot dps access-policy update
+Delete a shared access policies in an Azure IoT Hub device provisioning service,iot dps access-policy delete
+List all linked IoT hubs in an Azure IoT Hub device provisioning service,iot dps linked-hub list
+Show details of a linked IoT hub in an Azure IoT Hub device provisioning service,iot dps linked-hub show
+Create a linked IoT hub in an Azure IoT Hub device provisioning service,iot dps linked-hub create
+Update a linked IoT hub in an Azure IoT Hub device provisioning service,iot dps linked-hub update
+Update a linked IoT hub in an Azure IoT Hub device provisioning service,iot dps linked-hub delete
+List all certificates contained within an Azure IoT Hub device provisioning service,iot dps certificate list
+Show information about a particular Azure IoT Hub Device Provisioning Service certificate,iot dps certificate show
+Create/upload an Azure IoT Hub Device Provisioning Service certificate,iot dps certificate create
+Delete an Azure IoT Hub Device Provisioning Service certificate,iot dps certificate delete
+Generate a verification code for an Azure IoT Hub Device Provisioning Service certificate,iot dps certificate generate-verification-code
+Verify an Azure IoT Hub Device Provisioning Service certificate,iot dps certificate verify
+Update an Azure IoT Hub Device Provisioning Service certificate,iot dps certificate update
+Lists all certificates contained within an Azure IoT Hub,iot hub certificate list
+Shows information about a particular Azure IoT Hub certificate,iot hub certificate show
+Create/upload an Azure IoT Hub certificate,iot hub certificate create
+Deletes an Azure IoT Hub certificate,iot hub certificate delete
+Generates a verification code for an Azure IoT Hub certificate,iot hub certificate generate-verification-code
+Verifies an Azure IoT Hub certificate,iot hub certificate verify
+Update an Azure IoT Hub certificate,iot hub certificate update
+Create an Azure IoT hub,iot hub create
+List IoT hubs,iot hub list
+Show the connection strings for an IoT hub,iot hub show-connection-string
+Get the details of an IoT hub,iot hub show
+Update metadata for an IoT hub,iot hub update
+Delete an IoT hub,iot hub delete
+List available pricing tiers,iot hub list-skus
+Create an event hub consumer group,iot hub consumer-group create
+List event hub consumer groups,iot hub consumer-group list
+Get the details for an event hub consumer group,iot hub consumer-group show
+Delete an event hub consumer group,iot hub consumer-group delete
+List shared access policies of an IoT hub,iot hub policy list
+Get the details of a shared access policy of an IoT hub,iot hub policy show
+Create a new shared access policy in an IoT hub,iot hub policy create
+Delete a shared access policy from an IoT hub,iot hub policy delete
+List the jobs in an IoT hub,iot hub job list
+Get the details of a job in an IoT hub,iot hub job show
+Cancel a job in an IoT hub,iot hub job cancel
+Get the quota metrics for an IoT hub,iot hub show-quota-metrics
+Get the statistics for an IoT hub,iot hub show-stats
+Register a device for an IoT hub,iot device create
+List devices in an IoT hub,iot device list
+Show the connection strings for devices in an IoT hub,iot device show-connection-string
+Get the details for a device in an IoT hub,iot device show
+Update the metadata of a device in an IoT hub,iot device update
+Delete a device from an IoT hub,iot device delete
+Send a device-to-cloud message,iot device message send
+Receive a cloud-to-device message,iot device message receive
+Complete a cloud-to-device message,iot device message complete
+Reject a cloud-to-device message,iot device message reject
+Abandon a cloud-to-device message,iot device message abandon
+Export all the device identities in the IoT hub identity registry to an Azure Storage blob container,iot device export
+"Import, update, or delete device identities in the IoT hub identity registry from a blob",iot device import
+Create a key vault,keyvault create
+Recover a key vault,keyvault recover
+List key vaults,keyvault list
+Show details of a key vault,keyvault show
+Delete a key vault,keyvault delete
+Permanently deletes the specified vault,keyvault purge
+Update security policy settings for a Key Vault,keyvault set-policy
+Delete security policy settings for a Key Vault,keyvault delete-policy
+Gets information about the deleted vaults in a subscription,keyvault list-deleted
+Update the properties of a key vault,keyvault update
+List keys in the specified vault,keyvault key list
+Retrieves a list of individual key versions with the same key name,keyvault key list-versions
+List deleted keys in the specified vault,keyvault key list-deleted
+"Creates a new key, stores it, then returns key parameters and attributes to the client",keyvault key create
+The update key operation changes specified attributes of a stored key and can be applied to any key type and key version stored in Azure Key Vault,keyvault key set-attributes
+Gets the public part of a stored key,keyvault key show
+Retrieves the deleted key information plus its attributes,keyvault key show-deleted
+Deletes a key of any type from storage in Azure Key Vault,keyvault key delete
+Permanently deletes the specified key,keyvault key purge
+Recovers the deleted key back to its current version under /keys,keyvault key recover
+Requests that a backup of the specified key be downloaded to the client,keyvault key backup
+Restores a backed up key to a vault,keyvault key restore
+Import a private key,keyvault key import
+List secrets in a specified key vault,keyvault secret list
+List the versions of the specified secret,keyvault secret list-versions
+List deleted secrets in the specified vault,keyvault secret list-deleted
+Sets a secret in a specified key vault,keyvault secret set
+Updates the attributes associated with a specified secret in a given key vault,keyvault secret set-attributes
+Get a specified secret from a given key vault,keyvault secret show
+Retrieves the deleted secret information plus its attributes,keyvault secret show-deleted
+Deletes a secret from a specified key vault,keyvault secret delete
+Permanently deletes the specified secret,keyvault secret purge
+Recovers the deleted secret back to its current version under /secrets,keyvault secret recover
+Download a secret from a KeyVault,keyvault secret download
+Requests that a backup of the specified secret be downloaded to the client,keyvault secret backup
+Restores a backed up secret to a vault,keyvault secret restore
+Create a Key Vault certificate,keyvault certificate create
+List certificates in a specified key vault,keyvault certificate list
+List the versions of a certificate,keyvault certificate list-versions
+"Lists the deleted certificates in the specified vault, currently available for recovery",keyvault certificate list-deleted
+Gets information about a specified certificate,keyvault certificate show
+Retrieves information about the specified deleted certificate,keyvault certificate show-deleted
+Deletes a certificate from a specified key vault,keyvault certificate delete
+Permanently deletes the specified deleted certificate,keyvault certificate purge
+Recovers the deleted certificate back to its current version under /certificates,keyvault certificate recover
+Updates the specified attributes associated with the given certificate,keyvault certificate set-attributes
+Import a certificate into KeyVault,keyvault certificate import
+Download the public portion of a Key Vault certificate,keyvault certificate download
+Get the default policy for self-signed certificates,keyvault certificate get-default-policy
+Merges a certificate or a certificate chain with a key pair existing on the server,keyvault certificate pending merge
+Gets the operation associated with a specified certificate,keyvault certificate pending show
+Deletes the operation for a specified certificate,keyvault certificate pending delete
+Lists the certificate contacts for a specified key vault,keyvault certificate contact list
+Add a contact to the specified vault to receive notifications of certificate operations,keyvault certificate contact add
+Remove a certificate contact from the specified vault,keyvault certificate contact delete
+Update a certificate issuer record,keyvault certificate issuer update
+List certificate issuers for a specified key vault,keyvault certificate issuer list
+Create a certificate issuer record,keyvault certificate issuer create
+Lists the specified certificate issuer,keyvault certificate issuer show
+Deletes the specified certificate issuer,keyvault certificate issuer delete
+List admins for a specified certificate issuer,keyvault certificate issuer admin list
+Add admin details for a specified certificate issuer,keyvault certificate issuer admin add
+Remove admin details for the specified certificate issuer,keyvault certificate issuer admin delete
+Get virtual machine,lab vm show
+Delete virtual machine,lab vm delete
+Start a virtual machine,lab vm start
+Stop a virtual machine This operation can take a while to complete,lab vm stop
+Apply artifacts to a virtual machine in Azure DevTest Lab,lab vm apply-artifacts
+List the VMs in an Azure DevTest Lab,lab vm list
+Claim a virtual machine from the Lab,lab vm claim
+Create a VM in a lab,lab vm create
+Get lab,lab get
+Delete lab,lab delete
+Get custom image,lab custom-image show
+List custom images in a given lab,lab custom-image list
+Delete custom image,lab custom-image delete
+Create a custom image in a DevTest Lab,lab custom-image create
+List gallery images in a given lab,lab gallery-image list
+List artifacts in a given artifact source,lab artifact list
+List artifact sources in a given lab,lab artifact-source list
+Get artifact source,lab artifact-source show
+List virtual networks in a given lab,lab vnet list
+Get virtual network,lab vnet get
+Show formulae from an Azure DevTest Lab,lab formula show
+List formulas in a given lab,lab formula list
+Delete formula,lab formula delete
+Export artifacts from a formula,lab formula export-artifacts
+Set a secret for a lab,lab secret set
+Get secret,lab secret show
+List secrets in a given user profile,lab secret list
+Delete secret,lab secret delete
+Get the details for an environment of a lab,lab environment show
+List environments in a lab,lab environment list
+Delete an environment from a lab,lab environment delete
+Create an environment in a lab,lab environment create
+List azure resource manager templates in a given artifact source,lab arm-template list
+Get the details of an ARM template in a lab,lab arm-template show
+Show the details of a maps account,maps account show
+Show all maps accounts in a subscription or in a resource group,maps account list
+Create a maps account,maps account create
+Delete a maps account,maps account delete
+Update the properties of a maps account,maps account update
+Renew either the primary or secondary key for use with the Maps APIs,maps account keys renew
+List the keys to use with the Maps APIs,maps account keys list
+Show the details of an action group,monitor action-group show
+Create a new action group,monitor action-group create
+Delete an action group,monitor action-group delete
+Enable a receiver in an action group,monitor action-group enable-receiver
+List action groups under a resource group or the current subscription,monitor action-group list
+Update an action group,monitor action-group update
+Provides the list of activity log,monitor activity-log list
+List the event categories of activity logs,monitor activity-log list-categories
+List activity log alerts under a resource group or the current subscription,monitor activity-log alert list
+Create a default activity log alert,monitor activity-log alert create
+Get an activity log alert,monitor activity-log alert show
+Delete an activity log alert,monitor activity-log alert delete
+Update the details of this activity log alert,monitor activity-log alert update
+Add action groups to this activity log alert,monitor activity-log alert action-group add
+Remove action groups from this activity log alert,monitor activity-log alert action-group remove
+Add scopes to this activity log alert,monitor activity-log alert scope add
+Removes scopes from this activity log alert,monitor activity-log alert scope remove
+Create a metric-based alert rule,monitor alert create
+Delete an alert rule,monitor alert delete
+Show an alert rule,monitor alert show
+List alert rules in a resource group,monitor alert list
+Get the details of an alert rule incident,monitor alert show-incident
+List all incidents for an alert rule,monitor alert list-incidents
+Update a metric-based alert rule,monitor alert update
+Create new autoscale settings,monitor autoscale create
+Update autoscale settings,monitor autoscale update
+Deletes and autoscale setting,monitor autoscale delete
+Show autoscale setting details,monitor autoscale show
+Lists the autoscale settings for a resource group,monitor autoscale list
+Create a fixed or recurring autoscale profile,monitor autoscale profile create
+List autoscale profiles,monitor autoscale profile list
+Show details of an autoscale profile,monitor autoscale profile show
+Delete an autoscale profile,monitor autoscale profile delete
+Look up time zone information,monitor autoscale profile list-timezones
+Add a new autoscale rule,monitor autoscale rule create
+List autoscale rules for a profile,monitor autoscale rule list
+Remove autoscale rules from a profile,monitor autoscale rule delete
+Copy autoscale rules from one profile to another,monitor autoscale rule copy
+Creates or updates an autoscale setting,monitor autoscale-settings create
+Deletes and autoscale setting,monitor autoscale-settings delete
+Gets an autoscale setting,monitor autoscale-settings show
+Lists the autoscale settings for a resource group,monitor autoscale-settings list
+Scaffold fully formed autoscale-settings' parameters as json template ,monitor autoscale-settings get-parameters-template
+Updates an autoscale setting,monitor autoscale-settings update
+Create diagnostic settings for the specified resource,monitor diagnostic-settings create
+Gets the active diagnostic settings for the specified resource,monitor diagnostic-settings show
+Gets the active diagnostic settings list for the specified resource,monitor diagnostic-settings list
+Deletes existing diagnostic settings for the specified resource,monitor diagnostic-settings delete
+Update diagnostic settings,monitor diagnostic-settings update
+Gets the diagnostic settings category for the specified resource,monitor diagnostic-settings categories show
+Lists the diagnostic settings categories for the specified resource,monitor diagnostic-settings categories list
+Create a log profile,monitor log-profiles create
+Deletes the log profile,monitor log-profiles delete
+Gets the log profile,monitor log-profiles show
+List the log profiles,monitor log-profiles list
+Update a log profile,monitor log-profiles update
+List the metric values for a resource,monitor metrics list
+Lists the metric definitions for the resource,monitor metrics list-definitions
+List the number of network resources in a region that are used against a subscription quota,network list-usages
+Create an application gateway,network application-gateway create
+Delete an application gateway,network application-gateway delete
+Get the details of an application gateway,network application-gateway show
+List application gateways,network application-gateway list
+Start an application gateway,network application-gateway start
+Stop an application gateway,network application-gateway stop
+Get information on the backend health of an application gateway,network application-gateway show-backend-health
+Update an application gateway,network application-gateway update
+Place the CLI in a waiting state until a condition of the application gateway is met,network application-gateway wait
+List authorization certificates,network application-gateway auth-cert list
+Show an authorization certificate,network application-gateway auth-cert show
+Delete an authorization certificate,network application-gateway auth-cert delete
+Create an authorization certificate,network application-gateway auth-cert create
+Update an authorization certificate,network application-gateway auth-cert update
+List SSL certificates,network application-gateway ssl-cert list
+Get the details of an SSL certificate,network application-gateway ssl-cert show
+Delete an SSL certificate,network application-gateway ssl-cert delete
+Upload an SSL certificate,network application-gateway ssl-cert create
+Update an SSL certificate,network application-gateway ssl-cert update
+List frontend IP addresses,network application-gateway frontend-ip list
+Get the details of a frontend IP address,network application-gateway frontend-ip show
+Delete a frontend IP address,network application-gateway frontend-ip delete
+Create a frontend IP address,network application-gateway frontend-ip create
+Update a frontend IP address,network application-gateway frontend-ip update
+List frontend ports,network application-gateway frontend-port list
+Get the details of a frontend port,network application-gateway frontend-port show
+Delete a frontend port,network application-gateway frontend-port delete
+Create a frontend port,network application-gateway frontend-port create
+Update a frontend port,network application-gateway frontend-port update
+List address pools,network application-gateway address-pool list
+Get the details of an address pool,network application-gateway address-pool show
+Delete an address pool,network application-gateway address-pool delete
+Create an address pool,network application-gateway address-pool create
+Update an address pool,network application-gateway address-pool update
+List HTTP settings,network application-gateway http-settings list
+Get the details of a gateway's HTTP settings,network application-gateway http-settings show
+Delete HTTP settings,network application-gateway http-settings delete
+Create HTTP settings,network application-gateway http-settings create
+Update HTTP settings,network application-gateway http-settings update
+List HTTP listeners,network application-gateway http-listener list
+Get the details of an HTTP listener,network application-gateway http-listener show
+Delete an HTTP listener,network application-gateway http-listener delete
+Create an HTTP listener,network application-gateway http-listener create
+Update an HTTP listener,network application-gateway http-listener update
+List rules,network application-gateway rule list
+Get the details of a rule,network application-gateway rule show
+Delete a rule,network application-gateway rule delete
+Create a rule,network application-gateway rule create
+Update a rule,network application-gateway rule update
+List probes,network application-gateway probe list
+Get the details of a probe,network application-gateway probe show
+Delete a probe,network application-gateway probe delete
+Create a probe,network application-gateway probe create
+Update a probe,network application-gateway probe update
+List URL path maps,network application-gateway url-path-map list
+Get the details of a URL path map,network application-gateway url-path-map show
+Delete a URL path map,network application-gateway url-path-map delete
+Create a URL path map,network application-gateway url-path-map create
+Update a URL path map,network application-gateway url-path-map update
+List redirect configurations,network application-gateway redirect-config list
+Get the details of a redirect configuration,network application-gateway redirect-config show
+Delete a redirect configuration,network application-gateway redirect-config delete
+Create a redirect configuration,network application-gateway redirect-config create
+Update a redirect configuration,network application-gateway redirect-config update
+Update or clear SSL policy settings,network application-gateway ssl-policy set
+Get the details of gateway's SSL policy settings,network application-gateway ssl-policy show
+Lists available SSL options for configuring SSL policy,network application-gateway ssl-policy list-options
+Lists all SSL predefined policies for configuring SSL policy,network application-gateway ssl-policy predefined list
+Gets SSL predefined policy with the specified policy name,network application-gateway ssl-policy predefined show
+Create a rule for a URL path map,network application-gateway url-path-map rule create
+Delete a rule of a URL path map,network application-gateway url-path-map rule delete
+Update the firewall configuration of a web application,network application-gateway waf-config set
+Get the firewall configuration of a web application,network application-gateway waf-config show
+"Get information on available WAF rule sets, rule groups, and rule IDs",network application-gateway waf-config list-rule-sets
+Create an application security group,network asg create
+Get details of an application security group,network asg show
+List all application security groups in a subscription,network asg list
+Delete an application security group,network asg delete
+Update an application security group,network asg update
+Create a DDoS protection plan,network ddos-protection create
+Delete a DDoS protection plan,network ddos-protection delete
+List DDoS protection plans,network ddos-protection list
+Show details of a DDoS protection plan,network ddos-protection show
+Update a DDoS protection plan,network ddos-protection update
+Delete a DNS zone and all associated records,network dns zone delete
+Get a DNS zone parameters,network dns zone show
+List DNS zones,network dns zone list
+Create a DNS zone using a DNS zone file,network dns zone import
+Export a DNS zone as a DNS zone file,network dns zone export
+Create a DNS zone,network dns zone create
+Update a DNS zone properties,network dns zone update
+List all record sets within a DNS zone,network dns record-set list
+Get the details of an A record set,network dns record-set a show
+Delete an A record set and all associated records,network dns record-set a delete
+List all A record sets in a zone,network dns record-set a list
+Create an empty A record set,network dns record-set a create
+Add an A record,network dns record-set a add-record
+Remove an A record from its record set,network dns record-set a remove-record
+Update an A record set,network dns record-set a update
+Get the details of an AAAA record set,network dns record-set aaaa show
+Delete an AAAA record set and all associated records,network dns record-set aaaa delete
+List all AAAA record sets in a zone,network dns record-set aaaa list
+Create an empty AAAA record set,network dns record-set aaaa create
+Add an AAAA record,network dns record-set aaaa add-record
+Remove AAAA record from its record set,network dns record-set aaaa remove-record
+Update an AAAA record set,network dns record-set aaaa update
+Get the details of an MX record set,network dns record-set mx show
+Delete an MX record set and all associated records,network dns record-set mx delete
+List all MX record sets in a zone,network dns record-set mx list
+Create an empty MX record set,network dns record-set mx create
+Add an MX record,network dns record-set mx add-record
+Remove an MX record from its record set,network dns record-set mx remove-record
+Update an MX record set,network dns record-set mx update
+Get the details of an NS record set,network dns record-set ns show
+Delete an NS record set and all associated records,network dns record-set ns delete
+List all NS record sets in a zone,network dns record-set ns list
+Create an empty NS record set,network dns record-set ns create
+Add an NS record,network dns record-set ns add-record
+Remove an NS record from its record set,network dns record-set ns remove-record
+Update an NS record set,network dns record-set ns update
+Get the details of a PTR record set,network dns record-set ptr show
+Delete a PTR record set and all associated records,network dns record-set ptr delete
+List all PTR record sets in a zone,network dns record-set ptr list
+Create an empty PTR record set,network dns record-set ptr create
+Add a PTR record,network dns record-set ptr add-record
+Remove a PTR record from its record set,network dns record-set ptr remove-record
+Update a PTR record set,network dns record-set ptr update
+Get the details of an SRV record set,network dns record-set srv show
+Delete an SRV record set and all associated records,network dns record-set srv delete
+List all SRV record sets in a zone,network dns record-set srv list
+Create an empty SRV record set,network dns record-set srv create
+Add an SRV record,network dns record-set srv add-record
+Remove an SRV record from its record set,network dns record-set srv remove-record
+Update an SRV record set,network dns record-set srv update
+Get the details of a TXT record set,network dns record-set txt show
+Delete a TXT record set and all associated records,network dns record-set txt delete
+List all TXT record sets in a zone,network dns record-set txt list
+Create an empty TXT record set,network dns record-set txt create
+Add a TXT record,network dns record-set txt add-record
+Remove a TXT record from its record set,network dns record-set txt remove-record
+Update a TXT record set,network dns record-set txt update
+Get the details of a CAA record set,network dns record-set caa show
+Delete a CAA record set and all associated records,network dns record-set caa delete
+List all CAA record sets in a zone,network dns record-set caa list
+Create an empty CAA record set,network dns record-set caa create
+Add a CAA record,network dns record-set caa add-record
+Remove a CAA record from its record set,network dns record-set caa remove-record
+Update a CAA record set,network dns record-set caa update
+Get the details of an SOA record,network dns record-set soa show
+Update properties of an SOA record,network dns record-set soa update
+Get the details of a CNAME record set,network dns record-set cname show
+Delete a CNAME record set and its associated record,network dns record-set cname delete
+List the CNAME record set in a zone,network dns record-set cname list
+Create an empty CNAME record set,network dns record-set cname create
+Set the value of a CNAME record,network dns record-set cname set-record
+Remove a CNAME record from its record set,network dns record-set cname remove-record
+Delete an ExpressRoute circuit,network express-route delete
+Get the details of an ExpressRoute circuit,network express-route show
+Get the statistics of an ExpressRoute circuit,network express-route get-stats
+Show the current Address Resolution Protocol (ARP) table of an ExpressRoute circuit,network express-route list-arp-tables
+Show the current routing table of an ExpressRoute circuit peering,network express-route list-route-tables
+Create an ExpressRoute circuit,network express-route create
+List all ExpressRoute circuits for the current subscription,network express-route list
+List available ExpressRoute service providers,network express-route list-service-providers
+Update settings of an ExpressRoute circuit,network express-route update
+Place the CLI in a waiting state until a condition of the ExpressRoute is met,network express-route wait
+Create a new link authorization for an ExpressRoute circuit,network express-route auth create
+Delete a link authorization of an ExpressRoute circuit,network express-route auth delete
+Get the details of a link authorization of an ExpressRoute circuit,network express-route auth show
+List link authorizations of an ExpressRoute circuit,network express-route auth list
+Create peering settings for an ExpressRoute circuit,network express-route peering create
+Delete peering settings,network express-route peering delete
+Get the details of an express route peering,network express-route peering show
+List peering settings of an ExpressRoute circuit,network express-route peering list
+Update peering settings of an ExpressRoute circuit,network express-route peering update
+Get the details of a load balancer,network lb show
+Create a load balancer,network lb create
+Delete a load balancer,network lb delete
+List load balancers,network lb list
+Update a load balancer,network lb update
+List frontend IP addresses,network lb frontend-ip list
+Get the details of a frontend IP address,network lb frontend-ip show
+Delete a frontend IP address,network lb frontend-ip delete
+List inbound NAT rules,network lb inbound-nat-rule list
+Get the details of an inbound NAT rule,network lb inbound-nat-rule show
+Delete an inbound NAT rule,network lb inbound-nat-rule delete
+List inbound NAT address pools,network lb inbound-nat-pool list
+Get the details of an inbound NAT address pool,network lb inbound-nat-pool show
+Delete an inbound NAT address pool,network lb inbound-nat-pool delete
+List address pools,network lb address-pool list
+Get the details of an address pool,network lb address-pool show
+Delete an address pool,network lb address-pool delete
+List load balancing rules,network lb rule list
+Get the details of a load balancing rule,network lb rule show
+Delete a load balancing rule,network lb rule delete
+List probes,network lb probe list
+Get the details of a probe,network lb probe show
+Delete a probe,network lb probe delete
+Create a frontend IP address,network lb frontend-ip create
+Update a frontend IP address,network lb frontend-ip update
+Create an inbound NAT rule,network lb inbound-nat-rule create
+Update an inbound NAT rule,network lb inbound-nat-rule update
+Create an inbound NAT address pool,network lb inbound-nat-pool create
+Update an inbound NAT address pool,network lb inbound-nat-pool update
+Create an address pool,network lb address-pool create
+Create a load balancing rule,network lb rule create
+Update a load balancing rule,network lb rule update
+Create a probe,network lb probe create
+Update a probe,network lb probe update
+Delete a local VPN gateway,network local-gateway delete
+Get the details of a local VPN gateway,network local-gateway show
+List all local VPN gateways in a resource group,network local-gateway list
+Create a local VPN gateway,network local-gateway create
+Update a local VPN gateway,network local-gateway update
+Place the CLI in a waiting state until a condition of the local gateway is met,network local-gateway wait
+Create a network interface,network nic create
+Delete a network interface,network nic delete
+Get the details of a network interface,network nic show
+List network interfaces,network nic list
+Show the effective route table applied to a network interface,network nic show-effective-route-table
+List all effective network security groups applied to a network interface,network nic list-effective-nsg
+Update a network interface,network nic update
+Create an IP configuration,network nic ip-config create
+Update an IP configuration,network nic ip-config update
+List the IP configurations of a NIC,network nic ip-config list
+Show the details of an IP configuration,network nic ip-config show
+Delete an IP configuration,network nic ip-config delete
+Add an address pool to an IP configuration,network nic ip-config address-pool add
+Remove an address pool of an IP configuration,network nic ip-config address-pool remove
+Add an inbound NAT rule to an IP configuration,network nic ip-config inbound-nat-rule add
+Remove an inbound NAT rule of an IP configuration,network nic ip-config inbound-nat-rule remove
+Delete a network security group,network nsg delete
+Get information about a network security group,network nsg show
+List network security groups,network nsg list
+Create a network security group,network nsg create
+Update a network security group,network nsg update
+Delete a network security group rule,network nsg rule delete
+Get the details of a network security group rule,network nsg rule show
+List all rules in a network security group,network nsg rule list
+Create a network security group rule,network nsg rule create
+Update a network security group rule,network nsg rule update
+Configure the Network Watcher service for different regions,network watcher configure
+List Network Watchers,network watcher list
+Test IP flow to/from a VM given the currently configured network security group rules,network watcher test-ip-flow
+(PREVIEW) Test if a connection can be established between a Virtual Machine and a given endpoint,network watcher test-connectivity
+Get information on the 'next hop' of a VM,network watcher show-next-hop
+Get detailed security information on a VM for the currently configured network security group,network watcher show-security-group-view
+"Get the network topology of a resource group, virtual network or subnet",network watcher show-topology
+Create a connection monitor,network watcher connection-monitor create
+Delete a connection monitor for the given region,network watcher connection-monitor delete
+Shows a connection monitor by name,network watcher connection-monitor show
+Stop the specified connection monitor,network watcher connection-monitor stop
+Start the specified connection monitor,network watcher connection-monitor start
+Query a snapshot of the most recent connection state of a connection monitor,network watcher connection-monitor query
+List connection monitors for the given region,network watcher connection-monitor list
+Create and start a packet capture session,network watcher packet-capture create
+Show details of a packet capture session,network watcher packet-capture show
+Show the status of a packet capture session,network watcher packet-capture show-status
+Delete a packet capture session,network watcher packet-capture delete
+Stop a running packet capture session,network watcher packet-capture stop
+List all packet capture sessions within a resource group,network watcher packet-capture list
+Configure flow logging on a network security group,network watcher flow-log configure
+Get the flow log configuration of a network security group,network watcher flow-log show
+Troubleshoot issues with VPN connections or gateway connectivity,network watcher troubleshooting start
+Get the results of the last troubleshooting operation,network watcher troubleshooting show
+Delete a public IP address,network public-ip delete
+Get the details of a public IP address,network public-ip show
+List public IP addresses,network public-ip list
+Create a public IP address,network public-ip create
+Update a public IP address,network public-ip update
+Create a route filter,network route-filter create
+List route filters,network route-filter list
+Get the details of a route filter,network route-filter show
+Delete a route filter,network route-filter delete
+Update a route filter,network route-filter update
+Create a rule in a route filter,network route-filter rule create
+List rules in a route filter,network route-filter rule list
+Get the details of a rule in a route filter,network route-filter rule show
+Delete a rule from a route filter,network route-filter rule delete
+Update a rule in a route filter,network route-filter rule update
+Gets all the available BGP service communities,network route-filter rule list-service-communities
+Create a route table,network route-table create
+Delete a route table,network route-table delete
+Get the details of a route table,network route-table show
+List route tables,network route-table list
+Update a route table,network route-table update
+Create a route in a route table,network route-table route create
+Delete a route from a route table,network route-table route delete
+Get the details of a route in a route table,network route-table route show
+List routes in a route table,network route-table route list
+Update a route in a route table,network route-table route update
+Check the availability of a relative DNS name,network traffic-manager profile check-dns
+Get the details of a traffic manager profile,network traffic-manager profile show
+Delete a traffic manager profile,network traffic-manager profile delete
+List traffic manager profiles,network traffic-manager profile list
+Create a traffic manager profile,network traffic-manager profile create
+Update a traffic manager profile,network traffic-manager profile update
+Get the details of a traffic manager endpoint,network traffic-manager endpoint show
+Delete a traffic manager endpoint,network traffic-manager endpoint delete
+Create a traffic manager endpoint,network traffic-manager endpoint create
+List traffic manager endpoints,network traffic-manager endpoint list
+Update a traffic manager endpoint,network traffic-manager endpoint update
+Get the default geographic hierarchy used by the geographic traffic routing method,network traffic-manager endpoint show-geographic-hierarchy
+Delete a virtual network,network vnet delete
+Get the details of a virtual network,network vnet show
+List virtual networks,network vnet list
+Check if a private IP address is available for use within a virtual network,network vnet check-ip-address
+Create a virtual network,network vnet create
+Update a virtual network,network vnet update
+List which services support VNET service tunneling in a given region,network vnet list-endpoint-services
+Create a virtual network peering connection,network vnet peering create
+Show details of a peering,network vnet peering show
+List peerings,network vnet peering list
+Delete a peering,network vnet peering delete
+Update a peering,network vnet peering update
+Delete a subnet,network vnet subnet delete
+Show details of a subnet,network vnet subnet show
+List the subnets in a virtual network,network vnet subnet list
+Create a subnet and associate an existing NSG and route table,network vnet subnet create
+Update a subnet,network vnet subnet update
+Create a virtual network gateway,network vnet-gateway create
+Update a virtual network gateway,network vnet-gateway update
+Place the CLI in a waiting state until a condition of the virtual network gateway is met,network vnet-gateway wait
+Delete a virtual network gateway,network vnet-gateway delete
+Get the details of a virtual network gateway,network vnet-gateway show
+List virtual network gateways,network vnet-gateway list
+Reset a virtual network gateway,network vnet-gateway reset
+Retrieve the status of BGP peers,network vnet-gateway list-bgp-peer-status
+List the routes of a virtual network gateway advertised to the specified peer,network vnet-gateway list-advertised-routes
+"This operation retrieves a list of routes the virtual network gateway has learned, including routes learned from BGP peers",network vnet-gateway list-learned-routes
+Generate VPN client configuration,network vnet-gateway vpn-client generate
+Retrieve a pre-generated VPN client configuration,network vnet-gateway vpn-client show-url
+Revoke a certificate,network vnet-gateway revoked-cert create
+Delete a revoked certificate,network vnet-gateway revoked-cert delete
+Upload a root certificate,network vnet-gateway root-cert create
+Delete a root certificate,network vnet-gateway root-cert delete
+Create a VPN connection,network vpn-connection create
+Delete a VPN connection,network vpn-connection delete
+Get the details of a VPN connection,network vpn-connection show
+List all VPN connections in a resource group,network vpn-connection list
+Update a VPN connection,network vpn-connection update
+Retrieve a VPN connection shared key,network vpn-connection shared-key show
+Reset a VPN connection shared key,network vpn-connection shared-key reset
+Update a VPN connection shared key,network vpn-connection shared-key update
+Add a VPN connection IPSec policy,network vpn-connection ipsec-policy add
+List IPSec policies associated with a VPN connection,network vpn-connection ipsec-policy list
+Delete all IPsec policies on a VPN connection,network vpn-connection ipsec-policy clear
+List policy events,policy event list
+List policy compliance states,policy state list
+Summarize policy compliance states,policy state summarize
+Log in to Azure,login
+Log out to remove access to Azure subscriptions,logout
+Get a list of subscriptions for the logged in account,account list
+Set a subscription to be the current active subscription,account set
+Get the details of a subscription,account show
+Clear all subscriptions from the CLI's local cache,account clear
+List supported regions for the current subscription,account list-locations
+Get a token for utilities to access Azure,account get-access-token
+Create a server,mysql server create
+Restore a server from backup,mysql server restore
+Georestore a server from backup,mysql server georestore
+Delete a server,mysql server delete
+Get the details of a server,mysql server show
+List available servers,mysql server list
+Update a server,mysql server update
+Wait for server to satisfy certain conditions,mysql server wait
+Create a server,postgres server create
+Restore a server from backup,postgres server restore
+Georestore a server from backup,postgres server georestore
+Delete a server,postgres server delete
+Get the details of a server,postgres server show
+List available servers,postgres server list
+Update a server,postgres server update
+Wait for server to satisfy certain conditions,postgres server wait
+Create a new firewall rule for a server,mysql server firewall-rule create
+Delete a firewall rule,mysql server firewall-rule delete
+Get the details of a firewall rule,mysql server firewall-rule show
+List all firewall rules for a server,mysql server firewall-rule list
+Update a firewall rule,mysql server firewall-rule update
+Create a new firewall rule for a server,postgres server firewall-rule create
+Delete a firewall rule,postgres server firewall-rule delete
+Get the details of a firewall rule,postgres server firewall-rule show
+List all firewall rules for a server,postgres server firewall-rule list
+Update a firewall rule,postgres server firewall-rule update
+Update the configuration of a server,mysql server configuration set
+Get the configuration for a server,mysql server configuration show
+List the configuration values for a server,mysql server configuration list
+Update the configuration of a server,postgres server configuration set
+Get the configuration for a server,postgres server configuration show
+List the configuration values for a server,postgres server configuration list
+List log files for a server,mysql server-logs list
+Download log files,mysql server-logs download
+List log files for a server,postgres server-logs list
+Download log files,postgres server-logs download
+Create a MySQL database,mysql db create
+Delete a database,mysql db delete
+Show the details of a database,mysql db show
+List the databases for a server,mysql db list
+Create a PostgreSQL database,postgres db create
+Delete a database,postgres db delete
+Show the details of a database,postgres db show
+List the databases for a server,postgres db list
+Create new Redis Cache instance,redis create
+Deletes a Redis cache,redis delete
+Export data stored in a Redis cache,redis export
+Reboot specified Redis node(s),redis force-reboot
+(DEPRECATED) Import data into a Redis cache,redis import-method
+Import data into a Redis cache,redis import
+List Redis caches,redis list
+(DEPRECATED) Gets all Redis caches in the specified subscription,redis list-all
+Retrieve a Redis cache's access keys,redis list-keys
+Regenerate Redis cache's access keys,redis regenerate-keys
+Gets a Redis cache (resource description),redis show
+(DEPRECATED) Update the settings of a Redis cache,redis update-settings
+Scale or update settings of a Redis cache,redis update
+Create or replace the patching schedule for Redis cache (requires Premium SKU),redis patch-schedule set
+Deletes the patching schedule of a redis cache (requires Premium SKU),redis patch-schedule delete
+Gets the patching schedule of a redis cache (requires Premium SKU),redis patch-schedule show
+Gets the patching schedule of a redis cache (requires Premium SKU),redis patch-schedule patch-schedule show
+Get all reservation orders,reservations reservation-order list
+Get a specific reservation order,reservations reservation-order show
+Get all reservations,reservations reservation list
+Get details of a reservation,reservations reservation show
+Get history of a reservation,reservations reservation list-history
+Updates the applied scopes of the reservation,reservations reservation update
+Split a reservation,reservations reservation split
+Merge two reservations,reservations reservation merge
+Get list of applicable reservation order ids,reservations reservation-order-id list
+Get catalog of available reservation,reservations catalog show
+Create a subscription lock,account lock create
+Delete a subscription lock,account lock delete
+List lock information in the subscription,account lock list
+Show the details of a subscription lock,account lock show
+Update a subscription lock,account lock update
+Delete a resource group,group delete
+Gets a resource group,group show
+Check if a resource group exists,group exists
+List resource groups,group list
+Create a new resource group,group create
+Captures a resource group as a template,group export
+Update a resource group,group update
+Place the CLI in a waiting state until a condition of the resource group is met,group wait
+Create a resource group lock,group lock create
+Delete a resource group lock,group lock delete
+List lock information in the resource-group,group lock list
+Show the details of a resource group lock,group lock show
+Update a resource group lock,group lock update
+create a resource,resource create
+Delete a resource,resource delete
+Get the details of a resource,resource show
+List resources,resource list
+Tag a resource,resource tag
+Moves resources from one resource group to another(can be under different subscription),resource move
+Invoke an action on the resource,resource invoke-action
+Update a resource,resource update
+Create a resource-level lock,resource lock create
+Delete a resource-level lock,resource lock delete
+List lock information in the resource-level,resource lock list
+Show the details of a resource-level lock,resource lock show
+Update a resource-level lock,resource lock update
+Gets the specified resource provider,provider show
+Register a provider,provider register
+Unregister a provider,provider unregister
+Get operations from all providers,provider operation list
+Get an individual provider's operations,provider operation show
+List preview features,feature list
+Gets the preview feature with the specified name,feature show
+register a preview feature,feature register
+Gets the names and values of all resource tags that are defined in a subscription,tag list
+Creates a tag in the subscription,tag create
+Deletes a tag from the subscription,tag delete
+Creates a tag value,tag add-value
+Deletes a tag value,tag remove-value
+Start a deployment,group deployment create
+Get all the deployments for a resource group,group deployment list
+Gets a deployment,group deployment show
+Deletes a deployment from the deployment history,group deployment delete
+Validate whether a template is syntactically correct,group deployment validate
+Export the template used for a deployment,group deployment export
+Place the CLI in a waiting state until a deployment condition is met,group deployment wait
+Gets all deployments operations for a deployment,group deployment operation list
+get a deployment's operation,group deployment operation show
+Create a resource policy assignment,policy assignment create
+Delete a resource policy assignment,policy assignment delete
+List resource policy assignments,policy assignment list
+Show a resource policy assignment,policy assignment show
+Create a policy definition,policy definition create
+Delete a policy definition,policy definition delete
+List policy definitions,policy definition list
+get a policy definition,policy definition show
+Update a policy definition,policy definition update
+Create a policy set definition,policy set-definition create
+Delete a policy set definition,policy set-definition delete
+List policy set definitions,policy set-definition list
+get a policy set definition,policy set-definition show
+Update a policy set definition,policy set-definition update
+Create a lock,lock create
+Delete a lock,lock delete
+List lock information,lock list
+Show the properties of a lock,lock show
+Update a lock,lock update
+Create a new link between resources,resource link create
+Delete a link between resources,resource link delete
+Get details for a resource link,resource link show
+List resource links,resource link list
+Update link between resources,resource link update
+Create a managed application,managedapp create
+Delete a managed application,managedapp delete
+Gets a managed application,managedapp show
+List managed applications,managedapp list
+Create a managed application definition,managedapp definition create
+Delete a managed application definition,managedapp definition delete
+Gets a managed application definition,managedapp definition show
+List managed application definitions,managedapp definition list
+List all management groups,account management-group list
+Get a specific management group,account management-group show
+Create a new management group,account management-group create
+Delete an existing management group,account management-group delete
+Update an existing management group,account management-group update
+Add a subscription to a management group,account management-group subscription add
+Remove an existing subscription from a management group,account management-group subscription remove
+List role definitions,role definition list
+Delete a role definition,role definition delete
+Create a custom role definition,role definition create
+Update a role definition,role definition update
+Delete role assignments,role assignment delete
+List role assignments,role assignment list
+"Create a new role assignment for a user, group, or service principal",role assignment create
+List changelogs for role assignments,role assignment list-changelogs
+"Create a web application, web API or native application",ad app create
+Delete an application,ad app delete
+List applications,ad app list
+Get the details of an application,ad app show
+Update an application,ad app update
+Create a service principal,ad sp create
+Delete a service principal and its role assignments,ad sp delete
+List service principals,ad sp list
+Get the details of a service principal,ad sp show
+Create a service principal and configure its access to Azure resources,ad sp create-for-rbac
+Reset a service principal credential,ad sp credential reset
+list a service principal's credentials,ad sp credential list
+delete a service principal's credential,ad sp credential delete
+Delete a user,ad user delete
+Gets user information from the directory,ad user show
+List Azure Active Directory users,ad user list
+Request parameters for creating a new work or school account user,ad user create
+Create a group in the directory,ad group create
+Delete a group from the directory,ad group delete
+Gets group information from the directory,ad group show
+Gets a collection of object IDs of groups of which the specified group is a member,ad group get-member-groups
+list groups in the directory,ad group list
+Gets the members of a group,ad group member list
+Add a member to a group,ad group member add
+Remove a member from a group,ad group member remove
+Check if a member is in a group,ad group member check
+Create a Service Bus Namespace,servicebus namespace create
+Shows the Service Bus Namespace details,servicebus namespace show
+List the Service Bus Namespaces,servicebus namespace list
+Deletes the Service Bus Namespace,servicebus namespace delete
+check for the availability of the given name for the Namespace,servicebus namespace exists
+Updates a Service Bus Namespace,servicebus namespace update
+Create Authorization Rule for the given Service Bus Namespace,servicebus namespace authorization-rule create
+Shows the details of Service Bus Namespace Authorization Rule,servicebus namespace authorization-rule show
+Shows the list of Authorization Rule by Service Bus Namespace,servicebus namespace authorization-rule list
+List the keys and connection strings of Authorization Rule for Service Bus Namespace,servicebus namespace authorization-rule keys list
+Regenerate keys of Authorization Rule for the Service Bus Namespace,servicebus namespace authorization-rule keys renew
+Deletes the Authorization Rule of the Service Bus Namespace,servicebus namespace authorization-rule delete
+Updates Authorization Rule for the given Service Bus Namespace,servicebus namespace authorization-rule update
+Create the Service Bus Queue,servicebus queue create
+shows the Service Bus Queue Details,servicebus queue show
+List the Queue by Service Bus Namepsace,servicebus queue list
+Deletes the Service Bus Queue,servicebus queue delete
+Updates existing Service Bus Queue,servicebus queue update
+Create Authorization Rule for the given Service Bus Queue,servicebus queue authorization-rule create
+show properties of Authorization Rule for the given Service Bus Queue,servicebus queue authorization-rule show
+List of Authorization Rule by Service Bus Queue,servicebus queue authorization-rule list
+List the keys and connection strings of Authorization Rule for the given Service Bus Queue,servicebus queue authorization-rule keys list
+Regenerate keys of Authorization Rule for Service Bus Queue,servicebus queue authorization-rule keys renew
+Delete the Authorization Rule of Service Bus Queue,servicebus queue authorization-rule delete
+Update Authorization Rule for the given Service Bus Queue,servicebus queue authorization-rule update
+Create the Service Bus Topic,servicebus topic create
+Shows the Service Bus Topic Details,servicebus topic show
+List the Topic by Service Bus Namepsace,servicebus topic list
+Deletes the Service Bus Topic,servicebus topic delete
+Updates the Service Bus Topic,servicebus topic update
+Create Authorization Rule for given Service Bus Topic,servicebus topic authorization-rule create
+Shows the details of Authorization Rule for given Service Bus Topic,servicebus topic authorization-rule show
+shows list of Authorization Rule by Service Bus Topic,servicebus topic authorization-rule list
+List the keys and connection strings of Authorization Rule for Service Bus Topic,servicebus topic authorization-rule keys list
+Regenerate keys of Authorization Rule for Service Bus Topic,servicebus topic authorization-rule keys renew
+Deletes the Authorization Rule of the given Service Bus Topic,servicebus topic authorization-rule delete
+Create Authorization Rule for given Service Bus Topic,servicebus topic authorization-rule update
+Create the ServiceBus Subscription,servicebus topic subscription create
+Shows Service Bus Subscription Details,servicebus topic subscription show
+List the Subscription by Service Bus Topic,servicebus topic subscription list
+Deletes the Service Bus Subscription,servicebus topic subscription delete
+Updates the ServiceBus Subscription,servicebus topic subscription update
+Create the ServiceBus Rule for Subscription,servicebus topic subscription rule create
+Shows ServiceBus Rule Details,servicebus topic subscription rule show
+List the ServiceBus Rule by Subscription,servicebus topic subscription rule list
+Deletes the ServiceBus Rule,servicebus topic subscription rule delete
+Updates the ServiceBus Rule for Subscription,servicebus topic subscription rule update
+Sets Service Bus Geo-Disaster Recovery Configuration Alias for the give Namespace,servicebus georecovery-alias set
+shows properties of Service Bus Geo-Disaster Recovery Configuration Alias for Primay/Secondary Namespace,servicebus georecovery-alias show
+Gets all Alias(Disaster Recovery configurations),servicebus georecovery-alias list
+Disables Service Bus Geo-Disaster Recovery Configuration Alias and stops replicating changes from primary to secondary namespaces,servicebus georecovery-alias break-pair
+Invokes Service Bus Geo-Disaster Recovery Configuration Alias failover and re-configure the alias to point to the secondary namespace,servicebus georecovery-alias fail-over
+Check if Geo Recovery Alias Name is available,servicebus georecovery-alias exists
+Deletes Service Bus Geo-Disaster Recovery Configuration Alias request accepted,servicebus georecovery-alias delete
+Shows the list of Authorization Rule by Service Bus Namespace,servicebus georecovery-alias authorization-rule list
+Gets an authorization rule for a namespace by rule name,servicebus georecovery-alias authorization-rule show
+List the keys and connection strings of Authorization Rule for the Service Bus Namespace,servicebus georecovery-alias authorization-rule keys list
+Get cluster resource,sf cluster show
+List cluster resources,sf cluster list
+Create a new Azure Service Fabric cluster,sf cluster create
+Add a secondary cluster certificate to the cluster,sf cluster certificate add
+Remove a certificate from a cluster,sf cluster certificate remove
+Add a common name or certificate thumbprint to the cluster for client authentication,sf cluster client-certificate add
+Remove client certificates or subject names used for authentication,sf cluster client-certificate remove
+Update the settings of a cluster,sf cluster setting set
+Remove settings from a cluster,sf cluster setting remove
+Update the reliability tier for the primary node in a cluster,sf cluster reliability update
+Update the durability tier or VM SKU of a node type in the cluster,sf cluster durability update
+Add a new node type to a cluster,sf cluster node-type add
+Add nodes to a node type in a cluster,sf cluster node add
+Remove nodes from a node type in a cluster,sf cluster node remove
+Change the  upgrade type for a cluster,sf cluster upgrade-type set
+Add a new certificate to the Virtual Machine Scale Sets that make up the cluster to be used by hosted applications,sf application certificate add
+Gets all subscription usage metrics in a given location,sql list-usages
+Gets a subscription usage metric,sql show-usage
+Generates a connection string to a database,sql db show-connection-string
+Create a database,sql db create
+Create a copy of a database,sql db copy
+Create a new database by restoring from a backup,sql db restore
+Rename a database,sql db rename
+Get the details for a database,sql db show
+List databases a server or elastic pool,sql db list
+Delete a database,sql db delete
+Update a database,sql db update
+Imports a bacpac into an existing database,sql db import
+Export a database to a bacpac,sql db export
+Show database editions available for the currently active subscription,sql db list-editions
+Create a database as a readable secondary replica of an existing database,sql db replica create
+Create a data warehouse,sql dw create
+Get the details for a data warehouse,sql dw show
+List data warehouses for a server,sql dw list
+Delete a data warehouse,sql dw delete
+Pauses a datawarehouse,sql dw pause
+Resumes a datawarehouse,sql dw resume
+Update a data warehouse,sql dw update
+Gets a list of operations performed on the database,sql db op list
+Sets a database's transparent data encryption configuration,sql db tde set
+Gets a database's transparent data encryption configuration,sql db tde show
+Returns a database's transparent data encryption operation result,sql db tde list-activity
+List the replicas of a database and their replication status,sql db replica list-links
+Permanently stop data replication between two database replicas,sql db replica delete-link
+Set the primary replica database by failing over from the current primary replica database,sql db replica set-primary
+Gets a list of deleted databases that can be restored,sql db list-deleted
+Gets a database's blob auditing policy,sql db audit-policy show
+Update a database's auditing policy,sql db audit-policy update
+Gets a database's threat detection policy,sql db threat-policy show
+Update a database's threat detection policy,sql db threat-policy update
+Returns database usages,sql db list-usages
+Create an elastic pool,sql elastic-pool create
+Deletes an elastic pool,sql elastic-pool delete
+Gets an elastic pool,sql elastic-pool show
+Gets all elastic pools in a server,sql elastic-pool list
+Update an elastic pool,sql elastic-pool update
+Gets a list of databases in an elastic pool,sql elastic-pool list-dbs
+List elastic pool editions available for the active subscription,sql elastic-pool list-editions
+Gets a list of operations performed on the elastic pool,sql elastic-pool op list
+Create a server,sql server create
+Deletes a server,sql server delete
+Gets a server,sql server show
+List available servers,sql server list
+Update a server,sql server update
+Returns server usages,sql server list-usages
+Create a firewall rule,sql server firewall-rule create
+Update a firewall rule,sql server firewall-rule update
+Deletes a firewall rule,sql server firewall-rule delete
+Shows the details for a firewall rule,sql server firewall-rule show
+List a server's firewall rules,sql server firewall-rule list
+Create a new server Active Directory administrator,sql server ad-admin create
+Returns a list of server Administrators,sql server ad-admin list
+Deletes an existing server Active Directory Administrator,sql server ad-admin delete
+Update an existing server Active Directory administrator,sql server ad-admin update
+Creates a server key,sql server key create
+Deletes a server key,sql server key delete
+Shows a server key,sql server key show
+Gets a list of server keys,sql server key list
+Gets a server encryption protector,sql server tde-key show
+Sets the server's encryption protector,sql server tde-key set
+Create a virtual network rule to allows access to an Azure SQL server,sql server vnet-rule create
+Gets a virtual network rule,sql server vnet-rule show
+Gets a list of virtual network rules in a server,sql server vnet-rule list
+Deletes the virtual network rule with the given name,sql server vnet-rule delete
+Update a virtual network rule,sql server vnet-rule update
+Gets a server's secure connection policy,sql server conn-policy show
+Updates a server's secure connection policy,sql server conn-policy update
+Gets a server DNS alias,sql server dns-alias show
+Gets a list of server DNS aliases for a server,sql server dns-alias list
+Creates a server dns alias,sql server dns-alias create
+Deletes the server DNS alias with the given name,sql server dns-alias delete
+Sets a server to which DNS alias should point,sql server dns-alias set
+Create a managed instance,sql mi create
+Delete a managed instance,sql mi delete
+Get the details for a managed instance,sql mi show
+List available managed instances,sql mi list
+Update a managed instance,sql mi update
+Create a managed database,sql midb create
+Restore a managed database,sql midb restore
+Get the details for a managed database,sql midb show
+List maanged databases on a managed instance,sql midb list
+Delete a managed database,sql midb delete
+Checks that the storage account name is valid and is not already in use,storage account check-name
+Create a storage account,storage account create
+Delete a storage account,storage account delete
+Show storage account properties,storage account show
+List storage accounts,storage account list
+Show the current count and limit of the storage accounts under the subscription,storage account show-usage
+Get the connection string for a storage account,storage account show-connection-string
+Update the properties of a storage account,storage account update
+Regenerates one of the access keys for the specified storage account,storage account keys renew
+List the primary and secondary keys for a storage account,storage account keys list
+Add a network rule,storage account network-rule add
+List network rules,storage account network-rule list
+Remove a network rule,storage account network-rule remove
+Update logging settings for a storage account,storage logging update
+Show logging settings for a storage account,storage logging show
+Update metrics settings for a storage account,storage metrics update
+Show metrics settings for a storage account,storage metrics show
+List blobs in a given container,storage blob list
+"Downloads a blob to a file path, with automatic chunking and progress notifications",storage blob download
+Generates a shared access signature for the blob,storage blob generate-sas
+Creates the url to access a blob,storage blob url
+Creates a read-only snapshot of a blob,storage blob snapshot
+Get the details of a blob,storage blob show
+Sets system properties on the blob,storage blob update
+Check for the existence of a blob in a container,storage blob exists
+Mark a blob or snapshot for deletion,storage blob delete
+The undelete Blob operation restores the contents and metadata of soft deleted blob or snapshot,storage blob undelete
+Set the block or page tiers on the blob,storage blob set-tier
+Upload a file to a storage blob,storage blob upload
+Upload files from a local directory to a blob container,storage blob upload-batch
+Download blobs from a blob container recursively,storage blob download-batch
+Delete blobs from a blob container recursively,storage blob delete-batch
+Returns all user-defined metadata for the specified blob or snapshot,storage blob metadata show
+Sets user-defined metadata for the specified blob as one or more name-value pairs,storage blob metadata update
+Requests a new lease,storage blob lease acquire
+Renews the lease,storage blob lease renew
+Releases the lease,storage blob lease release
+Changes the lease ID of an active lease,storage blob lease change
+"Breaks the lease, if the blob has an active lease",storage blob lease break
+Copies a blob asynchronously,storage blob copy start
+"Aborts a pending copy_blob operation, and leaves a destination blob with zero length and full metadata",storage blob copy cancel
+Copy multiple blobs or files to a blob container,storage blob copy start-batch
+Copies an incremental copy of a blob asynchronously,storage blob incremental-copy start
+"Aborts a pending copy_blob operation, and leaves a destination blob with zero length and full metadata",storage blob incremental-copy cancel
+Show the storage blob delete-policy,storage blob service-properties delete-policy show
+Update the storage blob delete-policy,storage blob service-properties delete-policy update
+"Gets the properties of a storage account's Blob service, including Azure Storage Analytics",storage blob service-properties show
+List containers in a storage account,storage container list
+Marks the specified container for deletion,storage container delete
+Returns all user-defined metadata and system properties for the specified container,storage container show
+Create a container in a storage account,storage container create
+Generates a shared access signature for the container,storage container generate-sas
+Check for the existence of a storage container,storage container exists
+Sets the permissions for the specified container or stored access  policies that may be used with Shared Access Signatures,storage container set-permission
+Gets the permissions for the specified container,storage container show-permission
+Sets one or more user-defined name-value pairs for the specified container,storage container metadata update
+Returns all user-defined metadata for the specified container,storage container metadata show
+Requests a new lease,storage container lease acquire
+Renews the lease,storage container lease renew
+Release the lease,storage container lease release
+Change the lease ID of an active lease,storage container lease change
+"Break the lease, if the container has an active lease",storage container lease break
+Create a stored access policy on the containing object,storage container policy create
+Delete a stored access policy on a containing object ,storage container policy delete
+Set a stored access policy on a containing object,storage container policy update
+Show a stored access policy on a containing object,storage container policy show
+List stored access policies on a containing object,storage container policy list
+List the file shares in a storage account,storage share list
+Creates a new share under the specified account,storage share create
+Marks the specified share for deletion,storage share delete
+Generates a shared access signature for the share,storage share generate-sas
+"Gets the approximate size of the data stored on the share, rounded up to the nearest gigabyte",storage share stats
+Returns all user-defined metadata and system properties for the specified share,storage share show
+Sets service-defined properties for the specified share,storage share update
+Creates a snapshot of an existing share under the specified account,storage share snapshot
+Check for the existence of a file share,storage share exists
+Returns all user-defined metadata for the specified share,storage share metadata show
+Sets one or more user-defined name-value pairs for the specified share,storage share metadata update
+Create a stored access policy on the containing object,storage share policy create
+Delete a stored access policy on a containing object ,storage share policy delete
+Show a stored access policy on a containing object,storage share policy show
+List stored access policies on a containing object,storage share policy list
+Set a stored access policy on a containing object,storage share policy update
+Creates a new directory under the specified share or parent directory,storage directory create
+Deletes the specified empty directory,storage directory delete
+Returns all user-defined metadata and system properties for the specified directory,storage directory show
+Check for the existence of a storage directory,storage directory exists
+Returns all user-defined metadata for the specified directory,storage directory metadata show
+Sets one or more user-defined name-value pairs for the specified directory,storage directory metadata update
+List directories in a share,storage directory list
+List files and directories in a share,storage file list
+Marks the specified file for deletion,storage file delete
+Resizes a file to the specified size,storage file resize
+Creates the url to access a file,storage file url
+Generates a shared access signature for the file,storage file generate-sas
+"Returns all user-defined metadata, standard HTTP properties, and system properties for the file",storage file show
+Sets system properties on the file,storage file update
+Check for the existence of a file,storage file exists
+"Downloads a file to a file path, with automatic chunking and progress notifications",storage file download
+Upload a file to a share that uses the SMB 3,storage file upload
+Returns all user-defined metadata for the specified file,storage file metadata show
+Sets user-defined metadata for the specified file as one or more name-value pairs,storage file metadata update
+Copies a file asynchronously,storage file copy start
+" Aborts a pending copy_file operation, and leaves a destination file  with zero length and full metadata",storage file copy cancel
+Upload files from a local directory to an Azure Storage File Share in a batch operation,storage file upload-batch
+Download files from an Azure Storage File Share to a local directory in a batch operation,storage file download-batch
+Delete files from an Azure Storage File Share,storage file delete-batch
+Copy multiple files or blobs to a file share,storage file copy start-batch
+Add a CORS rule to a storage account,storage cors add
+Remove all CORS rules from a storage account,storage cors clear
+List all CORS rules for a storage account,storage cors list
+List queues in a storage account,storage queue list
+Creates a queue under the given account,storage queue create
+Deletes the specified queue and any messages it contains,storage queue delete
+Generates a shared access signature for the queue,storage queue generate-sas
+Retrieves statistics related to replication for the Queue service,storage queue stats
+Returns a boolean indicating whether the queue exists,storage queue exists
+Retrieves user-defined metadata and queue properties on the specified queue,storage queue metadata show
+Sets user-defined metadata on the specified queue,storage queue metadata update
+Create a stored access policy on the containing object,storage queue policy create
+Delete a stored access policy on a containing object ,storage queue policy delete
+Show a stored access policy on a containing object,storage queue policy show
+List stored access policies on a containing object,storage queue policy list
+Set a stored access policy on a containing object,storage queue policy update
+Adds a new message to the back of the message queue,storage message put
+Retrieves one or more messages from the front of the queue,storage message get
+"Retrieves one or more messages from the front of the queue, but does not alter the visibility of the message",storage message peek
+Deletes the specified message,storage message delete
+Deletes all messages from the specified queue,storage message clear
+Updates the visibility timeout of a message,storage message update
+Creates a new table in the storage account,storage table create
+Deletes the specified table and any data it contains,storage table delete
+Returns a boolean indicating whether the table exists,storage table exists
+Generates a shared access signature for the table,storage table generate-sas
+List tables in a storage account,storage table list
+Retrieves statistics related to replication for the Table service,storage table stats
+Create a stored access policy on the containing object,storage table policy create
+Delete a stored access policy on a containing object ,storage table policy delete
+Show a stored access policy on a containing object,storage table policy show
+List stored access policies on a containing object,storage table policy list
+Set a stored access policy on a containing object,storage table policy update
+List entities which satisfy a query,storage entity query
+Updates an existing entity in a table,storage entity replace
+Updates an existing entity by merging the entity's properties,storage entity merge
+Deletes an existing entity in a table,storage entity delete
+Get an entity from the specified table,storage entity show
+Insert an entity into a table,storage entity insert
+Create a managed disk,disk create
+Delete a managed disk,disk delete
+Grant a resource read access to a managed disk,disk grant-access
+List managed disks,disk list
+Revoke a resource's read access to a managed disk,disk revoke-access
+Gets information about a disk,disk show
+Update a managed disk,disk update
+Place the CLI in a waiting state until a condition of a managed disk is met,disk wait
+Create or update an identity in the specified subscription and resource group,identity create
+Gets the identity,identity show
+Deletes the identity,identity delete
+List Managed Service Identities,identity list
+Lists available operations for the Managed Identity provider,identity list-operations
+Create a custom Virtual Machine Image from managed disks or snapshots,image create
+List custom VM images,image list
+Gets an image,image show
+Deletes an Image,image delete
+Create a snapshot,snapshot create
+Deletes a snapshot,snapshot delete
+Grant read access to a snapshot,snapshot grant-access
+List snapshots,snapshot list
+Revoke read access to a snapshot,snapshot revoke-access
+Gets information about a snapshot,snapshot show
+Update a snapshot,snapshot update
+Enable managed service identity on a VM,vm identity assign
+(PREVIEW) Remove user assigned identities from a VM,vm identity remove
+display VM's managed identity info,vm identity show
+Capture information for a stopped VM,vm capture
+Create an Azure Virtual Machine,vm create
+Convert a VM with unmanaged disks to use managed disks,vm convert
+Deallocate a VM,vm deallocate
+Delete a VM,vm delete
+"Mark a VM as generalized, allowing it to be imaged for multiple deployments",vm generalize
+Get instance information about a VM,vm get-instance-view
+List details of Virtual Machines,vm list
+List IP addresses associated with a VM,vm list-ip-addresses
+List available sizes for VMs,vm list-sizes
+Get details for compute-related resource SKUs,vm list-skus
+List available usage resources for VMs,vm list-usage
+List available resizing options for VMs,vm list-vm-resize-options
+Opens a VM to inbound traffic on specified ports,vm open-port
+The operation to perform maintenance on a virtual machine,vm perform-maintenance
+Redeploy an existing VM,vm redeploy
+Update a VM's size,vm resize
+Restart VMs,vm restart
+Get the details of a VM,vm show
+Start a stopped VM,vm start
+Stop a running VM,vm stop
+Update the properties of a VM,vm update
+Place the CLI in a waiting state until a condition of the VM is met,vm wait
+Convert an Azure Availability Set to contain VMs with managed disks,vm availability-set convert
+Create an Azure Availability Set,vm availability-set create
+Delete an availability set,vm availability-set delete
+List availability sets,vm availability-set list
+List VM sizes for an availability set,vm availability-set list-sizes
+Get information for an availability set,vm availability-set show
+Update an Azure Availability Set,vm availability-set update
+Disable the boot diagnostics on a VM,vm boot-diagnostics disable
+Enable the boot diagnostics on a VM,vm boot-diagnostics enable
+Get the boot diagnostics log from a VM,vm boot-diagnostics get-boot-log
+Configure the Azure VM diagnostics extension,vm diagnostics set
+Get the default configuration settings for a VM,vm diagnostics get-default-config
+Attach a managed persistent disk to a VM,vm disk attach
+Detatch a managed disk from a VM,vm disk detach
+Enable disk encryption on the OS disk and/or data disks,vm encryption enable
+Disable disk encryption on the OS disk and/or data disks,vm encryption disable
+Show encryption status,vm encryption show
+Remove an extension attached to a VM,vm extension delete
+Display information about extensions attached to a VM,vm extension show
+Set extensions for a VM,vm extension set
+List the extensions attached to a VM,vm extension list
+Display information for an extension,vm extension image show
+List the names of available extensions,vm extension image list-names
+List the versions for available extensions,vm extension image list-versions
+List the information on available extensions,vm extension image list
+List the VM image offers available in the Azure Marketplace,vm image list-offers
+List the VM image publishers available in the Azure Marketplace,vm image list-publishers
+List the VM image SKUs available in the Azure Marketplace,vm image list-skus
+List the VM/VMSS images available in the Azure Marketplace,vm image list
+Accept Azure Marketplace term so that the image can be used to create VMs,vm image accept-terms
+Get the details for a VM image available in the Azure Marketplace,vm image show
+Add existing NICs to a VM,vm nic add
+Remove NICs from a VM,vm nic remove
+Configure settings of a NIC attached to a VM,vm nic set
+Display information for a NIC attached to a VM,vm nic show
+List the NICs available on a VM,vm nic list
+run command on a vm,vm run-command invoke
+Lists all available run commands for a subscription in a location,vm run-command list
+Gets specific run command for a subscription in a location,vm run-command show
+Transform secrets into a form that can be used by VMs and VMSSes,vm secret format
+Add a secret to a VM,vm secret add
+List secrets on a VM,vm secret list
+Remove a secret from a VM,vm secret remove
+Attach an unmanaged persistent disk to a VM,vm unmanaged-disk attach
+Detatch an unmanaged disk from a VM,vm unmanaged-disk detach
+List unamanaged disks of a VM,vm unmanaged-disk list
+Update a user account,vm user update
+Delete a user account from a VM,vm user delete
+Reset the SSH configuration on a VM,vm user reset-ssh
+Enable managed service identity on a VMSS,vmss identity assign
+(PREVIEW) Remove user assigned identities from a VM scaleset,vmss identity remove
+display VM scaleset's managed identity info,vmss identity show
+Create an Azure Virtual Machine Scale Set,vmss create
+Deallocate VMs within a VMSS,vmss deallocate
+Deletes a VM scale set,vmss delete
+Delete VMs within a VMSS,vmss delete-instances
+View an instance of a VMSS,vmss get-instance-view
+List VMSS,vmss list
+Gets a list of all virtual machines in a VM scale sets,vmss list-instances
+Get the IP address and port number used to connect to individual VM instances within a set,vmss list-instance-connection-info
+List public IP addresses of VM instances within a set,vmss list-instance-public-ips
+"Gets a list of SKUs available for your VM scale set, including the minimum and maximum VM instances allowed for each SKU",vmss list-skus
+Reimage VMs within a VMSS,vmss reimage
+Perform maintenance on one or more virtual machines in a VM scale set,vmss perform-maintenance
+Restart VMs within a VMSS,vmss restart
+Change the number of VMs within a VMSS,vmss scale
+Get details on VMs within a VMSS,vmss show
+Start VMs within a VMSS,vmss start
+Power off (stop) VMs within a VMSS,vmss stop
+Update a VMSS,vmss update
+Upgrade VMs within a VMSS,vmss update-instances
+Place the CLI in a waiting state until a condition of a scale set is met,vmss wait
+Enable diagnostics on a VMSS,vmss diagnostics set
+Show the default config file which defines data to be collected,vmss diagnostics get-default-config
+Attach managed data disks to a scale set or its instances,vmss disk attach
+Detach managed data disks from a scale set or its instances,vmss disk detach
+Encrypt a VMSS with managed disks,vmss encryption enable
+Disable the encryption on a VMSS with managed disks,vmss encryption disable
+Show encryption status,vmss encryption show
+Delete an extension from a VMSS,vmss extension delete
+Show details on a VMSS extension,vmss extension show
+Add an extension to a VMSS or update an existing extension,vmss extension set
+List extensions associated with a VMSS,vmss extension list
+Gets a virtual machine extension image,vmss extension image show
+Gets a list of virtual machine extension image types,vmss extension image list-names
+Gets a list of virtual machine extension image versions,vmss extension image list-versions
+List the information on available extensions,vmss extension image list
+Gets all network interfaces in a virtual machine scale set,vmss nic list
+Gets information about all network interfaces in a virtual machine in a virtual machine scale set,vmss nic list-vm-nics
+Get the specified network interface in a virtual machine scale set,vmss nic show
+Cancels the current virtual machine scale set rolling upgrade,vmss rolling-upgrade cancel
+Gets the status of the latest virtual machine scale set rolling upgrade,vmss rolling-upgrade get-latest
+Starts a rolling upgrade to move all virtual machine scale set instances to the latest available Platform Image OS version,vmss rolling-upgrade start
+Manage Azure Container Registries for private registries within Azure,acr
+Manage login credentials for Azure Container Registries,acr credential
+Manage repositories (image names) for Azure Container Registries,acr repository
+Manage webhooks for Azure Container Registries,acr webhook
+Manage replications of Azure Container Registries across multiple regions,acr replication
+"Manage build definitions, which can be triggered by git commits or base image updates",acr build-task
+Manage Azure Container Services,acs
+Commands to manage a DC/OS-orchestrated Azure Container Service,acs dcos
+Commands to manage a Kubernetes-orchestrated Azure Container Service,acs kubernetes
+Manage Azure Kubernetes Services,aks
+Manage Azure Advisor,advisor
+Manage Azure Advisor configuration,advisor configuration
+Review Azure Advisor recommendations,advisor recommendation
+Manage Azure Media Services resources,ams
+Manage Azure Media Services accounts,ams account
+Manage secondary storage for an Azure Media Services account,ams account storage
+Manage service principal and role based access for an Azure Media Services account,ams account sp
+Manage transforms for an Azure Media Services account,ams transform
+Manage transform outputs for an Azure Media Services account,ams transform output
+Manage assets for an Azure Media Services account,ams asset
+Manage jobs for a transform,ams job
+Manage streamings for an Azure Media Services account,ams streaming
+Manage streaming locators for an Azure Media Services account,ams streaming locator
+Manage streaming policies for an Azure Media Services account,ams streaming policy
+Manage streaming endpoints for an Azure Media Service account,ams streaming endpoint
+Manage App Service plans,appservice
+Manage web apps,webapp
+Manage webapp authentication and authorization,webapp auth
+(PREVIEW) manage webapp's managed service identity,webapp identity
+(PREVIEW) manage functionapp's managed service identity,functionapp identity
+Configure a web app,webapp config
+Configure web app settings,webapp config appsettings
+Manage a web app's connection strings,webapp config connection-string
+Manage web app container settings,webapp config container
+Configure SSL certificates for web apps,webapp config ssl
+Manage web app deployments,webapp deployment
+Manage web app deployment slots,webapp deployment slot
+Manage web app logs,webapp log
+Manage container-based continuous deployment,webapp deployment container
+Manage user credentials for deployment,webapp deployment user
+Manage web app deployment via source control,webapp deployment source
+Manage traffic routing for web apps,webapp traffic-routing
+Manage app service plans,appservice plan
+Configure hostnames for a web app,webapp config hostname
+Manage backups for web apps,webapp config backup
+Manage function apps,functionapp
+Configure a function app,functionapp config
+Configure function app settings,functionapp config appsettings
+Configure hostnames for a function app,functionapp config hostname
+Configure SSL certificates,functionapp config ssl
+Manage function app deployments,functionapp deployment
+Manage function app deployment via source control,functionapp deployment source
+Manage user credentials for deployment,functionapp deployment user
+Commands to manage Azure Backups,backup
+"Online storage entity in Azure used to hold data such as backup copies, recovery points and backup policies",backup vault
+Properties of the Recovery Services vault,backup vault backup-properties
+Resource which houses items or applications to be protected,backup container
+An item which is already protected or backed up to an Azure Recovery services vault with an associated policy,backup item
+A backup policy defines when you want to take a backup and for how long you would retain each backup copy,backup policy
+"A snapshot of data at that point-of-time, stored in Recovery Services Vault, from which you can restore information",backup recoverypoint
+"Manage protection of your items, enable protection or disable it, or take on-demand backups",backup protection
+Restore backed up items from recovery points in a Recovery Services vault,backup restore
+Gives access to all files of a recovery point,backup restore files
+Entity which contains details of the job,backup job
+Manage Azure Batch,batch
+Manage Azure Batch accounts,batch account
+Manage the access keys for the auto storage account configured for a Batch account,batch account autostorage-keys
+Manage Batch account keys,batch account keys
+Manage Batch applications,batch application
+Manage Batch application packages,batch application package
+View a summary of Batch application packages,batch application summary
+Manage Batch service options for a subscription at the region level,batch location
+Manage Batch service quotas at the region level,batch location quotas
+Manage Batch certificates,batch certificate
+Manage Batch task files,batch task file
+Manage Batch compute node files,batch node file
+Manage Batch jobs,batch job
+View the number of tasks in a Batch job and their states,batch job task-counts
+View statistics of all jobs under a Batch account,batch job all-statistics
+View the status of Batch job preparation and release tasks,batch job prep-release-status
+Manage Batch job schedules,batch job-schedule
+Manage the service log files of a Batch compute node,batch node service-logs
+Manage the user accounts of a Batch compute node,batch node user
+Manage Batch compute nodes,batch node
+Retrieve the remote login settings for a Batch compute node,batch node remote-login-settings
+Retrieve the remote desktop protocol file for a Batch compute node,batch node remote-desktop
+Manage task scheduling for a Batch compute node,batch node scheduling
+Manage Batch pools,batch pool
+Manage the operating system of Batch pools,batch pool os
+Manage automatic scaling of Batch pools,batch pool autoscale
+View statistics of all pools under a Batch account,batch pool all-statistics
+View usage metrics of Batch pools,batch pool usage-metrics
+Get node counts for Batch pools,batch pool node-counts
+Retrieve node agent SKUs of Batch pools using a Virtual Machine Configuration,batch pool node-agent-skus
+Manage Batch tasks,batch task
+Manage subtask information of a Batch task,batch task subtask
+Manage Batch AI resources,batchai
+Commands to manage workspaces,batchai workspace
+Commands to manage clusters,batchai cluster
+Commands to work with cluster nodes,batchai cluster node
+Commands to work with files generated by node setup task,batchai cluster file
+Commands to manage experiments,batchai experiment
+Commands to manage jobs,batchai job
+Commands to work with nodes which executed a job,batchai job node
+Commands to list and stream files in job's output directories,batchai job file
+Commands to manage file servers,batchai file-server
+Manage Azure Billing,billing
+Get billing invoices for a subscription,billing invoice
+Get billing periods for a subscription,billing period
+Get enrollment accounts,billing enrollment-account
+Manage Azure Content Delivery Networks (CDNs),cdn
+Manage CDN profiles to define an edge network,cdn profile
+Manage CDN endpoints,cdn endpoint
+Manage Azure CDN Custom Domains to provide custom host names for endpoints,cdn custom-domain
+List or show existing origins related to CDN endpoints,cdn origin
+View all available CDN edge nodes,cdn edge-node
+Manage registered Azure clouds,cloud
+Manage Azure Cognitive Services accounts,cognitiveservices
+Manage Azure Cognitive Services accounts,cognitiveservices account
+Manage the keys of an Azure Cognitive Services account,cognitiveservices account keys
+Manage consumption of Azure resources,consumption
+Manage reservations for Azure resources,consumption reservation
+List reservation summaries,consumption reservation summary
+List reservation details,consumption reservation detail
+Inspect the usage of Azure resources,consumption usage
+Inspect the price sheet of an Azure subscription within a billing period,consumption pricesheet
+Inspect the marketplace usage data of an Azure subscription within a billing period,consumption marketplace
+Manage budgets for an Azure subscription,consumption budget
+Manage Azure Container Instances,container
+Manage Azure Cosmos DB database accounts,cosmosdb
+Manage Azure Cosmos DB databases,cosmosdb database
+Manage Azure Cosmos DB collections,cosmosdb collection
+"(PREVIEW) Manage Data Lake Analytics accounts, jobs, and catalogs",dla
+(PREVIEW) Manage Data Lake Analytics jobs,dla job
+(PREVIEW) Manage Data Lake Analytics catalogs,dla catalog
+(PREVIEW) Manage Data Lake Analytics catalog databases,dla catalog database
+(PREVIEW) Manage Data Lake Analytics catalog assemblies,dla catalog assembly
+(PREVIEW) Manage Data Lake Analytics catalog external data sources,dla catalog external-data-source
+(PREVIEW) Manage Data Lake Analytics catalog stored procedures,dla catalog procedure
+(PREVIEW) Manage Data Lake Analytics catalog schemas,dla catalog schema
+(PREVIEW) Manage Data Lake Analytics catalog tables,dla catalog table
+(PREVIEW) Manage Data Lake Analytics catalog table partitions,dla catalog table-partition
+(PREVIEW) Manage Data Lake Analytics catalog table statistics,dla catalog table-stats
+(PREVIEW) Manage Data Lake Analytics catalog table types,dla catalog table-type
+(PREVIEW) Manage Data Lake Analytics catalog table valued functions,dla catalog tvf
+(PREVIEW) Manage Data Lake Analytics catalog views,dla catalog view
+(PREVIEW) Manage Data Lake Analytics catalog credentials,dla catalog credential
+(PREVIEW) Manage Data Lake Analytics catalog packages,dla catalog package
+(PREVIEW) Manage Data Lake Analytics accounts,dla account
+(PREVIEW) Manage links between Data Lake Analytics accounts and Azure Storage,dla account blob-storage
+(PREVIEW) Manage links between Data Lake Analytics and Data Lake Store accounts,dla account data-lake-store
+(PREVIEW) Manage Data Lake Analytics account firewall rules,dla account firewall
+(PREVIEW) Manage Data Lake Analytics account compute policies,dla account compute-policy
+(PREVIEW) Manage Data Lake Analytics job pipelines,dla job pipeline
+(PREVIEW) Manage Data Lake Analytics job recurrences,dla job recurrence
+(PREVIEW) Manage Data Lake Store accounts and filesystems,dls
+(PREVIEW) Manage Data Lake Store accounts,dls account
+(PREVIEW) Manage Data Lake Store account trusted identity providers,dls account trusted-provider
+(PREVIEW) Manage Data Lake Store account firewall rules,dls account firewall
+(PREVIEW) Manage a Data Lake Store filesystem,dls fs
+Manage Data Lake Store filesystem access and permissions,dls fs access
+Manage Azure Data Migration Service (DMS) instances,dms
+Manage Projects for an instance of the Data Migration Service,dms project
+Manage Tasks for a Data Migration Service instance's Project,dms project task
+Manage Azure Event Grid topics and subscriptions,eventgrid
+Manage Azure Event Grid topics,eventgrid topic
+Manage shared access keys of a topic,eventgrid topic key
+Manage event subscriptions for an Event Grid topic or for an Azure resource,eventgrid event-subscription
+Get details for topic types,eventgrid topic-type
+"Manage Azure Event Hubs namespaces, eventhubs, consumergroups and geo recovery configurations - Alias",eventhubs
+Manage Azure Event Hubs namespace and Authorizationrule,eventhubs namespace
+Manage Azure Event Hubs Authorizationrule for Namespace,eventhubs namespace authorization-rule
+Manage Azure Event Hubs Authorizationrule connection strings for Namespace,eventhubs namespace authorization-rule keys
+Manage Azure Event Hubs eventhub and authorization-rule,eventhubs eventhub
+Manage Azure Service Bus Authorizationrule for Eventhub,eventhubs eventhub authorization-rule
+Manage Azure Authorizationrule connection strings for Eventhub,eventhubs eventhub authorization-rule keys
+Manage Azure Event Hubs consumergroup,eventhubs eventhub consumer-group
+Manage Azure Event Hubs Geo Recovery configuration Alias,eventhubs georecovery-alias
+Manage Azure Event Hubs Authorizationrule for Geo Recovery configuration Alias,eventhubs georecovery-alias authorization-rule
+Manage Azure Event Hubs Authorizationrule connection strings for Geo Recovery configuration Alias,eventhubs georecovery-alias authorization-rule keys
+Manage and update CLI extensions,extension
+(PREVIEW) Manage Internet of Things (IoT) assets,iot
+(PREVIEW) Manage devices in your Azure IoT hub,iot device
+(PREVIEW) Manage Azure IoT hubs,iot hub
+Manage Azure IoT Hub Device Provisioning Service,iot dps
+Manage Azure IoT Hub Device Provisioning Service access policies,iot dps access-policy
+Manage Azure IoT Hub Device Provisioning Service linked IoT hubs,iot dps linked-hub
+Manage Azure IoT Hub Device Provisioning Service certificates,iot dps certificate
+Manage IoT Hub certificates,iot hub certificate
+(PREVIEW) Manage the event hub consumer groups of an IoT hub,iot hub consumer-group
+(PREVIEW) Manage shared access policies of an IoT hub,iot hub policy
+(PREVIEW) Manage jobs in an IoT hub,iot hub job
+(PREVIEW) Manage IoT device messaging,iot device message
+"Safeguard and maintain control of keys, secrets, and certificates",keyvault
+Manage keys,keyvault key
+Manage secrets,keyvault secret
+Manage certificates,keyvault certificate
+Manage pending certificate creation operations,keyvault certificate pending
+Manage contacts for certificate management,keyvault certificate contact
+Manage certificate issuer information,keyvault certificate issuer
+Manage admin information for certificate issuers,keyvault certificate issuer admin
+Manage Azure DevTest Labs,lab
+Manage VMs in an Azure DevTest Lab,lab vm
+Manage custom images of a DevTest Lab,lab custom-image
+List Azure Marketplace images allowed for a DevTest Lab,lab gallery-image
+Manage DevTest Labs artifacts,lab artifact
+Manage DevTest Lab artifact sources,lab artifact-source
+Manage virtual networks of an Azure DevTest Lab,lab vnet
+Manage formulas for an Azure DevTest Lab,lab formula
+Manage secrets of an Azure DevTest Lab,lab secret
+Manage Azure Resource Manager (ARM) templates in an Azure DevTest Lab,lab arm-template
+Manage environments for an Azure DevTest Lab,lab environment
+Manage Azure Maps,maps
+Manage Azure Maps accounts,maps account
+Manage Azure Maps account keys,maps account keys
+Manage the Azure Monitor Service,monitor
+Manage metric-based alert rules,monitor alert
+View Azure resource metrics,monitor metrics
+Manage log profiles,monitor log-profiles
+Manage service diagnostic settings,monitor diagnostic-settings
+Retrieve service diagnostic settings categories,monitor diagnostic-settings categories
+Manage autoscale settings,monitor autoscale
+Manage autoscaling profiles,monitor autoscale profile
+Manage autoscale scaling rules,monitor autoscale rule
+(DEPRECATED) Manage autoscale settings,monitor autoscale-settings
+Manage activity logs,monitor activity-log
+Manage action groups,monitor action-group
+Manage activity log alerts,monitor activity-log alert
+Manage action groups for activity log alerts,monitor activity-log alert action-group
+Manage scopes for activity log alerts,monitor activity-log alert scope
+Manage Azure Network resources,network
+Manage application-level routing and load balancing services,network application-gateway
+Manage address pools of an application gateway,network application-gateway address-pool
+Manage authorization certificates of an application gateway,network application-gateway auth-cert
+Manage frontend IP addresses of an application gateway,network application-gateway frontend-ip
+Manage frontend ports of an application gateway,network application-gateway frontend-port
+Manage HTTP listeners of an application gateway,network application-gateway http-listener
+Manage HTTP settings of an application gateway,network application-gateway http-settings
+Manage probes to gather and evaluate information on a gateway,network application-gateway probe
+Manage redirect configurations,network application-gateway redirect-config
+Evaluate probe information and define routing rules,network application-gateway rule
+Manage SSL certificates of an application gateway,network application-gateway ssl-cert
+Manage the SSL policy of an application gateway,network application-gateway ssl-policy
+Get information on predefined SSL policies,network application-gateway ssl-policy predefined
+Manage URL path maps of an application gateway,network application-gateway url-path-map
+Manage the rules of a URL path map,network application-gateway url-path-map rule
+Configure the settings of a web application firewall,network application-gateway waf-config
+Manage application security groups (ASGs),network asg
+Manage DDoS Protection Plans,network ddos-protection
+Manage DNS domains in Azure,network dns
+Manage DNS records and record sets,network dns record-set
+Manage DNS A records,network dns record-set a
+Manage DNS AAAA records,network dns record-set aaaa
+Manage DNS CAA records,network dns record-set caa
+Manage DNS CNAME records,network dns record-set cname
+Manage DNS MX records,network dns record-set mx
+Manage DNS NS records,network dns record-set ns
+Manage DNS PTR records,network dns record-set ptr
+Manage DNS SRV records,network dns record-set srv
+Manage a DNS SOA record,network dns record-set soa
+Manage DNS TXT records,network dns record-set txt
+Manage DNS zones,network dns zone
+Manage dedicated private network fiber connections to Azure,network express-route
+Manage authentication of an ExpressRoute circuit,network express-route auth
+Manage ExpressRoute peering of an ExpressRoute circuit,network express-route peering
+Manage and configure load balancers,network lb
+Manage address pools of a load balancer,network lb address-pool
+Manage frontend IP addresses of a load balancer,network lb frontend-ip
+Manage inbound NAT address pools of a load balancer,network lb inbound-nat-pool
+Manage inbound NAT rules of a load balancer,network lb inbound-nat-rule
+Evaluate probe information and define routing rules,network lb probe
+Manage load balancing rules,network lb rule
+Manage local gateways,network local-gateway
+Manage network interfaces,network nic
+Manage IP configurations of a network interface,network nic ip-config
+Manage address pools in an IP configuration,network nic ip-config address-pool
+Manage inbound NAT rules of an IP configuration,network nic ip-config inbound-nat-rule
+Manage Azure Network Security Groups (NSGs),network nsg
+Manage network security group rules,network nsg rule
+Manage public IP addresses,network public-ip
+Manage route tables,network route-table
+Manage routes in a route table,network route-table route
+(PREVIEW) Manage route filters,network route-filter
+(PREVIEW) Manage rules in a route filter,network route-filter rule
+Manage the routing of incoming traffic,network traffic-manager
+Manage Azure Traffic Manager profiles,network traffic-manager profile
+Manage Azure Traffic Manager end points,network traffic-manager endpoint
+Manage Azure Virtual Networks,network vnet
+Manage subnets in an Azure Virtual Network,network vnet subnet
+Manage peering connections between Azure Virtual Networks,network vnet peering
+Manage VPN connections,network vpn-connection
+Manage VPN connection IPSec policies,network vpn-connection ipsec-policy
+Manage VPN shared keys,network vpn-connection shared-key
+"Use an Azure Virtual Network Gateway to establish secure, cross-premises connectivity",network vnet-gateway
+Download a VPN client configuration required to connect to Azure via point-to-site,network vnet-gateway vpn-client
+Manage revoked certificates in a virtual network gateway,network vnet-gateway revoked-cert
+Manage root certificates of a virtual network gateway,network vnet-gateway root-cert
+Manage the Azure Network Watcher,network watcher
+Manage connection monitoring between an Azure Virtual Machine and any IP resource,network watcher connection-monitor
+Manage packet capture sessions on VMs,network watcher packet-capture
+Manage network security group flow logging,network watcher flow-log
+Manage Network Watcher troubleshooting sessions,network watcher troubleshooting
+Manage policy events,policy event
+Manage policy compliance states,policy state
+Manage Azure subscription information,account
+Manage Azure Database for MySQL servers,mysql
+Manage MySQL servers,mysql server
+Manage firewall rules for a server,mysql server firewall-rule
+Manage configuration values for a server,mysql server configuration
+Manage server logs,mysql server-logs
+Manage MySQL databases on a server,mysql db
+Manage Azure Database for PostgreSQL servers,postgres
+Manage PostgreSQL servers,postgres server
+Manage firewall rules for a server,postgres server firewall-rule
+Manage configuration values for a server,postgres server configuration
+Manage server logs,postgres server-logs
+Manage PostgreSQL databases on a server,postgres db
+"Access to a secure, dedicated Redis cache for your Azure applications",redis
+Manage Redis patch schedules,redis patch-schedule
+This group is deprecated and will be removed in CLI version 2,redis patch-schedule patch-schedule
+Manage Azure Reservations,reservations
+See catalog of available reservations,reservations catalog
+Manage reservation entities,reservations reservation
+"Manage reservation order, which is container for reservations",reservations reservation-order
+See reservation order ids that are applied to subscription,reservations reservation-order-id
+Manage template solutions provided and maintained by Independent Software Vendors (ISVs),managedapp
+Manage Azure Managed Applications,managedapp definition
+Manage Azure locks,lock
+Manage Azure subscription level locks,account lock
+Manage Azure Management Groups,account management-group
+Subscription operations for Management Groups,account management-group subscription
+Manage resource policies,policy
+Manage resource policy definitions,policy definition
+Manage resource policy set definitions,policy set-definition
+Manage resource policy assignments,policy assignment
+Manage Azure resources,resource
+Manage resource provider features,feature
+Manage resource groups and template deployments,group
+Manage Azure Resource Manager deployments,group deployment
+Manage deployment operations,group deployment operation
+Manage Azure resource group locks,group lock
+Manage resource providers,provider
+Get provider operations metadatas,provider operation
+Manage resource tags,tag
+Manage links between resources,resource link
+Manage Azure resource level locks,resource lock
+manage a service principal's credentials,ad sp credential
+Manage applications with AAD Graph,ad app
+Manage user roles for access control with Azure Active Directory and service principals,role
+Manage role assignments,role assignment
+Manage role definitions,role definition
+Manage Azure Active Directory Graph entities needed for Role Based Access Control,ad
+Manage Azure Active Directory groups,ad group
+Manage Azure Active Directory group members,ad group member
+Manage Azure Active Directory service principals for automation authentication,ad sp
+Manage Azure Active Directory users and user authentication,ad user
+"Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules and geo-disaster recovery configuration alias",servicebus
+Manage Azure Service Bus Namespace,servicebus namespace
+Manage Azure Service Bus Namespace Authorization Rule,servicebus namespace authorization-rule
+Manage Azure Authorization Rule connection strings for Namespace,servicebus namespace authorization-rule keys
+Manage Azure Service Bus Queue and Authorization Rule,servicebus queue
+Manage Azure Service Bus Queue Authorization Rule,servicebus queue authorization-rule
+Manage Azure Authorization Rule keys for Service Bus Queue,servicebus queue authorization-rule keys
+Manage Azure Service Bus Topic and Authorization Rule,servicebus topic
+Manage Azure Service Bus Topic Authorization Rule,servicebus topic authorization-rule
+Manage Azure Authorization Rule keys for Service Bus Topic,servicebus topic authorization-rule keys
+Manage Azure Service Bus Subscription,servicebus topic subscription
+Manage Azure Service Bus Rule,servicebus topic subscription rule
+Manage Azure Service Bus Geo-Disaster Recovery Configuration Alias,servicebus georecovery-alias
+Manage Azure Service Bus Authorization Rule for Namespace with Geo-Disaster Recovery Configuration Alias,servicebus georecovery-alias authorization-rule
+Manage Azure Authorization Rule keys for Service Bus Namespace,servicebus georecovery-alias authorization-rule keys
+Manage and administer Azure Service Fabric clusters,sf
+Manage applications running on an Azure Service Fabric cluster,sf application
+Manage an Azure Service Fabric cluster,sf cluster
+Manage a cluster certificate,sf cluster certificate
+Manage the client certificate of a cluster,sf cluster client-certificate
+Manage the durability of a cluster,sf cluster durability
+Manage the node instance of a cluster,sf cluster node
+Manage the node-type of a cluster,sf cluster node-type
+Manage the reliability of a cluster,sf cluster reliability
+Manage a cluster's settings,sf cluster setting
+Manage the upgrade type of a cluster,sf cluster upgrade-type
+Manage the certificate of an application,sf application certificate
+Manage Azure SQL Databases and Data Warehouses,sql
+Manage databases,sql db
+Manage a database's auditing policy,sql db audit-policy
+Manage a server's Active Directory administrator,sql server ad-admin
+Manage operations on a database,sql db op
+Manage replication between databases,sql db replica
+Manage a database's threat detection policies,sql db threat-policy
+Manage a database's transparent data encryption,sql db tde
+Manage data warehouses,sql dw
+Manage elastic pools,sql elastic-pool
+Manage operations on an elastic pool,sql elastic-pool op
+Manage SQL servers,sql server
+Manage a server's connection policy,sql server conn-policy
+Manage a server's DNS aliases,sql server dns-alias
+Manage a server's firewall rules,sql server firewall-rule
+Manage a server's keys,sql server key
+Manage a server's encryption protector,sql server tde-key
+Manage a server's virtual network rules,sql server vnet-rule
+Manage SQL managed instances,sql mi
+Manage SQL managed instance databases,sql midb
+Manage Azure Cloud Storage resources,storage
+Manage storage accounts,storage account
+Manage storage account keys,storage account keys
+Manage object storage for unstructured data (blobs),storage blob
+Manage blob copy operations,storage blob copy
+Manage blob incremental copy operations,storage blob incremental-copy
+Manage storage blob leases,storage blob lease
+Manage blob metadata,storage blob metadata
+Manage storage blob service properties,storage blob service-properties
+Manage storage blob delete-policy service properties,storage blob service-properties delete-policy
+Manage blob storage containers,storage container
+Manage blob storage container leases,storage container lease
+Manage container metadata,storage container metadata
+Manage container stored access policies,storage container policy
+Manage storage service Cross-Origin Resource Sharing (CORS),storage cors
+Manage file storage directories,storage directory
+Manage file storage directory metadata,storage directory metadata
+Manage table storage entities,storage entity
+Manage file shares that use the SMB 3,storage file
+Manage file copy operations,storage file copy
+Manage file metadata,storage file metadata
+Manage storage service logging information,storage logging
+Manage queue storage messages,storage message
+Manage storage service metrics,storage metrics
+Manage storage queues,storage queue
+Manage the metadata for a storage queue,storage queue metadata
+Manage shared access policies for a storage queue,storage queue policy
+Manage file shares,storage share
+Manage the metadata of a file share,storage share metadata
+Manage shared access policies of a storage file share,storage share policy
+Manage NoSQL key-value storage,storage table
+Manage shared access policies of a storage table,storage table policy
+Manage network rules,storage account network-rule
+Manage VM secrets,vm secret
+Manage data disks of a VMSS,vmss disk
+Manage network interfaces of a VMSS,vmss nic
+(PREVIEW) Manage rolling upgrades,vmss rolling-upgrade
+Provision Linux or Windows virtual machines,vm
+Manage user accounts for a VM,vm user
+Group resources into availability sets,vm availability-set
+Troubleshoot the startup of an Azure Virtual Machine,vm boot-diagnostics
+Configure the Azure Virtual Machine diagnostics extension,vm diagnostics
+Manage the managed data disks attached to a VM,vm disk
+Manage the unmanaged data disks attached to a VM,vm unmanaged-disk
+Manage encryption of VM disks,vm encryption
+Manage extensions on VMs,vm extension
+Find the available VM extensions for a subscription and region,vm extension image
+Information on available virtual machine images,vm image
+Manage network interfaces,vm nic
+Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS),vmss
+Configure the Azure Virtual Machine Scale Set diagnostics extension,vmss diagnostics
+Manage extensions on a VM scale set,vmss extension
+Find the available VM extensions for a subscription and region,vmss extension image
+(PREVIEW) Manage encryption of VMSS,vmss encryption
+manage service identities of a VM,vm identity
+Manage run commands on a Virtual Machine,vm run-command
+manage service identities of a VM scaleset,vmss identity
+Manage Azure Managed Disks,disk
+"Manage point-in-time copies of managed disks, native blobs, or other snapshots",snapshot
+Manage custom virtual machine images,image
+Managed Service Identities,identity

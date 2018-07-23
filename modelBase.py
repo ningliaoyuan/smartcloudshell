@@ -36,18 +36,21 @@ class NlpCliNode:
     return round(float(maxScore), 4)
 
 class CliNlpModel:
-  def __init__(self, id: str, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
+  def __init__(self, id: str, getQueriesFromCliNode, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
     self.id = id
     self._cliData = cliData
     self._nlp = nlpModel
     self.scoreThreshold = scoreThreshold
+    self._getQueriesFromCliNode = getQueriesFromCliNode
 
     if rewriteQuery is not None:
       self.rewriteQuery = rewriteQuery
     else:
       self.rewriteQuery = lambda query: query
 
+    op = log().start("processing data with model: " + self.id)
     self.nlpNodes = list(map(self._getNlpCliNode, cliData.getAllNodes()))
+    op.end("done")
 
   def _getNlpQuery(self, query):
     rewrittenQuery = self.rewriteQuery(query)
@@ -55,7 +58,7 @@ class CliNlpModel:
     return nlpQuery
 
   def _getNlpCliNode(self, cliNode: CliNode) -> NlpCliNode:
-    queries = cliNode.getQueries()
+    queries = self._getQueriesFromCliNode(cliNode)
     nlpQueries = list(map(self._getNlpQuery, queries))
     return NlpCliNode(cliNode, nlpQueries)
 
@@ -64,7 +67,7 @@ class CliNlpModel:
     scoredNodes = list(map(lambda nlpCliNode: Suggestion(nlpCliNode.cliNode, nlpCliNode.compare(nlpQuery)), self.nlpNodes))
     matches = filter(lambda scoredNode: scoredNode.score > self.scoreThreshold, scoredNodes)
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
-    return sortedMatches[:100]
+    return sortedMatches[:top]
 
   def getLegacyResult(self, queryStr, top = 10):
     suggestions = self.getSuggestions(queryStr, top)
