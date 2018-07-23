@@ -30,7 +30,7 @@ type Suggestion struct {
 
 func main() {
 	if len(os.Args) == 1 {
-		printHelp()
+		handleDefault()
 	} else if len(os.Args) == 2 && os.Args[1] == "test" {
 		selfTest()
 	} else if len(os.Args) > 2 && os.Args[1] == "local" {
@@ -138,12 +138,7 @@ func getLastCommand() string {
 	return commands[len(commands)-2]
 }
 
-func printHelp() {
-	fmt.Println("Hey! What's up?")
-	fmt.Println()
-	fmt.Println("Ask me anything. Say, `hey list my virtual machines`")
-	fmt.Println()
-
+func handleDefault() {
 	lastCommand := getLastCommand()
 
 	if lastCommand != "" {
@@ -156,6 +151,11 @@ func printHelp() {
 		}
 
 		presentResult(r)
+	} else {
+		fmt.Println("Hey! What's up?")
+		fmt.Println()
+		fmt.Println("Ask me anything. Say, `hey list my virtual machines`")
+		fmt.Println()
 	}
 }
 
