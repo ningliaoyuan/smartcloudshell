@@ -5,8 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
+	"os/user"
 	"strings"
 )
 
@@ -75,7 +77,7 @@ func presentResult(r []Suggestion) {
 	reader := bufio.NewReader(os.Stdin)
 
 	for i, c := range r {
-		fmt.Printf("Did you mean `%s` that will `%s`? (Y/n)", c.ID, c.Str)
+		fmt.Printf("Did you mean `az %s` that will `%s`? (Y/n)", c.ID, c.Str)
 
 		input, _ := reader.ReadString('\n')
 
@@ -112,11 +114,49 @@ func fetchSuggestions(endpoint, q string) ([]Suggestion, error) {
 	return r, nil
 }
 
+func getLastCommand() string {
+	usr, err := user.Current()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	histFile := usr.HomeDir + "/.bash_history"
+
+	if _, err := os.Stat(histFile); err != nil {
+		fmt.Println(err)
+		return ""
+	}
+
+	buff, err := ioutil.ReadFile(histFile)
+
+	if err != nil {
+		fmt.Println(err)
+		return ""
+	}
+
+	commands := strings.Split(string(buff), "\n")
+	return commands[len(commands)-2]
+}
+
 func printHelp() {
 	fmt.Println("Hey! What's up?")
 	fmt.Println()
 	fmt.Println("Ask me anything. Say, `hey list my virtual machines`")
 	fmt.Println()
+
+	lastCommand := getLastCommand()
+
+	if lastCommand != "" {
+		fmt.Println("Last command you typed: " + lastCommand)
+		r, err := fetchSuggestions(remoteEndpoint, lastCommand)
+
+		if err != nil {
+			fmt.Println("Sorry I have no idea what you mean.")
+			return
+		}
+
+		presentResult(r)
+	}
 }
 
 func selfTest() {
