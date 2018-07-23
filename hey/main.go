@@ -15,6 +15,10 @@ const (
 	remoteEndpoint = "http://smartcloudshellapi.westus2.azurecontainer.io"
 )
 
+var (
+	debugMode = false
+)
+
 // Suggestion is the return structure
 type Suggestion struct {
 	ID    string  `json:"id"`
@@ -28,43 +32,57 @@ func main() {
 	} else if len(os.Args) == 2 && os.Args[1] == "test" {
 		selfTest()
 	} else if len(os.Args) > 2 && os.Args[1] == "local" {
+		debugMode = true
 		r, err := fetchSuggestions(localEndpoint, strings.Join(os.Args[2:], " "))
 
 		if err != nil {
 			fmt.Printf("Something went wrong: %s\n", err.Error())
 		}
 
-		reader := bufio.NewReader(os.Stdin)
-
-		for i, c := range r {
-			fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v. (Y/n)", c.ID, c.Str, c.Score)
-
-			input, _ := reader.ReadString('\n')
-
-			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 {
-				break
-			}
-			fmt.Println()
-		}
+		presentResult(r)
 	} else {
-		r, err := fetchSuggestions(remoteEndpoint, strings.Join(os.Args[2:], " "))
+		input := ""
+		if os.Args[1] == "-d" {
+			debugMode = true
+			input = strings.Join(os.Args[2:], " ")
+		} else {
+			input = strings.Join(os.Args[1:], " ")
+		}
+
+		if debugMode {
+			fmt.Printf("[DEBUG] Input: %s\n", input)
+		}
+
+		r, err := fetchSuggestions(remoteEndpoint, input)
 
 		if err != nil {
 			fmt.Printf("Something went wrong: %s\n", err.Error())
 		}
 
-		reader := bufio.NewReader(os.Stdin)
+		if debugMode {
+			fmt.Printf("[DEBUG] %d results returned.\n", len(r))
 
-		for i, c := range r {
-			fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v\n", c.ID, c.Str, c.Score)
-
-			input, _ := reader.ReadString('\n')
-
-			if len(input) == 0 || input == "Y" || input == "y" || i > 5 {
-				break
+			for _, item := range r {
+				fmt.Printf("[DEBUG] %v\t%s\t%s\n", item.Score, item.ID, item.Str)
 			}
-			fmt.Println()
+		} else {
+			presentResult(r)
 		}
+	}
+}
+
+func presentResult(r []Suggestion) {
+	reader := bufio.NewReader(os.Stdin)
+
+	for i, c := range r {
+		fmt.Printf("Did you mean `%s` that will `%s`? Confident level %v. (Y/n)", c.ID, c.Str, c.Score)
+
+		input, _ := reader.ReadString('\n')
+
+		if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 || strings.ToLower(input) == "yes" {
+			break
+		}
+		fmt.Println()
 	}
 }
 
