@@ -148,14 +148,14 @@ class TestRunner:
 
     return report
 
-runner = TestRunner(testset_queries, baselineModel_sm.load())
-report1 = runner.run()
+# runner = TestRunner(testset_queries, baselineModel_sm.load())
+# report1 = runner.run()
 
 runner = TestRunner(testset_queries, baselineModel_lg.load())
 report2 = runner.run()
 
-diff = TestReportDiff.diffReports(report1, report2)
-diff.saveToYamlFile()
+# diff = TestReportDiff.diffReports(report1, report2)
+# diff.saveToYamlFile()
 
 
 # TODO: add more runner to measure different combinations

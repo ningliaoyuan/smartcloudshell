@@ -9,3 +9,32 @@ show all storage accounts,storage account list
 get connection string of my storage account,storage account show-connection-string
 Create a firewall rule for sql server,sql server firewall-rule create
 deploy my container,container create
+container instance,container
+scale out my web app,appservice plan update
+Add a Web App,webapp create
+list my accounts,account list
+list my account,account list
+list my subscriptions,account list
+show all my accounts,account list
+how to create vm,vm create
+create a storage account,storage account create
+create website,webapp create
+Delete docdb,cosmosdb delete
+delete docdb collection,cosmosdb collection delete
+show all cosmos dbs,cosmosdb database list
+query cosmos db keys,cosmosdb list-keys
+Creates an App Service plan,appservice plan create
+set my default subscription,account set
+cretae web app,webapp create
+list my accont,account list
+how to create data lake,dla account create
+how to submit a job in data lake,dla job submit
+show me the firewall rule of my data lake,dls account firewall show
+add new ip to my sql server,sql server firewall-rule create
+how to update the firewall rule for mysql,mysql server firewall-rule update
+how to delete a file from data lake,dls fs delete
+copy blob to other account,storage blob copy start-batch|storage blob copy start
+how to create container in azure,container create
+how to backup sql db,sql db copy
+how to update transparent data encryption config,sql db tde set
+upload a file to blob,storage blob upload
