@@ -13,7 +13,7 @@ class TestCaseResult:
     self.suggestions = suggestions
 
 class TestSummary:
-  def __init__(self, ts: str, modelId: str, testSetId: str, total, precision, top3recall, top10recall):
+  def __init__(self, ts: str, testSetId: str, modelId: str, total, precision, top3recall, top10recall):
     self.ts = ts
     self.modelId = modelId
     self.testSetId = testSetId
@@ -44,7 +44,7 @@ class TestReport:
     top1Matched = list(filter(lambda r: filterByIndex(r, 1), top3Matched))
     precision = cal(top1Matched, total)
 
-    self.summary = TestSummary(ts, modelId, testSetId, total, precision, top3recall, top10recall)
+    self.summary = TestSummary(ts, testSetId, modelId, total, precision, top3recall, top10recall)
 
   def saveToYamlFile(self, filepath = None):
     if filepath is None:
@@ -54,6 +54,19 @@ class TestReport:
       yaml.dump(self, outfile, default_flow_style=False)
 
     print("Test report saves to " + filepath)
+    return filepath
+
+  @staticmethod
+  def loadFromYamlFile(filename):
+    filepath = 'measure/output/%s.yaml' % filename
+
+    with open(filepath, 'r') as stream:
+      try:
+          testReport = yaml.load(stream)
+      except yaml.YAMLError as exc:
+          print(exc)
+
+    return testReport
 
 class CaseResultDiff:
   def __init__(self, testCase: TestCase, report1Suggestions: List[Suggestion], report2Suggestions: List[Suggestion], report1MatchedIndex: int, report2MatchedIndex: int):
@@ -91,6 +104,7 @@ class TestReportDiff:
       yaml.dump(self, outfile, default_flow_style=False)
 
     print("Test report diff saves to " + filepath)
+    return filepath
 
   @classmethod
   def diffReports(cls, report1: TestReport, report2: TestReport):
@@ -112,6 +126,18 @@ class TestReportDiff:
       diffs.append(diff)
 
     return cls(score, report1.summary, report2.summary, diffs)
+
+  @staticmethod
+  def loadFromYamlFile(filename):
+    filepath = 'measure/output/%s.yaml' % filename
+
+    with open(filepath, 'r') as stream:
+      try:
+          testReportDiff = yaml.load(stream)
+      except yaml.YAMLError as exc:
+          print(exc)
+
+    return testReportDiff
 
 class TestRunner:
   def __init__(self, testSet: TestSet, cliModel: CliNlpModel):
