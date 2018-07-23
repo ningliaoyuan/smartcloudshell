@@ -1,7 +1,6 @@
 import json
 from typing import List
 
-
 def createCliNodeFromJsonNode(jsonNode):
   command = jsonNode[0]
   help = jsonNode[1]["help"]
@@ -15,8 +14,7 @@ def createCliNodeFromJsonNode(jsonNode):
   else:
     cliType = "group"
 
-  # create initial queries
-  queries = list(filter(None, [command, help]))
+  queries = []
 
   return CliNode(command, group, help, cliType, queries)
 
@@ -38,9 +36,8 @@ class CliNode:
     return self.__str__()
 
 class CliData:
-  def __init__(self, dataJson):
-    self._dataJson = dataJson
-    self._nodes = list(map(createCliNodeFromJsonNode, self._dataJson.items()))
+  def __init__(self, nodes: List[CliNode]):
+    self._nodes = nodes
     self._commandNodes = list(filter(lambda n: n.cliType == "command", self._nodes))
 
   def getAllNodes(self):
@@ -50,13 +47,32 @@ class CliData:
     return self._commandNodes
 
   @classmethod
-  def loadFromJson(cls, filepath: str) -> CliData:
+  def loadFromJson(cls, filepath: str = 'data/help_dump_with_top_group.json'):
     with open (filepath) as f:
       data = json.load(f)
 
-    return cls(data)
+    nodes = list(map(createCliNodeFromJsonNode, data.items()))
+    return cls(nodes)
+
+  # @classmethod
+  # def loadFromQueryTsv(cls, filepath: str = 'data/'):
+  #   with open (filepath) as f:
+  #     data = json.load(f)
+
+  #   return cls(data)
 
 # export
 cliData = CliData.loadFromJson('data/help_dump_with_top_group.json')
-data_partial = CliData.loadFromJson('data/help_dump_with_top_group_partial.json')
-data_sm = CliData.loadFromJson('data/help_dump_small_with_top_group.json')
+cliData_partial = CliData.loadFromJson('data/help_dump_with_top_group_partial.json')
+cliData_sm = CliData.loadFromJson('data/help_dump_small_with_top_group.json')
+
+def loadAbbrDic(filepath: str = 'data/abbr.json') -> dict:
+  with open(filepath) as f:
+    abbrJsonDic = json.load(f)
+
+  dic = {}
+  for abbr in abbrJsonDic:
+    words = abbrJsonDic[abbr]['word']
+    dic[abbr] = words
+
+  return dic

@@ -36,7 +36,7 @@ class NlpCliNode:
     return round(float(maxScore), 4)
 
 class CliNlpModel:
-  def __init__(self, id: str, cliData: CliData, nlpModel, rewriteQuery = None, scoreThreshold = 0.5):
+  def __init__(self, id: str, cliData: CliData, nlpModel, getQueriesFromCliNode, rewriteQuery = None, scoreThreshold = 0.5):
     self.id = id
     self._cliData = cliData
     self._nlp = nlpModel
@@ -49,6 +49,7 @@ class CliNlpModel:
 
     op = log().start("processing data with model: " + self.id)
     self.nlpNodes = list(map(self._getNlpCliNode, cliData.getAllNodes()))
+    self._getQueriesFromCliNode = getQueriesFromCliNode
     op.end("done")
 
   def _getNlpQuery(self, query):
@@ -57,7 +58,7 @@ class CliNlpModel:
     return nlpQuery
 
   def _getNlpCliNode(self, cliNode: CliNode) -> NlpCliNode:
-    queries = cliNode.getQueries()
+    queries = self._getQueriesFromCliNode(cliNode)
     nlpQueries = list(map(self._getNlpQuery, queries))
     return NlpCliNode(cliNode, nlpQueries)
 
