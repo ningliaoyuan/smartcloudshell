@@ -40,5 +40,5 @@ def compareReports(reportPath1: str, reportPath2: str):
 # ensureTestRunerCanRun()
 # compareAbbrModelVsBaseLine()
 
-compareReports('0723113453_queries_lgd_lgm.report', '0723113442_queries_lgd_lgm_abbr.report')
+compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations

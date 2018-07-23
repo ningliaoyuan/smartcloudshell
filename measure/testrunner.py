@@ -5,6 +5,20 @@ from datetime import datetime
 from modelBase import CliNlpModel, Suggestion
 from measure.testset import TestCase, TestSet, testset_queries
 
+def _loadFromYamlFile(filename):
+  filepath = 'measure/cache/%s.yaml' % filename
+
+  if not os.path.exists(filepath):
+    filepath = 'measure/output/%s.yaml' % filename
+
+  with open(filepath, 'r') as stream:
+    try:
+        obj = yaml.load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+
+  return obj
+
 class TestCaseResult:
   def __init__(self, testCase: TestCase, suggestions: List[Suggestion], matchedIndex: int = -1, matchedSuggestion: Suggestion = None):
     self.testCase = testCase
@@ -21,7 +35,7 @@ class TestSummary:
     self.precision = precision
     self.top3recall = top3recall
     self.top10recall = top10recall
-    self.id = self.ts + '_' + self.testSetId + '_' + self.modelId
+    self.id = self.testSetId + '_' + self.modelId
 
 class TestReport:
   def __init__(self, ts: str, modelId: str, testSetId: str, testCaseResults: List[TestCaseResult]):
@@ -58,14 +72,7 @@ class TestReport:
 
   @staticmethod
   def loadFromYamlFile(filename):
-    filepath = 'measure/output/%s.yaml' % filename
-
-    with open(filepath, 'r') as stream:
-      try:
-          testReport = yaml.load(stream)
-      except yaml.YAMLError as exc:
-          print(exc)
-
+    testReport = _loadFromYamlFile(filename)
     return testReport
 
 class CaseResultDiff:
@@ -98,7 +105,7 @@ class TestReportDiff:
 
   def saveToYamlFile(self, filepath = None):
     if filepath is None:
-      filepath = 'measure/output/' + self.summary1.id + '_' + self.summary2.id + '.diff.yaml'
+      filepath = 'measure/output/' + self.summary1.id + '_VS_' + self.summary2.id + '.diff.yaml'
 
     with open(filepath, 'w') as outfile:
       yaml.dump(self, outfile, default_flow_style=False)
@@ -129,15 +136,8 @@ class TestReportDiff:
 
   @staticmethod
   def loadFromYamlFile(filename):
-    filepath = 'measure/output/%s.yaml' % filename
-
-    with open(filepath, 'r') as stream:
-      try:
-          testReportDiff = yaml.load(stream)
-      except yaml.YAMLError as exc:
-          print(exc)
-
-    return testReportDiff
+    testReport = _loadFromYamlFile(filename)
+    return testReport
 
 class TestRunner:
   def __init__(self, testSet: TestSet, cliModel: CliNlpModel):
