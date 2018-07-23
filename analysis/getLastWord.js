@@ -1,17 +1,27 @@
 var fs = require('fs');
 
-var json = fs.readFileSync('../data/help_dump.json', 'utf8');
+var json = fs.readFileSync('data/help_dump.json', 'utf8');
 var root = JSON.parse(json);
 
-var result = {};
+function addToDic(key, dic, command) {
+    if (!dic[key]) {
+        dic[key] = [];
+    }
+
+    dic[key].push(command);
+}
+
+var lastWordDic = {};
+var firstWordDic = {};
 for (var command in root) {
     var tokens = command.split(' ');
     var lastWord = tokens[tokens.length - 1].toLowerCase();
-    if (!result[lastWord]) {
-        result[lastWord] = [];
-    }
+    addToDic(lastWord, lastWordDic, command);
 
-    result[lastWord].push(command);
+    var firstWord = tokens[0];
+    addToDic(firstWord, firstWordDic, command);
 }
 
-fs.writeFileSync("lastWord.json", JSON.stringify(result, 0, 4));
+fs.writeFileSync("data/lastWord.json", JSON.stringify(lastWordDic, 0, 4));
+fs.writeFileSync("data/firstWord.json", JSON.stringify(firstWordDic, 0, 4));
+console.log("completed")

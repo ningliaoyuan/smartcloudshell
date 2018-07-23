@@ -57,3 +57,5 @@ acl,access control list,PROPN,NNP,appos,False,False,1,[u'Display the access cont
 rdp,Remote Desktop Protocol,PROPN,NNP,compound,False,False,1,[u'Gets the Remote Desktop Protocol file for the specified compute node.  Before you can access a node by using the RDP file, you must create a user account on the node. This API can only be invoked on pools created with a cloud service configuration. For pools created with a virtual machine configuration, see the GetRemoteLoginSettings API.'],,,,,,
 rbac,Role-Based Access Control,NOUN,NN,pobj,False,True,1,[u'ad sp create-for-rbac'],,,,,,,,
 nsg,Network Security Groups,,,,,,,,,,,,,,,
+aks,Kubernetes,,,,,,,,,,,,,,,
+ams,Azure Media Services,,,,,,,,,,,,,,,

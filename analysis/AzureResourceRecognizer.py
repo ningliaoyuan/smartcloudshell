@@ -4,15 +4,33 @@
 from __future__ import unicode_literals, print_function
 import spacy
 import plac
+import json
 from spacy.lang.en import English
 from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc, Span, Token
 
 # Custom pipeline components: https://spacy.io//usage/processing-pipelines#custom-components
-azureResources = ['virtual machine', 'vm']
+azureResources = ["acr", "acs", "aks", "advisor", "ams", "webapp", "appservice", "functionapp", "backup", "batch", "batchai", "billing", "cdn", "cloud", "cognitiveservices", "configure", "consumption", "container", "cosmosdb", "dla", "dls", "dms", "eventgrid", "eventhubs", "extension", "feedback", "find", "interactive",
+                  "iot", "keyvault", "lab", "maps", "monitor", "network", "policy", "login", "logout", "account", "mysql", "postgres", "redis", "reservations", "group", "resource", "provider", "feature", "tag", "lock", "managedapp", "role", "ad", "servicebus", "sf", "sql", "storage", "disk", "identity", "image", "snapshot", "vm", "vmss"]
+abbrDic = None
+with open('../data/abbr.json') as f:
+    abbrDic = json.load(f)
+
+newResources = []
+for resource in azureResources:
+    resourceLower = resource.lower()
+    newResources.append(resourceLower)
+    if resourceLower in abbrDic:
+        newResources.append(abbrDic[resourceLower]['word'])
+    else:
+        print(resourceLower)
+
+azureResources = newResources
+
 
 class AzureResourceRecognizer(object):
     name = 'AzureResourceRecognizer'  # component name, will show up in the pipeline
+
     def __init__(self, nlp, label='AzureResource'):
         """Initialise the pipeline component. The shared nlp instance is used
         to initialise the matcher with the shared vocab, get the label ID and
@@ -30,7 +48,8 @@ class AzureResourceRecognizer(object):
         # Register attributes on Doc and Span via a getter that checks if one of
         # the contained tokens is set to is_azure_resource == True.
         Doc.set_extension('has_azure_resource', getter=self.has_azure_resource)
-        Span.set_extension('has_azure_resource', getter=self.has_azure_resource)
+        Span.set_extension('has_azure_resource',
+                           getter=self.has_azure_resource)
 
     def __call__(self, doc):
         """Apply the pipeline component on a Doc object and modify it if matches

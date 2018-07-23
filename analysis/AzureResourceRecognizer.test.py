@@ -1,4 +1,3 @@
-from __future__ import unicode_literals, print_function
 import spacy
 import plac
 from spacy.lang.en import English
@@ -16,7 +15,7 @@ def test(text):
     print('Entities', [(e.text, e.label_) for e in doc.ents])
 
 def run():
-    text = "How to start my vm?"
+    text = "How to start my vm and virtual machine?"
     test(text)
     azureResourceRecognizer = AzureResourceRecognizer(nlp)
     nlp.add_pipe(azureResourceRecognizer, last=True)
