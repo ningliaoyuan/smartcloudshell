@@ -135,7 +135,22 @@ func getLastCommand() string {
 	}
 
 	commands := strings.Split(string(buff), "\n")
-	return commands[len(commands)-2]
+	last := ""
+	if len(commands) >= 2 {
+		cmd := commands[len(commands)-2]
+
+		segments := strings.Split(cmd, " ")
+
+		for _, c := range segments {
+			if len(c) > 0 && c[0] == '-' {
+				break
+			}
+
+			last = last + " " + c
+		}
+	}
+
+	return last
 }
 
 func handleDefault() {
