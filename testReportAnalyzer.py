@@ -2,7 +2,7 @@ import sys, csv
 args = sys.argv
 from measure.testrunner import TestReportDiff
 
-fileName = 'queries_lgd_lgm_abbrqr_typoqr_VS_queries_lgd_lgm.diff'
+fileName = 'queries_lgd_lgm_abbrqr_speller_VS_queries_lgd_lgm_abbrqr.diff'
 diff = TestReportDiff.loadFromYamlFile(fileName)
 
 outputFile = 'measure/output/' + fileName + '.csv'

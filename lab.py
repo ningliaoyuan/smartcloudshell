@@ -28,17 +28,11 @@ def compare(testSet: TestSet, model1: CliNlpModel, model2: CliNlpModel):
 def compareSmVsLgModels():
   compare(testset_queries, modelFactory.getBaselineModel_sm(), modelFactory.getBaselineModel())
 
-def compareAbbrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
-
-def compareAbbrQrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
-
-def compareAbbrTypoQrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrAndTypoQR(), modelFactory.getBaselineModel())
-
 def compareAzureResourceRecognizerModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
+
+def compareAbbrQrModelWithAndWithoutSpeller():
+  compare(testset_queries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
 
 def compareReports(reportPath1: str, reportPath2: str):
   report1 = TestReport.loadFromYamlFile(reportPath1)
@@ -47,9 +41,8 @@ def compareReports(reportPath1: str, reportPath2: str):
   diff.saveToYamlFile()
 
 # ensureTestRunerCanRun()
-# compareAbbrModelVsBaseLine()
-# compareAbbrQrModelVsBaseLine()
-compareAzureResourceRecognizerModelVsBaseLine()
+# compareAzureResourceRecognizerModelVsBaseLine()
+compareAbbrQrModelWithAndWithoutSpeller()
 
 #compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations

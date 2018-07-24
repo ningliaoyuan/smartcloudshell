@@ -5,7 +5,7 @@ abbrDic = None
 with open('data/abbr.json') as f:
     abbrDic = json.load(f)
 
-def rewriteQuery(input, dic = None):
+def rewriteAbbrInQuery(input, dic = None):
     if input is None:
         return input
 

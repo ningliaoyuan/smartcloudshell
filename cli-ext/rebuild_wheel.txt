@@ -1,0 +1,4 @@
+1. cd to "hey" subfolder
+2. run "python setup.py bdist_wheel" to build out a new wheel under "hey\dist"
+3. To install: az extension add --source hey\dist\hey-<version>-py2.py3-none-any.whl
+   (if you have older version extension, run "az extension remove -n hey")
