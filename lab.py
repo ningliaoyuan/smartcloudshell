@@ -28,12 +28,6 @@ def compare(testSet: TestSet, model1: CliNlpModel, model2: CliNlpModel):
 def compareSmVsLgModels():
   compare(testset_queries, modelFactory.getBaselineModel_sm(), modelFactory.getBaselineModel())
 
-def compareAbbrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
-
-def compareAbbrQrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
-
 def compareAzureResourceRecognizerModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
 
@@ -47,8 +41,6 @@ def compareReports(reportPath1: str, reportPath2: str):
   diff.saveToYamlFile()
 
 # ensureTestRunerCanRun()
-# compareAbbrModelVsBaseLine()
-# compareAbbrQrModelVsBaseLine()
 # compareAzureResourceRecognizerModelVsBaseLine()
 compareAbbrQrModelWithAndWithoutSpeller()
 
