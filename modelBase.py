@@ -1,7 +1,6 @@
 from enum import Enum
 from log import log
 from data import CliNode, CliData
-from utility.QueryRewriter import rewriteKnownTyposInQuery
 
 # suggetion result
 class Suggestion:
@@ -45,9 +44,9 @@ class CliNlpModel:
     self._getQueriesFromCliNode = getQueriesFromCliNode
 
     if rewriteQuery is not None:
-      self.rewriteQuery = lambda query: rewriteQuery(rewriteKnownTyposInQuery(query))
+      self.rewriteQuery = rewriteQuery
     else:
-      self.rewriteQuery = rewriteKnownTyposInQuery
+      self.rewriteQuery = lambda query: query
 
     self.preProcessDoc = preProcessDoc
 
