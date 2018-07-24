@@ -7,7 +7,9 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
-from QueryRewriter import rewriteQuery
+from utility.QueryRewriter import rewriteQuery
+from utility.AzureResourceRecognizer import AzureResourceRecognizer
+from utility.UpdateDocVector import updateDocVector
 
 def getVector(vocab, words):
   tokens = words.split(' ')
@@ -69,3 +71,19 @@ def getModelWithAbbrQrVectorAssigned():
   nlp = model_lg.load()
   # nlp = addAbbrVector(nlp)
   return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
+
+def getModelWithAbbrQrVectorAssigned():
+  nlp = model_lg.load()
+  # nlp = addAbbrVector(nlp)
+  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
+
+def getModelWithAbbrQrVectorAssigned():
+  nlp = model_lg.load()
+  # nlp = addAbbrVector(nlp)
+  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
+
+def getModelWithAzureResourceRecognizer():
+  nlp = model_lg.load()
+  azureResourceRecognizer = AzureResourceRecognizer(nlp)
+  nlp.add_pipe(azureResourceRecognizer, last=True)
+  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQuries, data.cliData, nlp, rewriteQuery, updateDocVector)

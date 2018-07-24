@@ -34,6 +34,9 @@ def compareAbbrModelVsBaseLine():
 def compareAbbrQrModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAbbrQrVectorAssigned(), modelFactory.getBaselineModel())
 
+def compareAzureResourceRecognizerModelVsBaseLine():
+  compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
+
 def compareReports(reportPath1: str, reportPath2: str):
   report1 = TestReport.loadFromYamlFile(reportPath1)
   report2 = TestReport.loadFromYamlFile(reportPath2)
@@ -42,7 +45,8 @@ def compareReports(reportPath1: str, reportPath2: str):
 
 # ensureTestRunerCanRun()
 # compareAbbrModelVsBaseLine()
-compareAbbrQrModelVsBaseLine()
+# compareAbbrQrModelVsBaseLine()
+compareAzureResourceRecognizerModelVsBaseLine()
 
 #compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations

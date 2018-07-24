@@ -39,5 +39,9 @@ how to backup sql db,sql db copy
 how to update transparent data encryption config,sql db tde set
 upload a file to blob,storage blob upload
 restart my vm,vm restart
-appservice, create an appservice plan
-create a batchai job, batchai job create
+appservice,create an appservice plan
+create a batchai job,batchai job create
+I'd like to create a virtual machine,vm create
+I want to manage batch ai resources,batchai
+create virtual machine scale set,vmss create
+manage keyvault certificate,keyvault certificate
