@@ -23,20 +23,3 @@ def rewriteQuery(input, dic = None):
             result.append(token)
 
     return ''.join(result)
-
-sourceTypoDic = None
-with open('data/source_typos.json') as f:
-    sourceTypoDic = json.load(f)
-
-def rewriteKnownTyposInQuery(input):
-    if input is None:
-        return input
-
-    result = input
-    tokens = re.split(r'(\W+)',input)
-    for token in tokens:
-        tokenLower = token.lower()
-        if tokenLower in sourceTypoDic:
-            word = sourceTypoDic[tokenLower]
-            result = re.sub(tokenLower, word, input, flags=re.I)
-    return result

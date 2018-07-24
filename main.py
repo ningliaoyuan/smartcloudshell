@@ -22,7 +22,8 @@ def cliWithHelp(query):
   result = cliModel.getLegacyResult(query)
   return jsonify(result)
 
-print("localhost:5000 is serving")
+port = 80
+print("localhost:%d is serving" % port)
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=80)
+  app.run(host='0.0.0.0', port=port)
