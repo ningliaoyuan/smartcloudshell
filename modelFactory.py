@@ -41,14 +41,14 @@ def getHelpAsQuery(cliNode: data.CliNode) -> List[str]:
   return [cliNode.help]
 
 def getIdAndHelp(cliNode: data.CliNode) -> List[str]:
-  return list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode)))
+  return map(rewriteKnownTyposInQuery, list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode))))
 
-def getAllAsQuries(cliNode: data.CliNode) -> List[str]:
-  return list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode) + cliNode.queries))
+def getAllAsQueries(cliNode: data.CliNode) -> List[str]:
+  return map(rewriteKnownTyposInQuery, list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode) + cliNode.queries)))
 
 def getBaselineModel():
   nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm", getAllAsQuries, data.cliData, nlp)
+  return CliNlpModel("lgd_lgm", getAllAsQueries, data.cliData, nlp)
 
 def getBaselineModel_idonly():
   nlp = model_lg.load()
@@ -56,26 +56,22 @@ def getBaselineModel_idonly():
 
 def getBaselineModel_sm():
   nlp = model_sm.load()
-  return CliNlpModel("smd_smm", getAllAsQuries, data.cliData_sm, nlp)
+  return CliNlpModel("smd_smm", getAllAsQueries, data.cliData_sm, nlp)
 
 def getBaselineModel_partial():
   nlp = model_lg.load()
-  return CliNlpModel("pad_lgm", getAllAsQuries, data.cliData_partial, nlp)
+  return CliNlpModel("pad_lgm", getAllAsQueries, data.cliData_partial, nlp)
 
 def getModelWithAbbrQR_partial():
   nlp = model_lg.load()
-  return CliNlpModel("pad_lgm_abbrqr", getAllAsQuries, data.cliData_partial, nlp, rewriteAbbrInQuery)
+  return CliNlpModel("pad_lgm_abbrqr", getAllAsQueries, data.cliData_partial, nlp, rewriteAbbrInQuery)
 
 def getModelWithAbbrQR():
   nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteAbbrInQuery)
-
-def getModelWithAbbrAndTypoQR():
-  nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_abbrqr_typoqr", getAllAsQuries, data.cliData, nlp, lambda query: rewriteAbbrInQuery(rewriteKnownTyposInQuery(query)))
+  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQueries, data.cliData, nlp, rewriteAbbrInQuery)
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()
   azureResourceRecognizer = AzureResourceRecognizer(nlp)
   nlp.add_pipe(azureResourceRecognizer, last=True)
-  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQuries, data.cliData, nlp, rewriteAbbrInQuery, updateDocVector)
+  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQueries, data.cliData, nlp, rewriteAbbrInQuery, updateDocVector)

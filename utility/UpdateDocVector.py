@@ -13,8 +13,8 @@ def updateDocVector(doc):
       vector = getVector(doc.vocab, token.text)
       # TODO: Add 3 times to increase weight
       tokenVectors.append(vector)
-      tokenVectors.append(vector)
-      tokenVectors.append(vector)
+      # tokenVectors.append(vector)
+      # tokenVectors.append(vector)
     else:
       tokenVectors.append(token.vector)
 
