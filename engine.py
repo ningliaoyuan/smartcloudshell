@@ -2,6 +2,7 @@ import modelFactory
 from modelBase import Suggestion
 from typing import List
 from log import log
+from aladdinSearch import AladdinSearch
 
 def _composeResult(cliSuggestions: List, customResponses: List, searchResults: List):
     return {
@@ -15,6 +16,8 @@ class Engine:
     op = log().start("Initializing model and index")
     self.cliModel = modelFactory.getBaselineModel()
     op.end("Done")
+
+    self.aladdin = AladdinSearch()
 
   def getLegacyResult(self, query):
     return self.cliModel.getLegacyResult(query)
@@ -31,7 +34,8 @@ class Engine:
       cliSuggestions = []
 
     if enableSearch:
-      searchResults = []
+      promise = self.aladdin.search(query)
+      searchResults = self.aladdin.resolveRequest(promise)
     else:
       searchResults = [] # TBD: haitao
 

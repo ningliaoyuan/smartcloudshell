@@ -23,13 +23,11 @@ def cliWithHelp(query):
 
 @app.route('/q/<string:query>')
 def getResponse(query):
-  search = request.args.get('s')
-  if search is None or search == 'true':
-    enableSearch = True
+  search = request.args.get('search')
+  enableSearch = bool(search)
 
-  custom = request.args.get('c')
-  if custom is None or search == 'true':
-    enableCustomResponse = True
+  custom = request.args.get('custom')
+  enableCustomResponse = (custom)
 
   result = engine.getResponse(
     query,
