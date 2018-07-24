@@ -24,8 +24,13 @@ def run():
     azureResourceRecognizer = AzureResourceRecognizer(nlp)
     nlp.add_pipe(azureResourceRecognizer, last=True)
 
-    similarity(nlp, nlp2, u'turn off vm', u'vm stop')
-    similarity(nlp, nlp2, u'turn off vm', u'lab vm stop')
+    # similarity(nlp, nlp2, u'how to create vm', u'vmss create')
+    # similarity(nlp, nlp2, u'how to create vm', u'vm create')
+
+    similarity(nlp, nlp2, u'create new web app', u'webapp create')
+    similarity(nlp, nlp2, u'create new web app', u'ad app create')
+
+    
 
 
 run()
