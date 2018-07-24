@@ -47,5 +47,7 @@ hey -d create vm
 # Azure Api
 
 <http://heyapi.trafficmanager.net>
+
 <http://heyapi.trafficmanager.net/cli/help/create%20vm>
+
 <http://smartcloudshellapi.westus2.azurecontainer.io/cli/help/I%20want%20to%20create%20a%20storage%20account>
