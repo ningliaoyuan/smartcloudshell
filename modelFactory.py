@@ -48,8 +48,9 @@ def getAllAsQueries(cliNode: data.CliNode) -> List[str]:
   return map(rewriteKnownTyposInQuery, list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode) + cliNode.queries)))
 
 def getBaselineModel():
-  nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm", getAllAsQueries, data.cliData, nlp)
+  return getModelWithAbbrQRAndSpeller()
+  # nlp = model_lg.load()
+  # return CliNlpModel("lgd_lgm", getAllAsQueries, data.cliData, nlp)
 
 def getBaselineModel_idonly():
   nlp = model_lg.load()
