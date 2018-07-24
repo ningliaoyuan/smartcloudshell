@@ -14,7 +14,7 @@ import (
 
 const (
 	localEndpoint  = "http://localhost:5000"
-	remoteEndpoint = "http://smartcloudshellapi.westus2.azurecontainer.io"
+	remoteEndpoint = "http://heyapi.trafficmanager.net"
 )
 
 var (
