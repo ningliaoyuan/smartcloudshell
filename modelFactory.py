@@ -7,7 +7,7 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
-from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
+from utility.QueryRewriter import rewriteAbbrInQuery
 from utility.AzureResourceRecognizer import AzureResourceRecognizer
 from utility.UpdateDocVector import updateDocVector
 
@@ -69,10 +69,6 @@ def getModelWithAbbrQR_partial():
 def getModelWithAbbrQR():
   nlp = model_lg.load()
   return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteAbbrInQuery)
-
-def getModelWithAbbrAndTypoQR():
-  nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_abbrqr_typoqr", getAllAsQuries, data.cliData, nlp, lambda query: rewriteAbbrInQuery(rewriteKnownTyposInQuery(query)))
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()

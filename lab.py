@@ -49,8 +49,7 @@ def compareReports(reportPath1: str, reportPath2: str):
 # ensureTestRunerCanRun()
 # compareAbbrModelVsBaseLine()
 # compareAbbrQrModelVsBaseLine()
-# compareAzureResourceRecognizerModelVsBaseLine()
-compareAbbrTypoQrModelVsBaseLine()
+compareAzureResourceRecognizerModelVsBaseLine()
 
 #compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations
