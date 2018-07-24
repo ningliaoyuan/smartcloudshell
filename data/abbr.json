@@ -3,6 +3,20 @@
         "word": "virtual machine",
         "count": 584
     },
+    "eventhub": {
+        "word": "event hub",
+        "count": 104
+    },
+    "eventhubs": {
+        "word": "event hub",
+        "count": 47
+    },
+    "adl": {
+        "word": "data lake"
+    },
+    "asr": {
+        "word": "site recovery"
+    },
     "dla": {
         "word": "data lake analytics"
     },
