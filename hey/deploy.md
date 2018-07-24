@@ -2,7 +2,7 @@
 ``` bash
 mkdir Downloads
 mkdir bin
-curl -L https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.4/smartcloudshell_linux_64-bit.tar.gz -o ./Downloads/smartCloudShell.tar.gz
+curl -L https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.5/smartcloudshell_linux_64-bit.tar.gz -o ./Downloads/smartCloudShell.tar.gz
 tar -xvzf ./Downloads/smartCloudShell.tar.gz -C ./bin
 ```
 
