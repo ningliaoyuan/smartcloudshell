@@ -1,0 +1,250 @@
+!!python/object:measure.testrunner.TestReportDiff
+score: 0
+summary1: !!python/object:measure.testrunner.TestSummary
+  id: queries_lgd_lgm_abbrqr_speller
+  modelId: lgd_lgm_abbrqr_speller
+  precision: 0.6939
+  testSetId: queries
+  top10recall: 0.8367
+  top3recall: 0.7347
+  total: 49
+  ts: '0724144531'
+summary2: !!python/object:measure.testrunner.TestSummary
+  id: queries_lgd_lgm_abbrqr
+  modelId: lgd_lgm_abbrqr
+  precision: 0.6939
+  testSetId: queries
+  top10recall: 0.8571
+  top3recall: 0.7551
+  total: 49
+  ts: '0724144545'
+z_diffs:
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account create
+    query: craete storage account
+  report1MatchedIndex: 0
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id002 !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Create a storage account.
+      id: storage account create
+      queries: []
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id001 !!python/object:data.CliNode
+      cliType: group
+      group: storage
+      help: Manage storage accounts.
+      id: storage account
+      queries: []
+    score: 0.9231
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Creates a new share under the specified account. If the share with the
+        same name already exists, the operation fails on the service. By default,
+        the exception is swallowed by the client. To expose the exception, specify
+        True for fail_on_exists.
+      id: storage share create
+      queries: []
+    score: 0.8946
+  report2MatchedIndex: 1
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id001
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id002
+    score: 0.9231
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: List storage accounts.
+      id: storage account list
+      queries: []
+    score: 0.9219
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql server firewall-rule create
+    query: Create a firewall rule for sql server
+  report1MatchedIndex: 8
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id003 !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: Create a new firewall rule for a server.
+      id: mysql server firewall-rule create
+      queries: []
+    score: 0.8885
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id004 !!python/object:data.CliNode
+      cliType: command
+      group: postgres
+      help: Create a new firewall rule for a server.
+      id: postgres server firewall-rule create
+      queries: []
+    score: 0.8885
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a virtual network rule to allows access to an Azure SQL server.
+      id: sql server vnet-rule create
+      queries: []
+    score: 0.8885
+  report2MatchedIndex: 0
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a firewall rule.
+      id: sql server firewall-rule create
+      queries: []
+    score: 0.9399
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id003
+    score: 0.9252
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id004
+    score: 0.9252
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp create
+    query: cretae web app
+  report1MatchedIndex: 0
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id006 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Create a web app.
+      id: webapp create
+      queries: []
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id005 !!python/object:data.CliNode
+      cliType: group
+      group: webapp
+      help: Manage web apps.
+      id: webapp
+      queries: []
+    score: 0.9406
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Start a web app.
+      id: webapp start
+      queries: []
+    score: 0.9184
+  report2MatchedIndex: 2
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id005
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Update a web app.
+      id: webapp update
+      queries: []
+    score: 0.9418
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id006
+    score: 0.9406
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - mysql server firewall-rule update
+    query: how to update the firewall rule for mysql
+  report1MatchedIndex: -1
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: batch
+      help: 'Deletes a pool from the specified account.  When you request that a pool
+        be deleted, the following actions occur: the pool state is set to deleting;
+        any ongoing resize operation on the pool are stopped; the Batch service starts
+        resizing the pool to zero nodes; any tasks running on existing nodes are terminated
+        and requeued (as if a resize pool operation had been requested with the default
+        requeue option); finally, the pool is removed from the system. Because running
+        tasks are requeued, the user can rerun these tasks by updating their job to
+        target a different pool. The tasks can then run on the new pool. If you want
+        to override the requeue behavior, then you should call resize pool explicitly
+        to shrink the pool to zero size before deleting the pool. If you call an Update,
+        Patch or Delete API on a pool in the deleting state, it will fail with HTTP
+        status code 409 with error code PoolBeingDeleted.'
+      id: batch pool delete
+      queries: []
+    score: 0.8564
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Updates the visibility timeout of a message. You can also use this operation
+        to update the contents of a message.  This operation can be used to continually
+        extend the invisibility of a  queue message. This functionality can be useful
+        if you want a worker role  to "lease" a queue message. For example, if a worker
+        role calls get_messages  and recognizes that it needs more time to process
+        a message, it can  continually extend the message's invisibility until it
+        is processed. If  the worker role were to fail during processing, eventually
+        the message  would become visible again and another worker role could process
+        it.  If the key-encryption-key field is set on the local service object, this
+        method will encrypt the content before uploading.
+      id: storage message update
+      queries: []
+    score: 0.8493
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: batch
+      help: Gets the settings required for remote login to a compute node.  Before
+        you can remotely login to a node using the remote login settings, you must
+        create a user account on the node. This API can be invoked only on pools created
+        with the virtual machine configuration property. For pools created with a
+        cloud service configuration, see the GetRemoteDesktop API.
+      id: batch node remote-login-settings show
+      queries: []
+    score: 0.8475
+  report2MatchedIndex: 6
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: List all firewall rules for a server.
+      id: mysql server firewall-rule list
+      queries: []
+    score: 0.8911
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: postgres
+      help: List all firewall rules for a server.
+      id: postgres server firewall-rule list
+      queries: []
+    score: 0.8911
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: mysql
+      help: Manage firewall rules for a server.
+      id: mysql server firewall-rule
+      queries: []
+    score: 0.888

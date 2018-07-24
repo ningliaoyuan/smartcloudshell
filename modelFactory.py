@@ -10,6 +10,7 @@ from modelBase import CliNlpModel
 from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
 from utility.AzureResourceRecognizer import AzureResourceRecognizer
 from utility.UpdateDocVector import updateDocVector
+from utility.SpellChecker import correctSpellingErrors
 
 def getVector(vocab, words):
   tokens = words.split(' ')
@@ -69,6 +70,12 @@ def getModelWithAbbrQR_partial():
 def getModelWithAbbrQR():
   nlp = model_lg.load()
   return CliNlpModel("lgd_lgm_abbrqr", getAllAsQueries, data.cliData, nlp, rewriteAbbrInQuery)
+
+def getModelWithAbbrQRAndSpeller():
+  nlp = model_lg.load()
+  return CliNlpModel("lgd_lgm_abbrqr_speller", getAllAsQueries, data.cliData, nlp,
+    rewriteDataQuery=rewriteAbbrInQuery,
+    rewriteUserQuery=lambda q: correctSpellingErrors(rewriteAbbrInQuery(q)))
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()

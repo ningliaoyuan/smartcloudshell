@@ -1,0 +1,5 @@
+Query,Expected command(s),Report 1 Score,Report 1 Matched Index,Report 1 Suggestions,Report 2 Matched Index,Report 2 Suggestions
+craete storage account,storage account create,1,0,"storage account create, storage account, storage share create",1,"storage account create, storage account, storage share create"
+Create a firewall rule for sql server,sql server firewall-rule create,-1,8,"mysql server firewall-rule create, postgres server firewall-rule create, sql server vnet-rule create",0,"mysql server firewall-rule create, postgres server firewall-rule create, sql server vnet-rule create"
+cretae web app,webapp create,1,0,"webapp create, webapp, webapp start",2,"webapp create, webapp, webapp start"
+how to update the firewall rule for mysql,mysql server firewall-rule update,-1,-1,"batch pool delete, storage message update, batch node remote-login-settings show",6,"batch pool delete, storage message update, batch node remote-login-settings show"

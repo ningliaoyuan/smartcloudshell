@@ -36,17 +36,22 @@ class NlpCliNode:
     return round(float(maxScore), 4)
 
 class CliNlpModel:
-  def __init__(self, id: str, getQueriesFromCliNode, cliData: CliData, nlpModel, rewriteQuery = None, preProcessDoc = None, scoreThreshold = 0.5):
+  def __init__(self, id: str, getQueriesFromCliNode, cliData: CliData, nlpModel, rewriteDataQuery = None, preProcessDoc = None, scoreThreshold = 0.5, rewriteUserQuery = None):
     self.id = id
     self._cliData = cliData
     self._nlp = nlpModel
     self.scoreThreshold = scoreThreshold
     self._getQueriesFromCliNode = getQueriesFromCliNode
 
-    if rewriteQuery is not None:
-      self.rewriteQuery = rewriteQuery
+    if rewriteDataQuery is not None:
+      self.rewriteDataQuery = rewriteDataQuery
     else:
-      self.rewriteQuery = lambda query: query
+      self.rewriteDataQuery = lambda query: query
+
+    if rewriteUserQuery is not None:
+      self.rewriteUserQuery = rewriteUserQuery
+    else:
+      self.rewriteUserQuery = self.rewriteDataQuery
 
     self.preProcessDoc = preProcessDoc
 
@@ -54,14 +59,20 @@ class CliNlpModel:
     self.nlpNodes = list(map(self._getNlpCliNode, cliData.getAllNodes()))
     op.end("done")
 
-  def _getNlpQuery(self, query):
-    rewrittenQuery = self.rewriteQuery(query)
+  def _getNlpQuery(self, query, queryRewriteFn):
+    rewrittenQuery = queryRewriteFn(query)
     nlpQuery = self._nlp(rewrittenQuery)
     return nlpQuery
 
+  def _getNlpQueryForData(self, query):
+    return self._getNlpQuery(query, self.rewriteDataQuery)
+
+  def _getNlpQueryForUserQuery(self, query):
+    return self._getNlpQuery(query, self.rewriteUserQuery)
+
   def _getNlpCliNode(self, cliNode: CliNode) -> NlpCliNode:
     queries = self._getQueriesFromCliNode(cliNode)
-    nlpQueries = list(map(self._getNlpQuery, queries))
+    nlpQueries = list(map(self._getNlpQueryForData, queries))
     if self.preProcessDoc is not None:
       for nlpQuery in nlpQueries:
         self.preProcessDoc(nlpQuery)
@@ -69,7 +80,7 @@ class CliNlpModel:
     return NlpCliNode(cliNode, nlpQueries)
 
   def getSuggestions(self, queryStr, top = 100):
-    nlpQuery = self._getNlpQuery(queryStr)
+    nlpQuery = self._getNlpQueryForUserQuery(queryStr)
     if self.preProcessDoc is not None:
         self.preProcessDoc(nlpQuery)
 

@@ -1,0 +1,1494 @@
+!!python/object:measure.testrunner.TestReport
+summary: !!python/object:measure.testrunner.TestSummary
+  id: queries_lgd_lgm_abbrqr
+  modelId: lgd_lgm_abbrqr
+  precision: 0.6939
+  testSetId: queries
+  top10recall: 0.8571
+  top3recall: 0.7551
+  total: 49
+  ts: '0724144545'
+testCaseResults:
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id001 !!python/object:modelBase.Suggestion
+    cliNode: &id002 !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Create a storage account.
+      id: storage account create
+      queries: []
+    score: 0.9164
+  suggestions:
+  - *id001
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id003 !!python/object:data.CliNode
+      cliType: group
+      group: storage
+      help: Manage storage accounts.
+      id: storage account
+      queries: []
+    score: 0.8991
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Delete a storage account.
+      id: storage account delete
+      queries: []
+    score: 0.8724
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account create
+    query: creat storage account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 1
+  matchedSuggestion: &id004 !!python/object:modelBase.Suggestion
+    cliNode: *id002
+    score: 0.9231
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id003
+    score: 1.0
+  - *id004
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id012 !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: List storage accounts.
+      id: storage account list
+      queries: []
+    score: 0.9219
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account create
+    query: craete storage account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id005 !!python/object:modelBase.Suggestion
+    cliNode: *id002
+    score: 1.0
+  suggestions:
+  - *id005
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id003
+    score: 0.9231
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Creates a new share under the specified account. If the share with the
+        same name already exists, the operation fails on the service. By default,
+        the exception is swallowed by the client. To expose the exception, specify
+        True for fail_on_exists.
+      id: storage share create
+      queries: []
+    score: 0.8946
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account create
+    query: create storage account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id006 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Stop a running VM.
+      id: vm stop
+      queries: []
+    score: 0.9122
+  suggestions:
+  - *id006
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id053 !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Start a stopped VM.
+      id: vm start
+      queries: []
+    score: 0.9057
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: lab
+      help: Get virtual machine.
+      id: lab vm show
+      queries: []
+    score: 0.9015
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm stop
+    query: turn off vm
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id007 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: acr
+      help: Lists all the container registries under the current subscription.
+      id: acr list
+      queries: []
+    score: 0.9106
+  suggestions:
+  - *id007
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: acr
+      help: List all of the replications for a container registry.
+      id: acr replication list
+      queries: []
+    score: 0.8756
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: acr
+      help: List all of the webhooks for a container registry.
+      id: acr webhook list
+      queries: []
+    score: 0.8755
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - acr list
+    query: Lists all the container registries
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id008 !!python/object:modelBase.Suggestion
+    cliNode: &id019 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Create a web app.
+      id: webapp create
+      queries: []
+    score: 0.9697
+  suggestions:
+  - *id008
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id009 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Start a web app.
+      id: webapp start
+      queries: []
+    score: 0.8987
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id029 !!python/object:data.CliNode
+      cliType: group
+      group: webapp
+      help: Manage web apps.
+      id: webapp
+      queries: []
+    score: 0.8948
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp create
+    query: create new web app
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 18
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: List web apps.
+      id: webapp list
+      queries: []
+    score: 0.8124
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id018 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Get the details of a web app.
+      id: webapp show
+      queries: []
+    score: 0.8838
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Show the backup schedule for a web app.
+      id: webapp config backup show
+      queries: []
+    score: 0.8549
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id009
+    score: 0.8481
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp list
+    query: show me my web apps
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id010 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Restart a web app.
+      id: webapp restart
+      queries: []
+    score: 0.9244
+  suggestions:
+  - *id010
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id009
+    score: 0.9068
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Stop a web app.
+      id: webapp stop
+      queries: []
+    score: 0.899
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp restart
+    query: how to restart web app
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id011 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: vm
+      help: Find the available VM extensions for a subscription and region.
+      id: vm extension image
+      queries: []
+    score: 0.968
+  suggestions:
+  - *id011
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: List the information on available extensions.
+      id: vm extension image list
+      queries: []
+    score: 0.9548
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Display information for an extension.
+      id: vm extension image show
+      queries: []
+    score: 0.9409
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm extension image
+    query: virtual machine extension image types
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 5
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: *id012
+    score: 0.868
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Show storage account properties.
+      id: storage account show
+      queries: []
+    score: 0.9385
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Returns all user-defined metadata and system properties for the specified
+        share. The data returned does not include the shares's list of files or directories.
+      id: storage share show
+      queries: []
+    score: 0.8793
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Show the current count and limit of the storage accounts under the subscription.
+      id: storage account show-usage
+      queries: []
+    score: 0.8747
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account list
+    query: show all storage accounts
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id013 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Get the connection string for a storage account.
+      id: storage account show-connection-string
+      queries: []
+    score: 0.9573
+  suggestions:
+  - *id013
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: batch
+      help: Manage the access keys for the auto storage account configured for a Batch
+        account.
+      id: batch account autostorage-keys
+      queries: []
+    score: 0.8893
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: batch
+      help: Gets the account keys for the specified Batch account.  This operation
+        applies only to Batch accounts created with a poolAllocationMode of 'BatchService'.
+        If the Batch account was created with a poolAllocationMode of 'UserSubscription',
+        clients cannot use access to keys to authenticate, and must use Azure Active
+        Directory instead. In this case, getting the keys will fail.
+      id: batch account keys list
+      queries: []
+    score: 0.8842
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account show-connection-string
+    query: get connection string of my storage account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id014 !!python/object:modelBase.Suggestion
+    cliNode: &id046 !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a firewall rule.
+      id: sql server firewall-rule create
+      queries: []
+    score: 0.9399
+  suggestions:
+  - *id014
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: Create a new firewall rule for a server.
+      id: mysql server firewall-rule create
+      queries: []
+    score: 0.9252
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: postgres
+      help: Create a new firewall rule for a server.
+      id: postgres server firewall-rule create
+      queries: []
+    score: 0.9252
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql server firewall-rule create
+    query: Create a firewall rule for sql server
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 1
+  matchedSuggestion: &id015 !!python/object:modelBase.Suggestion
+    cliNode: &id017 !!python/object:data.CliNode
+      cliType: command
+      group: container
+      help: Create a container group.
+      id: container create
+      queries: []
+    score: 0.7883
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: webapp
+      help: Manage container-based continuous deployment.
+      id: webapp deployment container
+      queries: []
+    score: 0.792
+  - *id015
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: container
+      help: Attach local standard output and error streams to a container in a container
+        group.
+      id: container attach
+      queries: []
+    score: 0.7751
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - container create
+    query: deploy my container
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id016 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: container
+      help: Manage Azure Container Instances.
+      id: container
+      queries: []
+    score: 0.8958
+  suggestions:
+  - *id016
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id017
+    score: 0.8422
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Check for the existence of a storage container.
+      id: storage container exists
+      queries: []
+    score: 0.841
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - container
+    query: container instance
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 67
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: &id037 !!python/object:data.CliNode
+      cliType: command
+      group: appservice
+      help: Update an app service plan.
+      id: appservice plan update
+      queries: []
+    score: 0.7923
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id009
+    score: 0.8735
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id018
+    score: 0.8703
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Get the details of a web app's settings.
+      id: webapp config appsettings list
+      queries: []
+    score: 0.8669
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - appservice plan update
+    query: scale out my web app
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id020 !!python/object:modelBase.Suggestion
+    cliNode: *id019
+    score: 0.9393
+  suggestions:
+  - *id020
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Delete a web app.
+      id: webapp delete
+      queries: []
+    score: 0.9224
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id039 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Update a web app.
+      id: webapp update
+      queries: []
+    score: 0.9217
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp create
+    query: Add a Web App
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id021 !!python/object:modelBase.Suggestion
+    cliNode: &id022 !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: Get a list of subscriptions for the logged in account.
+      id: account list
+      queries: []
+    score: 0.8979
+  suggestions:
+  - *id021
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id024 !!python/object:data.CliNode
+      cliType: command
+      group: batch
+      help: List the Batch accounts associated with a subscription or resource group.
+      id: batch account list
+      queries: []
+    score: 0.8441
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cognitiveservices
+      help: List the keys of an Azure Cognitive Services account.
+      id: cognitiveservices account keys list
+      queries: []
+    score: 0.8269
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: list my accounts
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id023 !!python/object:modelBase.Suggestion
+    cliNode: *id022
+    score: 0.9209
+  suggestions:
+  - *id023
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id024
+    score: 0.8458
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id042 !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: List lock information in the subscription.
+      id: account lock list
+      queries: []
+    score: 0.8435
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: list my account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 2
+  matchedSuggestion: &id025 !!python/object:modelBase.Suggestion
+    cliNode: *id022
+    score: 0.8046
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: eventgrid
+      help: List event subscriptions.
+      id: eventgrid event-subscription list
+      queries: []
+    score: 0.8239
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: billing
+      help: List all available invoices of the subscription
+      id: billing invoice list
+      queries: []
+    score: 0.8115
+  - *id025
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: list my subscriptions
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 4
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: *id022
+    score: 0.8338
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cognitiveservices
+      help: Get the details of an Azure Cognitive Services account.
+      id: cognitiveservices account show
+      queries: []
+    score: 0.8535
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: Get the details of a subscription.
+      id: account show
+      queries: []
+    score: 0.8535
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: batch
+      help: Deletes a job schedule from the specified account.  When you delete a
+        job schedule, this also deletes all jobs and tasks under that schedule. When
+        tasks are deleted, all the files in their working directories on the compute
+        nodes are also deleted (the retention period is ignored). The job schedule
+        statistics are no longer accessible once the job schedule is deleted, though
+        they are still counted towards account lifetime statistics.
+      id: batch job-schedule delete
+      queries: []
+    score: 0.8404
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: show all my accounts
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id026 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Create an Azure Virtual Machine.
+      id: vm create
+      queries: []
+    score: 0.9323
+  suggestions:
+  - *id026
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id057 !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Create an Azure Virtual Machine Scale Set.
+      id: vmss create
+      queries: []
+    score: 0.9063
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Gets information about all network interfaces in a virtual machine in
+        a virtual machine scale set.
+      id: vmss nic list-vm-nics
+      queries: []
+    score: 0.8947
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm create
+    query: how to create vm
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id027 !!python/object:modelBase.Suggestion
+    cliNode: *id002
+    score: 0.9739
+  suggestions:
+  - *id027
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Create a container in a storage account.
+      id: storage container create
+      queries: []
+    score: 0.9408
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Creates a new table in the storage account.
+      id: storage table create
+      queries: []
+    score: 0.9109
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage account create
+    query: create a storage account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id028 !!python/object:modelBase.Suggestion
+    cliNode: *id019
+    score: 1.0
+  suggestions:
+  - *id028
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id029
+    score: 0.9406
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id009
+    score: 0.9184
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp create
+    query: create website
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id030 !!python/object:modelBase.Suggestion
+    cliNode: &id033 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: Deletes an Azure Cosmos DB database account.
+      id: cosmosdb delete
+      queries: []
+    score: 1.0
+  suggestions:
+  - *id030
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id035 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Deletes an Azure Cosmos DB database '
+      id: cosmosdb database delete
+      queries: []
+    score: 0.9392
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id031 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Deletes an Azure Cosmos DB collection '
+      id: cosmosdb collection delete
+      queries: []
+    score: 0.9214
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb delete
+    query: Delete docdb
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id032 !!python/object:modelBase.Suggestion
+    cliNode: *id031
+    score: 1.0
+  suggestions:
+  - *id032
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id033
+    score: 0.9214
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Updates an Azure Cosmos DB collection '
+      id: cosmosdb collection update
+      queries: []
+    score: 0.9098
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb collection delete
+    query: delete docdb collection
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 16
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: &id034 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Lists all Azure Cosmos DB databases '
+      id: cosmosdb database list
+      queries: []
+    score: 0.6151
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: Get the details of an Azure Cosmos DB database account.
+      id: cosmosdb show
+      queries: []
+    score: 0.8339
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Shows an Azure Cosmos DB collection and its offer '
+      id: cosmosdb collection show
+      queries: []
+    score: 0.7956
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Shows an Azure Cosmos DB database '
+      id: cosmosdb database show
+      queries: []
+    score: 0.7462
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb database list
+    query: show all cosmos dbs
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 7
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: List the access keys for a Azure Cosmos DB database account.
+      id: cosmosdb list-keys
+      queries: []
+    score: 0.8181
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id034
+    score: 0.8599
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id035
+    score: 0.8533
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Creates an Azure Cosmos DB database '
+      id: cosmosdb database create
+      queries: []
+    score: 0.8513
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb list-keys
+    query: query cosmos db keys
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id036 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: appservice
+      help: Create an app service plan.
+      id: appservice plan create
+      queries: []
+    score: 0.9656
+  suggestions:
+  - *id036
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id037
+    score: 0.9238
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: appservice
+      help: Delete an app service plan.
+      id: appservice plan delete
+      queries: []
+    score: 0.918
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - appservice plan create
+    query: Creates an App Service plan
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id038 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: Set a subscription to be the current active subscription.
+      id: account set
+      queries: []
+    score: 0.8243
+  suggestions:
+  - *id038
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: backup
+      help: Get the default policy with default values to backup a VM.
+      id: backup policy get-default-for-vm
+      queries: []
+    score: 0.8146
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Get the default configuration settings for a VM.
+      id: vm diagnostics get-default-config
+      queries: []
+    score: 0.7937
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account set
+    query: set my default subscription
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 2
+  matchedSuggestion: &id040 !!python/object:modelBase.Suggestion
+    cliNode: *id019
+    score: 0.9406
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id029
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id039
+    score: 0.9418
+  - *id040
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - webapp create
+    query: cretae web app
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id041 !!python/object:modelBase.Suggestion
+    cliNode: *id022
+    score: 0.7392
+  suggestions:
+  - *id041
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id024
+    score: 0.6799
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id042
+    score: 0.6747
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: list my accont
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id043 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dla
+      help: Create a Data Lake Analytics account.
+      id: dla account create
+      queries: []
+    score: 0.8941
+  suggestions:
+  - *id043
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dls
+      help: Creates a Data Lake Store account.
+      id: dls account create
+      queries: []
+    score: 0.8932
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dla
+      help: Create a compute policy in the Data Lake Analytics account.
+      id: dla account compute-policy create
+      queries: []
+    score: 0.8927
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - dla account create
+    query: how to create data lake
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id044 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dla
+      help: Submit a job to a Data Lake Analytics account.
+      id: dla job submit
+      queries: []
+    score: 0.9426
+  suggestions:
+  - *id044
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dla
+      help: Wait for a Data Lake Analytics job to finish.
+      id: dla job wait
+      queries: []
+    score: 0.9206
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dla
+      help: Get information for a Data Lake Analytics job.
+      id: dla job show
+      queries: []
+    score: 0.9185
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - dla job submit
+    query: how to submit a job in data lake
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id045 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dls
+      help: Get the details of a firewall rule in a Data Lake Store account.
+      id: dls account firewall show
+      queries: []
+    score: 0.921
+  suggestions:
+  - *id045
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: Get the details of a firewall rule.
+      id: mysql server firewall-rule show
+      queries: []
+    score: 0.8988
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: postgres
+      help: Get the details of a firewall rule.
+      id: postgres server firewall-rule show
+      queries: []
+    score: 0.8988
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - dls account firewall show
+    query: show me the firewall rule of my data lake
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 19
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: *id046
+    score: 0.8319
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Creates a server key.
+      id: sql server key create
+      queries: []
+    score: 0.8561
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Gets a list of server DNS aliases for a server.
+      id: sql server dns-alias list
+      queries: []
+    score: 0.8534
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a server.
+      id: sql server create
+      queries: []
+    score: 0.8522
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql server firewall-rule create
+    query: add new ip to my sql server
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 6
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: Update a firewall rule.
+      id: mysql server firewall-rule update
+      queries: []
+    score: 0.883
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: mysql
+      help: List all firewall rules for a server.
+      id: mysql server firewall-rule list
+      queries: []
+    score: 0.8911
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: postgres
+      help: List all firewall rules for a server.
+      id: postgres server firewall-rule list
+      queries: []
+    score: 0.8911
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: mysql
+      help: Manage firewall rules for a server.
+      id: mysql server firewall-rule
+      queries: []
+    score: 0.888
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - mysql server firewall-rule update
+    query: how to update the firewall rule for mysql
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 1
+  matchedSuggestion: &id047 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dls
+      help: Delete a file or folder in a Data Lake Store account.
+      id: dls fs delete
+      queries: []
+    score: 0.936
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dls
+      help: Append content to a file in a Data Lake Store account.
+      id: dls fs append
+      queries: []
+    score: 0.9367
+  - *id047
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: dls
+      help: Upload a file or folder to a Data Lake Store account.
+      id: dls fs upload
+      queries: []
+    score: 0.9357
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - dls fs delete
+    query: how to delete a file from data lake
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 2
+  matchedSuggestion: &id048 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Copy multiple blobs or files to a blob container.
+      id: storage blob copy start-batch
+      queries: []
+    score: 0.8766
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Copies an incremental copy of a blob asynchronously. This operation returns
+        a copy operation properties object, including a copy ID you can use to check
+        or abort the copy operation. The Blob service copies blobs on a best-effort
+        basis.  The source blob for an incremental copy operation must be a page blob.
+        Call get_blob_properties on the destination blob to check the status of the
+        copy operation. The final blob will be committed when the copy completes.
+      id: storage blob incremental-copy start
+      queries: []
+    score: 0.8837
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id051 !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Copy multiple files or blobs to a file share.
+      id: storage file copy start-batch
+      queries: []
+    score: 0.878
+  - *id048
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage blob copy start-batch
+    - storage blob copy start
+    query: copy blob to other account
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 14
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: *id017
+    score: 0.8221
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: acs
+      help: Create a container service.
+      id: acs create
+      queries: []
+    score: 0.8655
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: iot
+      help: Export all the device identities in the IoT hub identity registry to an
+        Azure Storage blob container.
+      id: iot device export
+      queries: []
+    score: 0.857
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Accept Azure Marketplace term so that the image can be used to create
+        VMs
+      id: vm image accept-terms
+      queries: []
+    score: 0.8537
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - container create
+    query: how to create container in azure
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 9
+  matchedSuggestion: !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a copy of a database.
+      id: sql db copy
+      queries: []
+    score: 0.8727
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a database.
+      id: sql db create
+      queries: []
+    score: 0.8953
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a new database by restoring from a backup.
+      id: sql db restore
+      queries: []
+    score: 0.8876
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Restore a managed database.
+      id: sql midb restore
+      queries: []
+    score: 0.8873
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql db copy
+    query: how to backup sql db
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 1
+  matchedSuggestion: &id049 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Sets a database's transparent data encryption configuration.
+      id: sql db tde set
+      queries: []
+    score: 0.8994
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Gets a database's transparent data encryption configuration.
+      id: sql db tde show
+      queries: []
+    score: 0.9007
+  - *id049
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: sql
+      help: Manage a database's transparent data encryption.
+      id: sql db tde
+      queries: []
+    score: 0.8929
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql db tde set
+    query: how to update transparent data encryption config
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id050 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Upload a file to a storage blob.
+      id: storage blob upload
+      queries: []
+    score: 0.9468
+  suggestions:
+  - *id050
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: storage
+      help: Upload files from a local directory to a blob container.
+      id: storage blob upload-batch
+      queries: []
+    score: 0.905
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id051
+    score: 0.9049
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - storage blob upload
+    query: upload a file to blob
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id052 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Restart VMs.
+      id: vm restart
+      queries: []
+    score: 0.9489
+  suggestions:
+  - *id052
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id053
+    score: 0.903
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Place the CLI in a waiting state until a condition of the VM is met.
+      id: vm wait
+      queries: []
+    score: 0.903
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm restart
+    query: restart my vm
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: -1
+  matchedSuggestion: null
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: appservice
+      help: Manage App Service plans.
+      id: appservice
+      queries: []
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: appservice
+      help: Manage app service plans.
+      id: appservice plan
+      queries: []
+    score: 0.9216
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id037
+    score: 0.8883
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - create an appservice plan
+    query: appservice
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id054 !!python/object:modelBase.Suggestion
+    cliNode: &id056 !!python/object:data.CliNode
+      cliType: command
+      group: batchai
+      help: Create a job.
+      id: batchai job create
+      queries: []
+    score: 0.9732
+  suggestions:
+  - *id054
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: batchai
+      help: Commands to manage jobs.
+      id: batchai job
+      queries: []
+    score: 0.9032
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: batchai
+      help: Show information about a job.
+      id: batchai job show
+      queries: []
+    score: 0.8982
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - batchai job create
+    query: create a batchai job
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: -1
+  matchedSuggestion: null
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Add a secret to a VM.
+      id: vm secret add
+      queries: []
+    score: 0.9185
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: lab
+      help: Stop a virtual machine This operation can take a while to complete.
+      id: lab vm stop
+      queries: []
+    score: 0.9073
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: lab
+      help: Start a virtual machine. This operation can take a while to complete.
+      id: lab vm start
+      queries: []
+    score: 0.9029
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm create
+    query: I'd like to create a virtual machine
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id055 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: batchai
+      help: Manage Batch AI resources.
+      id: batchai
+      queries: []
+    score: 0.9158
+  suggestions:
+  - *id055
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id056
+    score: 0.8498
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: backup
+      help: A backup policy defines when you want to take a backup and for how long
+        you would retain each backup copy.
+      id: backup policy
+      queries: []
+    score: 0.8377
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - batchai
+    query: I want to manage batch ai resources
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 0
+  matchedSuggestion: &id058 !!python/object:modelBase.Suggestion
+    cliNode: *id057
+    score: 1.0
+  suggestions:
+  - *id058
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: vmss
+      help: Manage groupings of virtual machines in an Azure Virtual Machine Scale
+        Set (VMSS).
+      id: vmss
+      queries: []
+    score: 0.9737
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Start VMs within a VMSS.
+      id: vmss start
+      queries: []
+    score: 0.9594
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vmss create
+    query: create virtual machine scale set
+- !!python/object:measure.testrunner.TestCaseResult
+  matchedIndex: 1
+  matchedSuggestion: &id059 !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: keyvault
+      help: Manage certificates.
+      id: keyvault certificate
+      queries: []
+    score: 0.9404
+  suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: keyvault
+      help: Create a Key Vault certificate.
+      id: keyvault certificate create
+      queries: []
+    score: 0.9455
+  - *id059
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: keyvault
+      help: Recovers the deleted certificate back to its current version under /certificates.  The
+        RecoverDeletedCertificate operation performs the reversal of the Delete operation.
+        The operation is applicable in vaults enabled for soft-delete, and must be
+        issued during the retention interval (available in the deleted certificate's
+        attributes).
+      id: keyvault certificate recover
+      queries: []
+    score: 0.9309
+  testCase: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - keyvault certificate
+    query: manage keyvault certificate
