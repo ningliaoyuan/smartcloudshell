@@ -1,0 +1,2068 @@
+create Adl Analytics Data Source : cosmosdb database create
+create Adl Analytics Firewall Rule : sql server firewall-rule create
+create Adl Store Firewall Rule : sql server firewall-rule create
+create Adl Store Item Content : storage account create
+create Adl Store Trusted Id Provider : dls account trusted-provider create
+create Account : cognitiveservices account create
+create Iot Hub EHCG : iot hub create
+Disable HD Insight OMS : vm boot-diagnostics disable
+Edit ASR Recovery Plan : appservice plan delete
+Edit ASRRP : eventgrid topic delete
+Enable Adl Store Key Vault : storage account keys list
+Enable HD Insight OMS : vm boot-diagnostics enable
+Export Adl Store Child Item Properties : storage blob service-properties show
+Export Adl Store Item : container export
+get Adl Analytics Account : cognitiveservices account create
+get Adl Analytics Compute Policy : dla account compute-policy create
+get Adl Analytics Data Source : storage metrics update
+get Adl Analytics Firewall Rule : sql server firewall-rule create
+get Adl Catalog Item : backup item list
+get Adl Catalog Item Acl Entry : backup item list
+get Adl Job : batchai job wait
+get Adl Job Pipeline : batchai job wait
+get Adl Job Recurrence : batchai job wait
+get Adl Store : storage message get
+get Adl Store Child Item : storage message get
+get Adl Store Child Item Summary : backup item set-policy
+get Adl Store Firewall Rule : sql server firewall-rule show
+get Adl Store Item : backup item show
+get Adl Store Item Acl Entry : backup item list
+get Adl Store Item Content : storage message get
+get Adl Store Item Owner : backup item show
+get Adl Store Item Permission : storage message get
+get Adl Store Trusted Id Provider : dls account trusted-provider show
+get ASR Alertupdateting : aks wait
+get ASR Event : eventgrid event-subscription show
+get ASR Fabric : sql elastic-pool create
+get ASR Job : batchai job wait
+get ASR Network : network
+get ASR Network Mapping : network
+get ASR Notificationupdateting : aks wait
+get ASR Policy : policy
+get ASR Protectable Item : backup item list
+get ASR Protection Container : backup container
+get ASR Protection Container Mapping : storage container policy create
+get ASR Recovery Plan : keyvault key recover
+get ASR Recovery Point : keyvault key recover
+get ASR Replication Protected Item : backup item
+get ASRRP : lab get
+get ASR Services Provider : provider
+get ASR Storage Classification : storage message get
+get ASR Storage Classification Mapping : storage queue metadata show
+get AS Rv Center : storage message get
+get Azure As : cloud set
+get AD Service Principal Credential : ad sp credential list
+get Batch Subscription Quotas : batch location quotas
+get HD Insight OMS : dls fs access show
+get Iot Hub CVC : iot hub
+get Iot Hub EHCG : iot hub
+get Recovery Services Asr Notificationupdateting : keyvault key recover
+get Recovery Services Asr Vaultupdatetings : keyvault key recover
+get Recovery Services Backup Properties : backup vault backup-properties show
+get Resource Provider Action : resource move
+get Sql Database Long Term Retention Policy : sql db audit-policy show
+get Sql Database Server Auditing Policy : sql server key list
+get Vmss Disk Encryption Status : disk list
+get Vmss VM Disk Encryption Status : vm encryption show
+Import Adl Store Item : backup item list
+Import Automation Module : keyvault key import
+Join Adl Store Item : backup item show
+get Application Gateway Available Ssl Options : network application-gateway list
+get Application Gateway Available Waf Ruleupdates : network application-gateway wait
+get Application Gateway Ssl Predefined Policy : network application-gateway ssl-policy predefined list
+Login Az Account : login
+Login Account : batch account login
+Logout Az Account : cognitiveservices account
+Logout Account : logout
+Move Adl Store Item : backup item show
+create Adl Analytics Account : cognitiveservices account create
+create Adl Analytics Compute Policy : dla account compute-policy create
+create Adl Catalog Credential : dla catalog credential create
+create Adl Catalog Secret : cosmosdb collection create
+create Adl Store : functionapp create
+create Adl Store Item : storage account create
+create ASR Fabric : eventhubs eventhub create
+create ASR Network Mapping : network asg create
+create ASR Policy : policy assignment create
+create ASR Protectable Item : tag create
+create ASR Protection Container Mapping : container create
+create ASR Recovery Plan : appservice plan create
+create ASR Replication Protected Item : acr replication create
+create ASRRP : functionapp create
+create ASR Storage Classification Mapping : storage directory create
+create AS Rv Center : storage table policy create
+create Azure As : functionapp create
+create AD Service Principal Credential : ad user create
+create Data Factory V2 : cosmosdb database create
+create Data Factory V2Linked Service : storage account create
+create Data Factory V2Pipeline : cosmosdb database create
+create Data Factory V2Trigger : cosmosdb database create
+create Operational Insights Azure Audit Data Source : functionapp deployment source show
+Reactivate Azure Batch Task : batch task reactivate
+Remove Adl Analytics Account : account management-group subscription remove
+Remove Adl Analytics Compute Policy : dla account compute-policy delete
+Remove Adl Analytics Data Source : functionapp deployment source delete
+Remove Adl Analytics Firewall Rule : sql server firewall-rule delete
+Remove Adl Catalog Credential : dla catalog credential delete
+Remove Adl Catalog Item Acl Entry : backup item list
+Remove Adl Catalog Secret : keyvault secret delete
+Remove Adl Store : ams account storage remove
+Remove Adl Store Firewall Rule : storage account network-rule remove
+Remove Adl Store Item : backup item list
+Remove Adl Store Item Acl : backup item list
+Remove Adl Store Item Acl Entry : backup item list
+Remove Adl Store Trusted Id Provider : dls account trusted-provider delete
+Remove ASR Fabric : vm identity remove
+Remove ASR Network Mapping : network application-gateway probe delete
+Remove ASR Policy : policy definition delete
+Remove ASR Protection Container Mapping : storage container policy delete
+Remove ASR Recovery Plan : keyvault key recover
+Remove ASR Replication Protected Item : acr replication delete
+Remove ASRRP : extension remove
+Remove ASR Services Provider : provider
+Remove ASR Storage Classification Mapping : ams account storage remove
+Remove AS Rv Center : storage account network-rule remove
+Remove Azure As : vmss identity remove
+Remove Account : cognitiveservices account delete
+Remove AD Service Principal Credential : ad sp credential delete
+Remove Iot Hub EHCG : iot hub delete
+Remove Sql Database Server Auditing : sql server delete
+Repair Vmss Service Fabric UD : storage blob service-properties show
+Resolve Error : sql server firewall-rule delete
+Restart ASR Job : functionapp restart
+Resume ASR Job : batchai job
+Resume Azure As : cloud set
+Save Profile : cdn profile create
+Select Subscription : servicebus topic subscription list
+update Adl Analytics Account : cognitiveservices account update
+update Adl Analytics Data Source : storage metrics update
+update Adl Analytics Firewall Rule : sql server firewall-rule update
+update Adl Catalog Credential : dla catalog credential update
+update Adl Catalog Item Acl Entry : backup item list
+update Adl Catalog Secret : cosmosdb collection update
+update Adl Store : functionapp update
+update Adl Store Firewall Rule : sql server firewall-rule update
+update Adl Store Item Acl : backup item list
+update Adl Store Item Acl Entry : backup item list
+update Adl Store Item Expiry : storage account update
+update Adl Store Item Owner : backup item list
+update Adl Store Item Permission : backup item list
+update Adl Store Trusted Id Provider : dls account trusted-provider update
+update ASR Alertupdateting : vm update
+update ASR Notificationupdateting : vm update
+update ASR Replication Protected Item : acr replication update
+update ASR Vault Context : backup vault delete
+update ASR Vaultupdatetings : vm update
+update Azure As : cloud update
+update Azure Key Vault Certificate Attribute : sql server key create
+update Azure Key Vault Key : keyvault key
+update Azure Key Vault Key Attribute : keyvault key
+update Azure Key Vault Secret Attribute : sql server key create
+update AD Application : ad app update
+update AD Service Principal : ad app update
+update AD User : ad user
+update Iot Hub VC : iot hub update
+update Recovery Services Asr Notificationupdateting : resource update
+update Recovery Services Asr Vaultupdatetings : resource update
+update Sql Database Long Term Retention Policy : sql db audit-policy update
+update Sql Database Server Auditing Policy : sql server update
+Start ASR Apply Recovery Point : keyvault key recover
+Start ASR Commit Failover : vm start
+Start ASR Commit Failover Job : backup job stop
+Start ASRFO : functionapp start
+Start ASRPFO : functionapp start
+Start ASR Planned Failover Job : backup job wait
+Start ASR Resynchronize Replication Job : backup job stop
+Start ASR Resync Job : ams job start
+Start ASR Switch Process Server Job : batch job reset
+Start ASR Test Failover Cleanup Job : backup job wait
+Start ASR Test Failover Job : backup job wait
+Start ASRTFO : functionapp start
+Start ASR Unplanned Failover Job : backup job stop
+Stop Adl Job : batch job stop
+Stop ASR Job : backup job stop
+Submit Adl Job : batchai job
+Suspend Azure As : cloud set
+Swap Web App Slot : webapp deployment slot auto-swap
+Test Adl Analytics Account : cognitiveservices account
+Test Adl Catalog Item : backup item list
+Test Adl Store : lab get
+Test Adl Store Item : backup item show
+Test Azure As : cloud set
+Update Adl Analytics Compute Policy : storage metrics update
+Update ASR Mobility Service : network traffic-manager endpoint update
+Update ASR Policy : policy definition update
+Update ASR Protection Direction : backup protection disable
+Update ASR Recovery Plan : appservice plan update
+Update ASR Services Provider : provider
+Update AS Rv Center : storage table policy update
+Use Sql Database Server Auditing Policy : sql server key list
+Validate Cdn Custom Domain : cdn custom-domain
+Wait Adl Job : batchai job wait
+create Azure Key Vault Certificate : keyvault certificate create
+create Azure Key Vault Certificate Contact : keyvault certificate create
+create Azure Key Vault Key : keyvault key create
+create Azure Key Vault Managed Storage Account : storage account create
+create AD Group Member : ad group member add
+create Api Management Api To Product : batch application package create
+create Api Management Product To Group : account management-group create
+create Api Management Region : resource create
+create Api Management User To Group : account management-group create
+create Application Gateway Authentication Certificate : network application-gateway auth-cert create
+create Application Gateway Backendcreateress Pool : network application-gateway address-pool create
+create Application Gateway Backend Httpupdatetings : network application-gateway create
+create Application Gateway Frontend IP Config : network application-gateway frontend-ip create
+create Application Gateway Frontend Port : network application-gateway frontend-port create
+create Application Gateway Httpgetener : network application-gateway create
+create Application Gateway IP Configuration : network application-gateway frontend-ip create
+create Application Gateway Probe Config : network application-gateway probe create
+create Application Gateway Redirect Configuration : network application-gateway redirect-config create
+create Application Gateway Request Routing Rule : network application-gateway rule create
+create Application Gateway Ssl Certificate : keyvault certificate create
+create Application Gateway Url Path Map Config : network application-gateway redirect-config create
+create Autoscaleupdateting : functionapp create
+create Container Service Agent Pool Profile : storage blob service-properties show
+create Data Lake Analytics Data Source : cosmosdb database create
+create Data Lake Analytics Firewall Rule : sql server firewall-rule create
+create Data Lake Store Firewall Rule : network application-gateway rule create
+create Data Lake Store Item Content : storage account create
+create Data Lake Store Trusted Id Provider : dla account data-lake-store list
+create Dns Record Config : network dns record-set cname create
+create Environment : lab environment create
+create Express Route Circuit Authorization : network express-route create
+create Express Route Circuit Connection Config : network express-route auth create
+create Express Route Circuit Peering Config : network express-route peering create
+create HD Insight Cluster Identity : identity create
+create HD Insight Component Version : managedapp definition create
+create HD Insight Config Values : sql server key create
+create HD Insight Metastore : managedapp definition create
+create HD Insight Script Action : role definition create
+create HD Insight Security Profile : network traffic-manager profile create
+create HD Insight Storage : storage share create
+create Image Data Disk : disk create
+create Iot Hub Certificate : iot hub certificate create
+create Iot Hub Event Hub Consumer Group : iot hub consumer-group create
+create Iot Hub Key : iot hub create
+create Load Balancer Backendcreateress Pool Config : mysql server configuration set
+create Load Balancer Frontend Ip Config : webapp config backup create
+create Load Balancer Inbound Nat Pool Config : mysql server configuration set
+create Load Balancer Inbound Nat Rule Config : mysql server firewall-rule create
+create Load Balancer Probe Config : mysql server configuration set
+create Load Balancer Rule Config : mysql server firewall-rule create
+create Log Profile : monitor log-profiles create
+create Metric Alert Rule : network lb rule create
+create Ml Web Service Regional Property : network local-gateway create
+create Network Interface Ip Config : network nic ip-config create
+create Network Security Rule Config : network application-gateway rule create
+create Route Config : functionapp config appsettings set
+create Route Filter Rule Config : network route-filter rule create
+create Service Fabric Application Certificate : keyvault certificate create
+create Service Fabric Client Certificate : keyvault certificate create
+create Service Fabric Cluster Certificate : keyvault certificate create
+create Service Fabric Node : batch node user create
+create Service Fabric Node Type : batch node user create
+create Sql Database To Failover Group : sql server create
+create Sql Managed Instance Transparent Data Encryption Certificate : sql server key create
+create Sql Server Key Vault Key : sql server key create
+create Sql Server Transparent Data Encryption Certificate : sql server key create
+create Storage Account Network Rule : storage account network-rule add
+create Traffic Manager Endpoint Config : network traffic-manager endpoint create
+create Vhd : functionapp create
+create Virtual Network Gateway Ip Config : network nic ip-config create
+create Virtual Network Peering : network express-route peering create
+create Virtual Network Subnet Config : network nic ip-config create
+create V Mcreateitional Unattend Content : functionapp create
+create VM Data Disk : disk create
+create VM Network Interface : vm create
+create VM Secret : vm secret add
+create Vmsscreateitional Unattend Content : functionapp create
+create Vmss Data Disk : disk create
+create Vmss Diagnostics Extension : vmss diagnostics set
+create Vmss Extension : extension add
+create VM Ssh Public Key : sql server key create
+create Vmss Network Interface Configuration : network application-gateway create
+create Vmss Secret : keyvault secret set
+create Vmss Ssh Public Key : keyvault key create
+create Vmss Win R Mgetener : functionapp create
+create Vpn Client Revoked Certificate : keyvault certificate create
+create Vpn Client Root Certificate : network application-gateway ssl-cert create
+create Webtest Alert Rule : monitor alert create
+Backup Azure Key Vault Certificate : backup vault create
+Backup Azure Key Vault Key : keyvault key backup
+Backup Azure Key Vault Managed Storage Account : backup vault create
+Backup Azure Key Vault Secret : keyvault secret backup
+Backup Api Management : backup
+Backup Backup Item : backup item
+Backup Recovery Services Backup Item : backup
+Clear Context : account clear
+Clear Default : account clear
+Complete Service Bus Migration : network express-route wait
+Confirm Cdn Endpoint Probe URL : cdn endpoint stop
+Connect Account : cognitiveservices account
+Convert To VM Managed Disk : vm convert
+Disable Azure Batch Auto Scale : batch job disable
+Disable Azure Batch Compute Node Scheduling : batch node scheduling disable
+Disable Azure Batch Job : batch job disable
+Disable Azure Batch Job Schedule : batch job-schedule disable
+Disable Activity Log Alert : monitor activity-log alert delete
+Disable Backup Protection : backup protection disable
+Disable Cdn Custom Domain : cdn custom-domain delete
+Disable Context Autosave : vm encryption disable
+Disable Data Collection : cosmosdb collection delete
+Disable HD Insight Operations Management Suite : storage share policy update
+Disable Operational Insights IIS Log Collection : sql server key create
+Disable Operational Insights Linux Custom Log Collection : sql server key create
+Disable Operational Insights Linux Performance Collection : storage metrics update
+Disable Operational Insights Linux Syslog Collection : mysql server configuration list
+Disable Recovery Services Backup Protection : backup protection disable
+Disable Recovery Services Backup RP Mount Script : backup restore files mount-rp
+Disable Scheduler Job Collection : batch job disable
+Disable Traffic Manager Endpoint : network traffic-manager endpoint delete
+Disable Traffic Manager Profile : network traffic-manager profile delete
+Disable VM Disk Encryption : vm encryption disable
+Disable Vmss Disk Encryption : vmss encryption disable
+Disconnect Account : cognitiveservices account
+Edit Recovery Services Asr Recovery Plan : keyvault key recover
+Edit Web App Backup Configuration : webapp config backup create
+Enable Azure Batch Auto Scale : batchai cluster auto-scale
+Enable Azure Batch Compute Node Scheduling : batch node scheduling enable
+Enable Azure Batch Job : batch job enable
+Enable Azure Batch Job Schedule : batch job-schedule enable
+Enable Azure Batch Task : batch task create
+Enable Activity Log Alert : monitor activity-log alert create
+Enable Backup Container Reregistration : backup container
+Enable Backup Protection : backup protection
+Enable Cdn Custom Domain : cdn custom-domain create
+Enable Context Autosave : vm encryption enable
+Enable Data Collection : cosmosdb database create
+Enable Data Lake Store Key Vault : storage account keys list
+Enable HD Insight Operations Management Suite : storage share policy create
+Enable Operational Insights IIS Log Collection : storage share policy create
+Enable Operational Insights Linux Custom Log Collection : storage account create
+Enable Operational Insights Linux Performance Collection : storage share policy create
+Enable Operational Insights Linux Syslog Collection : vm encryption enable
+Enable Recovery Services Backup Protection : backup protection
+Enable Scheduler Job Collection : batch job enable
+Enable Traffic Manager Endpoint : network traffic-manager endpoint create
+Enable Traffic Manager Profile : network traffic-manager profile create
+Export Api Management Api : sql db export
+Export Automation Dsc Configuration : functionapp deployment source config
+Export Automation Dsc Node Report Content : batch node user create
+Export Automation Runbook : group deployment export
+Export Data Lake Store Child Item Properties : storage blob service-properties show
+Export Data Lake Store Item : storage account list
+Export Log Analytic Request Rate By Interval : batch account set
+Export Log Analytic Throttled Requests : batch node service-logs upload
+Export Ml Web Service : container export
+Export Redis Cache : redis export
+Export Resource Group : group export
+get Azure Batch Certificate : batch certificate create
+get Azure Batch Compute Node : batch node
+get Azure Batch Job : batch job create
+get Azure Batch Job Preparation And Release Task Status : batch job set
+get Azure Batch Job Schedule : batch job-schedule create
+get Azure Batch Job Statistics : batch job all-statistics
+get Azure Batch Node Agent Sku : batch node
+get Azure Batch Node File : batch node file
+get Azure Batch Node File Content : batch node file
+get Azure Batch Pool : batch pool
+get Azure Batch Pool Node Counts : batch pool node-counts
+get Azure Batch Pool Statistics : batch pool all-statistics
+get Azure Batch Pool Usage Metrics : batch pool usage-metrics
+get Azure Batch Remote Desktop Protocol File : batch node remote-desktop download
+get Azure Batch Remote Loginupdatetings : batch node remote-desktop
+get Azure Batch Subtask : batch pool create
+get Azure Batch Task : batch task create
+get Azure Batch Task Counts : batch task stop
+get Azure Key Vault Certificate : keyvault certificate create
+get Azure Key Vault Certificate Contact : keyvault certificate contact add
+get Azure Key Vault Certificate Issuer : keyvault certificate issuer create
+get Azure Key Vault Certificate Operation : storage account keys renew
+get Azure Key Vault Certificate Policy : keyvault certificate create
+get Azure Key Vault Key : keyvault key
+get Azure Key Vault Managed Storage Account : storage account keys
+get Azure Key Vault Managed Storage Sas Definition : storage account keys
+get Azure Key Vault Secret : keyvault secret set
+get Action Group : monitor action-group show
+get Activity Log Alert : monitor activity-log alert list
+get AD App Credential : ad app
+get AD Application : ad app create
+get AD Group : ad group
+get AD Group Member : ad group member check
+get AD Service Principal : ad group member check
+get AD Sp Credential : ad sp credential
+get AD User : ad user
+get Alert History : monitor alert list
+get Alert Rule : monitor alert list
+get Analysis Services Server : sql server key show
+get Api Management : account management-group update
+get Api Management Api : sql server key list
+get Api Management Api Release : network dns record-set soa update
+get Api Management Api Revision : sql db audit-policy update
+get Api Management Api Versionupdate : sql server key list
+get Api Management Authorization Server : sql server key list
+get Api Management Backend : mysql server create
+get Api Management Certificate : keyvault certificate create
+get Api Management Group : account management-group create
+get Api Management Identity Provider : dls account trusted-provider create
+get Api Management Logger : sql server key create
+get Api Management Open Id Connect Provider : network application-gateway wait
+get Api Management Operation : provider operation list
+get Api Management Policy : policy definition update
+get Api Management Product : account management-group subscription add
+get Api Management Property : account management-group create
+get Api Management Sso Token : sql server key create
+get Api Management Subscription : account management-group subscription add
+get Api Management Tenant Access : account management-group subscription remove
+get Api Management Tenant Git Access : storage queue policy update
+get Api Management Tenant Sync State : storage queue policy create
+get Api Management User : functionapp deployment user set
+get Api Management User Sso Url : sql server key list
+get Application Gateway : network application-gateway wait
+get Application Gateway Authentication Certificate : network application-gateway auth-cert create
+get Application Gateway Available Ssl Options : network application-gateway list
+get Application Gateway Available Waf Ruleupdates : network application-gateway wait
+get Application Gateway Backendcreateress Pool : network application-gateway address-pool create
+get Application Gateway Backend Health : network application-gateway wait
+get Application Gateway Backend Httpupdatetings : network application-gateway wait
+get Application Gateway Connection Draining : network application-gateway stop
+get Application Gateway Frontend IP Config : network application-gateway frontend-ip delete
+get Application Gateway Frontend Port : network application-gateway frontend-port create
+get Application Gateway Httpgetener : network application-gateway wait
+get Application Gateway IP Configuration : network application-gateway frontend-ip create
+get Application Gateway Probe Config : network application-gateway probe delete
+get Application Gateway Redirect Configuration : network application-gateway redirect-config create
+get Application Gateway Request Routing Rule : network application-gateway rule list
+get Application Gateway Sku : network application-gateway wait
+get Application Gateway Ssl Certificate : sf application certificate add
+get Application Gateway Ssl Policy : network application-gateway rule create
+get Application Gateway Ssl Predefined Policy : network application-gateway ssl-policy predefined list
+get Application Gateway Url Path Map Config : network application-gateway url-path-map rule delete
+get Application Gateway Web Application Firewall Configuration : network application-gateway delete
+get Application Insights : batch application summary show
+get Application Insights Api Key : keyvault key create
+get Application Insights Continuous Export : batch application create
+get Application Security Group : account management-group create
+get App Service Plan : appservice plan update
+get App Service Plan Metrics : ad app create
+get Automation Account : cognitiveservices account create
+get Automation Certificate : keyvault certificate create
+get Automation Connection : network watcher connection-monitor create
+get Automation Credential : batch job enable
+get Automation Dsc Compilation Job : backup job list
+get Automation Dsc Compilation Job Output : batch job enable
+get Automation Dsc Configuration : mysql server configuration set
+get Automation Dsc Node : batchai job node
+get Automation Dsc Node Configuration : batch node user reset
+get Automation Dsc Node Configuration Deployment : functionapp deployment source config
+get Automation Dsc Node Configuration Deployment Schedule : batch node scheduling enable
+get Automation Dsc Node Report : batchai job node list
+get Automation Dsc Onboarding Metaconfig : network watcher troubleshooting start
+get Azure RM Automation Hybrid Worker Group : group deployment create
+get Automation Job : batchai job
+get Automation Job Output : batch job enable
+get Automation Job Output Record : batch job enable
+get Automation Module : batch node scheduling enable
+get Automation Registration Info : keyvault certificate contact list
+get Automation Runbook : batch job enable
+get Automation Schedule : batch job-schedule enable
+get Automation Scheduled Runbook : batch job-schedule enable
+get Automation Variable : batch node user create
+get Automation Webhook : batch job enable
+get Autoscale History : batch job all-statistics show
+get Autoscaleupdateting : lab get
+get Availabilityupdate : lab get
+get Backup Container : backup container
+get Backup Item : backup item
+get Backup Job : backup job wait
+get Backup Job Details : backup job wait
+get Backup Protection Policy : backup policy
+get Backup Recovery Point : backup job wait
+get Backup Vault : backup vault
+get Backup Vault Credentials : backup vault list
+get Batch Account : batch account
+get Batch Account Keys : batch account keys
+get Batch Application : batch application
+get Batch Application Package : batch application package
+get Batch Location Quotas : batch location quotas
+get Bgp Service Community : network express-route list-service-providers
+get Billing Invoice : billing invoice
+get Billing Period : billing period
+get Cdn Custom Domain : cdn custom-domain
+get Cdn Edge Nodes : cdn edge-node
+get Cdn Endpoint : cdn endpoint start
+get Cdn Endpoint Name Availability : cdn endpoint list
+get Cdn Endpoint Resource Usage : cdn endpoint create
+get Cdn Origin : cdn origin
+get Cdn Profile : cdn profile
+get Cdn Profile Resource Usage : cdn profile usage
+get Cdn Profile Sso Url : cdn profile
+get Cdn Profile Supported Optimization Type : cdn profile create
+get Cdn Subscription Resource Usage : cdn profile usage
+get Cognitive Services Account : account management-group subscription add
+get Cognitive Services Account Key : account management-group subscription add
+get Cognitive Services Account Skus : account management-group subscription add
+get Cognitive Services Account Usage : storage account show-usage
+get Compute Resource Sku : resource tag
+get Consumption Budget : consumption budget
+get Consumption Marketplace : consumption marketplace
+get Consumption Price Sheet : consumption budget list
+get Consumption Reservation Detail : consumption reservation detail
+get Consumption Reservation Summary : consumption reservation summary
+get Consumption Usage Detail : consumption usage list
+get Container Group : container show
+get Container Instance Log : container logs
+get Container Registry : storage container policy delete
+get Container Registry Credential : storage container policy delete
+get Container Registry Replication : storage container policy delete
+get Container Registry Webhook : storage container policy delete
+get Container Registry Webhook Event : storage container policy show
+get Container Service : storage container policy show
+get Context : policy definition create
+get Context Autosaveupdateting : policy definition create
+get Data Factory : storage message get
+get Data Factory Activity Window : monitor activity-log alert create
+get Data Factory Dataset : storage file metadata show
+get Data Factory Gateway : network application-gateway wait
+get Data Factory Gateway Auth Key : sql server key create
+get Data Factory Hub : storage message get
+get Data Factory Linked Service : storage message get
+get Data Factory Pipeline : storage message get
+get Data Factory Run : storage message get
+get Data Factory Slice : storage blob copy start
+get Data Factory V2 : storage file update
+get Data Factory V2Activity Run : storage message get
+get Data Factory V2Dataset : storage message get
+get Data Factory V2Integration Runtime : storage file metadata show
+get Data Factory V2Integration Runtime Key : sql server key create
+get Data Factory V2Integration Runtime Metric : storage metrics update
+get Data Factory V2Integration Runtime Node : batch node user create
+get Data Factory V2Linked Service : storage message get
+get Data Factory V2Pipeline : storage message get
+get Data Factory V2Pipeline Run : storage message get
+get Data Factory V2Trigger : storage message get
+get Data Factory V2Trigger Run : storage message get
+get Data Lake Analytics Account : maps account create
+get Data Lake Analytics Catalog Item : dla account data-lake-store list
+get Data Lake Analytics Catalog Item Acl Entry : storage account list
+get Data Lake Analytics Compute Policy : storage metrics update
+get Data Lake Analytics Data Source : storage metrics update
+get Data Lake Analytics Firewall Rule : sql server firewall-rule create
+get Data Lake Analytics Job : batch job all-statistics show
+get Data Lake Analytics Job Pipeline : batchai job file stream
+get Data Lake Analytics Job Recurrence : batch job all-statistics show
+get Data Lake Store Account : dla account data-lake-store show
+get Data Lake Store Child Item : dla account data-lake-store list
+get Data Lake Store Child Item Summary : dla account data-lake-store list
+get Data Lake Store Firewall Rule : storage account network-rule list
+get Data Lake Store Item : dla account data-lake-store list
+get Data Lake Store Item Acl Entry : storage account keys list
+get Data Lake Store Item Content : storage message get
+get Data Lake Store Item Owner : dla account data-lake-store list
+get Data Lake Store Item Permission : storage message get
+get Data Lake Store Trusted Id Provider : dla account data-lake-store list
+get Ddos Protection Plan : network ddos-protection create
+get Default : vmss diagnostics get-default-config
+get Diagnosticupdateting : lab get
+get Disk : disk wait
+get Dns Recordupdate : network dns
+get Dns Zone : network dns zone
+get Dtl Allowed VM Sizes Policy : storage share policy create
+get Dtl Auto Shutdown Policy : backup policy show
+get Dtl Auto Start Policy : backup policy show
+get Dtl V Ms Per Lab Policy : lab get
+get Dtl V Ms Per User Policy : storage share policy delete
+get Effective Network Security Group : account management-group create
+get Effective Route Table : network route-table route create
+get Enrollment Account : billing enrollment-account show
+get Environment : lab environment create
+get Event Grid Subscription : eventgrid event-subscription create
+get Event Grid Topic : eventgrid topic show
+get Event Grid Topic Key : eventgrid topic key
+get Event Grid Topic Type : eventgrid topic-type show
+get Event Hub : iot hub consumer-group show
+get Event Hub Authorization Rule : servicebus queue authorization-rule show
+get Event Hub Consumer Group : iot hub consumer-group show
+get Event Hub Geo DR Configuration : network dns record-set mx create
+get Event Hub Key : keyvault key show
+get Event Hub Namespace : eventhubs namespace show
+get Express Route Circuit : network express-route wait
+get Express Route Circuit ARP Table : network route-table route delete
+get Express Route Circuit Authorization : network express-route wait
+get Express Route Circuit Connection Config : network express-route wait
+get Express Route Circuit Peering Config : network express-route peering delete
+get Express Route Circuit Route Table : network route-table route show
+get Express Route Circuit Route Table Summary : network route-table route show
+get Express Route Circuit Stats : network express-route wait
+get Express Route Service Provider : network express-route wait
+get HD Insight Cluster : batchai cluster show
+get HD Insight Job : batchai job wait
+get HD Insight Job Output : batchai job file stream
+get HD Insight Operations Management Suite : account management-group update
+get HD Insight Persisted Script Action : role definition update
+get HD Insight Properties : storage blob service-properties show
+get HD Insight Script Action History : role definition update
+get Image : image
+get Integration Account : cognitiveservices account create
+get Integration Account Agreement : account management-group subscription add
+get Integration Account Callback Url : batch account login
+get Integration Account Certificate : keyvault certificate create
+get Integration Account Generated Icn : maps account create
+get Integration Account Map : maps account create
+get Integration Account Partner : account management-group subscription add
+get Integration Account Received Icn : account management-group subscription add
+get Integration Account Schema : cognitiveservices account create
+get Iot Hub : iot hub
+get Iot Hub Certificate : iot hub certificate
+get Iot Hub Certificate Verification Code : iot hub certificate verify
+get Iot Hub Connection String : iot hub show-connection-string
+get Iot Hub Event Hub Consumer Group : iot hub consumer-group show
+get Iot Hub Job : iot hub job
+get Iot Hub Key : iot hub create
+get Iot Hub Quota Metric : iot hub show-quota-metrics
+get Iot Hub Registry Statistic : iot hub policy delete
+get Iot Hub Valid Sku : iot hub certificate verify
+get Key Vault : backup vault create
+get Load Balancer : cdn endpoint load
+get Load Balancer Backendcreateress Pool Config : batch pool reset
+get Load Balancer Frontend Ip Config : webapp config hostname get-external-ip
+get Load Balancer Inbound Nat Pool Config : network lb inbound-nat-pool delete
+get Load Balancer Inbound Nat Rule Config : network nic ip-config inbound-nat-rule remove
+get Load Balancer Probe Config : functionapp config appsettings set
+get Load Balancer Rule Config : functionapp config appsettings set
+get Local Network Gateway : network local-gateway wait
+get Location : batch location
+get Log : monitor log-profiles update
+get Logic App : ad app create
+get Logic App Run Action : ad app create
+get Logic App Run History : ad app create
+get Logic App Trigger : ad app create
+get Logic App Trigger Callback Url : batch node user reset
+get Logic App Trigger History : servicebus topic subscription rule create
+get Logic App Upgraded Definition : policy definition update
+get Log Profile : monitor log-profiles list
+get Managed Application : batch application package create
+get Managed Application Definition : network application-gateway rule create
+get Management Group : account management-group show
+get Marketplace Terms : consumption marketplace list
+get Media Service : network express-route list-service-providers
+get Media Service Keys : storage message get
+get Media Service Name Availability : storage account check-name
+get Metric : network lb rule create
+get Metric Definition : managedapp definition
+get Ml Commitment Association : account management-group subscription add
+get Ml Commitment Plan : appservice plan
+get Ml Commitment Plan Usage History : storage share policy create
+get Ml Op Cluster : sf cluster node-type add
+get Ml Op Cluster Key : sf cluster node-type add
+get Ml Web Service : network express-route list-service-providers
+get Ml Web Service Keys : storage account keys list
+get Network Interface : network application-gateway create
+get Network Interface Ip Config : network nic ip-config create
+get Network Security Group : network local-gateway wait
+get Network Security Rule Config : network application-gateway rule delete
+get Network Usage : network
+get Network Watcher : network watcher
+get Network Watcher Connection Monitor : network watcher connection-monitor stop
+get Network Watcher Connection Monitor Report : network watcher connection-monitor show
+get Network Watcher Flow Log Status : network watcher flow-log
+get Network Watcher Next Hop : network watcher show-next-hop
+get Network Watcher Packet Capture : network watcher packet-capture stop
+get Network Watcher Reachability Providersget : network watcher
+get Azure RM Network Watcher Reachability Report : network watcher configure
+get Network Watcher Security Group View : network watcher show-security-group-view
+get Network Watcher Topology : network watcher show-topology
+get Network Watcher Troubleshooting Result : network watcher troubleshooting start
+get Notification Hub : iot hub certificate update
+get Notification Hub Authorization Rules : servicebus queue authorization-rule update
+get Notification Hubget Keys : cognitiveservices account keys list
+get Notification Hub PNS Credentials : iot hub certificate verify
+get Notification Hubs Namespace : eventhubs namespace update
+get Notification Hubs Namespace Authorization Rules : eventhubs namespace authorization-rule update
+get Notification Hubs Namespaceget Keys : cognitiveservices account keys list
+get Operational Insights Data Source : functionapp deployment source show
+get Operational Insights Intelligence Packs : storage share policy create
+get Operational Insights Link Targets : resource link create
+get Operational Insights Saved Search : storage share policy create
+get Operational Insights Saved Search Results : batch job all-statistics show
+get Operational Insights Schema : group deployment validate
+get Operational Insights Search Results : find
+get Operational Insights Storage Insight : storage share policy show
+get Operational Insights Workspace : storage share policy create
+get Operational Insights Workspace Management Groups : account management-group create
+get Operational Insights Workspace Shared Keys : storage share policy create
+get Operational Insights Workspace Usage : storage share policy create
+get Policy Assignment : policy assignment
+get Policy Definition : policy definition
+get Policy Event : policy event
+get Policyupdate Definition : managedapp definition
+get Policy State : policy state
+get Policy State Summary : policy state list
+get Power BI Embedded Capacity : storage message get
+get Power BI Workspace : storage message get
+get Power BI Workspace Collection : storage share create
+get Power BI Workspace Collection Access Keys : storage account keys list
+get Provider Feature : provider show
+get Provider Operation : provider operation
+get Public Ipcreateress : network public-ip show
+get Recovery Services Asr Alertupdateting : keyvault key recover
+get Recovery Services Asr Event : provider operation show
+get Recovery Services Asr Fabric : storage message get
+get Recovery Services Asr Job : backup job stop
+get Recovery Services Asr Network : network local-gateway wait
+get Recovery Services Asr Network Mapping : network traffic-manager endpoint create
+get Recovery Services Asr Policy : backup policy
+get Recovery Services Asr Protectable Item : keyvault key recover
+get Recovery Services Asr Protection Container : backup protection
+get Recovery Services Asr Protection Container Mapping : storage container policy create
+get Recovery Services Asr Recovery Plan : keyvault key recover
+get Recovery Services Asr Recovery Point : keyvault key recover
+get Recovery Services Asr Replication Protected Item : backup protection check-vm
+get Recovery Services Asr Services Provider : provider
+get Recovery Services Asr Storage Classification : storage share policy
+get Recovery Services Asr Storage Classification Mapping : storage queue policy create
+get Recovery Services Asr Vault Context : keyvault key recover
+get Recovery Services Asrv Center : provider operation show
+get Recovery Services Backup Container : backup container show
+get Recovery Services Backup Item : backup item
+get Recovery Services Backup Job : backup job
+get Recovery Services Backup Job Details : backup job list
+get Recovery Services Backup Management Server : backup policy
+get Recovery Services Backup Property : backup vault backup-properties set
+get Recovery Services Backup Protection Policy : backup policy
+get Recovery Services Backup Recovery Point : backup job stop
+get Recovery Services Backup Retention Policy Object : backup policy set
+get Recovery Services Backup RP Mount Script : backup restore files mount-rp
+get Recovery Services Backup Schedule Policy Object : backup policy show
+get Recovery Services Backup Status : backup protection backup-now
+get Recovery Services Vault : backup vault create
+get Recovery Services Vaultupdatetings File : storage file copy start
+get Redis Cache : redis delete
+get Redis Cache Firewall Rule : postgres server firewall-rule delete
+get Redis Cache Key : redis list-keys
+get Redis Cache Link : redis delete
+get Redis Cache Patch Schedule : redis patch-schedule delete
+get Relay Authorization Rule : servicebus queue authorization-rule keys renew
+get Relay Hybrid Connection : network watcher connection-monitor start
+get Relay Key : keyvault key
+get Relay Namespace : eventhubs namespace list
+get Relay Operation : provider operation show
+get Remote Desktop File : batch node remote-desktop download
+get Resource : resource move
+get Resource Group : resource move
+get Resource Group Deployment : group deployment list
+get Resource Group Deployment Operation : group deployment operation list
+get Resource Lock : resource lock
+get Resource Provider : provider
+get Role Assignment : role assignment
+get Role Definition : role definition
+get Route Config : network route-table route delete
+get Route Filter : network route-filter
+get Route Filter Rule Config : network route-filter rule delete
+get Route Table : network route-table route create
+get Scheduler Job : batchai job wait
+get Scheduler Job Collection : batch job set
+get Scheduler Job History : batchai job list
+get Service Bus Authorization Rule : servicebus queue authorization-rule show
+get Service Bus Geo DR Configuration : network express-route wait
+get Service Bus Key : network express-route wait
+get Service Bus Migration : network express-route wait
+get Service Bus Namespace : network express-route auth list
+get Service Bus Operation : provider operation show
+get Service Bus Queue : network express-route wait
+get Service Bus Rule : network express-route wait
+get Service Bus Subscription : network express-route wait
+get Service Bus Topic : network express-route wait
+get Service Fabric Cluster : storage blob service-properties show
+get Snapshot : snapshot create
+get Sql Capability : sql server key create
+get Sql Database : sql server list
+get Sql Database Activity : sql server key list
+get Sql Database Advisor : sql server key list
+get Sql Database Auditing : sql db audit-policy update
+get Sql Database Auditing Policy : sql db audit-policy update
+get Sql Database Backup Long Term Retention Policy : backup policy list
+get Sql Database Data Masking Policy : sql server key create
+get Sql Database Data Masking Rule : sql server key create
+get Sql Database Expanded : cosmosdb database create
+get Sql Database Failover Group : sql server list
+get Sql Database Geo Backup : sql server key list
+get Sql Database Geo Backup Policy : sql server key list
+get Sql Database Import Export Status : sql db export
+get Sql Database Index Recommendations : sql server key list
+get Sql Database Long Term Retention Backup : sql server key create
+get Sql Database Recommended Action : sql server key list
+get Sql Database Replication Link : sql server key list
+get Sql Database Restore Points : sql midb restore
+get Sql Database Secure Connection Policy : sql server key create
+get Sql Database Threat Detection Policy : sql db threat-policy update
+get Sql Database Transparent Data Encryption : sql server key create
+get Sql Database Transparent Data Encryption Activity : sql server key create
+get Sql Database Upgrade Hint : sql server key list
+get Sql Deleted Database Backup : sql server key delete
+get Sql Elastic Pool : sql elastic-pool create
+get Sql Elastic Pool Activity : sql elastic-pool create
+get Sql Elastic Pool Advisor : sql elastic-pool list
+get Sql Elastic Pool Database : sql elastic-pool list
+get Sql Elastic Pool Recommendation : sql elastic-pool list
+get Sql Elastic Pool Recommended Action : sql elastic-pool create
+get Sql Server : sql server
+get Sql Server Active Directory Administrator : sql server list
+get Sql Server Advisor : sql server key
+get Sql Server Auditing : sql server
+get Sql Server Auditing Policy : sql server key
+get Sql Server Backup Long Term Retention Vault : sql server key create
+get Sql Server Communication Link : sql server key create
+get Sql Server Disaster Recovery Configuration : sql server key create
+get Sql Server Disaster Recovery Configuration Activity : sql server key create
+get Sql Server Dns Alias : sql server dns-alias
+get Sql Server Firewall Rule : sql server firewall-rule
+get Sql Server Key Vault Key : sql server key create
+get Sql Server Recommended Action : sql server key show
+get Sql Server Service Objective : sql server key show
+get Sql Server Threat Detection Policy : sql db threat-policy update
+get Sql Server Transparent Data Encryption Protector : sql server key create
+get Sql Server Upgrade : sql server update
+get Sql Server Upgrade Hint : sql server update
+get Sql Server Virtual Network Rule : sql server firewall-rule create
+get Sql Sync Agent : sql server key delete
+get Sql Sync Agent Linked Database : sql server key list
+get Sql Sync Group : sql server key show
+get Sql Sync Group Log : sql server key delete
+get Sql Sync Member : sql server key delete
+get Sql Sync Schema : sql db create
+get Storage Account : storage account
+get Storage Account Key : storage account keys list
+get Storage Account Name Availability : storage account check-name
+get Storage Account Network Ruleupdate : storage account network-rule add
+get Storage Usage : storage message get
+get Stream Analytics Default Function Definition : managedapp definition create
+get Stream Analytics Function : batchai job file stream
+get Stream Analytics Input : batchai job file stream
+get Stream Analytics Job : batchai job file stream
+get Stream Analytics Output : batchai job file stream
+get Stream Analytics Quota : batchai job file stream
+get Stream Analytics Transformation : batchai job file stream
+get Subscription : servicebus topic subscription
+get Tag : tag
+get Tenant : storage blob lease break
+get Traffic Manager Endpoint : network traffic-manager endpoint
+get Traffic Manager Profile : network traffic-manager profile list
+get Virtual Network : network local-gateway create
+get Virtual Network Available Endpoint Service : network traffic-manager endpoint create
+get Virtual Network Gateway : network local-gateway create
+get Virtual Network Gateway Advertised Route : network local-gateway wait
+get Virtual Network Gateway BGP Peer Status : network local-gateway delete
+get Virtual Network Gateway Connection : network local-gateway create
+get Virtual Network Gateway Connection Shared Key : network vpn-connection shared-key show
+get Virtual Network Gateway Connection Vpn Device Config Script : network vpn-connection create
+get Virtual Network Gateway Learned Route : network local-gateway wait
+get Virtual Network Gateway Supported Vpn Device : network vpn-connection create
+get Virtual Network Peering : network express-route peering create
+get Virtual Network Subnet Config : network nic ip-config create
+get Virtual Network Usageget : network local-gateway create
+get VM : vm wait
+get VM Access Extension : vm extension set
+get VMAD Domain Extension : vmss extension list
+get VMAEM Extension : extension add
+get VM Boot Diagnostics Data : vm boot-diagnostics enable
+get VM Chef Extension : vm extension show
+get VM Custom Script Extension : vm extension set
+get VM Diagnostics Extension : vm diagnostics set
+get VM Disk Encryption Status : vm encryption show
+get VM Dsc Extension : vm extension
+get VM Dsc Extension Status : vm extension list
+get VM Extension : vm extension
+get VM Extension Image : vm extension image
+get VM Extension Image Type : vm extension image list
+get VM Image : vm image
+get VM Image Offer : vm image list-offers
+get VM Image Publisher : vm image list-publishers
+get VM Image Sku : vm image
+get VM Run Command Document : vm run-command list
+get VM Size : vm list-sizes
+get VM Sql Server Extension : sql server
+get Vmss : lab get
+get Vmss Disk Encryption : vmss disk
+get Vmss Rolling Upgrade : vmss rolling-upgrade start
+get Vmss Sku : lab get
+get Vmss VM : vm wait
+get Vmss VM Disk Encryption : vm encryption
+get VM Usage : vm list-usage
+get Vpn Client Configuration : mysql server configuration set
+get Vpn Client Ipsec Parameter : mysql server configuration set
+get Vpn Client Package : network vpn-connection update
+get Vpn Client Revoked Certificate : keyvault certificate pending delete
+get Vpn Client Root Certificate : network application-gateway ssl-cert delete
+get Wcf Relay : network express-route wait
+get Web App : ad app create
+get Web App Backup : ad app update
+get Web App Backup Configuration : webapp config backup create
+get Web App Backupget : ad app create
+get Web App Certificate : ad app create
+get Web App Metrics : ad app create
+get Web App Publishing Profile : ad app create
+get Web App Slot : ad app create
+get Web App Slot Config Name : network application-gateway redirect-config list
+get Web App Slot Metrics : ad app create
+get Web App Slot Publishing Profile : ad app create
+get Web App Snapshot : ad app update
+get Web App SSL Binding : network application-gateway ssl-policy predefined show
+get Usage Aggregates : consumption usage list
+Grant Disk Access : disk grant-access
+Grant HD Insight Http Services Access : snapshot grant-access
+Grant HD Insight Rdp Services Access : snapshot grant-access
+Grant Snapshot Access : snapshot grant-access
+Import Azure Key Vault Certificate : keyvault certificate import
+Import Api Management Api : sql db import
+Import Api Management Hostname Certificate : keyvault certificate import
+Import Automation Dsc Configuration : functionapp deployment source config
+Import Automation Dsc Node Configuration : batch node scheduling disable
+Import Automation Runbook : keyvault key import
+Import Context : keyvault key import
+Import Data Lake Store Item : dla account data-lake-store list
+Import Ml Web Service : batch node service-logs upload
+Import Recovery Services Asr Vaultupdatetings File : backup restore files
+Import Redis Cache : redis import
+Invoke Data Factory V2Integration Runtime Upgrade : functionapp deployment source delete
+Invoke Data Factory V2Pipeline : storage entity query
+Invoke HD Insight Hive Job : batchai job create
+Invoke Operational Insights Query : storage entity query
+Invoke Resource Action : resource invoke-action
+Invoke VM Run Command : vm run-command invoke
+Join Data Lake Store Item : dla account data-lake-store list
+Move Data Lake Store Item : dla account data-lake-store list
+Move Express Route Circuit : network express-route wait
+Move Ml Commitment Association : storage share policy create
+Move Resource : resource move
+create Azure Batch Certificate : batch certificate create
+create Azure Batch Compute Node User : batch node user create
+create Azure Batch Job : batch job create
+create Azure Batch Job Schedule : batch job-schedule create
+create Azure Batch Pool : batch pool create
+create Azure Batch Task : batch task create
+create Azure Key Vault Certificate Administrator Details : keyvault certificate create
+create Azure Key Vault Certificate Organization Details : keyvault certificate create
+create Azure Key Vault Certificate Policy : keyvault certificate create
+create Action Group : group create
+create Action Group Receiver : monitor action-group create
+create Activity Log Alert Condition : monitor activity-log alert create
+create AD App Credential : ad app create
+create AD Application : ad app create
+create AD Group : ad group create
+create AD Service Principal : ad group create
+create AD Sp Credential : ad sp credential
+create AD User : ad user create
+create Alert Rule Email : monitor alert create
+create Alert Rule Webhook : monitor alert create
+create Analysis Services Firewall Config : sql server firewall-rule create
+create Analysis Services Firewall Rule : network application-gateway rule create
+create Analysis Services Server : sql server key create
+create Api Management : sql server key create
+create Api Management Api : sql server key create
+create Api Management Api Release : sql server key create
+create Api Management Api Revision : sql server key create
+create Api Management Api Versionupdate : sql server key create
+create Api Management Authorization Server : sql server key create
+create Api Management Backend : mysql server create
+create Api Management Backend Credential : sql server key create
+create Api Management Backend Proxy : mysql server create
+create Api Management Backend Service Fabric : sql server key create
+create Api Management Certificate : keyvault certificate create
+create Api Management Context : resource create
+create Api Management Custom Hostname Configuration : mysql server configuration set
+create Api Management Group : account management-group create
+create Api Management Hostname Configuration : mysql server configuration set
+create Api Management Identity Provider : account management-group create
+create Api Management Logger : sql server key create
+create Api Management Open Id Connect Provider : network application-gateway create
+create Api Management Operation : account management-group create
+create Api Management Product : batch application package create
+create Api Management Property : resource create
+create Api Management Region : resource create
+create Api Management Subscription : account management-group subscription add
+create Api Management System Certificate : keyvault certificate create
+create Api Management User : batch node user create
+create Api Management Virtual Network : network application-gateway create
+create Application Gateway : network application-gateway create
+create Application Gateway Authentication Certificate : network application-gateway auth-cert create
+create Application Gateway Backendcreateress Pool : network application-gateway address-pool create
+create Application Gateway Backend Httpupdatetings : network application-gateway create
+create Application Gateway Connection Draining : network application-gateway create
+create Application Gateway Firewall Disabled Rule Group Config : network application-gateway rule delete
+create Application Gateway Frontend IP Config : network application-gateway frontend-ip create
+create Application Gateway Frontend Port : network application-gateway frontend-port create
+create Application Gateway Httpgetener : network application-gateway create
+create Application Gateway IP Configuration : network application-gateway frontend-ip create
+create Application Gateway Path Rule Config : network application-gateway rule create
+create Application Gateway Probe Config : network application-gateway probe create
+create Application Gateway Probe Health Response Match : network application-gateway probe create
+create Application Gateway Redirect Configuration : network application-gateway redirect-config create
+create Application Gateway Request Routing Rule : network application-gateway rule create
+create Application Gateway Sku : network application-gateway create
+create Application Gateway Ssl Certificate : keyvault certificate create
+create Application Gateway Ssl Policy : network application-gateway rule create
+create Application Gateway Url Path Map Config : network application-gateway redirect-config create
+create Application Gateway Web Application Firewall Configuration : network application-gateway create
+create Application Insights : batch application create
+create Application Insights Api Key : keyvault key create
+create Application Insights Continuous Export : batch application create
+create Application Security Group : group deployment create
+create App Service Plan : appservice plan create
+create Automation Account : cognitiveservices account create
+create Automation Certificate : keyvault certificate create
+create Automation Connection : network application-gateway create
+create Automation Credential : keyvault certificate create
+create Automation Key : keyvault key create
+create Automation Module : batch application package create
+create Automation Runbook : functionapp create
+create Automation Schedule : batch job-schedule create
+create Automation Variable : batch node user create
+create Automation Webhook : functionapp create
+create Autoscale Notification : batch application create
+create Autoscale Profile : functionapp create
+create Autoscale Rule : eventhubs eventhub authorization-rule create
+create Autoscale Webhook : eventhubs eventhub create
+create Availabilityupdate : functionapp create
+create Backup Protection Policy : backup policy
+create Backup Retention Policy Object : storage queue policy create
+create Backup Vault : backup vault create
+create Batch Account : batch account create
+create Batch Account Key : batch account create
+create Batch Application : batch application create
+create Batch Application Package : batch application package create
+create Cdn Custom Domain : cdn custom-domain create
+create Cdn Endpoint : cdn endpoint create
+create Cdn Profile : cdn profile create
+create Cognitive Services Account : cognitiveservices account create
+create Cognitive Services Account Key : cognitiveservices account create
+create Consumption Budget : consumption budget create
+create Container Group : container create
+create Container Registry : container create
+create Container Registry Replication : storage container policy create
+create Container Registry Webhook : container create
+create Container Service : container create
+create Container Service Config : container create
+create Data Factory : cosmosdb database create
+create Data Factory Dataset : cosmosdb database create
+create Data Factory Encrypt Value : batch node user create
+create Data Factory Gateway : network application-gateway create
+create Data Factory Gateway Auth Key : sql server key create
+create Data Factory Gateway Key : keyvault key create
+create Data Factory Hub : resource lock create
+create Data Factory Linked Service : storage account create
+create Data Factory Pipeline : cosmosdb database create
+create Data Factory V2Integration Runtime Key : keyvault key create
+create Data Factory V2Linked Service Encrypted Credential : storage account create
+create Data Lake Analytics Account : maps account create
+create Data Lake Analytics Catalog Credential : cosmosdb database create
+create Data Lake Analytics Catalog Secret : cosmosdb database create
+create Data Lake Analytics Compute Policy : storage share policy create
+create Data Lake Store Account : storage account create
+create Data Lake Store Item : storage account create
+create Ddos Protection Plan : network ddos-protection create
+create Disk : disk create
+create Disk Config : disk create
+create Disk Update Config : disk update
+create Dns Record Config : network dns record-set cname create
+create Dns Recordupdate : network dns zone create
+create Dns Zone : network dns zone create
+create Event Grid Subscription : eventgrid event-subscription create
+create Event Grid Topic : eventgrid topic create
+create Event Grid Topic Key : keyvault key create
+create Event Hub : iot hub policy create
+create Event Hub Authorization Rule : eventhubs eventhub authorization-rule create
+create Event Hub Consumer Group : iot hub consumer-group create
+create Event Hub Geo DR Configuration : network dns record-set mx create
+create Event Hub Key : keyvault key create
+create Event Hub Namespace : eventhubs namespace create
+create Express Route Circuit : network express-route create
+create Express Route Circuit Authorization : network express-route create
+create Express Route Circuit Peering Config : network express-route peering create
+create HD Insight Cluster : batchai cluster create
+create HD Insight Cluster Config : batchai cluster create
+create HD Insight Hive Job Definition : managedapp definition create
+create HD Insight Map Reduce Job Definition : managedapp definition create
+create HD Insight Pig Job Definition : role definition create
+create HD Insight Sqoop Job Definition : role definition create
+create HD Insight Streaming Map Reduce Job Definition : ams streaming policy create
+create Image : image create
+create Image Config : image create
+create Integration Account : cognitiveservices account create
+create Integration Account Agreement : cognitiveservices account create
+create Integration Account Certificate : keyvault certificate create
+create Integration Account Map : maps account create
+create Integration Account Partner : cognitiveservices account create
+create Integration Account Schema : cognitiveservices account create
+create Iot Hub : iot hub create
+create Iot Hub Export Devices : iot device export
+create Iot Hub Import Devices : iot device import
+create Ipsec Policy : policy definition create
+create Key Vault : keyvault key create
+create Load Balancer : resource lock create
+create Load Balancer Backendcreateress Pool Config : mysql server configuration set
+create Load Balancer Frontend Ip Config : webapp config backup create
+create Load Balancer Inbound Nat Pool Config : mysql server configuration set
+create Load Balancer Inbound Nat Rule Config : mysql server firewall-rule create
+create Load Balancer Probe Config : mysql server configuration set
+create Load Balancer Rule Config : mysql server firewall-rule create
+create Local Network Gateway : network local-gateway create
+create Logic App : ad app create
+create Managed Application : batch application create
+create Managed Application Definition : managedapp definition create
+create Management Group : account management-group create
+create Management Group Subscription : account management-group subscription add
+create Media Service : network traffic-manager profile create
+create Media Service Storage Config : storage directory create
+create Ml Commitment Plan : appservice plan create
+create Ml Op Cluster : batchai cluster create
+create Ml Web Service : network application-gateway create
+create Network Interface : network application-gateway create
+create Network Interface Ip Config : network nic ip-config create
+create Network Security Group : group deployment create
+create Network Security Rule Config : network application-gateway rule create
+create Network Watcher : network watcher
+create Network Watcher Connection Monitor : network watcher connection-monitor create
+create Network Watcher Packet Capture : network watcher packet-capture create
+create Network Watcher Protocol Configuration : network watcher configure
+create Notification Hub : iot hub policy create
+create Notification Hub Authorization Rules : servicebus queue authorization-rule create
+create Notification Hub Key : keyvault key create
+create Notification Hubs Namespace : eventhubs namespace create
+create Notification Hubs Namespace Authorization Rules : eventhubs namespace authorization-rule create
+create Notification Hubs Namespace Key : eventhubs namespace create
+create Operational Insights Azure Activity Log Data Source : monitor activity-log alert create
+create Operational Insights Computer Group : group deployment create
+create Operational Insights Custom Log Data Source : cosmosdb database create
+create Operational Insights Linux Performance Object Data Source : functionapp deployment source show
+create Operational Insights Linux Syslog Data Source : functionapp deployment source delete
+create Operational Insights Saved Search : resource create
+create Operational Insights Storage Insight : storage share policy create
+create Operational Insights Windows Event Data Source : storage share policy create
+create Operational Insights Windows Performance Counter Data Source : storage share policy create
+create Operational Insights Workspace : batchai workspace create
+create Packet Capture Filter Config : network watcher packet-capture create
+create Policy Assignment : policy assignment create
+create Policy Definition : policy definition create
+create Policyupdate Definition : managedapp definition create
+create Power BI Embedded Capacity : storage share create
+create Power BI Workspace Collection : cosmosdb collection create
+create Public Ipcreateress : functionapp create
+create Public Ip Tag : network public-ip create
+create Recovery Services Asr Azure To Azure Disk Replication Config : disk create
+create Recovery Services Asr Fabric : storage share policy create
+create Recovery Services Asr Network Mapping : network traffic-manager endpoint create
+create Recovery Services Asr Policy : storage share policy create
+create Recovery Services Asr Protectable Item : keyvault key recover
+create Recovery Services Asr Protection Container : storage container policy create
+create Recovery Services Asr Protection Container Mapping : storage container policy create
+create Recovery Services Asr Recovery Plan : keyvault key recover
+create Recovery Services Asr Replication Protected Item : storage queue policy create
+create Recovery Services Asr Storage Classification Mapping : storage directory create
+create Recovery Services Asrv Center : storage share policy create
+create Recovery Services Backup Protection Policy : backup policy
+create Recovery Services Vault : backup vault create
+create Redis Cache : redis create
+create Redis Cache Firewall Rule : postgres server firewall-rule create
+create Redis Cache Key : redis create
+create Redis Cache Link : redis create
+create Redis Cache Patch Schedule : redis patch-schedule delete
+create Redis Cache Schedule Entry : redis patch-schedule delete
+create Relay Authorization Rule : eventhubs eventhub authorization-rule create
+create Relay Hybrid Connection : network application-gateway probe create
+create Relay Key : keyvault key create
+create Relay Namespace : eventhubs namespace create
+create Resource : resource create
+create Resource Group : group create
+create Resource Group Deployment : group deployment create
+create Resource Lock : resource lock create
+create Role Assignment : role assignment create
+create Role Definition : role definition create
+create Route Config : functionapp config appsettings set
+create Route Filter : network route-filter create
+create Route Filter Rule Config : network route-filter rule create
+create Route Table : network route-table route create
+create Scheduler Http Job : batchai job create
+create Scheduler Job Collection : batchai job create
+create Scheduler Service Bus Queue Job : servicebus queue create
+create Scheduler Service Bus Topic Job : network traffic-manager profile create
+create Scheduler Storage Queue Job : storage queue create
+create Service Bus Authorization Rule : servicebus queue authorization-rule create
+create Service Bus Geo DR Configuration : network express-route auth create
+create Service Bus Key : network express-route create
+create Service Bus Namespace : network express-route auth create
+create Service Bus Queue : servicebus queue create
+create Service Bus Rule : network application-gateway rule create
+create Service Bus Subscription : network express-route create
+create Service Bus Topic : network express-route create
+create Service Fabric Cluster : batchai cluster create
+create Snapshot : snapshot create
+create Snapshot Config : snapshot create
+create Snapshot Update Config : snapshot update
+create Sql Database : sql midb create
+create Sql Database Copy : cosmosdb database create
+create Sql Database Data Masking Rule : cosmosdb database create
+create Sql Database Export : sql midb create
+create Sql Database Failover Group : sql server create
+create Sql Database Import : sql midb create
+create Sql Database Restore Point : sql server key create
+create Sql Database Secondary : cosmosdb database create
+create Sql Elastic Pool : sql elastic-pool create
+create Sql Server : sql server create
+create Sql Server Communication Link : sql server create
+create Sql Server Disaster Recovery Configuration : sql server key create
+create Sql Server Dns Alias : sql server dns-alias create
+create Sql Server Firewall Rule : sql server firewall-rule create
+create Sql Server Virtual Network Rule : sql server firewall-rule create
+create Sql Sync Agent : sql server key create
+create Sql Sync Agent Key : sql server key create
+create Sql Sync Group : sql midb create
+create Sql Sync Member : sql midb create
+create Storage Account : storage account create
+create Storage Account Key : storage account create
+create Stream Analytics Function : batch node user create
+create Stream Analytics Input : batch node user create
+create Stream Analytics Job : batchai job create
+create Stream Analytics Output : ams transform output add
+create Stream Analytics Transformation : resource create
+create Tag : tag create
+create Traffic Manager Endpoint : network traffic-manager endpoint create
+create Traffic Manager Profile : network traffic-manager profile create
+create Virtual Network : network local-gateway create
+create Virtual Network Gateway : network local-gateway create
+create Virtual Network Gateway Connection : network application-gateway create
+create Virtual Network Gateway Ip Config : network nic ip-config create
+create Virtual Network Subnet Config : network nic ip-config create
+create VM : vm create
+create VM Config : vm create
+create VM Data Disk : disk create
+create VM Sql Server Auto Backup Config : sql server create
+create VM Sql Server Auto Patching Config : sql server create
+create VM Sql Server Key Vault Credential Config : sql server key create
+create Vmss : functionapp create
+create Vmss Config : functionapp config appsettings set
+create Vmss Ip Config : network nic ip-config create
+create Vmss Ip Tag Config : network nic ip-config create
+create Vmss Vault Certificate Config : keyvault certificate create
+create Vpn Client Configuration : mysql server configuration set
+create Vpn Client Ipsec Parameter : sql server key create
+create Vpn Client Ipsec Policy : network vpn-connection create
+create Vpn Client Revoked Certificate : keyvault certificate create
+create Vpn Client Root Certificate : network application-gateway ssl-cert create
+create Wcf Relay : network dns record-set a create
+create Web App : ad app create
+create Web App Backup : ad app create
+create Web App Database Backupupdateting : cosmosdb database create
+create Web App Slot : ad app create
+create Web App SSL Binding : ad app create
+Publish Api Management Tenant Git Configuration : mysql server configuration list
+Publish Automation Runbook : batch job enable
+Publish Cdn Endpoint Content : cdn endpoint create
+Publish VM Dsc Configuration : vm user
+Register Automation Dsc Node : batch node user reset
+Register Automation Scheduled Runbook : provider register
+Register Backup Container : backup container
+Register Provider Feature : provider register
+Register Resource Provider : provider register
+Remove Azure Batch Certificate : batch certificate delete
+Remove Azure Batch Compute Node : batch node delete
+Remove Azure Batch Compute Node User : batch node user delete
+Remove Azure Batch Job : batch job delete
+Remove Azure Batch Job Schedule : batch job-schedule delete
+Remove Azure Batch Node File : batch node file delete
+Remove Azure Batch Pool : batch pool delete
+Remove Azure Batch Task : batch task delete
+Remove Azure Key Vault Certificate : sf cluster certificate remove
+Remove Azure Key Vault Certificate Contact : keyvault certificate contact delete
+Remove Azure Key Vault Certificate Issuer : keyvault certificate issuer create
+Remove Azure Key Vault Certificate Operation : storage account keys renew
+Remove Azure Key Vault Key : keyvault key
+Remove Azure Key Vault Managed Storage Account : storage account keys
+Remove Azure Key Vault Managed Storage Sas Definition : storage blob generate-sas
+Remove Azure Key Vault Secret : keyvault secret restore
+Remove Action Group : monitor action-group delete
+Remove Activity Log Alert : monitor activity-log alert delete
+Remove AD App Credential : ad app delete
+Remove AD Application : ad app delete
+Remove AD Group : ad group member remove
+Remove AD Group Member : ad group member remove
+Remove AD Service Principal : ad group member remove
+Remove AD Sp Credential : ad sp credential delete
+Remove AD User : ad user delete
+Remove Alert Rule : monitor activity-log alert scope remove
+Remove Analysis Services Server : storage account network-rule remove
+Remove Api Management : ams account storage remove
+Remove Api Management Api : sql server key delete
+Remove Api Management Api From Product : batch application package delete
+Remove Api Management Api Release : batch application package delete
+Remove Api Management Api Revision : sql db audit-policy update
+Remove Api Management Api Versionupdate : sql server key delete
+Remove Api Management Authorization Server : sql server key delete
+Remove Api Management Backend : mysql server configuration list
+Remove Api Management Certificate : keyvault certificate delete
+Remove Api Management Group : account management-group subscription remove
+Remove Api Management Identity Provider : account management-group subscription remove
+Remove Api Management Logger : sql server key delete
+Remove Api Management Open Id Connect Provider : network application-gateway rule delete
+Remove Api Management Operation : storage account network-rule remove
+Remove Api Management Policy : policy definition delete
+Remove Api Management Product : account management-group subscription remove
+Remove Api Management Product From Group : account management-group subscription remove
+Remove Api Management Property : storage blob service-properties delete-policy update
+Remove Api Management Region : storage account network-rule remove
+Remove Api Management Subscription : account management-group subscription remove
+Remove Api Management User : batch node user delete
+Remove Api Management User From Group : account management-group subscription remove
+Remove Application Gateway : network application-gateway delete
+Remove Application Gateway Authentication Certificate : network application-gateway auth-cert delete
+Remove Application Gateway Backendcreateress Pool : network application-gateway address-pool delete
+Remove Application Gateway Backend Httpupdatetings : network application-gateway delete
+Remove Application Gateway Connection Draining : network application-gateway probe delete
+Remove Application Gateway Frontend IP Config : network application-gateway frontend-ip delete
+Remove Application Gateway Frontend Port : network application-gateway frontend-port delete
+Remove Application Gateway Httpgetener : network application-gateway delete
+Remove Application Gateway IP Configuration : network application-gateway frontend-ip delete
+Remove Application Gateway Probe Config : network application-gateway probe delete
+Remove Application Gateway Redirect Configuration : network application-gateway redirect-config delete
+Remove Application Gateway Request Routing Rule : network application-gateway rule delete
+Remove Application Gateway Ssl Certificate : sf application certificate add
+Remove Application Gateway Ssl Policy : network application-gateway rule delete
+Remove Application Gateway Url Path Map Config : network application-gateway url-path-map rule delete
+Remove Application Insights : batch application create
+Remove Application Insights Api Key : keyvault key delete
+Remove Application Insights Continuous Export : batch application create
+Remove Application Security Group : account management-group subscription remove
+Remove App Service Plan : appservice plan delete
+Remove Automation Account : ams account storage remove
+Remove Automation Certificate : keyvault certificate delete
+Remove Automation Connection : network application-gateway probe delete
+Remove Automation Connection Type : storage account network-rule remove
+Remove Automation Credential : sf cluster client-certificate remove
+Remove Automation Dsc Configuration : mysql server configuration set
+Remove Automation Dsc Node Configuration : batch node user reset
+Remove Automation Module : batch application package delete
+Remove Automation Runbook : extension remove
+Remove Automation Schedule : batch job-schedule disable
+Remove Automation Variable : ams transform output remove
+Remove Automation Webhook : extension remove
+Remove Autoscaleupdateting : extension remove
+Remove Availabilityupdate : extension remove
+Remove Backup Protection Policy : backup protection
+Remove Backup Vault : backup vault delete
+Remove Batch Account : batch account delete
+Remove Batch Application : batch application delete
+Remove Batch Application Package : batch application package delete
+Remove Cdn Custom Domain : cdn custom-domain delete
+Remove Cdn Endpoint : cdn endpoint delete
+Remove Cdn Profile : cdn profile delete
+Remove Cognitive Services Account : account management-group subscription remove
+Remove Consumption Budget : consumption budget delete
+Remove Container Group : container delete
+Remove Container Registry : container delete
+Remove Container Registry Replication : storage container delete
+Remove Container Registry Webhook : container delete
+Remove Container Service : storage container policy delete
+Remove Container Service Agent Pool Profile : storage blob service-properties show
+Remove Context : vmss identity remove
+Remove Data Factory : ams account storage remove
+Remove Data Factory Dataset : storage file metadata show
+Remove Data Factory Gateway : network application-gateway probe delete
+Remove Data Factory Hub : ams account storage remove
+Remove Data Factory Linked Service : storage account network-rule remove
+Remove Data Factory Pipeline : storage container policy delete
+Remove Data Factory V2 : storage file update
+Remove Data Factory V2Dataset : ams account storage remove
+Remove Data Factory V2Integration Runtime : functionapp deployment source delete
+Remove Data Factory V2Integration Runtime Node : batch node user delete
+Remove Data Factory V2Linked Service : storage blob service-properties delete-policy update
+Remove Data Factory V2Pipeline : ams account storage remove
+Remove Data Factory V2Trigger : ams account storage remove
+Remove Data Lake Analytics Account : storage account delete
+Remove Data Lake Analytics Catalog Credential : storage directory metadata show
+Remove Data Lake Analytics Catalog Item Acl Entry : storage directory metadata update
+Remove Data Lake Analytics Catalog Secret : storage account create
+Remove Data Lake Analytics Compute Policy : storage share policy delete
+Remove Data Lake Analytics Data Source : storage metrics update
+Remove Data Lake Analytics Firewall Rule : storage account network-rule remove
+Remove Data Lake Store Account : dla account data-lake-store delete
+Remove Data Lake Store Firewall Rule : storage account network-rule remove
+Remove Data Lake Store Item : dla account data-lake-store delete
+Remove Data Lake Store Item Acl : storage table policy delete
+Remove Data Lake Store Item Acl Entry : storage table policy delete
+Remove Data Lake Store Trusted Id Provider : dla account data-lake-store delete
+Remove Ddos Protection Plan : network ddos-protection delete
+Remove Disk : disk delete
+Remove Dns Record Config : network dns record-set cname delete
+Remove Dns Recordupdate : network dns zone delete
+Remove Dns Zone : network dns zone delete
+Remove Environment : lab environment delete
+Remove Event Grid Subscription : eventgrid event-subscription delete
+Remove Event Grid Topic : eventgrid topic create
+Remove Event Hub : iot hub consumer-group delete
+Remove Event Hub Authorization Rule : storage account network-rule remove
+Remove Event Hub Consumer Group : iot hub consumer-group create
+Remove Event Hub Geo DR Configuration : network nic ip-config address-pool remove
+Remove Event Hub Namespace : eventhubs namespace create
+Remove Express Route Circuit : network express-route delete
+Remove Express Route Circuit Authorization : network express-route delete
+Remove Express Route Circuit Connection Config : network express-route auth delete
+Remove Express Route Circuit Peering Config : network express-route peering delete
+Remove HD Insight Cluster : sf cluster setting remove
+Remove HD Insight Persisted Script Action : role definition delete
+Remove Image : image delete
+Remove Image Data Disk : disk delete
+Remove Integration Account : account management-group subscription remove
+Remove Integration Account Agreement : account management-group subscription remove
+Remove Integration Account Certificate : keyvault certificate pending delete
+Remove Integration Account Map : maps account delete
+Remove Integration Account Partner : account management-group subscription remove
+Remove Integration Account Received Icn : account management-group subscription remove
+Remove Integration Account Schema : storage account delete
+Remove Iot Hub : iot hub delete
+Remove Iot Hub Certificate : iot hub certificate delete
+Remove Iot Hub Event Hub Consumer Group : iot hub consumer-group create
+Remove Iot Hub Key : iot hub policy delete
+Remove Key Vault : keyvault key delete
+Remove Key Vault Access Policy : storage share policy delete
+Remove Load Balancer : extension remove
+Remove Load Balancer Backendcreateress Pool Config : network nic ip-config address-pool remove
+Remove Load Balancer Frontend Ip Config : functionapp config ssl delete
+Remove Load Balancer Inbound Nat Pool Config : network nic ip-config address-pool remove
+Remove Load Balancer Inbound Nat Rule Config : network nic ip-config inbound-nat-rule remove
+Remove Load Balancer Probe Config : network lb probe delete
+Remove Load Balancer Rule Config : functionapp config appsettings delete
+Remove Local Network Gateway : network local-gateway delete
+Remove Logic App : ad app delete
+Remove Log Profile : monitor log-profiles delete
+Remove Managed Application : batch application package delete
+Remove Managed Application Definition : network application-gateway rule delete
+Remove Management Group : account management-group subscription remove
+Remove Management Group Subscription : account management-group subscription remove
+Remove Media Service : storage account network-rule remove
+Remove Ml Commitment Plan : appservice plan create
+Remove Ml Op Cluster : sf cluster node remove
+Remove Ml Web Service : storage account network-rule remove
+Remove Network Interface : network application-gateway probe delete
+Remove Network Interface Ip Config : network nic ip-config delete
+Remove Network Security Group : storage account network-rule remove
+Remove Network Security Rule Config : network application-gateway rule delete
+Remove Network Watcher : network watcher
+Remove Network Watcher Connection Monitor : network watcher connection-monitor delete
+Remove Network Watcher Packet Capture : network watcher packet-capture delete
+Remove Notification Hub : iot hub policy delete
+Remove Notification Hub Authorization Rules : eventhubs eventhub authorization-rule delete
+Remove Notification Hubs Namespace : eventhubs namespace delete
+Remove Notification Hubs Namespace Authorization Rules : eventhubs namespace authorization-rule delete
+Remove Operational Insights Data Source : functionapp deployment source delete
+Remove Operational Insights Saved Search : storage account network-rule remove
+Remove Operational Insights Storage Insight : storage share policy create
+Remove Operational Insights Workspace : batchai workspace create
+Remove Policy Assignment : policy assignment delete
+Remove Policy Definition : policy definition delete
+Remove Policyupdate Definition : managedapp definition delete
+Remove Power BI Embedded Capacity : storage account network-rule remove
+Remove Power BI Workspace Collection : storage table create
+Remove Public Ipcreateress : vmss identity remove
+Remove Recovery Services Asr Fabric : ams account storage remove
+Remove Recovery Services Asr Network Mapping : network application-gateway probe delete
+Remove Recovery Services Asr Policy : backup policy
+Remove Recovery Services Asr Protection Container : backup protection disable
+Remove Recovery Services Asr Protection Container Mapping : storage container policy delete
+Remove Recovery Services Asr Recovery Plan : keyvault key recover
+Remove Recovery Services Asr Replication Protected Item : backup protection disable
+Remove Recovery Services Asr Services Provider : provider operation
+Remove Recovery Services Asr Storage Classification Mapping : ams account storage remove
+Remove Recovery Services Asrv Center : storage account network-rule remove
+Remove Recovery Services Backup Protection Policy : backup policy
+Remove Recovery Services Vault : backup vault create
+Remove Redis Cache : redis delete
+Remove Redis Cache Diagnostics : redis delete
+Remove Redis Cache Firewall Rule : postgres server firewall-rule delete
+Remove Redis Cache Link : redis delete
+Remove Redis Cache Patch Schedule : redis patch-schedule delete
+Remove Relay Authorization Rule : eventhubs eventhub authorization-rule delete
+Remove Relay Hybrid Connection : network application-gateway probe delete
+Remove Relay Namespace : eventhubs namespace delete
+Remove Resource : resource delete
+Remove Resource Group : ad group member remove
+Remove Resource Group Deployment : group deployment delete
+Remove Resource Lock : resource lock delete
+Remove Role Assignment : role assignment delete
+Remove Role Definition : role definition delete
+Remove Route Config : functionapp config appsettings delete
+Remove Route Filter : network route-filter delete
+Remove Route Filter Rule Config : network route-filter rule delete
+Remove Route Table : network route-table route delete
+Remove Scheduler Job : batchai job delete
+Remove Scheduler Job Collection : batchai job delete
+Remove Service Bus Authorization Rule : servicebus queue authorization-rule keys renew
+Remove Service Bus Geo DR Configuration : network nic ip-config address-pool remove
+Remove Service Bus Migration : network express-route wait
+Remove Service Bus Namespace : network express-route auth delete
+Remove Service Bus Queue : storage queue policy delete
+Remove Service Bus Rule : storage account network-rule remove
+Remove Service Bus Subscription : account management-group subscription remove
+Remove Service Bus Topic : network express-route delete
+Remove Service Fabric Client Certificate : sf cluster client-certificate remove
+Remove Service Fabric Cluster Certificate : sf cluster client-certificate remove
+Remove Service Fabric Node : batch node service-logs
+Remove Service Fabric Node Type : sf cluster node-type add
+Remove Service Fabricupdateting : storage account network-rule remove
+Remove Snapshot : snapshot delete
+Remove Sql Database : sql midb delete
+Remove Sql Database Auditing : sql server key delete
+Remove Sql Database Data Masking Rule : cosmosdb database delete
+Remove Sql Database Failover Group : sql server key delete
+Remove Sql Database From Failover Group : sql server key delete
+Remove Sql Database Long Term Retention Backup : sql server key delete
+Remove Sql Database Restore Point : sql midb restore
+Remove Sql Database Secondary : sql server key delete
+Remove Sql Database Threat Detection Policy : sql db threat-policy update
+Remove Sql Elastic Pool : sql elastic-pool delete
+Remove Sql Server : sql server delete
+Remove Sql Server Active Directory Administrator : sql server key delete
+Remove Sql Server Auditing : sql server delete
+Remove Sql Server Communication Link : sql server key delete
+Remove Sql Server Disaster Recovery Configuration : sql server key delete
+Remove Sql Server Dns Alias : sql server dns-alias delete
+Remove Sql Server Firewall Rule : sql server firewall-rule delete
+Remove Sql Server Key Vault Key : sql server key create
+Remove Sql Server Threat Detection Policy : sql server firewall-rule create
+Remove Sql Server Virtual Network Rule : sql server firewall-rule create
+Remove Sql Sync Agent : sql server key delete
+Remove Sql Sync Group : sql server key delete
+Remove Sql Sync Member : sql server key delete
+Remove Storage Account : storage account delete
+Remove Storage Account Network Rule : storage account network-rule remove
+Remove Stream Analytics Function : monitor activity-log alert scope remove
+Remove Stream Analytics Input : ams transform output remove
+Remove Stream Analytics Job : batchai job file stream
+Remove Stream Analytics Output : ams transform output remove
+Remove Tag : tag delete
+Remove Traffic Manager Endpoint : network traffic-manager endpoint delete
+Remove Traffic Manager Endpoint Config : network traffic-manager endpoint delete
+Remove Traffic Manager Profile : network traffic-manager profile delete
+Remove Virtual Network : network local-gateway delete
+Remove Virtual Network Gateway : network local-gateway delete
+Remove Virtual Network Gateway Connection : network local-gateway delete
+Remove Virtual Network Gateway Default Site : network application-gateway delete
+Remove Virtual Network Gateway Ip Config : network nic ip-config create
+Remove Virtual Network Peering : network express-route peering delete
+Remove Virtual Network Subnet Config : network nic ip-config delete
+Remove VM : vm secret remove
+Remove VM Access Extension : vm extension delete
+Remove VMAEM Extension : extension remove
+Remove VM Backup : vm delete
+Remove VM Chef Extension : vm extension delete
+Remove VM Custom Script Extension : vm extension delete
+Remove VM Data Disk : disk delete
+Remove VM Diagnostics Extension : vm extension delete
+Remove VM Disk Encryption Extension : vm disk attach
+Remove VM Dsc Extension : vm extension delete
+Remove VM Extension : vm extension delete
+Remove VM Network Interface : network application-gateway delete
+Remove VM Secret : vm secret remove
+Remove VM Sql Server Extension : sql server delete
+Remove Vmss : extension remove
+Remove Vmss Data Disk : disk delete
+Remove Vmss Diagnostics Extension : extension remove
+Remove Vmss Extension : extension remove
+Remove Vmss Network Interface Configuration : network application-gateway probe delete
+Remove Vpn Client Ipsec Parameter : sql server firewall-rule delete
+Remove Vpn Client Revoked Certificate : keyvault certificate pending delete
+Remove Vpn Client Root Certificate : sf cluster client-certificate remove
+Remove Wcf Relay : extension remove
+Remove Web App : ad app delete
+Remove Web App Backup : ad app delete
+Remove Web App Slot : ad app delete
+Remove Web App SSL Binding : network application-gateway ssl-cert delete
+Rename Context : batch task file delete
+Repair Vmss Service Fabric Update Domain : storage blob service-properties delete-policy update
+Reset Azure Batch Compute Node : batch node user reset
+Reset Power BI Workspace Collection Access Keys : storage account keys list
+Reset Redis Cache : redis delete
+Reset Virtual Network Gateway : network vnet-gateway reset
+Reset Virtual Network Gateway Connection Shared Key : network vpn-connection shared-key reset
+Reset Web App Publishing Profile : ad app update
+Reset Web App Slot Publishing Profile : ad app update
+Resize Virtual Network Gateway : network application-gateway delete
+Resolve Error : sql server firewall-rule delete
+Restart Azure Batch Compute Node : batch node
+Restart Recovery Services Asr Job : backup job stop
+Restart VM : vm restart
+Restart Vmss : functionapp restart
+Restart Web App : ad app update
+Restart Web App Slot : webapp deployment slot delete
+Restore Azure Key Vault Certificate : keyvault key restore
+Restore Azure Key Vault Key : keyvault key restore
+Restore Azure Key Vault Managed Storage Account : storage account keys renew
+Restore Azure Key Vault Secret : keyvault secret restore
+Restore Api Management : sql midb restore
+Restore Backup Item : backup item
+Restore Recovery Services Backup Item : backup restore
+Restore Sql Database : sql midb restore
+Restore Web App Backup : backup restore files
+Restore Web App Snapshot : ad app update
+Resume Analysis Services Server : sql server key show
+Resume Automation Job : batchai job
+Resume Data Factory Pipeline : batchai job file stream
+Resume Power BI Embedded Capacity : storage share policy create
+Resume Recovery Services Asr Job : backup job
+Resume Sql Database : sql midb list
+Revoke Disk Access : disk revoke-access
+Revoke HD Insight Http Services Access : network application-gateway http-settings show
+Revoke HD Insight Rdp Services Access : network vpn-connection delete
+Revoke Snapshot Access : snapshot revoke-access
+Save Api Management Tenant Git Configuration : mysql server configuration list
+Save Context : storage share policy create
+Save Data Factory Log : storage logging update
+Save Resource Group Deployment Template : group deployment create
+Save Vhd : backup item list
+Save VM Image : vm image
+Select Context : policy definition delete
+Send Feedback : feedback
+update Azure Batch Compute Node User : batch node user
+update Azure Batch Job : batch job delete
+update Azure Batch Job Schedule : batch job-schedule reset
+update Azure Batch Pool : batch pool
+update Azure Batch Pool OS Version : batch pool os upgrade
+update Azure Batch Task : batch task
+update Azure Key Vault Certificate Issuer : keyvault certificate issuer update
+update Azure Key Vault Certificate Policy : storage share policy update
+update Azure Key Vault Managed Storage Sas Definition : sql server key create
+update Azure Key Vault Secret : keyvault secret set
+update Action Group : group update
+update Activity Log Alert : monitor activity-log alert update
+update Analysis Services Server : network traffic-manager endpoint update
+update Api Management : resource update
+update Api Management Api : sql server update
+update Api Management Api Revision : sql server update
+update Api Management Api Versionupdate : sql server update
+update Api Management Authorization Server : sql server update
+update Api Management Backend : mysql server update
+update Api Management Certificate : keyvault certificate issuer update
+update Api Management Group : account management-group update
+update Api Management Hostnames : resource update
+update Api Management Identity Provider : account management-group update
+update Api Management Logger : storage logging update
+update Api Management Open Id Connect Provider : network application-gateway rule update
+update Api Management Operation : advisor configuration update
+update Api Management Policy : policy definition update
+update Api Management Product : storage metrics update
+update Api Management Property : resource update
+update Api Management Subscription : servicebus topic subscription update
+update Api Management Tenant Access : storage queue policy update
+update Api Management User : vm user update
+update Application Gateway : network application-gateway update
+update Application Gateway Authentication Certificate : network application-gateway auth-cert update
+update Application Gateway Backendcreateress Pool : network application-gateway address-pool update
+update Application Gateway Backend Httpupdatetings : network application-gateway update
+update Application Gateway Connection Draining : network application-gateway update
+update Application Gateway Frontend IP Config : network application-gateway frontend-ip update
+update Application Gateway Frontend Port : network application-gateway frontend-port update
+update Application Gateway Httpgetener : network application-gateway update
+update Application Gateway IP Configuration : network application-gateway frontend-ip update
+update Application Gateway Probe Config : network application-gateway probe update
+update Application Gateway Redirect Configuration : network application-gateway redirect-config update
+update Application Gateway Request Routing Rule : network application-gateway rule update
+update Application Gateway Sku : network application-gateway update
+update Application Gateway Ssl Certificate : network application-gateway update
+update Application Gateway Ssl Policy : network application-gateway rule update
+update Application Gateway Url Path Map Config : network application-gateway redirect-config update
+update Application Gateway Web Application Firewall Configuration : network application-gateway update
+update Application Insights Continuous Export : batch application create
+update Application Insights Daily Cap : storage share policy update
+update Application Insights Pricing Plan : appservice plan update
+update App Service Plan : appservice plan update
+update Automation Account : cognitiveservices account update
+update Automation Certificate : keyvault certificate issuer update
+update Automation Connection Field Value : network application-gateway rule update
+update Automation Credential : advisor configuration update
+update Automation Dsc Node : batch node user reset
+update Automation Module : advisor configuration update
+update Automation Runbook : eventhubs eventhub update
+update Automation Schedule : appservice plan update
+update Automation Variable : storage metrics update
+update Automation Webhook : eventhubs eventhub update
+update Backup Protection Policy : backup policy
+update Backup Vault : backup vault
+update Batch Account : batch account
+update Batch Application : batch application
+update Cdn Endpoint : cdn endpoint update
+update Cdn Origin : cdn origin list
+update Cdn Profile : cdn profile update
+update Cognitive Services Account : cognitiveservices account update
+update Consumption Budget : consumption budget
+update Context : eventgrid topic update
+update Current Storage Account : storage account update
+update Data Factory Gateway : network application-gateway update
+update Data Factory Pipeline Active Period : storage share policy update
+update Data Factory Slice Status : resource lock update
+update Data Factory V2 : storage file update
+update Data Factory V2Dataset : storage file update
+update Data Factory V2Integration Runtime : storage file metadata update
+update Data Factory V2Linked Service : storage account update
+update Data Factory V2Pipeline : storage file update
+update Data Factory V2Trigger : storage file update
+update Data Lake Analytics Account : storage account update
+update Data Lake Analytics Catalog Credential : storage metrics update
+update Data Lake Analytics Catalog Item Acl Entry : storage directory metadata update
+update Data Lake Analytics Catalog Secret : storage metrics update
+update Data Lake Analytics Data Source : storage metrics update
+update Data Lake Analytics Firewall Rule : sql server firewall-rule update
+update Data Lake Store Account : storage account update
+update Data Lake Store Firewall Rule : network application-gateway rule update
+update Data Lake Store Item Acl : storage account update
+update Data Lake Store Item Acl Entry : storage account update
+update Data Lake Store Item Expiry : storage account update
+update Data Lake Store Item Owner : storage account update
+update Data Lake Store Item Permission : storage account update
+update Data Lake Store Trusted Id Provider : dla account data-lake-store list
+update Default : eventhubs eventhub update
+update Diagnosticupdateting : eventhubs eventhub update
+update Disk Disk Encryption Key : disk update
+update Disk Image Reference : disk update
+update Disk Key Encryption Key : keyvault key backup
+update Disk Update Disk Encryption Key : disk update
+update Disk Update Key Encryption Key : disk update
+update Dns Recordupdate : network dns zone update
+update Dns Zone : network dns zone update
+update Dtl Allowed VM Sizes Policy : storage share policy update
+update Dtl Auto Shutdown Policy : policy definition update
+update Dtl Auto Start Policy : policy definition update
+update Dtl V Ms Per Lab Policy : storage share policy update
+update Dtl V Ms Per User Policy : sql db audit-policy update
+update Environment : resource update
+update Event Grid Topic : eventgrid topic update
+update Event Hub : eventgrid event-subscription update
+update Event Hub Authorization Rule : eventhubs eventhub authorization-rule update
+update Event Hub Consumer Group : iot hub consumer-group show
+update Event Hub Geo DR Configuration Break Pair : network dns record-set a update
+update Event Hub Geo DR Configuration Fail Over : network dns record-set a update
+update Event Hub Namespace : eventhubs namespace update
+update Express Route Circuit : network express-route update
+update Express Route Circuit Peering Config : network express-route peering update
+update HD Insight Cluster Size : sf cluster reliability update
+update HD Insight Default Storage : storage account update
+update HD Insight Persisted Script Action : role definition update
+update Image Os Disk : disk update
+update Integration Account : cognitiveservices account update
+update Integration Account Agreement : cognitiveservices account update
+update Integration Account Certificate : cognitiveservices account update
+update Integration Account Generated Icn : cognitiveservices account update
+update Integration Account Map : maps account update
+update Integration Account Partner : cognitiveservices account update
+update Integration Account Received Icn : cognitiveservices account update
+update Integration Account Schema : cognitiveservices account update
+update Iot Hub : iot hub update
+update Iot Hub Verified Certificate : iot hub certificate update
+update Key Vault Access Policy : storage share policy update
+update Load Balancer : lock update
+update Load Balancer Frontend Ip Config : webapp config backup update
+update Load Balancer Inbound Nat Pool Config : mysql server configuration set
+update Load Balancer Inbound Nat Rule Config : mysql server firewall-rule update
+update Load Balancer Probe Config : webapp config backup update
+update Load Balancer Rule Config : mysql server firewall-rule update
+update Local Network Gateway : network local-gateway update
+update Logic App : ad app update
+update Managed Application : network application-gateway rule update
+update Managed Application Definition : policy definition update
+update Marketplace Terms : policy definition update
+update Media Service : network traffic-manager profile update
+update Media Service Key : storage share policy update
+update Ml Op Cluster : sf cluster node-type add
+update Network Interface : network application-gateway update
+update Network Interface Ip Config : network nic ip-config update
+update Network Security Group : network local-gateway update
+update Network Security Rule Config : network application-gateway rule update
+update Network Watcher Config Flow Log : network watcher flow-log configure
+update Network Watcher Connection Monitor : network watcher connection-monitor
+update Notification Hub : iot hub update
+update Notification Hub Authorization Rules : servicebus queue authorization-rule update
+update Notification Hubs Namespace : eventhubs namespace update
+update Notification Hubs Namespace Authorization Rules : eventhubs namespace authorization-rule update
+update Operational Insights Data Source : storage metrics update
+update Operational Insights Intelligence Pack : storage metrics update
+update Operational Insights Saved Search : resource update
+update Operational Insights Storage Insight : storage metrics update
+update Operational Insights Workspace : storage metrics update
+update Policy Assignment : policy assignment
+update Policy Definition : policy definition update
+update Policyupdate Definition : policy definition update
+update Public Ipcreateress : functionapp update
+update Recovery Services Asr Alertupdateting : resource update
+update Recovery Services Asr Replication Protected Item : storage queue policy update
+update Recovery Services Asr Vault Context : storage share policy update
+update Recovery Services Backup Properties : backup vault backup-properties set
+update Recovery Services Backup Protection Policy : backup policy
+update Recovery Services Vault Context : storage share policy update
+update Redis Cache : redis update
+update Redis Cache Diagnostics : redis update
+update Relay Authorization Rule : eventhubs eventhub authorization-rule update
+update Relay Hybrid Connection : network application-gateway probe update
+update Relay Namespace : eventhubs namespace update
+update Resource : resource update
+update Resource Group : group update
+update Resource Lock : resource lock update
+update Role Definition : role definition update
+update Route Config : webapp config backup update
+update Route Filter : network route-filter update
+update Route Filter Rule Config : network route-filter rule update
+update Route Table : network route-table route update
+update Scheduler Http Job : sql server ad-admin update
+update Scheduler Job Collection : cosmosdb collection update
+update Scheduler Service Bus Queue Job : servicebus queue update
+update Scheduler Service Bus Topic Job : network traffic-manager profile update
+update Scheduler Storage Queue Job : storage queue policy update
+update Service Bus Authorization Rule : servicebus queue authorization-rule update
+update Service Bus Geo DR Configuration Break Pair : network route-table update
+update Service Bus Geo DR Configuration Fail Over : network express-route update
+update Service Bus Namespace : eventhubs namespace update
+update Service Bus Queue : servicebus queue update
+update Service Bus Rule : network application-gateway rule update
+update Service Bus Subscription : network express-route update
+update Service Bus Topic : network express-route update
+update Service Fabricupdateting : functionapp update
+update Service Fabric Upgrade Type : storage blob service-properties delete-policy update
+update Snapshot Disk Encryption Key : disk update
+update Snapshot Image Reference : snapshot update
+update Snapshot Key Encryption Key : keyvault key
+update Snapshot Update Disk Encryption Key : disk update
+update Snapshot Update Key Encryption Key : resource lock update
+update Sql Database : sql server update
+update Sql Database Advisor Auto Execute Status : sql server key list
+update Sql Database Auditing : sql db audit-policy update
+update Sql Database Auditing Policy : sql db audit-policy update
+update Sql Database Backup Long Term Retention Policy : backup policy list
+update Sql Database Data Masking Policy : sql db audit-policy update
+update Sql Database Data Masking Rule : cosmosdb database delete
+update Sql Database Failover Group : sql server update
+update Sql Database Geo Backup Policy : sql db audit-policy update
+update Sql Database Recommended Action State : sql db audit-policy update
+update Sql Database Secondary : sql server update
+update Sql Database Threat Detection Policy : sql db threat-policy update
+update Sql Database Transparent Data Encryption : sql server key delete
+update Sql Elastic Pool : sql elastic-pool update
+update Sql Elastic Pool Advisor Auto Execute Status : sql elastic-pool update
+update Sql Elastic Pool Recommended Action State : sql elastic-pool update
+update Sql Server : sql server update
+update Sql Server Active Directory Administrator : sql server update
+update Sql Server Advisor Auto Execute Status : sql server update
+update Sql Server Auditing : sql server update
+update Sql Server Auditing Policy : sql server update
+update Sql Server Backup Long Term Retention Vault : sql server key delete
+update Sql Server Disaster Recovery Configuration : sql server update
+update Sql Server Dns Alias : sql server dns-alias
+update Sql Server Firewall Rule : sql server firewall-rule update
+update Sql Server Recommended Action State : sql server update
+update Sql Server Threat Detection Policy : sql db threat-policy update
+update Sql Server Transparent Data Encryption Protector : sql server key delete
+update Sql Server Virtual Network Rule : sql server firewall-rule update
+update Storage Account : storage account update
+update Traffic Manager Endpoint : network traffic-manager endpoint update
+update Traffic Manager Profile : network traffic-manager profile update
+update Virtual Network : network application-gateway update
+update Virtual Network Gateway : network application-gateway update
+update Virtual Network Gateway Connection : network application-gateway update
+update Virtual Network Gateway Connection Shared Key : network vpn-connection shared-key update
+update Virtual Network Gateway Default Site : network application-gateway update
+update Virtual Network Gateway Vpn Client Config : network vpn-connection update
+update Virtual Network Peering : network express-route peering update
+update Virtual Network Subnet Config : network nic ip-config update
+update VM : vm update
+update VM Access Extension : extension update
+update VMAD Domain Extension : extension update
+update VMAEM Extension : extension update
+update VM Backup Extension : vm extension delete
+update VM Bginfo Extension : vm extension
+update VM Boot Diagnostics : vm boot-diagnostics
+update VM Chef Extension : vm extension list
+update VM Custom Script Extension : vm extension set
+update VM Data Disk : disk update
+update VM Diagnostics Extension : vm diagnostics set
+update VM Disk Encryption Extension : disk update
+update VM Dsc Extension : vm update
+update VM Extension : vm extension
+update VM Operating System : vm user update
+update VMOS Disk : disk update
+update VM Plan : vm update
+update VM Source Image : vm image list
+update VM Sql Server Extension : sql server update
+update Vmss : eventhubs eventhub update
+update Vmss Boot Diagnostic : vm boot-diagnostics enable
+update Vmss Disk Encryption Extension : disk update
+update Vmss Os Profile : eventhubs eventhub update
+update Vmss Rolling Upgrade Policy : appservice plan update
+update Vmss Storage Profile : storage account update
+update Vmss VM : vm update
+update Vpn Client Ipsec Parameter : sql server update
+update Wcf Relay : functionapp update
+update Web App : ad app update
+update Web App Slot : ad app update
+update Web App Slot Config Name : network application-gateway redirect-config update
+Start Azure Batch Compute Node Service Log Upload : batch node service-logs upload
+Start Azure Batch Pool Resize : batch pool resize
+Start Application Gateway : network application-gateway start
+Start Automation Dsc Compilation Job : ams job start
+Start Automation Dsc Node Configuration Deployment : functionapp deployment source config
+Start Automation Runbook : functionapp start
+Start Cdn Endpoint : cdn endpoint start
+Start Data Factory V2Integration Runtime : storage blob incremental-copy start
+Start Data Factory V2Trigger : storage file copy start
+Start HD Insight Job : batchai job wait
+Start Logic App : ad app create
+Start Network Watcher Connection Monitor : network watcher connection-monitor start
+Start Network Watcher Resource Troubleshooting : network watcher troubleshooting start
+Start Recovery Services Asr Apply Recovery Point : keyvault key recover
+Start Recovery Services Asr Commit Failover Job : backup job stop
+Start Recovery Services Asr Planned Failover Job : backup job stop
+Start Recovery Services Asr Resynchronize Replication Job : backup job stop
+Start Recovery Services Asr Switch Process Server Job : backup job stop
+Start Recovery Services Asr Test Failover Cleanup Job : backup job stop
+Start Recovery Services Asr Test Failover Job : backup job wait
+Start Recovery Services Asr Unplanned Failover Job : backup job stop
+Start Service Bus Migration : network express-route wait
+Start Sql Database Execute Index Recommendation : sql server key list
+Start Sql Server Upgrade : sql server update
+Start Sql Sync Group Sync : batch account autostorage-keys sync
+Start Stream Analytics Job : batchai job file stream
+Start VM : vm start
+Start Vmss : functionapp start
+Start Vmss Rolling OS Upgrade : vmss rolling-upgrade start
+Start Web App : ad app create
+Start Web App Slot : ad app update
+Stop Azure Batch Certificate Deletion : batch certificate delete
+Stop Azure Batch Job : batch job stop
+Stop Azure Batch Job Schedule : batch job-schedule stop
+Stop Azure Batch Pool Resize : batch pool resize
+Stop Azure Batch Task : batch task stop
+Stop Azure Key Vault Certificate Operation : storage account keys renew
+Stop Application Gateway : network application-gateway stop
+Stop Automation Dsc Node Configuration Deployment : functionapp deployment source config
+Stop Automation Job : batch job stop
+Stop Backup Job : backup job stop
+Stop Cdn Endpoint : cdn endpoint stop
+Stop Data Factory V2Integration Runtime : functionapp deployment source delete
+Stop Data Factory V2Pipeline Run : backup job stop
+Stop Data Factory V2Trigger : batch job stop
+Stop Data Lake Analytics Job : backup job stop
+Stop HD Insight Job : batchai job wait
+Stop Logic App Run : batch task stop
+Stop Network Watcher Connection Monitor : network watcher connection-monitor stop
+Stop Network Watcher Packet Capture : network watcher packet-capture stop
+Stop Recovery Services Asr Job : backup job stop
+Stop Recovery Services Backup Job : backup job stop
+Stop Resource Group Deployment : group deployment create
+Stop Service Bus Migration : network express-route wait
+Stop Sql Database Activity : sql server key show
+Stop Sql Database Execute Index Recommendation : sql server key list
+Stop Sql Elastic Pool Activity : sql elastic-pool show
+Stop Sql Server Upgrade : sql server update
+Stop Sql Sync Group Sync : sql server key delete
+Stop Stream Analytics Job : batchai job file stream
+Stop VM : vm stop
+Stop Vmss : functionapp stop
+Stop Vmss Rolling Upgrade : vmss rolling-upgrade start
+Stop Web App : ad app create
+Stop Web App Slot : ad app create
+Submit Data Lake Analytics Job : batchai job file stream
+Submit HD Insight Script Action : role definition update
+Suspend Analysis Services Server : network application-gateway probe update
+Suspend Automation Job : batchai job terminate
+Suspend Data Factory Pipeline : storage queue policy create
+Suspend Power BI Embedded Capacity : storage entity replace
+Suspend Sql Database : sql server delete
+Switch Sql Database Failover Group : mysql server configuration list
+Switch Web App Slot : webapp deployment slot auto-swap
+Sync Data Factory V2Integration Runtime Credential : storage file metadata update
+Sync Media Service Storage Keys : storage account keys
+Test Azure Batch Auto Scale : batchai cluster auto-scale
+Test Analysis Services Server : sql server key show
+Test Cdn Custom Domain : cdn custom-domain
+Test Container Registry Name Availability : storage container policy list
+Test Container Registry Webhook : storage container policy delete
+Test Data Lake Analytics Account : storage account update
+Test Data Lake Analytics Catalog Item : storage metrics update
+Test Data Lake Store Account : storage account show
+Test Data Lake Store Item : dla account data-lake-store list
+Test Dns Availability : network dns zone update
+Test Event Hub Name : iot hub certificate show
+Test Logic App : ad app update
+Test Ml Op Cluster System Services Update Availability : network application-gateway probe update
+Test Network Watcher Connectivity : network watcher test-connectivity
+Test Network Watcher IP Flow : network watcher test-ip-flow
+Test Power BI Embedded Capacity : network lb probe create
+Test Private I Pcreateress Availability : batch pool all-statistics show
+Test Relay Name : network dns record-set a list
+Test Resource Group Deployment : group deployment
+Test Service Bus Name : network express-route wait
+Test Stream Analytics Function : storage metrics show
+Test Stream Analytics Input : monitor metrics list
+Test Stream Analytics Output : batchai job file stream
+Test VMAEM Extension : extension
+Undo Azure Key Vault Certificate Removal : storage account keys renew
+Undo Azure Key Vault Key Removal : keyvault key restore
+Undo Azure Key Vault Managed Storage Account Removal : storage account keys
+Undo Azure Key Vault Managed Storage Sas Definition Removal : storage table policy delete
+Undo Azure Key Vault Secret Removal : keyvault secret restore
+Undo Key Vault Removal : keyvault key restore
+Unpublish Cdn Endpoint Content : cdn endpoint
+Unregister Automation Dsc Node : batch node scheduling disable
+Unregister Automation Scheduled Runbook : batch node scheduling enable
+Unregister Backup Container : backup container
+Unregister Recovery Services Backup Container : backup container
+Unregister Recovery Services Backup Management Server : backup policy
+Unregister Resource Provider : provider
+Update Azure Key Vault Certificate : keyvault certificate issuer update
+Update Azure Key Vault Key : keyvault key
+Update Azure Key Vault Managed Storage Account : storage account update
+Update Azure Key Vault Managed Storage Account Key : storage account keys
+Update Azure Key Vault Secret : keyvault secret set
+Update AD Application : ad app update
+Update AD Service Principal : ad app update
+Update AD User : ad user
+Update Api Management Api Release : sql server update
+Update Api Management Deployment : webapp deployment source update-token
+Update Api Management Region : resource update
+Update Availabilityupdate : eventhubs eventhub update
+Update Container Registry : storage container metadata update
+Update Container Registry Credential : storage container metadata update
+Update Container Registry Webhook : storage container metadata update
+Update Container Service : storage container policy update
+Update Data Factory V2 : storage file update
+Update Data Factory V2Integration Runtime : storage file metadata update
+Update Data Factory V2Integration Runtime Node : batch node user reset
+Update Data Lake Analytics Compute Policy : storage metrics update
+Update Disk : disk update
+Update Event Grid Subscription : eventgrid event-subscription update
+Update Image : image
+Update Iot Hub : iot hub update
+Update Management Group : account management-group update
+Update Ml Commitment Plan : appservice plan update
+Update Ml Op Cluster System Service : network application-gateway probe update
+Update Ml Web Service : network application-gateway update
+Update Power BI Embedded Capacity : storage share policy update
+Update Recovery Services Asr Mobility Service : provider operation list
+Update Recovery Services Asr Network Mapping : network traffic-manager endpoint update
+Update Recovery Services Asr Policy : backup policy
+Update Recovery Services Asr Protection Direction : backup protection
+Update Recovery Services Asr Recovery Plan : appservice plan update
+Update Recovery Services Asr Services Provider : provider
+Update Recovery Services Asrv Center : storage share policy update
+Update Service Fabric Durability : sf cluster durability update
+Update Service Fabric Reliability : sf cluster reliability update
+Update Snapshot : snapshot update
+Update Sql Sync Group : sql server update
+Update Sql Sync Member : sql server update
+Update Sql Sync Schema : sql db update
+Update Storage Account Network Ruleupdate : storage account update
+Update VM : vm update
+Update Vmss : eventhubs eventhub update
+Update Vmss Instance : functionapp update
+Update Vmss VM : vm update
+Use HD Insight Cluster : batchai cluster create
+Use Sql Server Auditing Policy : sql server key
+Wait Backup Job : backup job wait
+Wait Data Lake Analytics Job : batchai job wait
+Wait HD Insight Job : batchai job wait
+Wait Recovery Services Backup Job : backup job wait
