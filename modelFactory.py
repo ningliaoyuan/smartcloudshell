@@ -7,7 +7,7 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
-from utility.QueryRewriter import rewriteQuery
+from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
 from utility.AzureResourceRecognizer import AzureResourceRecognizer
 from utility.UpdateDocVector import updateDocVector
 
@@ -62,28 +62,20 @@ def getBaselineModel_partial():
   nlp = model_lg.load()
   return CliNlpModel("pad_lgm", getAllAsQuries, data.cliData_partial, nlp)
 
-def getModelWithAbbrVectorAssigned_partial():
+def getModelWithAbbrQR_partial():
   nlp = model_lg.load()
-  nlp = addAbbrVector(nlp)
-  return CliNlpModel("lgd_lgm_abbr", getAllAsQuries, data.cliData_partial, nlp)
+  return CliNlpModel("pad_lgm_abbrqr", getAllAsQuries, data.cliData_partial, nlp, rewriteAbbrInQuery)
 
-def getModelWithAbbrQrVectorAssigned():
+def getModelWithAbbrQR():
   nlp = model_lg.load()
-  # nlp = addAbbrVector(nlp)
-  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
+  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteAbbrInQuery)
 
-def getModelWithAbbrQrVectorAssigned():
+def getModelWithAbbrAndTypoQR():
   nlp = model_lg.load()
-  # nlp = addAbbrVector(nlp)
-  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
-
-def getModelWithAbbrQrVectorAssigned():
-  nlp = model_lg.load()
-  # nlp = addAbbrVector(nlp)
-  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQuries, data.cliData, nlp, rewriteQuery)
+  return CliNlpModel("lgd_lgm_abbrqr_typoqr", getAllAsQuries, data.cliData, nlp, lambda query: rewriteAbbrInQuery(rewriteKnownTyposInQuery(query)))
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()
   azureResourceRecognizer = AzureResourceRecognizer(nlp)
   nlp.add_pipe(azureResourceRecognizer, last=True)
-  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQuries, data.cliData, nlp, rewriteQuery, updateDocVector)
+  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQuries, data.cliData, nlp, rewriteAbbrInQuery, updateDocVector)

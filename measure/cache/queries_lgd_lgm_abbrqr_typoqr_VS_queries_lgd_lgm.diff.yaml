@@ -1,0 +1,500 @@
+!!python/object:measure.testrunner.TestReportDiff
+score: 0
+summary1: !!python/object:measure.testrunner.TestSummary
+  id: queries_lgd_lgm_abbrqr_typoqr
+  modelId: lgd_lgm_abbrqr_typoqr
+  precision: 0.6596
+  testSetId: queries
+  top10recall: 0.8511
+  top3recall: 0.7021
+  total: 47
+  ts: '0724013012'
+summary2: !!python/object:measure.testrunner.TestSummary
+  id: queries_lgd_lgm
+  modelId: lgd_lgm
+  precision: 0.6809
+  testSetId: queries
+  top10recall: 0.8511
+  top3recall: 0.766
+  total: 47
+  ts: '0724013020'
+z_diffs:
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vm stop
+    query: turn off vm
+  report1MatchedIndex: 0
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id002 !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Stop a running VM.
+      id: vm stop
+      queries: []
+    score: 0.9122
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id001 !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Start a stopped VM.
+      id: vm start
+      queries: []
+    score: 0.9057
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: lab
+      help: Get virtual machine.
+      id: lab vm show
+      queries: []
+    score: 0.9015
+  report2MatchedIndex: 1
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id001
+    score: 0.8021
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id002
+    score: 0.7944
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: run command on a vm
+      id: vm run-command invoke
+      queries: []
+    score: 0.7794
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - vmss extension image list-names
+    query: virtual machine extension image types
+  report1MatchedIndex: 9
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: vm
+      help: Find the available VM extensions for a subscription and region.
+      id: vm extension image
+      queries: []
+    score: 0.968
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: List the information on available extensions.
+      id: vm extension image list
+      queries: []
+    score: 0.9548
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Display information for an extension.
+      id: vm extension image show
+      queries: []
+    score: 0.9409
+  report2MatchedIndex: 0
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Gets a list of virtual machine extension image types.
+      id: vmss extension image list-names
+      queries: []
+    score: 0.9082
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Gets a virtual machine extension image.
+      id: vmss extension image show
+      queries: []
+    score: 0.8998
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: vmss
+      help: Gets a list of virtual machine extension image versions.
+      id: vmss extension image list-versions
+      queries: []
+    score: 0.8882
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - appservice plan update
+    query: scale out my web app
+  report1MatchedIndex: 57
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id003 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Start a web app.
+      id: webapp start
+      queries: []
+    score: 0.8735
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id004 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Get the details of a web app.
+      id: webapp show
+      queries: []
+    score: 0.8703
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id005 !!python/object:data.CliNode
+      cliType: command
+      group: webapp
+      help: Get the details of a web app's settings.
+      id: webapp config appsettings list
+      queries: []
+    score: 0.8669
+  report2MatchedIndex: 54
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id003
+    score: 0.8735
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id004
+    score: 0.8703
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id005
+    score: 0.8669
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account list
+    query: list my subscriptions
+  report1MatchedIndex: 2
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id006 !!python/object:data.CliNode
+      cliType: command
+      group: eventgrid
+      help: List event subscriptions.
+      id: eventgrid event-subscription list
+      queries: []
+    score: 0.8239
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id007 !!python/object:data.CliNode
+      cliType: command
+      group: billing
+      help: List all available invoices of the subscription
+      id: billing invoice list
+      queries: []
+    score: 0.8115
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: Get a list of subscriptions for the logged in account.
+      id: account list
+      queries: []
+    score: 0.8046
+  report2MatchedIndex: 3
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: servicebus
+      help: List the Subscription by Service Bus Topic
+      id: servicebus topic subscription list
+      queries: []
+    score: 0.8432
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id006
+    score: 0.8239
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id007
+    score: 0.8115
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb delete
+    query: Delete docdb
+  report1MatchedIndex: 0
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id008 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: Deletes an Azure Cosmos DB database account.
+      id: cosmosdb delete
+      queries: []
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id011 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Deletes an Azure Cosmos DB database '
+      id: cosmosdb database delete
+      queries: []
+    score: 0.9392
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Deletes an Azure Cosmos DB collection '
+      id: cosmosdb collection delete
+      queries: []
+    score: 0.9214
+  report2MatchedIndex: 1
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: functionapp
+      help: Delete a function app.
+      id: functionapp delete
+      queries: []
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id008
+    score: 1.0
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: eventhubs
+      help: Deletes the Eventhub
+      id: eventhubs eventhub delete
+      queries: []
+    score: 1.0
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb database list
+    query: show all cosmos dbs
+  report1MatchedIndex: 16
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: Get the details of an Azure Cosmos DB database account.
+      id: cosmosdb show
+      queries: []
+    score: 0.8339
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id009 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Shows an Azure Cosmos DB collection and its offer '
+      id: cosmosdb collection show
+      queries: []
+    score: 0.7956
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Shows an Azure Cosmos DB database '
+      id: cosmosdb database show
+      queries: []
+    score: 0.7462
+  report2MatchedIndex: 2
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Lists all Azure Cosmos DB collections '
+      id: cosmosdb collection list
+      queries: []
+    score: 0.7082
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id009
+    score: 0.6761
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id010 !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Lists all Azure Cosmos DB databases '
+      id: cosmosdb database list
+      queries: []
+    score: 0.6748
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - cosmosdb list-keys
+    query: query cosmos db keys
+  report1MatchedIndex: 7
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id010
+    score: 0.8599
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id011
+    score: 0.8533
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: cosmosdb
+      help: 'Creates an Azure Cosmos DB database '
+      id: cosmosdb database create
+      queries: []
+    score: 0.8513
+  report2MatchedIndex: 16
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id011
+    score: 0.7918
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id015 !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a database.
+      id: sql db create
+      queries: []
+    score: 0.7712
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id010
+    score: 0.7701
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - account set
+    query: set my default subscription
+  report1MatchedIndex: 0
+  report1Score: 1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id013 !!python/object:data.CliNode
+      cliType: command
+      group: account
+      help: Set a subscription to be the current active subscription.
+      id: account set
+      queries: []
+    score: 0.8243
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id012 !!python/object:data.CliNode
+      cliType: command
+      group: backup
+      help: Get the default policy with default values to backup a VM.
+      id: backup policy get-default-for-vm
+      queries: []
+    score: 0.8146
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id014 !!python/object:data.CliNode
+      cliType: command
+      group: vm
+      help: Get the default configuration settings for a VM.
+      id: vm diagnostics get-default-config
+      queries: []
+    score: 0.7937
+  report2MatchedIndex: 1
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id012
+    score: 0.8266
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id013
+    score: 0.8243
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id014
+    score: 0.814
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - sql db copy
+    query: how to backup sql db
+  report1MatchedIndex: 9
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id015
+    score: 0.8953
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id016 !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Create a new database by restoring from a backup.
+      id: sql db restore
+      queries: []
+    score: 0.8876
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Restore a managed database.
+      id: sql midb restore
+      queries: []
+    score: 0.8873
+  report2MatchedIndex: 3
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id015
+    score: 0.8791
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id016
+    score: 0.869
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: sql
+      help: Get the details for a database.
+      id: sql db show
+      queries: []
+    score: 0.8543
+- !!python/object:measure.testrunner.CaseResultDiff
+  case: !!python/object:measure.testset.TestCase
+    expectedCommands:
+    - keyvault certificate
+    query: manage keyvault certificate
+  report1MatchedIndex: 1
+  report1Score: -1
+  report1Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id018 !!python/object:data.CliNode
+      cliType: command
+      group: keyvault
+      help: Create a Key Vault certificate.
+      id: keyvault certificate create
+      queries: []
+    score: 0.9455
+  - !!python/object:modelBase.Suggestion
+    cliNode: &id017 !!python/object:data.CliNode
+      cliType: group
+      group: keyvault
+      help: Manage certificates.
+      id: keyvault certificate
+      queries: []
+    score: 0.9404
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: command
+      group: keyvault
+      help: Recovers the deleted certificate back to its current version under /certificates.  The
+        RecoverDeletedCertificate operation performs the reversal of the Delete operation.
+        The operation is applicable in vaults enabled for soft-delete, and must be
+        issued during the retention interval (available in the deleted certificate's
+        attributes).
+      id: keyvault certificate recover
+      queries: []
+    score: 0.9309
+  report2MatchedIndex: 0
+  report2Suggestions:
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id017
+    score: 0.8937
+  - !!python/object:modelBase.Suggestion
+    cliNode: !!python/object:data.CliNode
+      cliType: group
+      group: keyvault
+      help: Manage certificate issuer information.
+      id: keyvault certificate issuer
+      queries: []
+    score: 0.8558
+  - !!python/object:modelBase.Suggestion
+    cliNode: *id018
+    score: 0.8528

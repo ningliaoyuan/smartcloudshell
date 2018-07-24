@@ -29,10 +29,13 @@ def compareSmVsLgModels():
   compare(testset_queries, modelFactory.getBaselineModel_sm(), modelFactory.getBaselineModel())
 
 def compareAbbrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrVectorAssigned(), modelFactory.getBaselineModel())
+  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
 
 def compareAbbrQrModelVsBaseLine():
-  compare(testset_queries, modelFactory.getModelWithAbbrQrVectorAssigned(), modelFactory.getBaselineModel())
+  compare(testset_queries, modelFactory.getModelWithAbbrQR(), modelFactory.getBaselineModel())
+
+def compareAbbrTypoQrModelVsBaseLine():
+  compare(testset_queries, modelFactory.getModelWithAbbrAndTypoQR(), modelFactory.getBaselineModel())
 
 def compareAzureResourceRecognizerModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
@@ -46,7 +49,8 @@ def compareReports(reportPath1: str, reportPath2: str):
 # ensureTestRunerCanRun()
 # compareAbbrModelVsBaseLine()
 # compareAbbrQrModelVsBaseLine()
-compareAzureResourceRecognizerModelVsBaseLine()
+# compareAzureResourceRecognizerModelVsBaseLine()
+compareAbbrTypoQrModelVsBaseLine()
 
 #compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations

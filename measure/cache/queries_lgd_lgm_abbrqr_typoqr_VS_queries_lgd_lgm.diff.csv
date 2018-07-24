@@ -1,0 +1,11 @@
+Query,Expected command(s),Report 1 Score,Report 1 Matched Index,Report 1 Suggestions,Report 2 Matched Index,Report 2 Suggestions
+turn off vm,vm stop,1,0,"vm stop, vm start, lab vm show",1,"vm stop, vm start, lab vm show"
+virtual machine extension image types,vmss extension image list-names,-1,9,"vm extension image, vm extension image list, vm extension image show",0,"vm extension image, vm extension image list, vm extension image show"
+scale out my web app,appservice plan update,-1,57,"webapp start, webapp show, webapp config appsettings list",54,"webapp start, webapp show, webapp config appsettings list"
+list my subscriptions,account list,1,2,"eventgrid event-subscription list, billing invoice list, account list",3,"eventgrid event-subscription list, billing invoice list, account list"
+Delete docdb,cosmosdb delete,1,0,"cosmosdb delete, cosmosdb database delete, cosmosdb collection delete",1,"cosmosdb delete, cosmosdb database delete, cosmosdb collection delete"
+show all cosmos dbs,cosmosdb database list,-1,16,"cosmosdb show, cosmosdb collection show, cosmosdb database show",2,"cosmosdb show, cosmosdb collection show, cosmosdb database show"
+query cosmos db keys,cosmosdb list-keys,1,7,"cosmosdb database list, cosmosdb database delete, cosmosdb database create",16,"cosmosdb database list, cosmosdb database delete, cosmosdb database create"
+set my default subscription,account set,1,0,"account set, backup policy get-default-for-vm, vm diagnostics get-default-config",1,"account set, backup policy get-default-for-vm, vm diagnostics get-default-config"
+how to backup sql db,sql db copy,-1,9,"sql db create, sql db restore, sql midb restore",3,"sql db create, sql db restore, sql midb restore"
+manage keyvault certificate,keyvault certificate,-1,1,"keyvault certificate create, keyvault certificate, keyvault certificate recover",0,"keyvault certificate create, keyvault certificate, keyvault certificate recover"
