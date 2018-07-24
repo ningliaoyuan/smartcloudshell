@@ -91,7 +91,7 @@
         "count": 9
     },
     "midb": {
-        "word": "managed database",
+        "word": "managed instance databases",
         "count": 5
     },
     "az": {
@@ -136,5 +136,150 @@
     "cosmosdb": {
         "word": "cosmos db",
         "count": 44
+    },
+    "servicebus": {
+        "word": "service bus",
+        "count": 67
+    },
+    "keyvault": {
+        "word": "key vault",
+        "count": 62
+    },
+    "functionapp": {
+        "word": "function app",
+        "count": 10
+    },
+    "batchai": {
+        "word": "batch ai",
+        "count": 86
+    },
+    "georecovery": {
+        "word": "geo recovery",
+        "count": 19
+    },
+    "authorizationrule": {
+        "word": "authorization rule",
+        "count": 55
+    },
+    "expressroute": {
+        "word": "express route",
+        "count": 61
+    },
+    "eventgrid": {
+        "word": "event grid",
+        "count": 37
+    },
+    "devtest": {
+        "word": "dev test",
+        "count": 15
+    },
+    "cognitiveservice": {
+        "word": "cognitive service"
+    },
+    "appsetting": {
+        "word": "app setting"
+    },
+    "appservice": {
+        "word": "app service",
+        "count": 5
+    },
+    "consumergroup": {
+        "word": "consumer group",
+        "count": 15
+    },
+    "georestore": {
+        "word": "geore store",
+        "count": 10
+    },
+    "recoverypoint": {
+        "word": "recovery point"
+    },
+    "scaleset": {
+        "word": "scale set",
+        "count": 13
+    },
+    "validationstatus": {
+        "word": "validation status",
+        "count": 2
+    },
+    "functionapps": {
+        "word": "function apps",
+        "count": 2
+    },
+    "autostorage": {
+        "word": "auto storage"
+    },
+    "executioninfo": {
+        "word": "execution info",
+        "count": 2
+    },
+    "datawarehouse": {
+        "word": "data warehouse",
+        "count": 2
+    },
+    "disabletask": {
+        "word": "disable task"
+    },
+    "aliasdisaster": {
+        "word": "alias disaster",
+        "count": 2
+    },
+    "nodeinfo": {
+        "word": "node info",
+        "count": 2
+    },
+    "pricesheet": {
+        "word": "price sheet"
+    },
+    "blobservice": {
+        "word": "blob service",
+        "count": 2
+    },
+    "fileservice": {
+        "word": "file service",
+        "count": 2
+    },
+    "affinityid": {
+        "word": "affinity id",
+        "count": 3
+    },
+    "funcupdate": {
+        "word": "function update"
+    },
+    "deletecertificateissuer": {
+        "word": "delete certificateissuer",
+        "count": 1
+    },
+    "mergecertificate": {
+        "word": "merge certificate",
+        "count": 1
+    },
+    "cloudserviceconfiguration": {
+        "word": "cloud service configuration",
+        "count": 4
+    },
+    "kubectl": {
+        "word": "kubectl",
+        "count": 3
+    },
+    "dequeuecount": {
+        "word": "dequeue count",
+        "count": 1
+    },
+    "batchservice": {
+        "word": "batch service",
+        "count": 11
+    },
+    "queueservice": {
+        "word": "queue service",
+        "count": 1
+    },
+    "usersubscription": {
+        "word": "user subscription",
+        "count": 1
+    },
+    "tableservice": {
+        "word": "table service",
+        "count": 1
     }
 }
