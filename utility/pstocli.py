@@ -4,7 +4,7 @@ import json
 import re
 from AzureResourceRecognizer import AzureResourceRecognizer
 from UpdateDocVector import updateDocVector
-from QueryRewriter import rewriteAbbrInQuery
+from QueryRewriter import rewriteQuery
 
 def camel_case_split(identifier):
     matches = re.finditer('.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)', identifier)
@@ -19,7 +19,7 @@ def psCommandNamePreprocess(command):
     command = command.replace("Set", "update")
     command = command.replace("Remove", "delete")
     command = " ".join(camel_case_split(command))
-    command = rewriteAbbrInQuery(command)
+    command = rewriteQuery(command)
     return command
 
 psCommands = []
@@ -40,7 +40,7 @@ with open('./measure/testset/helpToCommand.csv') as azFile:
         pass
 
 mapping = open('./measure/testset/PStoAzMapping.csv', 'wb')
-with open('./measure/psDataSet/azurePowershellCommands.debug.csv') as psFile:
+with open('./measure/psDataSet/azurePowershellCommands.raw.csv') as psFile:
     reader = csv.reader(psFile)
     for row in reader:
         psCommand = psCommandNamePreprocess(row[2])
