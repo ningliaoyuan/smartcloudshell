@@ -23,6 +23,13 @@ class Engine:
 
     self.aladdin = AladdinSearch()
 
+    self.diag = {
+      "modelid": self.cliModel.id
+    }
+    if isDev:
+      self.diag["isDev"] = True
+
+
   def getLegacyResult(self, query):
     return self.cliModel.getLegacyResult(query)
 

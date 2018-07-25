@@ -9,7 +9,10 @@ from io import StringIO
 
 app = Flask(__name__)
 
-# isDev = True
+isDev = True
+
+# TODO: read isDev from env var
+# don't comment out the following line when commit
 isDev = False
 
 engine = Engine(isDev)
@@ -45,9 +48,7 @@ def getResponse(query):
 
 @app.route('/diag')
 def getDiag():
-  return jsonify({
-    "modelid": engine.cliModel.id
-  })
+  return jsonify(engine.diag)
 
 @app.route('/nlp/qr/<string:query>')
 def nlp_qr(query):
@@ -82,6 +83,7 @@ port = 80
 if isDev:
   port = 5000
 
+print(engine.diag)
 print("localhost:%d is serving" % port)
 
 if __name__ == '__main__':
