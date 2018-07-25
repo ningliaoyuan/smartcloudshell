@@ -78,6 +78,12 @@ def getModelWithAbbrQRAndSpeller():
     rewriteDataQuery=rewriteAbbrInQuery,
     rewriteUserQuery=combineQueryRewriters(rewriteAbbrInQuery, correctSpellingErrors))
 
+def getModelWithAbbrQRAndSpeller_smdata_smmodel():
+  nlp = model_sm.load()
+  return CliNlpModel("lgd_lgm_abbrqr_speller", getAllAsQueries, data.cliData_sm, nlp,
+    rewriteDataQuery=rewriteAbbrInQuery,
+    rewriteUserQuery=combineQueryRewriters(rewriteAbbrInQuery, correctSpellingErrors))
+
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()
   azureResourceRecognizer = AzureResourceRecognizer(nlp)

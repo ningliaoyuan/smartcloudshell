@@ -1,12 +1,18 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file, make_response
 from datetime import datetime
 from log import log
 
 from engine import Engine
+from spacy import displacy
+
+from io import StringIO
 
 app = Flask(__name__)
 
-engine = Engine()
+# isDev = True
+isDev = False
+
+engine = Engine(isDev)
 
 @app.route('/')
 def hello_world():
@@ -43,7 +49,39 @@ def getDiag():
     "modelid": engine.cliModel.id
   })
 
+@app.route('/nlp/qr/<string:query>')
+def nlp_qr(query):
+  rewrittenQuery = engine.cliModel.rewriteUserQuery(query)
+  newQuery = rewrittenQuery["query"]
+  return jsonify({
+    "origin": query,
+    "new": newQuery,
+    "identical": (query == newQuery),
+    "corrections": rewrittenQuery["corrections"]
+  })
+
+@app.route('/nlp/tokens/<string:query>')
+def nlp_tokens(query):
+  doc = engine.cliModel._nlp(query)
+
+  tokens = [(token.text, token.dep_, token.head.text, token.head.pos_).__str__() for token in doc]
+
+  return jsonify(tokens)
+
+@app.route('/nlp/svg/<string:query>')
+def nlp_svg(query):
+  doc = engine.cliModel._nlp(query)
+  svg = displacy.render(doc, style='dep')
+
+  response = make_response(svg)
+  response.content_type = 'image/svg+xml'
+  return response
+
 port = 80
+
+if isDev:
+  port = 5000
+
 print("localhost:%d is serving" % port)
 
 if __name__ == '__main__':

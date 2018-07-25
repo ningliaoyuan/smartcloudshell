@@ -13,12 +13,12 @@ def _composeResult(cliSuggestions: List, cliCorrections: dict, customResponses: 
     }
 
 class Engine:
-  def __init__(self):
+  def __init__(self, isDev = False):
     op = log().start("Initializing model and index")
-    # self.cliModel = modelFactory.getBaselineModel_sm()
-    self.cliModel = modelFactory.getBaselineModel()
-    f = open(datetime.now().strftime('%Y-%m-%dT%H-%M-%S'), 'wb')
-    f.close()
+    if isDev:
+      self.cliModel = modelFactory.getModelWithAbbrQRAndSpeller_smdata_smmodel()
+    else:
+      self.cliModel = modelFactory.getBaselineModel()
     op.end("Done")
 
     self.aladdin = AladdinSearch()
