@@ -31,6 +31,7 @@ def correctSpellingErrors(input):
     wordRE = re.compile(r'^\w+$')
     tokens = filter(lambda t: wordRE.match(t), re.split(r'(\W+)',input))
     tokens = map(lambda t: t.lower(), tokens)
+    corrections = {}
 
     for unknown in spell.unknown(tokens):
         candidates = spell.candidates(unknown)
@@ -42,4 +43,8 @@ def correctSpellingErrors(input):
                 word = c
                 wf = _wf
         result = re.sub(unknown, word, input, flags=re.I)
-    return result
+        corrections[unknown] = word
+    return {
+        'query': result,
+        'corrections': corrections
+    }

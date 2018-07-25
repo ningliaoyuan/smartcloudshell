@@ -25,7 +25,7 @@ with open(outputFile, 'w+', newline='') as csvfile:
           row.report1MatchedIndex,
           ', '.join(map(lambda s: s.cliNode.id, row.report1Suggestions)),
           row.report2MatchedIndex,
-          ', '.join(map(lambda s: s.cliNode.id, row.report1Suggestions))
+          ', '.join(map(lambda s: s.cliNode.id, row.report2Suggestions))
       ])
 
 print('done')

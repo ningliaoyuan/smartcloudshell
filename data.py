@@ -39,12 +39,16 @@ class CliData:
   def __init__(self, nodes: List[CliNode]):
     self._nodes = nodes
     self._commandNodes = list(filter(lambda n: n.cliType == "command", self._nodes))
+    self._nodeDict = {n.id: n for n in self._nodes}
 
   def getAllNodes(self):
     return self._nodes
 
   def getCommandNodes(self):
     return self._commandNodes
+
+  def getCliNodeById(self, id: str) -> CliNode:
+    return self._nodeDict.get(id, None)
 
   @classmethod
   def loadFromJson(cls, filepath: str = 'data/help_dump_with_top_group.json'):

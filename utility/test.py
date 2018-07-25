@@ -27,8 +27,8 @@ def test(text1, text2):
     doc1 = nlp(text1)
     doc2 = nlp(text2)
 
-    similarity = doc1.similarity(doc2)
-    print('a', similarity, text1, "|", text2)
+    # similarity = doc1.similarity(doc2)
+    # print('a', similarity, text1, "|", text2)
 
     updateDocVector(doc1)
     updateDocVector(doc2)
@@ -41,6 +41,7 @@ def test(text1, text2):
     similarity = doc1.similarity(doc2)
     print('c', similarity, text1, "|", text2)
 
-test(u'get active directory Service Principal Credential', u'provider operation list')
+# test(u'get active directory Service Principal Credential', u'provider operation list')
 # test(testcases[1], testcases[2])
-test(u'get active directory Service Principal Credential', u"ad sp credential list")
+test(u'create windows 10 vmss', 'vmss create')
+# test(u'get active directory Service Principal Credential', u"ad sp credential list")

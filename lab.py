@@ -4,12 +4,12 @@ from typing import List
 import datetime
 import modelFactory
 # from Model import baselineModel_lg, baselineModel_sm
-from modelBase import CliNlpModel, Suggestion
-from measure.testset import TestCase, TestSet, testset_queries
+from modelBase import CliNlpModel
+from measure.testset import TestCase, TestSet, testset_queries, testset_labeledqueries
 from measure.testrunner import TestRunner, TestReportDiff, TestReport
 
 def ensureTestRunerCanRun():
-  runner = TestRunner(testset_queries, modelFactory.getBaselineModel_sm())
+  runner = TestRunner(testset_queries, modelFactory.getModelWithAbbrQRAndSpeller_smdata_smmodel())
   report1 = runner.run()
   report1.saveToYamlFile()
 
@@ -25,14 +25,11 @@ def compare(testSet: TestSet, model1: CliNlpModel, model2: CliNlpModel):
   diff = TestReportDiff.diffReports(report1, report2)
   diff.saveToYamlFile()
 
-def compareSmVsLgModels():
-  compare(testset_queries, modelFactory.getBaselineModel_sm(), modelFactory.getBaselineModel())
-
 def compareAzureResourceRecognizerModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
 
 def compareAbbrQrModelWithAndWithoutSpeller():
-  compare(testset_queries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
+  compare(testset_labeledqueries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
 
 def compareReports(reportPath1: str, reportPath2: str):
   report1 = TestReport.loadFromYamlFile(reportPath1)
