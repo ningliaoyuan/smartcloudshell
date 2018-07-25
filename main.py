@@ -4,8 +4,9 @@ from log import log
 
 from engine import Engine
 from spacy import displacy
-
 from io import StringIO
+from utility.NlpWithAzureResourceRecognizer import nlpWithAzureResourceRecognizer
+from utility.QueryRewriter import rewriteAbbrInQuery
 
 app = Flask(__name__)
 
@@ -69,13 +70,40 @@ def nlp_tokens(query):
 
   return jsonify(tokens)
 
-@app.route('/nlp/svg/<string:query>')
-def nlp_svg(query):
-  doc = engine.cliModel._nlp(query)
+def getSvgResponse(nlp, query):
+  doc = nlp(query)
   svg = displacy.render(doc, style='dep')
 
   response = make_response(svg)
   response.content_type = 'image/svg+xml'
+  return response
+
+def getSvgResponse(nlp, query):
+  doc = nlp(query)
+  svg = displacy.render(doc, style='dep')
+
+  response = make_response(svg)
+  response.content_type = 'image/svg+xml'
+  return response
+
+@app.route('/nlp/svg/<string:query>')
+def nlp_svg(query):
+  return getSvgResponse(engine.cliModelWithAzureResourceRecognizer._nlp, query)
+
+@app.route('/nlp/svg2/<string:query>')
+def nlp_svg2(query):
+  query = rewriteAbbrInQuery(query)['query']
+  nlp = nlpWithAzureResourceRecognizer()
+  return getSvgResponse(nlp, query)
+
+@app.route('/nlp/entity/<string:query>')
+def nlp_entity(query):
+  query = rewriteAbbrInQuery(query)['query']
+  nlp = nlpWithAzureResourceRecognizer()
+  doc = nlp(query)
+  html = displacy.render(doc, style='ent')
+  response = make_response(html)
+  response.content_type = 'document'
   return response
 
 port = 80
