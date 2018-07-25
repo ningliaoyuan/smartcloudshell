@@ -4,9 +4,10 @@ from log import log
 from aladdinSearch import AladdinSearch
 from datetime import datetime
 
-def _composeResult(cliSuggestions: List, customResponses: List, searchResults: List):
+def _composeResult(cliSuggestions: List, cliCorrections: dict, customResponses: List, searchResults: List):
     return {
       "cli": cliSuggestions,
+      "cliCorrections": cliCorrections,
       "custom": customResponses,
       "search": searchResults
     }
@@ -36,7 +37,7 @@ class Engine:
       promise = self.aladdin.search(query)
 
     if customResponse is None or len(customResponse) == 0:
-      cliSuggestions = self.cliModel.getLegacyResult(query)
+      cliSuggestions, cliCorrections = self.cliModel.getLegacyResult(query)
     else:
       cliSuggestions = []
 
@@ -51,4 +52,10 @@ class Engine:
     else:
       searchResults = []
 
-    return _composeResult(cliSuggestions, customResponse, searchResults)
+    return _composeResult(cliSuggestions, cliCorrections, customResponse, searchResults)
+
+if __name__ == '__main__':
+  engine = Engine()
+  response = engine.getResponse('Creat storage accont', False, True)
+  import json
+  print(json.dumps(response))

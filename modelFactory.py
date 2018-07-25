@@ -7,7 +7,7 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
-from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
+from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery, combineQueryRewriters
 from utility.AzureResourceRecognizer import AzureResourceRecognizer
 from utility.UpdateDocVector import updateDocVector
 from utility.SpellChecker import correctSpellingErrors
@@ -76,7 +76,7 @@ def getModelWithAbbrQRAndSpeller():
   nlp = model_lg.load()
   return CliNlpModel("lgd_lgm_abbrqr_speller", getAllAsQueries, data.cliData, nlp,
     rewriteDataQuery=rewriteAbbrInQuery,
-    rewriteUserQuery=lambda q: correctSpellingErrors(rewriteAbbrInQuery(q)))
+    rewriteUserQuery=combineQueryRewriters(rewriteAbbrInQuery, correctSpellingErrors))
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()

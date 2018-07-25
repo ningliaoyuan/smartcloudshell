@@ -47,7 +47,7 @@ class CliNlpModel:
     if rewriteDataQuery is not None:
       self.rewriteDataQuery = rewriteDataQuery
     else:
-      self.rewriteDataQuery = lambda query: query
+      self.rewriteDataQuery = lambda query: { 'query': query, 'corrections': {} }
 
     if rewriteUserQuery is not None:
       self.rewriteUserQuery = rewriteUserQuery
@@ -62,11 +62,11 @@ class CliNlpModel:
 
   def _getNlpQuery(self, query, queryRewriteFn):
     rewrittenQuery = queryRewriteFn(query)
-    nlpQuery = self._nlp(rewrittenQuery)
-    return nlpQuery
+    nlpQuery = self._nlp(rewrittenQuery['query'])
+    return nlpQuery, rewrittenQuery['corrections']
 
   def _getNlpQueryForData(self, query):
-    return self._getNlpQuery(query, self.rewriteDataQuery)
+    return self._getNlpQuery(query, self.rewriteDataQuery)[0]
 
   def _getNlpQueryForUserQuery(self, query):
     return self._getNlpQuery(query, self.rewriteUserQuery)
@@ -81,19 +81,19 @@ class CliNlpModel:
     return NlpCliNode(cliNode, nlpQueries)
 
   def getSuggestions(self, queryStr, top = 100):
-    nlpQuery = self._getNlpQueryForUserQuery(queryStr)
+    nlpQuery, corrections = self._getNlpQueryForUserQuery(queryStr)
     if self.preProcessDoc is not None:
         self.preProcessDoc(nlpQuery)
 
     scoredNodes = list(map(lambda nlpCliNode: Suggestion(nlpCliNode.cliNode, nlpCliNode.compare(nlpQuery)), self.nlpNodes))
     matches = filter(lambda scoredNode: scoredNode.score > self.scoreThreshold, scoredNodes)
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
-    return sortedMatches[:top]
+    return sortedMatches[:top], corrections
 
   def getLegacyResult(self, queryStr, top = 10):
-    suggestions = self.getSuggestions(queryStr, top)
+    suggestions, corrections = self.getSuggestions(queryStr, top)
     result = list(map(mapSuggestionToRes, suggestions))
-    return result
+    return result, corrections
 
   def getCustomResponse(self, query) -> str:
     customDict = {
