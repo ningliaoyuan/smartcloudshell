@@ -15,6 +15,7 @@ def _composeResult(cliSuggestions: List, customResponses: List, searchResults: L
 class Engine:
   def __init__(self):
     op = log().start("Initializing model and index")
+    # self.cliModel = modelFactory.getBaselineModel_sm()
     self.cliModel = modelFactory.getBaselineModel()
     f = open(datetime.datetime.now().strftime('%Y-%m-%dT%H-%M-%S'), 'wb')
     f.close()
@@ -31,15 +32,18 @@ class Engine:
     else:
       customResponse = None
 
+    promise = None
+    if enableSearch:
+      promise = self.aladdin.search(query)
+
     if customResponse is None or len(customResponse) == 0:
       cliSuggestions = self.cliModel.getLegacyResult(query)
     else:
       cliSuggestions = []
 
-    if enableSearch:
-      promise = self.aladdin.search(query)
+    if promise is not None:
       searchResults = self.aladdin.resolveRequest(promise)
     else:
-      searchResults = [] # TBD: haitao
+      searchResults = []
 
     return _composeResult(cliSuggestions, customResponse, searchResults)
