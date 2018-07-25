@@ -38,7 +38,7 @@ Run following in Cloud Shell:
 [![Launch Cloud Shell](https://shell.azure.com/images/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com)
 
 ```
-mkdir bin && curl -sL https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.7/smartcloudshell_linux_64-bit.tar.gz | tar xz && mv ./hey ./bin && export PATH=$PATH:~/bin
+mkdir bin && curl -sL https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.8/smartcloudshell_linux_64-bit.tar.gz | tar xz && mv ./hey ./bin && export PATH=$PATH:~/bin
 ```
 
 Run with debug
