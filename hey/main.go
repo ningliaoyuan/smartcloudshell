@@ -28,6 +28,21 @@ type Suggestion struct {
 	Str   string  `json:"str"`
 }
 
+// CliSuggestion is the result for CLI
+type CliSuggestion struct {
+	CliType    string  `json:"cliType"`
+	Executable bool    `json:"executable"`
+	Help       string  `json:"help"`
+	ID         string  `json:"id"`
+	Score      float64 `json:"score"`
+}
+
+// SuggestionV2 is the new return structure
+type SuggestionV2 struct {
+	Cli    []CliSuggestion `json:"cli"`
+	Custom string          `json:"custom"`
+}
+
 func main() {
 	if len(os.Args) == 1 {
 		handleDefault()
@@ -43,7 +58,7 @@ func main() {
 			fmt.Printf("Something went wrong: %s\n", err.Error())
 		}
 
-		presentResult(r)
+		presentResult(*r)
 	} else {
 		input := ""
 		if os.Args[1] == "-d" {
@@ -64,36 +79,42 @@ func main() {
 		}
 
 		if debugMode {
-			fmt.Printf("[DEBUG] %d results returned.\n", len(r))
+			fmt.Printf("[DEBUG] %d results returned.\n", len(r.Cli))
 
-			for _, item := range r {
-				fmt.Printf("[DEBUG] %v\t%s\t%s\n", item.Score, item.ID, item.Str)
+			for _, item := range r.Cli {
+				fmt.Printf("[DEBUG] %v\t%s\t%s\n", item.Score, item.ID, item.Help)
 			}
+
+			fmt.Printf("[DEBUG] Custom: %s", r.Custom)
 		} else {
-			presentResult(r)
+			presentResult(*r)
 		}
 	}
 }
 
-func presentResult(r []Suggestion) {
+func presentResult(r SuggestionV2) {
 	reader := bufio.NewReader(os.Stdin)
 
-	for i, c := range r {
-		fmt.Printf("Did you mean `az %s` that will `%s`? (Y/n)", c.ID, c.Str)
+	if len(r.Cli) > 0 {
+		for i, c := range r.Cli {
+			fmt.Printf("Did you mean `az %s` that will `%s`? (Y/n)", c.ID, c.Help)
 
-		input, _ := reader.ReadString('\n')
+			input, _ := reader.ReadString('\n')
 
-		if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 || strings.ToLower(input) == "yes" {
-			break
+			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 || strings.ToLower(input) == "yes" {
+				break
+			}
+			fmt.Println()
 		}
-		fmt.Println()
+	} else if r.Custom != "" {
+		cowsay([]string{r.Custom})
 	}
 }
 
-func fetchSuggestions(endpoint, q string) ([]Suggestion, error) {
+func fetchSuggestions(endpoint, q string) (*SuggestionV2, error) {
 	client := &http.Client{}
 
-	url := fmt.Sprintf("%s/cli/help/%s", endpoint, q)
+	url := fmt.Sprintf("%s/q/%s?custom=true&search=true&top=10", endpoint, q)
 	resp, err := client.Get(url)
 
 	if err != nil {
@@ -103,17 +124,17 @@ func fetchSuggestions(endpoint, q string) ([]Suggestion, error) {
 	defer resp.Body.Close()
 	buff, err := ioutil.ReadAll(resp.Body)
 
-	var r []Suggestion
+	var r SuggestionV2
 	err = json.Unmarshal(buff, &r)
 	if err != nil {
 		return nil, err
 	}
 
-	if len(r) == 0 {
+	if len(r.Cli) == 0 && r.Custom == "" {
 		return nil, fmt.Errorf("I have no idea what you are talking about")
 	}
 
-	return r, nil
+	return &r, nil
 }
 
 func getLastCommand() string {
@@ -170,7 +191,7 @@ func handleDefault() {
 			return
 		}
 
-		presentResult(r)
+		presentResult(*r)
 	} else {
 		showHelp()
 	}
@@ -178,8 +199,12 @@ func handleDefault() {
 
 func showHelp() {
 	welcome := []string{"Hey! What's up?", "Ask me anything. Say, `hey list my virtual machines`"}
-	width := maxWidth(welcome)
-	messages := setPadding(welcome, width)
+	cowsay(welcome)
+}
+
+func cowsay(text []string) {
+	width := maxWidth(text)
+	messages := setPadding(text, width)
 
 	cow := "default"
 	cowfile = &cow
