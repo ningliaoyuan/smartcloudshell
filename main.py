@@ -37,6 +37,12 @@ def getResponse(query):
 
   return jsonify(result)
 
+@app.route('/diag')
+def getDiag():
+  return jsonify({
+    "modelid": engine.cliModel.id
+  })
+
 port = 80
 print("localhost:%d is serving" % port)
 
