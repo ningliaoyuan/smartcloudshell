@@ -11,7 +11,7 @@ from spacy.tokens import Doc, Span, Token
 
 # Custom pipeline components: https://spacy.io//usage/processing-pipelines#custom-components
 azureResources = ["acr", "acs", "aks", "advisor", "ams", "webapp", "appservice", "functionapp", "backup", "batch", "batchai", "billing", "cdn", "cloud", "cognitiveservices", "configure", "consumption", "container", "cosmosdb", "dla", "dls", "dms", "eventgrid", "eventhubs", "extension", "feedback", "find", "interactive",
-                  "iot", "keyvault", "lab", "maps", "monitor", "network", "policy", "account", "mysql", "postgres", "redis", "reservations", "group", "resource", "provider", "feature", "tag", "lock", "managedapp", "role", "ad", "servicebus", "sf", "sql", "storage", "disk", "identity", "image", "snapshot", "vm", "vmss"]
+                  "iot", "keyvault", "lab", "maps", "monitor", "network", "policy", "account", "mysql", "postgres", "redis", "reservations", "group", "resource", "provider", "feature", "tag", "lock", "managedapp", "role", "ad", "servicebus", "sf", "sql", "storage", "disk", "identity", "image", "snapshot", "vm", "vmss", "storage account", "docdb", "cosmosdb", "container registries"]
 abbrDic = None
 with open('data/abbr.json') as f:
     abbrDic = json.load(f)
@@ -21,6 +21,7 @@ for resource in azureResources:
     resourceLower = resource.lower()
     newResources.append(resourceLower)
     if resourceLower in abbrDic:
+        newResources.append(resource)
         newResources.append(abbrDic[resourceLower]['word'])
     # else:
     #     print(resourceLower)
