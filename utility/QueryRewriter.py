@@ -4,6 +4,7 @@ import re
 abbrDic = None
 with open('data/abbr.json') as f:
     abbrDic = json.load(f)
+    flatAbbrDic = {key: val["word"] for key, val in abbrDic.items()}
 
 def combineQueryRewriters(qr1, qr2):
     def combined(query):
@@ -24,7 +25,7 @@ def rewriteAbbrInQuery(input, dic = None):
         return input
 
     if dic is None:
-      dic = abbrDic
+      dic = flatAbbrDic
 
     tokens = re.split(r'(\W+)',input)
     result = []
@@ -32,8 +33,8 @@ def rewriteAbbrInQuery(input, dic = None):
     for token in tokens:
         tokenLower = token.lower()
         if tokenLower in dic:
-            word = abbrDic[tokenLower]
-            result.append(word['word'])
+            word = dic[tokenLower]
+            result.append(word)
             corrections[token] = word
         else:
             result.append(token)

@@ -1,9 +1,9 @@
 from pprint import pprint
-from QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
+from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
 
 def executeTestCase(testCases, queryRewriteFn):
     for testCase in testCases:
-        output = queryRewriteFn(testCase[0])
+        output = queryRewriteFn(testCase[0])["query"]
         assert (output == testCase[1]), output + " != " + testCase[1]
 
 abbrTestCases = [
@@ -15,10 +15,15 @@ abbrTestCases = [
 ]
 executeTestCase(abbrTestCases, rewriteAbbrInQuery)
 
+def executeTestCase2(testCases, queryRewriteFn):
+  for testCase in testCases:
+    output= queryRewriteFn(testCase[0])
+    assert (output == testCase[1]), output + " != " + testCase[1]
+
 knownTypoTestCases = [
     ["Detatch a managed disk from a VM.", "detach a managed disk from a VM."],
     ["List unamanaged disks of a VM.", "List unmanaged disks of a VM."]
 ]
-executeTestCase(knownTypoTestCases, rewriteKnownTyposInQuery)
+executeTestCase2(knownTypoTestCases, rewriteKnownTyposInQuery)
 
 pprint("completed")

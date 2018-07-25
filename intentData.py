@@ -46,7 +46,6 @@ def _saveToYamlFile(obj, filepath):
   print("Saves to " + filepath)
   return filepath
 
-
 def _getIdAsQuery(cliNode: data.CliNode) -> List[str]:
   return [cliNode.id]
 
