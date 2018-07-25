@@ -1,11 +1,13 @@
 from flask import Flask, jsonify
+from datetime import datetime
 app = Flask(__name__)
 
 print("initializing")
 
 import modelFactory
 from modelBase import Suggestion
-
+f = open(datetime.datetime.now().strftime('%Y-%m-%dT%H-%M-%S'), 'wb')
+f.close()
 cliModel = modelFactory.getBaselineModel()
 
 @app.route('/')
