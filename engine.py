@@ -1,5 +1,4 @@
-import modelFactory
-from modelBase import Suggestion
+import sys, modelFactory
 from typing import List
 from log import log
 from aladdinSearch import AladdinSearch
@@ -41,8 +40,14 @@ class Engine:
     else:
       cliSuggestions = []
 
+    searchResults = []
     if promise is not None:
-      searchResults = self.aladdin.resolveRequest(promise)
+      try:
+        searchResults = self.aladdin.resolveRequest(promise)
+      except TimeoutError:
+        print("Timed out when calling search")
+      except:
+        print("Unexpected error when calling search:", sys.exc_info()[0])
     else:
       searchResults = []
 

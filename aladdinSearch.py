@@ -14,6 +14,8 @@ class AladdinSearch(object):
   def resolveRequest(self, searchPromise, timeout = 3, top = 3):
     response = searchPromise.result(timeout)
     if response.status_code == 200:
-        results = json.loads(response.content)
-        return results[:top]
+      results = json.loads(response.content)
+      return results[:top]
+    else:
+      print("Unexpected response when calling search:", response)
     return []

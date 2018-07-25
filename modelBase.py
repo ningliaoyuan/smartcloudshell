@@ -1,6 +1,7 @@
 from enum import Enum
 from log import log
 from data import CliNode, CliData
+from random import randint
 
 # suggetion result
 class Suggestion:
@@ -96,11 +97,23 @@ class CliNlpModel:
 
   def getCustomResponse(self, query) -> str:
     customDict = {
-      "hi": "hi tester",
-      "bye": "see you later",
-      "what can you do": "I can do anything. please give me a vote",
-      "tell me a joke": "What do you call a dog with no legs, it doesn’t matter, it’s not going to come anyway."
+      "hi": ["you should say hey"],
+      "bye": ["see you later"],
+      "what can you do":
+        [
+          "I can do anything. please give me a vote"
+        ],
+      "tell me a joke":
+        [
+          "My wife accused me of being immature, I told her to get out of my fort.",
+          "Someone stole my mood ring, I don’t know how I feel about that.",
+          "I broke my finger last week, on the other hand, I am okay.",
+          "Someone stole my Microsoft office and they’re gonna pay, you have my word.",
+          "What do you call a dog with no legs, it doesn’t matter, it’s not going to come anyway."
+        ]
     }
 
     res = customDict.get(query, None)
-    return res
+    index = randint(0, len(res) - 1)
+
+    return res[index]
