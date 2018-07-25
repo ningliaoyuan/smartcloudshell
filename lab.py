@@ -5,7 +5,7 @@ import datetime
 import modelFactory
 # from Model import baselineModel_lg, baselineModel_sm
 from modelBase import CliNlpModel, Suggestion
-from measure.testset import TestCase, TestSet, testset_queries
+from measure.testset import TestCase, TestSet, testset_queries, testset_labeledqueries
 from measure.testrunner import TestRunner, TestReportDiff, TestReport
 
 def ensureTestRunerCanRun():
@@ -32,7 +32,7 @@ def compareAzureResourceRecognizerModelVsBaseLine():
   compare(testset_queries, modelFactory.getModelWithAzureResourceRecognizer(), modelFactory.getBaselineModel())
 
 def compareAbbrQrModelWithAndWithoutSpeller():
-  compare(testset_queries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
+  compare(testset_labeledqueries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
 
 def compareReports(reportPath1: str, reportPath2: str):
   report1 = TestReport.loadFromYamlFile(reportPath1)

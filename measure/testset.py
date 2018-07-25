@@ -44,5 +44,6 @@ class TestSet:
 # export:
 testset_queries = TestSet.loadFromTestsFile(fileName = 'queries')
 testset_helptocommand = TestSet.loadFromTestsFile(fileName = 'helpToCommand')
+testset_labeledqueries = TestSet.loadFromTestsFile(fileName = 'labeled_queries')
 
 # print(testset_queries.count)
