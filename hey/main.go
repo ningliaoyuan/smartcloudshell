@@ -143,12 +143,15 @@ func getLastCommand() string {
 
 		segments := strings.Split(cmd, " ")
 
-		for _, c := range segments {
-			if len(c) > 0 && c[0] == '-' {
-				break
-			}
+		if len(segments) > 0 && segments[0] == "az" {
+			for i := 1; i < len(segments); i++ {
+				c := segments[i]
+				if len(c) > 0 && c[0] == '-' {
+					break
+				}
 
-			last = last + " " + c
+				last = last + " " + c
+			}
 		}
 	}
 
