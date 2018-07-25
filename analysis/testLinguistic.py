@@ -6,11 +6,11 @@ from pprint import pprint
 from pathlib import Path
 import re
 from spacy.vocab import Vocab
-from AzureResourceRecognizer import AzureResourceRecognizer
+# from AzureResourceRecognizer import AzureResourceRecognizer
 
 nlp = spacy.load('en_core_web_lg')
-azureResourceRecognizer = AzureResourceRecognizer(nlp)
-nlp.add_pipe(azureResourceRecognizer, last=True)
+# azureResourceRecognizer = AzureResourceRecognizer(nlp)
+# nlp.add_pipe(azureResourceRecognizer, last=True)
 
 def run():
     sentences = [
@@ -22,6 +22,10 @@ def run():
         u"Show me how to create website",
         u"Steps to set a predefined SSL policy",
         u"I need to create a new virtual machine",
+        u"Create a virtual machine for my company",
+        u"Create a firewall rule for sql server",
+        u"manage keyvault certificate",
+        u"create virtual machine scale set",
     ]
 
     for sentence in sentences:
@@ -37,7 +41,7 @@ def run():
 
         svg = displacy.render(doc, style='dep')
         file_name = '-'.join([w.text for w in doc if not w.is_punct]) + '.svg'
-        output_path = Path('linguistic/' + file_name)
+        output_path = Path('analysis/linguistic/' + file_name)
         output_path.open('w', encoding='utf-8').write(svg)
         print("completed")
 
