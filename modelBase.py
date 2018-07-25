@@ -93,3 +93,14 @@ class CliNlpModel:
     suggestions = self.getSuggestions(queryStr, top)
     result = list(map(mapSuggestionToRes, suggestions))
     return result
+
+  def getCustomResponse(self, query) -> str:
+    customDict = {
+      "hi": "hi tester",
+      "bye": "see you later",
+      "what can you do": "I can do anything. please give me a vote",
+      "tell me a joke": "What do you call a dog with no legs, it doesn’t matter, it’s not going to come anyway."
+    }
+
+    res = customDict.get(query, None)
+    return res

@@ -59,3 +59,5 @@ wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.14.1
 wrapt==1.10.11
+requests==2.19.1
+requests_futures==0.9.7 
