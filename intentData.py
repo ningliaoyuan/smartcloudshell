@@ -78,7 +78,7 @@ def _getIntentSetFromClidata(id, desc= None, getQueries = None, cliData: data.Cl
   return IntentSet(id, desc, ts, intents)
 
 def getIntentSet():
-  return _getIntentSetFromClidata("intent_sm", cliData = data.cliData)
+  return _getIntentSetFromClidata("intent", cliData = data.cliData)
 
 def getIntentSet_sm():
   return _getIntentSetFromClidata("intent_sm", cliData = data.cliData_sm)
