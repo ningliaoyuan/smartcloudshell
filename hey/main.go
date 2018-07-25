@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"os/exec"
 	"os/user"
 	"strings"
 )
@@ -101,7 +102,14 @@ func presentResult(r SuggestionV2) {
 
 			input, _ := reader.ReadString('\n')
 
-			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || i > 5 || strings.ToLower(input) == "yes" {
+			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || strings.ToLower(input) == "yes" {
+				if c.Executable || strings.Contains(strings.ToLower(c.ID), "list") {
+					executeCmd(c)
+				}
+				break
+			}
+
+			if i > 5 {
 				break
 			}
 			fmt.Println()
@@ -109,6 +117,20 @@ func presentResult(r SuggestionV2) {
 	} else if r.Custom != "" {
 		cowsay([]string{r.Custom})
 	}
+}
+
+func executeCmd(c CliSuggestion) {
+	cmd := exec.Command("az", strings.Split(c.ID, " ")...)
+
+	cmd.Stdin = os.Stdin
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	if err := cmd.Start(); err != nil {
+		log.Fatal(err)
+	}
+
+	cmd.Wait()
 }
 
 func fetchSuggestions(endpoint, q string) (*SuggestionV2, error) {
