@@ -31,6 +31,8 @@ type Suggestion struct {
 func main() {
 	if len(os.Args) == 1 {
 		handleDefault()
+	} else if len(os.Args) == 2 && strings.ToLower(os.Args[1]) == "help" {
+		showHelp()
 	} else if len(os.Args) == 2 && os.Args[1] == "test" {
 		selfTest()
 	} else if len(os.Args) > 2 && os.Args[1] == "local" {
@@ -167,11 +169,23 @@ func handleDefault() {
 
 		presentResult(r)
 	} else {
-		fmt.Println("Hey! What's up?")
-		fmt.Println()
-		fmt.Println("Ask me anything. Say, `hey list my virtual machines`")
-		fmt.Println()
+		showHelp()
 	}
+}
+
+func showHelp() {
+	welcome := []string{"Hey! What's up?", "Ask me anything. Say, `hey list my virtual machines`"}
+	width := maxWidth(welcome)
+	messages := setPadding(welcome, width)
+
+	cow := "default"
+	cowfile = &cow
+
+	f := newFace()
+	balloon := constructBallon(f, messages, width)
+
+	fmt.Println(balloon)
+	renderCow(f, os.Stdout)
 }
 
 func selfTest() {
