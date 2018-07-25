@@ -63,22 +63,22 @@ class CliData:
             data = json.load(f)
         insertCommand(
           data,
-          'az vm list –query "[?location==\'eastus\']"',
+          'vm list –query "[?location==\'eastus\']"',
           'List virtual machines in east us'
         )
         insertCommand(
           data,
-          'az vm list –query "[?storageProfile.osDisk.osType==\'Linux\']"',
+          'vm list –query "[?storageProfile.osDisk.osType==\'Linux\']"',
           'List Linux virtual machines'
         )
         insertCommand(
           data,
-          'az vm list –query "[?storageProfile.osDisk.osType==\'Windows\']"',
+          'vm list –query "[?storageProfile.osDisk.osType==\'Windows\']"',
           'List Windows virtual machines'
         )
         insertCommand(
           data,
-          'az vm list –query "[?.hardwareProfile.vmSize==\'Standard_F1\']"',
+          'vm list –query "[?.hardwareProfile.vmSize==\'Standard_F1\']"',
           'List Standard_F1 virtual machines'
         )
 
