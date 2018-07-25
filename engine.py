@@ -34,10 +34,7 @@ class Engine:
     if isDev:
       self.diag["isDev"] = True
 
-  def getLegacyResult(self, query):
-    return self.intentModel.getLegacyResult(query)
-
-  def getResponse(self, query, enableSearch, enableCustomResponse):
+  def getResponse(self, query, enableSearch, enableCustomResponse, top = 10):
     if enableCustomResponse:
       customResponse = self.intentModel.getCustomResponse(query)
     else:
@@ -50,7 +47,7 @@ class Engine:
     cliCorrections, cliSuggestions = [], []
 
     if customResponse is None or len(customResponse) == 0:
-      intentSuggestions, cliCorrections = self.intentModel.getMatchedIntents(query)
+      intentSuggestions, cliCorrections = self.intentModel.getMatchedIntents(query, top)
 
       for intentSug in intentSuggestions:
         cliNode = _getCliNodeById(intentSug.intent.id)
