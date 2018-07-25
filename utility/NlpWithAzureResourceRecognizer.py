@@ -1,4 +1,4 @@
-from utility.AzureResourceRecognizer import AzureResourceRecognizer
+from AzureResourceRecognizer import AzureResourceRecognizer
 import en_core_web_lg as model_lg
 
 class NlpWithAzureResourceRecognizer:

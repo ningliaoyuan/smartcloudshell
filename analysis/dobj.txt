@@ -1,0 +1,49 @@
+creat storage account | create storage account
+craete storage account | create storage account
+====== create storage account
+turn off vm | turn virtual machine
+Lists all the container registries | lists registries
+create new web app | create web app
+show me my web apps | show apps
+how to restart web app | restart web app
+!!!!!! virtual machine extension image types
+show all storage accounts | show accounts
+get connection string of my storage account | get string
+Create a firewall rule for sql server | create rule
+deploy my container | deploy container
+!!!!!! container instance
+scale out my web app | scale web app
+Add a Web App | add web app
+list my accounts | list accounts
+list my account | list account
+list my subscriptions | list subscriptions
+show all my accounts | show accounts
+how to create vm | create virtual machine
+create a storage account | create storage account
+create website | create webster
+Delete docdb | delete dock
+delete docdb collection | delete collection
+show all cosmos dbs | show dbs
+query cosmos db keys | query keys
+Creates an App Service plan | creates plan
+set my default subscription | set subscription
+cretae web app | create web app
+list my accont | list account
+how to create data lake | create lake
+how to submit a job in data lake | submit job
+show me the firewall rule of my data lake | show rule
+add new ip to my sql server | add ip
+how to update the firewall rule for mysql | update rule
+how to delete a file from data lake | delete file
+!!!!!! copy blob to other account
+how to create container in azure | create container
+!!!!!! how to backup sql db
+how to update transparent data encryption config | update config
+upload a file to blob | unload file
+restart my vm | restart virtual machine
+!!!!!! appservice
+!!!!!! create a batchai job
+I'd like to create a virtual machine | create virtual machine
+!!!!!! I want to manage batch ai resources
+====== create virtual machine scale set
+manage keyvault certificate | manage certificate
