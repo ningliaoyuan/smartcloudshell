@@ -1,0 +1,11 @@
+# List Linux virtual machines.
+az vm list --query "[?storageProfile.osDisk.osType=='Linux']"
+
+# List Windows virtual machines.
+az vm list --query "[?storageProfile.osDisk.osType=='Windows']"
+
+# List Standard_F1 virtual machines
+az vm list --query "[?hardwareProfile.vmSize=='Standard_F1']"
+
+# List virtual machines in east us
+az vm list --query "[?location=='eastus']"
