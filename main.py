@@ -26,12 +26,16 @@ def hello_world():
 
 @app.route('/cli/<string:query>')
 def cliWithCmd(query):
-  result = engine.getLegacyResult(query)
+  result = engine.getResponse(
+    query,
+    enableSearch = False,
+    enableCustomResponse = False)
+
   return jsonify(result)
 
 @app.route('/cli/help/<string:query>')
 def cliWithHelp(query):
-  result = engine.getLegacyResult(query)
+  result = cliWithCmd(query)
   return jsonify(result)
 
 @app.route('/q/<string:query>')
@@ -42,10 +46,16 @@ def getResponse(query):
   custom = request.args.get('custom')
   enableCustomResponse = (custom)
 
+  top = request.args.get('top')
+  if top is None:
+    top = "10"
+  top = int(top, 0)
+
   result = engine.getResponse(
     query,
     enableSearch = enableSearch,
-    enableCustomResponse = enableCustomResponse)
+    enableCustomResponse = enableCustomResponse,
+    top = top)
 
   return jsonify(result)
 

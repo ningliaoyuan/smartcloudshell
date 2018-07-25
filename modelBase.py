@@ -82,12 +82,6 @@ class CliNlpModel:
     sortedMatches = sorted(matches, key=lambda suggestion: suggestion.score, reverse=True)
     return sortedMatches[:top], corrections
 
-  def getLegacyResult(self, queryStr, top = 10):
-    suggestions, corrections = self.getMatchedIntents(queryStr, top)
-    result = [sug.mapSuggestionToRes() for sug in suggestions]
-
-    return result
-
   def getCustomResponse(self, query) -> str:
     customDict = {
       "hi": ["you should say hey"],
