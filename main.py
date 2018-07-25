@@ -24,19 +24,19 @@ nlpWithAzureResourceRecognizer = NlpWithAzureResourceRecognizer()
 def hello_world():
   return 'Welcome to smart cloud shell! Please help with testing/labeling at https://bizqnabootcamp.azurewebsites.net/'
 
-@app.route('/cli/<string:query>')
-def cliWithCmd(query):
-  result = engine.getResponse(
-    query,
-    enableSearch = False,
-    enableCustomResponse = False)
+# @app.route('/cli/<string:query>')
+# def cliWithCmd(query):
+#   result = engine.getResponse(
+#     query,
+#     enableSearch = False,
+#     enableCustomResponse = False)
 
-  return jsonify(result)
+#   return jsonify(result)
 
-@app.route('/cli/help/<string:query>')
-def cliWithHelp(query):
-  result = cliWithCmd(query)
-  return jsonify(result)
+# @app.route('/cli/help/<string:query>')
+# def cliWithHelp(query):
+#   result = cliWithCmd(query)
+#   return jsonify(result)
 
 @app.route('/q/<string:query>')
 def getResponse(query):
