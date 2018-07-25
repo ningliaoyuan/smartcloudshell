@@ -3,6 +3,7 @@ from modelBase import Suggestion
 from typing import List
 from log import log
 from aladdinSearch import AladdinSearch
+from datetime import datetime
 
 def _composeResult(cliSuggestions: List, customResponses: List, searchResults: List):
     return {
@@ -15,6 +16,8 @@ class Engine:
   def __init__(self):
     op = log().start("Initializing model and index")
     self.cliModel = modelFactory.getBaselineModel()
+    f = open(datetime.datetime.now().strftime('%Y-%m-%dT%H-%M-%S'), 'wb')
+    f.close()
     op.end("Done")
 
     self.aladdin = AladdinSearch()
