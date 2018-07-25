@@ -1,0 +1,55 @@
+!!python/object:__main__.IntentSet
+createOn: 0725022408
+desc: Small set of default cli intent data
+id: cliIntent_default_sm
+intents:
+- id: acr check-name
+  kind: command
+  queries:
+  - acr check-name
+  - Checks if a container registry name is valid and available for use.
+- id: acr list
+  kind: command
+  queries:
+  - acr list
+  - Lists all the container registries under the current subscription.
+- id: acr create
+  kind: command
+  queries:
+  - acr create
+  - Creates a container registry.
+- id: acr delete
+  kind: command
+  queries:
+  - acr delete
+  - Deletes a container registry.
+- id: acr show
+  kind: command
+  queries:
+  - acr show
+  - Get the details of a container registry.
+- id: acr login
+  kind: command
+  queries:
+  - acr login
+  - Log in to a container registry through the Docker CLI.
+- id: acr show-usage
+  kind: command
+  queries:
+  - acr show-usage
+  - Get the quota usages for a container registry.
+- id: acr update
+  kind: command
+  queries:
+  - acr update
+  - Update a container registry.
+- id: acr import
+  kind: command
+  queries:
+  - acr import
+  - Imports an image to the container registry from source.
+- id: acr credential show
+  kind: command
+  queries:
+  - acr credential show
+  - Get the login credentials for a container registry.

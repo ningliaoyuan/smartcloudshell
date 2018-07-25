@@ -69,5 +69,5 @@ def visualize(model, title='Command confusion map'):
 
 # visualize(modelFactory.getBaselineModel_sm(), 'Command confusion map - small dataset with small model')
 # visualize(modelFactory.getBaselineModel(), 'Command confusion map - large dataset with large model')
-visualize(modelFactory.getBaselineModel_partial(), 'Command confusion map - partial dataset with large model (commands only)')
-visualize(modelFactory.getModelWithAbbrQR_partial(), 'Command confusion map - partial dataset with large model with abbr QR (commands only)')
+# visualize(modelFactory.getBaselineModel_partial(), 'Command confusion map - partial dataset with large model (commands only)')
+# visualize(modelFactory.getModelWithAbbrQR_partial(), 'Command confusion map - partial dataset with large model with abbr QR (commands only)')

@@ -7,85 +7,34 @@ import en_core_web_sm as model_sm
 
 from log import log
 from modelBase import CliNlpModel
-from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery, combineQueryRewriters
+from utility.QueryRewriter import rewriteAbbrInQuery, combineQueryRewriters
 from utility.AzureResourceRecognizer import AzureResourceRecognizer
 from utility.UpdateDocVector import updateDocVector
 from utility.SpellChecker import correctSpellingErrors
-
-def getVector(vocab, words):
-  tokens = words.split(' ')
-  vectors = list(map(vocab.get_vector, tokens))
-  return np.mean(vectors, axis = 0)
-
-def addAbbrVector(nlp):
-    vocab = nlp.vocab
-    abbrDic = data.loadAbbrDic()
-
-    for abbr, phrase in abbrDic.items():
-      try:
-        # vector = nlp(phrase).vector
-        vector = getVector(vocab, phrase)
-        vocab.set_vector(abbr, vector)
-      except:
-        print("Unexpected error:", abbr, phrase)
-      else:
-        print("done", abbr)
-
-    return nlp
-
-def getIdAsQuery(cliNode: data.CliNode) -> List[str]:
-  return [cliNode.id]
-
-def getHelpAsQuery(cliNode: data.CliNode) -> List[str]:
-  if cliNode.help is None:
-    return [None]
-  return [cliNode.help]
-
-def getIdAndHelp(cliNode: data.CliNode) -> List[str]:
-  return map(rewriteKnownTyposInQuery, list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode))))
-
-def getAllAsQueries(cliNode: data.CliNode) -> List[str]:
-  return map(rewriteKnownTyposInQuery, list(filter(None, getIdAsQuery(cliNode) + getHelpAsQuery(cliNode) + cliNode.queries)))
+from intentData import getIntentSet, getIntentSet_sm
 
 def getBaselineModel():
   return getModelWithAbbrQRAndSpeller()
-  # nlp = model_lg.load()
-  # return CliNlpModel("lgd_lgm", getAllAsQueries, data.cliData, nlp)
-
-def getBaselineModel_idonly():
-  nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_idonly", getIdAsQuery, data.cliData, nlp)
-
-def getBaselineModel_sm():
-  nlp = model_sm.load()
-  return CliNlpModel("smd_smm", getAllAsQueries, data.cliData_sm, nlp)
-
-def getBaselineModel_partial():
-  nlp = model_lg.load()
-  return CliNlpModel("pad_lgm", getAllAsQueries, data.cliData_partial, nlp)
-
-def getModelWithAbbrQR_partial():
-  nlp = model_lg.load()
-  return CliNlpModel("pad_lgm_abbrqr", getAllAsQueries, data.cliData_partial, nlp, rewriteAbbrInQuery)
 
 def getModelWithAbbrQR():
   nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_abbrqr", getAllAsQueries, data.cliData, nlp, rewriteAbbrInQuery)
+  return CliNlpModel("lgd_lgm_abbrqr", getIntentSet(), nlp, rewriteAbbrInQuery)
 
 def getModelWithAbbrQRAndSpeller():
   nlp = model_lg.load()
-  return CliNlpModel("lgd_lgm_abbrqr_speller", getAllAsQueries, data.cliData, nlp,
+  return CliNlpModel("lgd_lgm_abbrqr_speller", getIntentSet(), nlp,
     rewriteDataQuery=rewriteAbbrInQuery,
     rewriteUserQuery=combineQueryRewriters(rewriteAbbrInQuery, correctSpellingErrors))
 
 def getModelWithAbbrQRAndSpeller_smdata_smmodel():
   nlp = model_sm.load()
-  return CliNlpModel("smdata_smmodel_abbrqr_speller", getAllAsQueries, data.cliData_sm, nlp,
+  return CliNlpModel("smdata_smmodel_abbrqr_speller", getIntentSet_sm(), nlp,
     rewriteDataQuery=rewriteAbbrInQuery,
     rewriteUserQuery=combineQueryRewriters(rewriteAbbrInQuery, correctSpellingErrors))
 
 def getModelWithAzureResourceRecognizer():
   nlp = model_lg.load()
+  intentSet = getIntentSet()
   azureResourceRecognizer = AzureResourceRecognizer(nlp)
   nlp.add_pipe(azureResourceRecognizer, last=True)
-  return CliNlpModel("lgd_lgm_azRecognizer", getAllAsQueries, data.cliData, nlp, rewriteAbbrInQuery, updateDocVector)
+  return CliNlpModel("lgd_lgm_azRecognizer", intentSet, nlp, rewriteAbbrInQuery, preProcessDoc = updateDocVector)

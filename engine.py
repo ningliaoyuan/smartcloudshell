@@ -3,39 +3,43 @@ from typing import List
 from log import log
 from aladdinSearch import AladdinSearch
 from datetime import datetime
+from modelBase import Suggestion
+from data import cliData
 
-def _composeResult(cliSuggestions: List, cliCorrections: dict, customResponses: List, searchResults: List):
+def _composeResult(suggestions: List, cliCorrections: dict, customResponses: List, searchResults: List):
     return {
-      "cli": cliSuggestions,
+      "cli": suggestions,
       "cliCorrections": cliCorrections,
       "custom": customResponses,
       "search": searchResults
     }
 
+def _getCliNodeById(id):
+  return cliData.getCliNodeById(id)
+
 class Engine:
   def __init__(self, isDev = False):
     op = log().start("Initializing model and index")
     if isDev:
-      self.cliModel = modelFactory.getModelWithAbbrQRAndSpeller_smdata_smmodel()
+      self.intentModel = modelFactory.getModelWithAbbrQRAndSpeller_smdata_smmodel()
     else:
-      self.cliModel = modelFactory.getBaselineModel()
+      self.intentModel = modelFactory.getBaselineModel()
     op.end("Done")
 
     self.aladdin = AladdinSearch()
 
     self.diag = {
-      "modelid": self.cliModel.id
+      "modelid": self.intentModel.id
     }
     if isDev:
       self.diag["isDev"] = True
 
-
   def getLegacyResult(self, query):
-    return self.cliModel.getLegacyResult(query)
+    return self.intentModel.getLegacyResult(query)
 
   def getResponse(self, query, enableSearch, enableCustomResponse):
     if enableCustomResponse:
-      customResponse = self.cliModel.getCustomResponse(query)
+      customResponse = self.intentModel.getCustomResponse(query)
     else:
       customResponse = None
 
@@ -43,10 +47,21 @@ class Engine:
     if enableSearch:
       promise = self.aladdin.search(query)
 
+    cliCorrections, cliSuggestions = [], []
+
     if customResponse is None or len(customResponse) == 0:
-      cliSuggestions, cliCorrections = self.cliModel.getLegacyResult(query)
-    else:
-      cliSuggestions = []
+      intentSuggestions, cliCorrections = self.intentModel.getMatchedIntents(query)
+
+      for intentSug in intentSuggestions:
+        cliNode = _getCliNodeById(intentSug.intent.id)
+        cliSuggestions.append({
+          "id": cliNode.id,
+          "help": cliNode.help,
+          "cliType": cliNode.cliType,
+          "score": intentSug.score,
+          "executable": False, # TBD
+          "parameters": [] # TBD
+        })
 
     searchResults = []
     if promise is not None:
@@ -56,8 +71,6 @@ class Engine:
         print("Timed out when calling search")
       except:
         print("Unexpected error when calling search:", sys.exc_info()[0])
-    else:
-      searchResults = []
 
     return _composeResult(cliSuggestions, cliCorrections, customResponse, searchResults)
 
