@@ -33,10 +33,12 @@ docker run -p 5000:5000 smartcloudshell
 ```
 
 # Install Hey
+Run following in Cloud Shell:
 
-Windows
+[![Launch Cloud Shell](https://shell.azure.com/images/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com)
+
 ```
-https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.3/smartcloudshell_windows_64-bit.zip
+mkdir bin && curl -sL https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.7/smartcloudshell_linux_64-bit.tar.gz | tar xz && mv ./hey ./bin && export PATH=$PATH:~/bin
 ```
 
 Run with debug

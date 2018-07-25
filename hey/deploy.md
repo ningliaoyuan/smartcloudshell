@@ -1,13 +1,8 @@
 # download and unzip binary
-## init download folder and bin folder
-``` bash
-mkdir Downloads
-mkdir bin
-```
+
 ## download and extract
 ```
-curl -L https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.5/smartcloudshell_linux_64-bit.tar.gz -o ./Downloads/smartCloudShell.tar.gz
-tar -xvzf ./Downloads/smartCloudShell.tar.gz -C ./bin
+mkdir bin && curl -sL https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.7/smartcloudshell_linux_64-bit.tar.gz | tar xz && mv ./hey ./bin && export PATH=$PATH:~/bin
 ```
 
 # append following script to ~/.bashrc (using cloudshell editor)
