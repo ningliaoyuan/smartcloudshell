@@ -8,4 +8,7 @@ az vm list --query "[?storageProfile.osDisk.osType=='Windows']"
 az vm list --query "[?hardwareProfile.vmSize=='Standard_F1']"
 
 # List virtual machines in east us
-az vm list --query "[?location=='eastus']
+az vm list --query "[?location=='eastus']"
+
+# Restart all virtual machines in east us
+az vm list --query "[?location=='eastus'] .id" -o tsv | xargs -I {} az vm restart --id {}
