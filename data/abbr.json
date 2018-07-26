@@ -304,8 +304,8 @@
         "word": "web app",
         "count": 3
     },
-    "show": {
-        "word": "list",
-        "count": 360
+    "vms": {
+        "word": "virtual machine",
+        "count": 81
     }
 }

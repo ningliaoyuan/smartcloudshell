@@ -1,7 +1,7 @@
 from spellchecker import SpellChecker
 import re, csv, json
 
-oovs = []
+oovs = ["firewall"]
 with open('analysis/help+sample-word-oov.csv') as oovFile:
     rows = csv.reader(oovFile)
     next(rows) # skip header line
