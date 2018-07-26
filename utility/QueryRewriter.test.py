@@ -1,5 +1,5 @@
 from pprint import pprint
-from utility.QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery
+from QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery, rewriteStopWords
 
 def executeTestCase(testCases, queryRewriteFn):
     for testCase in testCases:
@@ -25,5 +25,12 @@ knownTypoTestCases = [
     ["List unamanaged disks of a VM.", "List unmanaged disks of a VM."]
 ]
 executeTestCase2(knownTypoTestCases, rewriteKnownTyposInQuery)
+
+executeTestCase([
+    ["Delete a azure vm", "Delete vm"],
+    ["Create a new website", "Create website"],
+    ["Steps to start my my my website", "Steps start website"],
+    ["my website stop", "website stop"]
+], rewriteStopWords)
 
 pprint("completed")

@@ -66,16 +66,13 @@ def output(doc):
 
 
 ignoredDeps = [
-    "advmod", #副词修饰符, what, how
-    "aux", #非主要动词, to
+    "advmod", # what, how
+    "aux", # to
     "advmod", # very
     "amod", # stable
-    "det" #determiner
+    "det" # determiner
     ]
-ignoredDepDic = {}
-for tag in ignoredDeps:
-    ignoredDepDic[tag] = True
-
+ignoredDepDic = dict((k.lower(), True) for k in ignoredDeps)
 
 def extractDobj2(inputText):
     text = inputText.lower()
@@ -108,20 +105,19 @@ def extractDobj2(inputText):
 
 
 def run():
-    # extractDobj2(u"show me the firewall rule of my data lake")
+    # extractDobj2(u"restart my vm ")
     # extractDobj2(u"manage keyvault certificate")
 
-    output = open('temp\dobjtest.txt', 'w')
+    # output = open('temp\dobjtest.txt', 'w')
     cases = getCases()
     for case in cases:
         dobj = extractDobj2(case)
         if dobj == case:
-              thefile.write("%s\n" % item)
+            # output.write("%s\n" % item)
             print("======", case)
         elif dobj == None:
             print("!!!!!!", case)
         else:
             print(case, "|", dobj)
-
 
 run()

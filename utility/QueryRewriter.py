@@ -6,6 +6,7 @@ with open('data/abbr.json') as f:
     abbrDic = json.load(f)
     flatAbbrDic = {key: val["word"] for key, val in abbrDic.items()}
 
+
 def combineQueryRewriters(qr1, qr2):
     def combined(query):
         r1 = qr1(query)
@@ -20,14 +21,15 @@ def combineQueryRewriters(qr1, qr2):
         }
     return combined
 
-def rewriteAbbrInQuery(input, dic = None):
+
+def rewriteAbbrInQuery(input, dic=None):
     if input is None:
         return input
 
     if dic is None:
-      dic = flatAbbrDic
+        dic = flatAbbrDic
 
-    tokens = re.split(r'(\W+)',input)
+    tokens = re.split(r'(\W+)', input)
     result = []
     corrections = {}
     for token in tokens:
@@ -44,19 +46,51 @@ def rewriteAbbrInQuery(input, dic = None):
         'corrections': corrections
     }
 
+
 sourceTypoDic = None
 with open('data/source_typos.json') as f:
     sourceTypoDic = json.load(f)
+
 
 def rewriteKnownTyposInQuery(input):
     if input is None:
         return input
 
     result = input
-    tokens = re.split(r'(\W+)',input)
+    tokens = re.split(r'(\W+)', input)
     for token in tokens:
         tokenLower = token.lower()
         if tokenLower in sourceTypoDic:
             word = sourceTypoDic[tokenLower]
             result = re.sub(tokenLower, word, input, flags=re.I)
     return result
+
+
+stopWords = ["azure", "a", "the", "my", "me", "his",
+             "her", "what", "how", "to", "this", "that", "new"]
+stopWordDic = dict((k.lower(), True) for k in stopWords)
+
+def rewriteStopWords(input):
+    if input is None:
+        return input
+
+    tokens = re.split(r'(\W+)', input)
+    result = []
+    corrections = []
+    stopAppendSpace = True
+    for token in tokens:
+        tokenLower = token.lower()
+        if tokenLower in stopWordDic:
+            corrections.append(token)
+        elif tokenLower == ' ':
+            if stopAppendSpace == False:
+                result.append(token)
+            stopAppendSpace = True
+        else:
+            result.append(token)
+            stopAppendSpace = False
+
+    return {
+        'query': ''.join(result),
+        'corrections': corrections
+    }
