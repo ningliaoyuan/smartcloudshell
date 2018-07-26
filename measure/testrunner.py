@@ -147,11 +147,11 @@ class TestRunner:
     self._testCaseResults = None
 
   def getTestCaseResult(self, case: TestCase):
-    suggestions, corrections = self._cliModel.geMatchedIntents(case.query, top = 100)
+    suggestions, corrections = self._cliModel.getMatchedIntents(case.query, top = 100)
 
     for index in range(len(suggestions)):
       sug = suggestions[index]
-      if case.match(sug.cliNode.id):
+      if case.match(sug.intent.id):
         return TestCaseResult(case, suggestions[:3], index, sug)
 
     return TestCaseResult(case, suggestions[:3])

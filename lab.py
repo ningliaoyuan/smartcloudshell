@@ -31,6 +31,9 @@ def compareAzureResourceRecognizerModelVsBaseLine():
 def compareAbbrQrModelWithAndWithoutSpeller():
   compare(testset_labeledqueries, modelFactory.getModelWithAbbrQRAndSpeller(), modelFactory.getModelWithAbbrQR())
 
+def compareWithAndWithoutStopsQr():
+  compare(testset_labeledqueries,  modelFactory.getModelWithAbbrQrStopsQrAndSpeller(), modelFactory.getModelWithAbbrQRAndSpeller())
+
 def compareReports(reportPath1: str, reportPath2: str):
   report1 = TestReport.loadFromYamlFile(reportPath1)
   report2 = TestReport.loadFromYamlFile(reportPath2)
@@ -39,7 +42,7 @@ def compareReports(reportPath1: str, reportPath2: str):
 
 # ensureTestRunerCanRun()
 # compareAzureResourceRecognizerModelVsBaseLine()
-compareAbbrQrModelWithAndWithoutSpeller()
+compareWithAndWithoutStopsQr()
 
 #compareReports('queries_lgd_lgm.report', 'queries_lgd_lgm_abbr.report')
 # TODO: add more runner to measure different combinations

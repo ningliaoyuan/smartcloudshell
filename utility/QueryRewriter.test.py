@@ -1,5 +1,5 @@
 from pprint import pprint
-from QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery, rewriteStopWords
+from QueryRewriter import rewriteAbbrInQuery, rewriteKnownTyposInQuery, rewriteStopWords, combineQueryRewriters
 
 def executeTestCase(testCases, queryRewriteFn):
     for testCase in testCases:
@@ -32,5 +32,13 @@ executeTestCase([
     ["Steps to start my my my website", "Steps start website"],
     ["my website stop", "website stop"]
 ], rewriteStopWords)
+
+rewriteAll = combineQueryRewriters([rewriteAbbrInQuery, rewriteStopWords])
+executeTestCase([
+    ["Delete a azure vm", "Delete virtual machine"],
+    ["Create a new website", "Create web app"],
+    ["Steps to start my my my website", "Steps start web app"],
+    ["my website stop", "web app stop"]
+], rewriteAll)
 
 pprint("completed")

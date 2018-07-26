@@ -7,18 +7,20 @@ with open('data/abbr.json') as f:
     flatAbbrDic = {key: val["word"] for key, val in abbrDic.items()}
 
 
-def combineQueryRewriters(qr1, qr2):
+def combineQueryRewriters(qrs):
     def combined(query):
-        r1 = qr1(query)
-        c = r1['corrections'] if r1['corrections'] is not None else {}
-        r2 = qr2(r1['query'])
-        c2 = r2['corrections'] if r2['corrections'] is not None else {}
-        for key in c2:
-            c[key] = c2[key]
+        c = {}
+        for qr in qrs:
+            r = qr(query)
+            query = r['query']
+            if r['corrections'] is not None:
+                c.update(r['corrections'])
+
         return {
-            'query': r2['query'],
+            'query': query,
             'corrections': c
         }
+
     return combined
 
 
@@ -66,9 +68,17 @@ def rewriteKnownTyposInQuery(input):
     return result
 
 
-stopWords = ["azure", "a", "the", "my", "me", "his",
-             "her", "what", "how", "to", "this", "that", "new"]
+# The default stop word list is from: https://github.com/apache/lucene-solr/blob/53981795fd73e85aae1892c3c72344af7c57083a/lucene/core/src/java/org/apache/lucene/analysis/standard/StandardAnalyzer.java#L44-L50
+stopWords = ["a", "an", "and", "are", "as", "at", "be", "but", "by",
+              "for", "if", "in", "into", "is", "it",
+              "no", "not", "of", "on", "or", "such",
+              "that", "the", "their", "then", "there", "these",
+              "they", "this", "to", "was", "will", "with"]
+stopWords.extend(["azure", "a", "the", "my", "me", "his",
+                  "her", "what", "how", "to", "this", "that", "new"])
+
 stopWordDic = dict((k.lower(), True) for k in stopWords)
+
 
 def rewriteStopWords(input):
     if input is None:
@@ -76,12 +86,12 @@ def rewriteStopWords(input):
 
     tokens = re.split(r'(\W+)', input)
     result = []
-    corrections = []
+    corrections = {}
     stopAppendSpace = True
     for token in tokens:
         tokenLower = token.lower()
         if tokenLower in stopWordDic:
-            corrections.append(token)
+            corrections[token] = ''
         elif tokenLower == ' ':
             if stopAppendSpace == False:
                 result.append(token)
