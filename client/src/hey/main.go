@@ -90,7 +90,9 @@ func main() {
 
 			fmt.Printf("[DEBUG] Custom: %s", r.Custom)
 		} else {
-			presentResult(*r)
+			if r != nil {
+				presentResult(*r)
+			}
 		}
 	}
 }
