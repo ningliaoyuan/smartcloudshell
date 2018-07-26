@@ -47,6 +47,8 @@ type SuggestionV2 struct {
 func main() {
 	if len(os.Args) == 1 {
 		handleDefault()
+	} else if isWeather, city := isWeatherReq(os.Args); isWeather {
+		weather(city)
 	} else if len(os.Args) == 2 && strings.ToLower(os.Args[1]) == "help" {
 		showHelp()
 	} else if len(os.Args) == 2 && os.Args[1] == "test" {
@@ -121,6 +123,43 @@ func presentResult(r SuggestionV2) {
 
 func executeCmd(c CliSuggestion) {
 	cmd := exec.Command("az", strings.Split(c.ID, " ")...)
+
+	cmd.Stdin = os.Stdin
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+
+	if err := cmd.Start(); err != nil {
+		log.Fatal(err)
+	}
+
+	cmd.Wait()
+}
+
+func isCity(city string) bool {
+	l := strings.ToLower(city)
+
+	return l == "redmond" || l == "belevue" || l == "seattle" || l == "sammamish"
+}
+
+func isWeatherReq(args []string) (bool, string) {
+	hasWeather := false
+	city := ""
+
+	for _, a := range args {
+		if strings.ToLower(a) == "weather" {
+			hasWeather = true
+		}
+
+		if isCity(a) {
+			city = a
+		}
+	}
+
+	return hasWeather, city
+}
+
+func weather(city string) {
+	cmd := exec.Command("curl", fmt.Sprintf("wttr.in/%s", city))
 
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
