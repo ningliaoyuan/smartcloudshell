@@ -32,6 +32,12 @@ docker build -t smartcloudshell .
 docker run -p 5000:5000 smartcloudshell
 ```
 
+# Build Hey
+```
+export GOPATH=$PWD/client && cd ./client/src/hey
+go build
+```
+
 # Install Hey
 Run following in Cloud Shell:
 
