@@ -92,4 +92,6 @@ ENV/
 
 /hey/hey
 /hey/bin/
+/client/src/hey/hey
+/client/src/hey/bin
 temp/
