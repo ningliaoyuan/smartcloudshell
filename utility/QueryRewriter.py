@@ -74,8 +74,7 @@ stopWords = ["a", "an", "and", "are", "as", "at", "be", "but", "by",
               "no", "not", "of", "on", "or", "such",
               "that", "the", "their", "then", "there", "these",
               "they", "this", "to", "was", "will", "with"]
-stopWords.extend(["azure", "a", "the", "my", "me", "his",
-                  "her", "what", "how", "to", "this", "that", "new"])
+stopWords.extend(["azure", "my", "what", "how"])
 
 stopWordDic = dict((k.lower(), True) for k in stopWords)
 
