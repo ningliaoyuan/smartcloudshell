@@ -5,15 +5,22 @@
 mkdir -p bin && curl -sL https://github.com/ningliaoyuan/smartcloudshell/releases/download/v0.11/smartcloudshell_linux_64-bit.tar.gz | tar xz && mv ./hey ./bin && export PATH=$PATH:~/bin
 ```
 
-# append following script to ~/.bashrc (using cloudshell editor)
+# append following script to ~/.bashrc
+
+try cloudshell editor:
+code ~/.bashrc
+
 ``` bash
 # add ~/bin to path
 export PATH=$PATH:~/bin
 # print help text for 'hey'
-echo hey helps you to express yourself in your own words using our conversational AI engine and auto-correction.
+echo Try "hey" to learn how to interactive with Azure in Natural Language
 echo
-echo For example: Search by typing: "hey update the file in storage" or "hey create new storage directory"
-echo To learn more about the supported skills, just type: hey
+echo Examples:
+echo   hey show my subscriptions
+echo   hey create a storage account
+echo   hey list my linux vms
+echo   hey tell me a joke
 ```
 
 # reload ~/.bashrc
