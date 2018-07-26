@@ -122,7 +122,17 @@ func presentResult(r SuggestionV2) {
 }
 
 func executeCmd(c CliSuggestion) {
-	cmd := exec.Command("az", strings.Split(c.ID, " ")...)
+	args := []string{}
+
+	for _, a := range strings.Split(c.ID, " ") {
+		if strings.HasPrefix(a, "\"") && strings.HasSuffix(a, "\"") {
+			args = append(args, a[1:len(a)-1])
+		} else {
+			args = append(args, a)
+		}
+	}
+
+	cmd := exec.Command("az", args...)
 
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
