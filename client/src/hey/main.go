@@ -109,6 +109,9 @@ func presentResult(r SuggestionV2) {
 			if len(input) == 1 || input[0] == 'Y' || input[0] == 'y' || strings.ToLower(input) == "yes" {
 				if c.Executable || strings.Contains(strings.ToLower(c.ID), "list") {
 					executeCmd(c)
+				} else {
+					c.ID = c.ID + " -h"
+					executeCmd(c)
 				}
 				break
 			}
