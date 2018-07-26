@@ -2,7 +2,7 @@ import sys, csv
 args = sys.argv
 from measure.testrunner import TestReportDiff
 
-fileName = 'queries_lgd_lgm_abbrqr_speller_VS_queries_lgd_lgm_abbrqr.diff'
+fileName = 'labeled_queries_lgd_lgm_abbrQrStopsQrAndSpeller_VS_labeled_queries_lgd_lgm_abbrqr_speller.diff'
 diff = TestReportDiff.loadFromYamlFile(fileName)
 
 outputFile = 'measure/output/' + fileName + '.csv'
@@ -23,9 +23,9 @@ with open(outputFile, 'w+', newline='') as csvfile:
           ', '.join(row.case.expectedCommands),
           row.report1Score,
           row.report1MatchedIndex,
-          ', '.join(map(lambda s: s.cliNode.id, row.report1Suggestions)),
+          ', '.join(map(lambda s: s.intent.id, row.report1Suggestions)),
           row.report2MatchedIndex,
-          ', '.join(map(lambda s: s.cliNode.id, row.report2Suggestions))
+          ', '.join(map(lambda s: s.intent.id, row.report2Suggestions))
       ])
 
 print('done')
