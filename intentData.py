@@ -52,7 +52,9 @@ def _getIdAsQuery(cliNode: data.CliNode) -> List[str]:
 def _getHelpAsQuery(cliNode: data.CliNode) -> List[str]:
   if cliNode.help is None:
     return [None]
-  return [cliNode.help]
+  else:
+    help = cliNode.help.split('.')[0]
+    return [help]
 
 def _getIdAndHelp(cliNode: data.CliNode) -> List[str]:
   return map(rewriteKnownTyposInQuery, list(filter(None, _getIdAsQuery(cliNode) + _getHelpAsQuery(cliNode))))
@@ -95,7 +97,7 @@ def _updateIntentYamls():
   intentSet_sm = _getIntentSetFromClidata("cliIntent_default_sm", "Small set of default cli intent data", _getIdAndHelp, top = 10)
   _saveToYamlFile(intentSet_sm, 'intent/cliIntent_sm.yaml')
 
-  intentSet_idonly = _getIntentSetFromClidata("cliIntent_idonly", "Small set of default cli intent data", _getIdAsQuery)
+  intentSet_idonly = _getIntentSetFromClidata("cliIntent_idonly", "Id only trigger query of default cli intent data", _getIdAsQuery)
   _saveToYamlFile(intentSet_idonly, 'intent/cliIntent_idonly.yaml')
 
 # _updateIntentYamls()
